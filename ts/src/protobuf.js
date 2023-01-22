@@ -454,7 +454,7 @@ class Protobuf {
                 return { "key": key, "value": this._uint32() };
             // unknown type
             default:
-                throw new Error("Unknown type 0x" + type.toString(16));
+                throw new Error(`Unknown type 0x${type.toString(16)}`);
         }
     }
 

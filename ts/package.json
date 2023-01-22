@@ -13,6 +13,7 @@
     "@types/ws": "^8.5.4"
   },
   "dependencies": {
+    "node-kcp-token": "github:TheLostTree/node-kcp",
     "protobufjs": "^7.1.2",
     "ws": "^8.12.0"
   }
