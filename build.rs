@@ -1,4 +1,4 @@
-use std::{path::Path, env, fs::{self, File}, io::Write};
+use std::{path::Path, env, fs::{self, File}, io::Write, str::Lines};
 
 use protobuf_codegen;
 
@@ -43,7 +43,7 @@ fn generate_cmdid_file<P: AsRef<Path>>(path: P){
     contents.push_str("impl CmdIds {\n");
     contents.push_str("\tpub fn from_u16(id: u16) -> Option<CmdIds> {\n");
     contents.push_str("\t\tmatch id {\n");
-    lines.for_each(|line|{
+    lines.clone().for_each(|line|{
         let mut split = line.split(",");
         let name = split.next().unwrap();
         let cmdid = split.next().unwrap();
@@ -55,6 +55,8 @@ fn generate_cmdid_file<P: AsRef<Path>>(path: P){
     contents.push_str("}\n");
 
     generate_file(&path, contents.as_bytes());
+
+    generate_proto_decodes(lines)
 }
 
 fn generate_protobufs(){
@@ -75,6 +77,15 @@ fn generate_protobufs(){
     // Specify output directory relative to Cargo output directory.
     .cargo_out_dir("protos_target")
     .run_from_script();
+}
+
+
+fn generate_proto_decodes(cmds: Lines){
+    let mut contents = String::new();
+    contents.push_str("fn decode_proto(p: Packet, cmd: CmdIds){\n");
+    contents.push_str("\tmatch cmd {\n");
+    
+
 }
 
 
