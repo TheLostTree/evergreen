@@ -1,3 +1,4 @@
+#![allow(unused)]
 pub struct Random {
     //
     // Private Constants
@@ -13,7 +14,8 @@ impl Random {
     // public Random()
     //   : this(Environment.TickCount) {
     // }
-    pub fn default() -> Random {
+    
+    fn default() -> Random {
         Random {
             m_big: i32::MAX,
             m_seed: 161803398,
@@ -54,7 +56,7 @@ impl Random {
 
         for k in 1..5 {
             for i in 1..56 {
-                rand.seed_array[i] -= rand.seed_array[1 + (i + 30) % 55];
+                rand.seed_array[i] = rand.seed_array[i].wrapping_sub(rand.seed_array[1 + (i + 30) % 55]);
                 if rand.seed_array[i] < 0 {
                     rand.seed_array[i] += rand.m_big
                 };

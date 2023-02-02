@@ -1,7 +1,9 @@
-use crate::RUNNING;
+use crate::{RUNNING, client_server_pair};
 use pcap::{Capture, Device};
 use std::io::{stdin, stdout, Write};
 use std::sync::atomic::Ordering;
+
+
 
 pub fn run(){
     let main_device = get_device(false).unwrap();
@@ -28,7 +30,11 @@ pub fn run(){
     println!("listening on {}...", device_name);
 
     let mut count = 0;
+    let (sender, receiver) = std::sync::mpsc::channel();
 
+    let processing_thread = std::thread::spawn(move||{
+        client_server_pair::processing_thread(receiver)
+    });
     
 
     while RUNNING.load(Ordering::SeqCst) {
@@ -36,12 +42,32 @@ pub fn run(){
             println!("received packet! {} size: {}", count, packet.len());
             count += 1;
             let pktdata = packet.data.to_vec();
-            println!("{:?}", pktdata);
+            // println!("{:?}", pktdata);
             // handle data
+
+            _ = sender.send(remove_headers(pktdata));
             
         }
     }
+
+    _ = processing_thread.join()
 }
+
+
+fn remove_headers(data: Vec<u8>)->(Vec<u8>, u16){
+    // let source_addr = u32::from_be_bytes([data[12], data[13], data[14], data[15]]);
+
+    //remove ethernet header
+    let data = &data[14..];
+    //beginning of udp header
+    let source_port = u16::from_be_bytes([data[20], data[21]]);
+
+    // //remove ipv4 header and udp header
+    let data = &data[20+8..];
+    (Vec::from(data), source_port)
+}
+
+
 fn get_device(default: bool) -> Option<Device> {
     if default {
         return Device::lookup().unwrap();
