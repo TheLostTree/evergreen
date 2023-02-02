@@ -1,0 +1,1 @@
+set LIBPCAP_LIBDIR=C:\Users\admin\Documents\npcapsdk\Lib\x64 && cargo run

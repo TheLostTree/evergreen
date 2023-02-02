@@ -10,3 +10,8 @@ pcap = "1.0.0"
 tungstenite = "0.18.0"
 ctrlc = { version = "3.0", features = ["termination"] }
 url = "2.3.1"
+protobuf = "3.2.0"
+kcp = {git = "https://github.com/RustySamovar/kcp"}
+
+[build-dependencies]
+protobuf-codegen = "3.2.0"

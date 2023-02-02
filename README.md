@@ -1,6 +1,15 @@
-# Evergreen
+## Npcap
 
-no i don't know why i named it that
+execute this in your commandline(cmd) after installing npcap + the sdk
 
+``set LIBPCAP_LIBDIR=C:\path\to\npcapsdk\Lib\x64``
 
-made with love( rust and js bc i'm lazy)
+eg.
+
+``set LIBPCAP_LIBDIR=C:\Users\admin\Documents\npcapsdk\Lib\x64``
+
+and 
+
+``$env:LIBPCAP_LIBDIR='C:\Users\admin\Documents\npcapsdk\Lib\x64'``
+
+with powershell
