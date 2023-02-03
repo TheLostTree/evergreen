@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message PushTipsData {
-	uint32 pushTipsId = 13;
-	uint32 state = 8;
-}

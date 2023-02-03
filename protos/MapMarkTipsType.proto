@@ -1,7 +1,0 @@
-syntax = "proto3";
-
-
-
-enum MapMarkTipsType {
-	MAP_MARK_TIPS_TYPE_DUNGEON_ELEMENT_TRIAL = 0;
-}

@@ -225,7 +225,11 @@ impl ClientServerPair{
             data: body.to_vec(),
             is_client,
         };
-        println!("recv packet {:?}", CmdIds::from_u16(cmdid));
+
+
+
+        //it better be 12.
+        println!("recv packet {:?}, header+ head+data_size - len= {}", CmdIds::from_u16(cmdid).unwrap(), 12 + p.header_size  as u32 +p.data_size -p.header.len() as u32 - p.data.len() as u32);
 
         self.handle_parsed_packet(&mut p);
     }
@@ -254,7 +258,13 @@ impl ClientServerPair{
                     let x = self.decode_base64_rsa(v.serverRandKey.clone());
                     self.tokenrspserverseed = Some(u64::from_be_bytes([x[0], x[1], x[2], x[3], x[4], x[5], x[6], x[7]]));
                     // lol!
-                    protobuf_json_mapping::print_to_string(&v).unwrap()
+                    let options = protobuf_json_mapping::PrintOptions{
+                        enum_values_int :false,
+                        proto_field_name: false,
+                        always_output_default_values: true,
+                        _future_options: (),
+                    };
+                    protobuf_json_mapping::print_to_string_with_options(&v,&options).unwrap()
 
                 }else{
                     let mut contents = String::new();

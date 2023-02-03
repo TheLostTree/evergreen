@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message FishingScore {
-	bool isNewRecord = 13;
-	uint32 bcjgjjefnci = 10;
-}

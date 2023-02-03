@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message BrokenFloorInfo {
-	map<uint32, uint32> fallCountMap = 15;
-	uint32 endTime = 10;
-}

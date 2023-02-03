@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message FleurFairBalloonInfo {
-	uint32 bestScore = 7;
-}

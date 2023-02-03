@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message OpRedraw {
-	repeated uint32 cardList = 12;
-}

@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message OILIHLEJJGP {
-	uint32 targetEntityId = 10;
-}

@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-
-
-enum ClientReconnectReason {
-	CLIENT_RECONNECT_REASON_NONE = 0;
-	CLIENT_RECONNECT_REASON_QUIT_MP = 1;
-}

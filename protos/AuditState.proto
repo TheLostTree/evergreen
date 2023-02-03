@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-enum AuditState {
-	AUDIT_STATE_NONE = 0;
-	AUDIT_STATE_WAITING = 1;
-	AUDIT_STATE_FAILED = 2;
-}

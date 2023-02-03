@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message PotionAvatarInfo {
-	uint64 avatarId = 10;
-	bool isTrial = 3;
-}

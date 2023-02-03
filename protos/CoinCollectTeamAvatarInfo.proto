@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message CoinCollectTeamAvatarInfo {
-	uint32 costumeId = 15;
-	uint32 avatarId = 8;
-}

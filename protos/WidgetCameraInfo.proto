@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message WidgetCameraInfo {
-	uint32 targetEntityId = 6;
-}

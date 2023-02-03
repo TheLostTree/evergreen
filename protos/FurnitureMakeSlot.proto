@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-import "FurnitureMakeData.proto";
-
-message FurnitureMakeSlot {
-	repeated FurnitureMakeData furnitureMakeDataList = 4;
-}

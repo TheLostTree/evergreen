@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-import "GalleryStopReason.proto";
-
-message ENAHEFOGJAE {
-	GalleryStopReason reason = 3;
-}

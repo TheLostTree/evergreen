@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message BartenderTaskInfo {
-	bool isFinish = 7;
-	uint32 id = 4;
-}

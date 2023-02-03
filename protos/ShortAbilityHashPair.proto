@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message ShortAbilityHashPair {
-	int32 abilityNameHash = 6;
-	int32 abilityConfigHash = 10;
-}

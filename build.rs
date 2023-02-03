@@ -86,13 +86,24 @@ fn generate_proto_decodes(cmds: Lines){
     contents.push_str("use crate::protos::*;\n");
     contents.push_str("use crate::cmdids::CmdIds;\n");
     contents.push_str("use crate::client_server_pair::Packet;\n");
-    contents.push_str("use protobuf_json_mapping::print_to_string;\n");
+    contents.push_str("use protobuf_json_mapping::print_to_string_with_options;\n");
     contents.push_str("use protobuf::Message;\n\n");
 
 
 
 
+
+
     contents.push_str("pub fn default_decode_proto(p: &mut Packet, cmd: CmdIds)->String{\n");
+    contents.push_str("
+    
+    let options = protobuf_json_mapping::PrintOptions{
+        enum_values_int :false,
+        proto_field_name: false,
+        always_output_default_values: true,
+        _future_options: (),
+    };
+    ");
     contents.push_str("\tmatch cmd {\n");
     let dir = Path::new("./protos");
     for line in cmds{
@@ -118,7 +129,7 @@ fn generate_proto_decodes(cmds: Lines){
         CmdIds::{}=>{{
             let x = {}::{}::parse_from_bytes(&p.header);
             if let Some(v) = x.ok(){{
-                return print_to_string(&v).unwrap();
+                return print_to_string_with_options(&v,&options).unwrap();
             }}else{{
                 let mut contents = String::new();
                 for byte in &mut *p.data{{

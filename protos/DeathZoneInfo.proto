@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message DeathZoneInfo {
-	bool isOpen = 15;
-	uint32 id = 6;
-}

@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message HKBIPBOACKF {
-	repeated int32 paramList = 5;
-}

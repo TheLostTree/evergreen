@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-import "LanternRiteFireworksStageInfo.proto";
-
-message LanternRiteFireworksInfo {
-	repeated LanternRiteFireworksStageInfo stageInfoList = 1;
-}

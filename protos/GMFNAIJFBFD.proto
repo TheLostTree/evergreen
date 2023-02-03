@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message GMFNAIJFBFD {
-	uint32 applyEntityId = 6;
-}

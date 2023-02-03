@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-import "HomeLimitedShopGoods.proto";
-
-message HomeLimitedShop {
-	repeated HomeLimitedShopGoods goodsList = 9;
-}

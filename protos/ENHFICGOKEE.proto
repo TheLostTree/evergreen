@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message ENHFICGOKEE {
-	uint32 regPlatform = 1;
-}

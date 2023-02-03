@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message InstableSprayAvatarInfo {
-	bool isTrial = 2;
-	uint64 avatarId = 12;
-}

@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message BreakoutVector2 {
-	int32 x = 1;
-	int32 y = 2;
-}

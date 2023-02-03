@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-import "IDOELHBANCP.proto";
-
-message CKGBCMJEJHH {
-	repeated IDOELHBANCP kcllbppiboo = 999;
-}

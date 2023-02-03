@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-import "CharAmusementStageData.proto";
-
-message CharAmusementDetailInfo {
-	repeated CharAmusementStageData stageDataList = 1;
-}

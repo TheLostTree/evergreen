@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-import "GravenInnocenceCampStageInfo.proto";
-
-message GravenInnocenceCampInfo {
-	repeated GravenInnocenceCampStageInfo stageInfoList = 4;
-}

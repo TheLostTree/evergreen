@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message MistTrialMissionInfo {
-	uint32 watcherListId = 14;
-	uint32 param = 7;
-}

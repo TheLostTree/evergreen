@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-import "Rotation.proto";
-
-message OBCIHDJGLCK {
-	Rotation hhfmfeegcei = 2;
-}

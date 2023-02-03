@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message GCGMsgPVEIntention {
-	repeated uint32 skillIdList = 3;
-	uint32 cardGuid = 9;
-}

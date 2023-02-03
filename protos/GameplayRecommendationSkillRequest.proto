@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message GameplayRecommendationSkillRequest {
-	uint32 skillDepotId = 9;
-}

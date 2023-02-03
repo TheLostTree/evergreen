@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message CylinderSize {
-	float height = 4;
-	float radius = 14;
-}

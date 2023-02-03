@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message PlayerRTTInfo {
-	uint32 rtt = 7;
-	uint32 uid = 13;
-}

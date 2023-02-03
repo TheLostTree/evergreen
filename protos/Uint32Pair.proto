@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message Uint32Pair {
-	uint32 key = 1;
-	uint32 value = 2;
-}

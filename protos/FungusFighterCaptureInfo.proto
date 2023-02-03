@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message FungusFighterCaptureInfo {
-	bool isHideProgress = 3;
-}

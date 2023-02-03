@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message CrystalLinkAvatarInfo {
-	bool isTrial = 9;
-	uint64 avatarId = 7;
-}

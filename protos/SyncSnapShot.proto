@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-import "BreakoutSnapShot.proto";
-
-message SyncSnapShot {
-	BreakoutSnapShot bllachfilmo = 3;
-}

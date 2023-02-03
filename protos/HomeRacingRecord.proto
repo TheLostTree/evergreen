@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-import "HomeRacingGalleryRecord.proto";
-
-message HomeRacingRecord {
-	repeated HomeRacingGalleryRecord recordList = 2;
-}

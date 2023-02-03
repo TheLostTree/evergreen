@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-
-
-enum WidgetSlotOp {
-	WIDGET_SLOT_OP_ATTACH = 0;
-	WIDGET_SLOT_OP_DETACH = 1;
-}

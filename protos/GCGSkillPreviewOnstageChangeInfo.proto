@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message GCGSkillPreviewOnstageChangeInfo {
-	uint32 Unk3300_EHHDPPFDIFB = 5;
-	uint32 Unk3300_BALADGFAPKL = 3;
-}
