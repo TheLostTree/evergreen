@@ -86,7 +86,7 @@ fn generate_proto_decodes(cmds: Lines){
     contents.push_str("use crate::protos::*;\n");
     contents.push_str("use crate::cmdids::CmdIds;\n");
     contents.push_str("use crate::client_server_pair::Packet;\n");
-    contents.push_str("use protobuf::protobuf_json_mapping::print_to_string;\n");
+    contents.push_str("use protobuf_json_mapping::print_to_string;\n");
     contents.push_str("use protobuf::Message;\n\n");
 
 
