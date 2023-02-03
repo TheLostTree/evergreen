@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+
+
+
+message PublishCustomDungeonRsp {
+	enum JFHKPDMINCL {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 6242;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	int32 retcode = 5;
+}

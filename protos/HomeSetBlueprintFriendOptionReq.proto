@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+
+
+
+message HomeSetBlueprintFriendOptionReq {
+	enum OBHPDCNHJCO {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 4590;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+		EAJIABGAOCI = 1;
+	}
+
+	bool isAllowFriendCopy = 10;
+}

@@ -146,6 +146,7 @@ dependencies = [
  "pcap",
  "protobuf",
  "protobuf-codegen",
+ "protobuf-json-mapping",
  "tungstenite",
  "url",
 ]
@@ -353,6 +354,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "openssl-src"
+version = "111.24.0+1.1.1s"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3498f259dab01178c6228c6b00dcef0ed2a2d5e20d648c017861227773ea4abd"
+dependencies = [
+ "cc",
+]
+
+[[package]]
 name = "openssl-sys"
 version = "0.9.80"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -361,6 +371,7 @@ dependencies = [
  "autocfg",
  "cc",
  "libc",
+ "openssl-src",
  "pkg-config",
  "vcpkg",
 ]
@@ -430,6 +441,17 @@ dependencies = [
  "protobuf-parse",
  "regex",
  "tempfile",
+ "thiserror",
+]
+
+[[package]]
+name = "protobuf-json-mapping"
+version = "3.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ce19fee00c35e62179f79d622f440c27466c9f8dff68ca907d8f59dfc8a88adb"
+dependencies = [
+ "protobuf",
+ "protobuf-support",
  "thiserror",
 ]
 

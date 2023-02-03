@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+
+
+import "HuntingPair.proto";
+import "Rotation.proto";
+
+message HuntingStartNotify {
+	enum KPIPGJKJKII {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 4331;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	uint32 failTime = 4;
+	HuntingPair huntingPair = 12;
+	bool isFinal = 7;
+	Rotation cluePosition = 14;
+}

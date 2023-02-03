@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+import "Rotation.proto";
+
+message BMAPKBNNAGD {
+	Rotation mpfmoiobaad = 2;
+	Rotation eknhofiihcl = 4;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+
+
+import "BreakoutAction.proto";
+
+message AMNJIKMPMHN {
+	BreakoutAction henpegmkbie = 9;
+}

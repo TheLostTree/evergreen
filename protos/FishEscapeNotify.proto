@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+
+
+import "Rotation.proto";
+import "FishEscapeReason.proto";
+
+message FishEscapeNotify {
+	enum BAKJLJJGKJM {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 5835;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	Rotation pos = 9;
+	uint32 uid = 15;
+	repeated uint32 fishIdList = 5;
+	FishEscapeReason reason = 7;
+}

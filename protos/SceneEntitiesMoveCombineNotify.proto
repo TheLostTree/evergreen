@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+
+
+import "EntityMoveInfo.proto";
+
+message SceneEntitiesMoveCombineNotify {
+	enum JACHFFDDKEI {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 3025;
+		DCDNILFDFLB = 1;
+		NNBKOLMPOEA = 0;
+	}
+
+	repeated EntityMoveInfo entityMoveInfoList = 9;
+}

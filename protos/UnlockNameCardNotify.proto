@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+
+
+
+message UnlockNameCardNotify {
+	enum IPFDAEJJCCP {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 4085;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	uint32 nameCardId = 5;
+}

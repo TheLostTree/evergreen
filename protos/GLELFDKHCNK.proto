@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+
+message GLELFDKHCNK {
+	uint32 minFinishTime = 2;
+	uint32 levelId = 12;
+	bool isFinish = 13;
+}

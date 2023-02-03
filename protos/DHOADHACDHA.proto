@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+
+message DHOADHACDHA {
+	uint32 id = 7;
+	uint32 num = 6;
+	repeated uint32 type = 1;
+}

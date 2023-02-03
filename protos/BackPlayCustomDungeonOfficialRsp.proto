@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+
+
+
+message BackPlayCustomDungeonOfficialRsp {
+	enum HCINMIHICEF {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 6213;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	int32 retcode = 7;
+}

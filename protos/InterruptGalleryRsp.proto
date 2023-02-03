@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+
+
+
+message InterruptGalleryRsp {
+	enum KIEAILGENFP {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 5516;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+		EAJIABGAOCI = 1;
+	}
+
+	int32 retcode = 15;
+	uint32 galleryId = 9;
+}

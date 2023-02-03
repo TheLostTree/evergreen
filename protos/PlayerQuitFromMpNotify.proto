@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+
+
+import "QuitReason.proto";
+
+message PlayerQuitFromMpNotify {
+	enum KFIEONAKIJH {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 1831;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	QuitReason reason = 1;
+}

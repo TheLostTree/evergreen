@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+
+
+
+message SyncPing {
+	uint64 clientGameTime = 12;
+	uint64 serverGameTime = 7;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+
+
+
+message GameplayRecommendationElementReliquaryRequest {
+	uint32 elementType = 12;
+	uint32 equipType = 7;
+}

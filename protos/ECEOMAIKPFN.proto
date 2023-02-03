@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+
+
+import "ResVersionConfig.proto";
+import "bytes.proto";
+
+message ECEOMAIKPFN {
+	string maemgpinjha = 1;
+	uint32 dofeepngdbn = 2;
+	string kgeiloibajg = 3;
+	string areaType = 7;
+	string akkgiajbpmc = 8;
+	string gejagjjdlam = 9;
+	string odchdbmdbld = 10;
+	string dbdldipgdbg = 11;
+	string apiddjcfhmo = 12;
+	string ekbmdkedega = 13;
+	uint32 clientDataVersion = 14;
+	string nhdhgkjfhie = 16;
+	uint32 clientSilenceDataVersion = 18;
+	string kogchffkekb = 19;
+	string bmkfadjhbdf = 20;
+	ResVersionConfig resVersionConfig = 22;
+	bytes secretKey = 23;
+	string kghbneonpep = 24;
+	string clientVersionSuffix = 26;
+	string clientSilenceVersionSuffix = 27;
+	bool cbkhilbbjef = 28;
+	string kadhjklbgin = 29;
+	string ddnhelgkimo = 30;
+	string jdplgfnhgil = 31;
+	string bigcoaodoec = 32;
+	string abbcpppahfe = 33;
+	string nextResourceUrl = 34;
+	ResVersionConfig nextResVersionConfig = 35;
+	string gameBiz = 36;
+}

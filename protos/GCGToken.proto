@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+
+
+
+message GCGToken {
+	uint32 key = 9;
+	uint32 value = 5;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+import "FJMGEBIAMDB.proto";
+
+message KLLIHAMBOJN {
+	string createTime = 1;
+	FJMGEBIAMDB jkfdibhoggm = 2;
+}

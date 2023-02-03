@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+
+message EMFJMDELOJN {
+	uint32 difficulty = 7;
+	bool isOpen = 1;
+	uint32 costTime = 6;
+}

@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+
+
+
+message IPDNEDNFFEO {
+	float jmiipakgola = 7;
+}

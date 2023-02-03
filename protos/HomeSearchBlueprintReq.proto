@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+
+
+
+message HomeSearchBlueprintReq {
+	enum OLPKDIPAOHO {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 4713;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+		EAJIABGAOCI = 1;
+	}
+
+	string shareCode = 4;
+}

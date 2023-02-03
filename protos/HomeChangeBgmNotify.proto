@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+
+
+
+message HomeChangeBgmNotify {
+	enum HMAPKOBFLGN {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 4900;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	uint32 bgmId = 7;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+
+
+
+message MainCoopFailNotify {
+	enum KOGKDCGMHFO {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 1976;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	string textmapId = 4;
+	uint32 chapterId = 13;
+}

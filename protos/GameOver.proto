@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+import "GCGEndReason.proto";
+
+message GameOver {
+	GCGEndReason endReason = 4;
+	uint32 winControllerId = 10;
+}

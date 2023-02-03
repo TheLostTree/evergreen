@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+
+
+import "ScenePlayBattleInfo.proto";
+
+message ScenePlayBattleInfoListNotify {
+	enum DNCCKICNIPN {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 4363;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	repeated ScenePlayBattleInfo battleInfoList = 13;
+}

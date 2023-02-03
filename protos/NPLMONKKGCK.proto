@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+
+
+import "Rotation.proto";
+
+message NPLMONKKGCK {
+	message MONJLJNOPMC {
+	}
+	message EGDEKCHMAFG {
+		repeated Rotation lfglcalgdac = 1;
+	}
+	message PMALMLLNHMN {
+		uint32 entityId = 5;
+	}
+
+	oneof EMKLHFDNJMA {
+		MONJLJNOPMC add_signal = 13;
+		EGDEKCHMAFG refresh_seed = 3;
+		PMALMLLNHMN catch_seed = 4;
+	}
+}

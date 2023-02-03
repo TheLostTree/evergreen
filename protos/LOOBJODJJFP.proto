@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+import "Rotation.proto";
+
+message LOOBJODJJFP {
+	Rotation spawnPos = 15;
+	uint32 guid = 8;
+}

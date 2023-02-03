@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+
+
+import "ChatChannelInfo.proto";
+
+message ChatChannelInfoNotify {
+	enum HDDAKDGMNMB {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 4963;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	ChatChannelInfo channelInfo = 15;
+}

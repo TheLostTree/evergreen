@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+
+
+
+message PlayerSignatureNotify {
+	enum AFOHEGLBCHK {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 4012;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	string signature = 3;
+}

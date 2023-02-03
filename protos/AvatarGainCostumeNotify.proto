@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+
+
+
+message AvatarGainCostumeNotify {
+	enum GMAECEBKKBE {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 1714;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	uint32 costumeId = 6;
+}

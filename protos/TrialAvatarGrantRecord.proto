@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+
+
+
+message TrialAvatarGrantRecord {
+	uint32 dglgipiglnd = 1;
+	uint32 calgbbolcpn = 2;
+}

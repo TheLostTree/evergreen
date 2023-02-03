@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+
+
+import "UgcType.proto";
+import "MusicBriefInfo.proto";
+
+message GetUgcBriefInfoRsp {
+	enum FEOCBIBAOAK {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 6341;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	uint64 ugcGuid = 15;
+	UgcType ugcType = 9;
+	int32 retcode = 1;
+	oneof ODGCKIFHHNP {
+		MusicBriefInfo music_brief_info = 8;
+	}
+}

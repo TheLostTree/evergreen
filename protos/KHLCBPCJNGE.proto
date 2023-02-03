@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+
+
+
+message KHLCBPCJNGE {
+	uint32 value = 1;
+}

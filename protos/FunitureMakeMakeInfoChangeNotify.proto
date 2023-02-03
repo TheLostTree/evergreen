@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+
+
+import "FurnitureMakeInfo.proto";
+
+message FunitureMakeMakeInfoChangeNotify {
+	enum DNJNMEOICMI {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 4592;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	FurnitureMakeInfo ijdbngdlgdb = 8;
+}

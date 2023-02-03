@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+
+
+
+message JigsawPictureData {
+	uint32 Unk3300_DFGHKDBENED = 12;
+	uint32 Unk3300_FIKPLGJIBGP = 11;
+	bool isOpen = 4;
+	bool isFinished = 8;
+}

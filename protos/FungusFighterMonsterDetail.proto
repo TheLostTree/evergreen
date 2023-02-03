@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+
+message FungusFighterMonsterDetail {
+	float curHpPercentage = 9;
+	uint32 fungusId = 10;
+	bool isAlive = 12;
+}

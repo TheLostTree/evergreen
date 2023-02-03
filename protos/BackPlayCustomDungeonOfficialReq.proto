@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+
+
+
+message BackPlayCustomDungeonOfficialReq {
+	enum LEOMIABPADC {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 6227;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+		EAJIABGAOCI = 1;
+	}
+
+	uint32 roomId = 4;
+}

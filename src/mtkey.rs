@@ -106,11 +106,23 @@ pub fn get_dispatch_keys()->HashMap<u16, [u8;4096]>{
         let mut keybytes = [0u8; 4096];
 
         let mut index = 0;
-        for b in parts[1].chars().step_by(2){
-            let byte = u8::from_str_radix(&b.to_string(), 16).unwrap();
-            keybytes[index] = byte;
-            index += 1;
+        for b in (0..parts[1].len()-1).step_by(2){
+            let c = &parts[1][b..b+2];
+            let byte = u8::from_str_radix(c, 16);
+            // print!("{}", c);
+            match byte{
+                Ok(_) => {
+                    let byte = byte.unwrap();
+                    keybytes[index] = byte;
+                    index += 1;
+                },
+                Err(_) => {
+                    // println!("errr: '{}' is actually '{}'", c, c as i32)
+                },
+            }
         }
+        // println!();
+
         x.insert(firstbytes.unwrap(), keybytes);
     }
     x

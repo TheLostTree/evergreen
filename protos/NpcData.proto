@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+
+
+
+message NpcData {
+	uint32 avatarId = 1;
+	uint32 costumeId = 2;
+}

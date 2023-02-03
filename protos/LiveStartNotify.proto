@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+
+
+
+message LiveStartNotify {
+	enum NPIDEEGPABN {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 873;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	uint32 liveId = 10;
+}

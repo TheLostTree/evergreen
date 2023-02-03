@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+
+message IBBGEJCNPEI {
+	string flopankfnol = 1;
+	string gameBiz = 2;
+	string mnlpmamhoem = 3;
+}

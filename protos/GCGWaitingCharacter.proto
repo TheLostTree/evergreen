@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+
+
+
+message GCGWaitingCharacter {
+	uint32 condCount = 9;
+	uint32 cardId = 2;
+}

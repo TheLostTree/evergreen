@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+
+
+import "QuestVarOp.proto";
+
+message QuestUpdateQuestVarReq {
+	enum OAKICGPFBIK {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 439;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+		EAJIABGAOCI = 1;
+	}
+
+	uint32 parentQuestVarSeq = 9;
+	uint32 parentQuestId = 12;
+	repeated QuestVarOp questVarOpList = 4;
+	uint32 questId = 3;
+}

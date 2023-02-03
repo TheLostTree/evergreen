@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+
+
+
+message ParamList {
+	repeated uint32 paramList = 1;
+}

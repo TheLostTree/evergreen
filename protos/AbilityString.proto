@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+
+
+
+message AbilityString {
+	oneof JNHEJKGOMOD {
+		string str = 1;
+		uint32 hash = 2;
+	}
+}

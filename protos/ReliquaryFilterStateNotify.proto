@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+
+
+
+message ReliquaryFilterStateNotify {
+	enum OEOHONEIBDO {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 631;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	map<uint32, uint32> reliquaryFilterStateMap = 11;
+}

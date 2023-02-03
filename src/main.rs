@@ -16,23 +16,29 @@ mod cmdids{
     include!(concat!(env!("OUT_DIR"), "/cmdids_target/cmdids.rs"));
 }
 
+mod proto_decode{
+    include!(concat!(env!("OUT_DIR"), "/proto_decode.rs"));
+}
+
+
 
 fn main() {
     ctrlc::set_handler(move || {
+        println!("got signal");
         RUNNING.store(false, Ordering::SeqCst);
     })
     .expect("Error setting Ctrl-C handler");
 
     // println!("{:?}",protos::GetPlayerTokenReq::file_descriptor());
 
-    // let sniffing = std::thread::spawn(sniffer::run);
+
+    // testbf();
+
+    let sniffing = std::thread::spawn(sniffer::run);
 
 
-
-
-
-    // _ = sniffing.join();
-    println!("{:?}",mtkey::get_dispatch_keys());
+    _ = sniffing.join();
+    // mtkey::get_dispatch_keys();
     // key_bruteforce::bruteforce(1658814410247, 4502709363913224634, &[0x0b, 0xb9]);
     println!("closing...")
 }

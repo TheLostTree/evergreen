@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+
+
+
+message CheckGroupReplacedRsp {
+	enum FJMGJMAPMLK {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 3117;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	int32 retcode = 3;
+	repeated uint32 replacedGroupIdList = 6;
+}

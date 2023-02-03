@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+
+message Unk3300_ADHENCIFKNI {
+	uint64 timeStamp = 14;
+	uint32 controllerId = 4;
+	uint64 beginTime = 12;
+}

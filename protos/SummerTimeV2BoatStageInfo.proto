@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+
+
+
+message SummerTimeV2BoatStageInfo {
+	uint32 openTime = 3;
+	bool isOpen = 14;
+	uint32 stageId = 2;
+	uint32 bestScore = 4;
+}

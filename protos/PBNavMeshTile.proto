@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+
+
+import "PBNavMeshPoly.proto";
+import "Rotation.proto";
+
+message PBNavMeshTile {
+	repeated PBNavMeshPoly polys = 11;
+	repeated Rotation vecs = 1;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+
+message AbilityEmbryo {
+	uint32 abilityId = 1;
+	uint32 abilityNameHash = 2;
+	uint32 abilityOverrideNameHash = 3;
+}

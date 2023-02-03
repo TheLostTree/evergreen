@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+
+
+
+message CoinCollectInfo {
+	uint32 Unk3300_CPLDPCMBHOE = 11;
+	uint32 Unk3300_DKBJMLJGLIB = 9;
+}

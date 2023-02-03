@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+
+
+
+message RoguelikeTakeStageFirstPassRewardReq {
+	enum PIHCHEHAEFM {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 8887;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+		EAJIABGAOCI = 1;
+	}
+
+	uint32 stageId = 14;
+}

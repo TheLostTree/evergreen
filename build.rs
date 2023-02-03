@@ -13,7 +13,7 @@ fn main(){
     
 
     let dest_path = gen_dir.join("cmdids.rs");
-    println!("cargo:warning=dest_path: {}", dest_path.display());
+    // println!("cargo:warning=dest_path: {}", dest_path.display());
 
     generate_cmdid_file(dest_path);
     
@@ -28,6 +28,7 @@ fn main(){
 fn generate_cmdid_file<P: AsRef<Path>>(path: P){
     let mut contents = String::new();
     // contents.push_str("pub mod cmdids {\n");
+    contents.push_str("#[derive(Debug)]");
     contents.push_str("pub enum CmdIds {\n");
     let binding = std::fs::read_to_string("./CmdIds.csv").expect("place ur cmdids pls");
     let lines = binding.lines();
@@ -82,8 +83,65 @@ fn generate_protobufs(){
 
 fn generate_proto_decodes(cmds: Lines){
     let mut contents = String::new();
-    contents.push_str("fn decode_proto(p: Packet, cmd: CmdIds){\n");
+    contents.push_str("use crate::protos::*;\n");
+    contents.push_str("use crate::cmdids::CmdIds;\n");
+    contents.push_str("use crate::client_server_pair::Packet;\n");
+    contents.push_str("use protobuf::protobuf_json_mapping::print_to_string;\n");
+    contents.push_str("use protobuf::Message;\n\n");
+
+
+
+
+    contents.push_str("pub fn default_decode_proto(p: &mut Packet, cmd: CmdIds)->String{\n");
     contents.push_str("\tmatch cmd {\n");
+    let dir = Path::new("./protos");
+    for line in cmds{
+        let mut split = line.split(",");
+        let name = split.next().unwrap();
+        // let cmdid = split.next().unwrap();
+        //check to make sure it has a corresponding .proto file
+        if fs::metadata(dir.join(&format!("{}.proto", name))).is_err(){
+            //convert the data to hex and thats it
+            contents.push_str(&format!("
+        CmdIds::{}=>{{
+            let mut contents = String::new();
+            for byte in &mut *p.data{{
+                contents.push_str(&format!(\"{{:02x}}\", byte));
+            }}
+            return contents;
+        }}
+            ", name));  
+            continue;
+        }
+
+        contents.push_str(&format!("
+        CmdIds::{}=>{{
+            let x = {}::{}::parse_from_bytes(&p.header);
+            if let Some(v) = x.ok(){{
+                return print_to_string(&v).unwrap();
+            }}else{{
+                let mut contents = String::new();
+                for byte in &mut *p.data{{
+                    contents.push_str(&format!(\"{{:02x}}\", byte));
+                }}
+                return contents;
+            }}
+            
+        }}
+            ", name,name,name));
+    }
+    contents.push_str("
+    }
+}
+    
+    ");
+
+    let dir = env::var("OUT_DIR").unwrap();
+
+    let gen_dir = Path::new(&dir).join("./proto_decode.rs");
+    generate_file(gen_dir, contents.as_bytes());
+
+
     
 
 }

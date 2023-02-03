@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+
+
+
+message DungeonCandidateTeamSetChangingAvatarReq {
+	enum MCOGCNOEKLM {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 937;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+		EAJIABGAOCI = 1;
+	}
+
+	bool isChangingAvatar = 4;
+}

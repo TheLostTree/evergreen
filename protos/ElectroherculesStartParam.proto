@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+
+
+
+message ElectroherculesStartParam {
+	uint32 difficulty = 5;
+}

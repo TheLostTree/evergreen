@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+
+
+
+message CharDie {
+	uint32 cardGuid = 10;
+	uint32 controllerId = 9;
+}

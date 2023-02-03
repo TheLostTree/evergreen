@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+import "HPAKAIEAKFI.proto";
+
+message PLDKICHAHEB {
+	string createTime = 1;
+	HPAKAIEAKFI value = 2;
+}

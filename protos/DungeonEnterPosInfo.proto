@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+
+
+
+message DungeonEnterPosInfo {
+	uint32 questId = 15;
+	uint32 pointId = 7;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+import "GameplayRecommendationReliquaryMainPropData.proto";
+
+message GameplayRecommendationReliquaryResponse {
+	repeated GameplayRecommendationReliquaryMainPropData nbbpegfkpac = 12;
+	uint32 equipType = 15;
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+
+
+
+message PlayerGameTimeByLuaNotify {
+	enum GPPBGJGNDHA {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 171;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	string gpbkdlaodce = 6;
+}

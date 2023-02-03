@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+
+
+
+message GCGSkillPreviewReactionInfo {
+	uint32 Unk3300_AENPLEDPMJH = 9;
+	uint32 Unk3300_PDEHPHJFAKD = 10;
+}

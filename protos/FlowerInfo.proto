@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+
+message FlowerInfo {
+	uint32 curScore = 7;
+	uint32 targetScore = 6;
+	uint32 endTime = 8;
+}

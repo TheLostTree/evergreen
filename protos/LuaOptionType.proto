@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+
+
+enum LuaOptionType {
+	LUA_OPTION_TYPE_NONE = 0;
+	LUA_OPTION_TYPE_PLAYER_INPUT = 1;
+}

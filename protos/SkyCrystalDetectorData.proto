@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+
+
+import "Rotation.proto";
+
+message SkyCrystalDetectorData {
+	Rotation hintCenterPos = 6;
+	uint32 groupId = 14;
+	uint32 configId = 8;
+	bool isHintValid = 3;
+}

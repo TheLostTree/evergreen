@@ -3,9 +3,11 @@ use crate::random_cs::Random;
 
 
 
-pub fn bruteforce(sent_time: u64, server_seed: u64, key_prefix: &[u8])->Option<u64>{
+pub fn bruteforce(sent_time: u64, server_seed: u64, bytes: &[u8])->Option<u64>{
     println!("Sent time: {}", sent_time);
     println!("Server seed: {}", server_seed);
+    let key_prefix = [bytes[0]^0x45, bytes[1]^0x67];
+
     println!("Key prefix: {:?}", key_prefix);
 
     let bf_bounds = 1000;

@@ -13,8 +13,9 @@ url = "2.3.1"
 protobuf = "3.2.0"
 bytes = "1.4.0"
 kcp = {git = "https://github.com/RustySamovar/kcp"}
-openssl = "0.10.0"
+openssl = {version = "0.10.0", features = ["vendored"]}
 base64 = "0.13.0"
+protobuf-json-mapping = "3.2.0"
 
 [build-dependencies]
 protobuf-codegen = "3.2.0"

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+
+
+import "TowerMonthlyBrief.proto";
+import "TowerMonthlyCombatRecord.proto";
+
+message TowerMonthlyDetail {
+	TowerMonthlyBrief monthlyBrief = 5;
+	TowerMonthlyCombatRecord monthlyCombatRecord = 1;
+}

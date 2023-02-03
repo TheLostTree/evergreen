@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+
+
+
+message DelBackupAvatarTeamRsp {
+	enum HMFPBAACAFA {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 1756;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	uint32 backupAvatarTeamId = 11;
+	int32 retcode = 12;
+}

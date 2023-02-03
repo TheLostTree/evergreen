@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+
+
+enum NNDIACOGJBL {
+	NNDIACOGJBL_NONE = 0;
+	BLKJCONMCCO = 1;
+	CIADBIJEAMK = 2;
+}

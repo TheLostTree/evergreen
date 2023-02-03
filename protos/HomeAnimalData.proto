@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+
+
+import "Rotation.proto";
+
+message HomeAnimalData {
+	Rotation spawnRot = 13;
+	uint32 furnitureId = 10;
+	Rotation spawnPos = 4;
+}

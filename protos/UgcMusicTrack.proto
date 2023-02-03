@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+
+
+import "UgcMusicNote.proto";
+
+message UgcMusicTrack {
+	repeated UgcMusicNote musicNoteList = 13;
+}

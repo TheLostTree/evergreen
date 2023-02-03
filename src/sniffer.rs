@@ -17,8 +17,6 @@ pub fn run(){
             .unwrap_or(&"No Description".to_owned())
     );
 
-    println!("Successfully connected to ws");
-
     let mut cap = Capture::from_device(main_device)
         .unwrap()
         .promisc(true).timeout(1)
@@ -29,28 +27,22 @@ pub fn run(){
     _ = cap.filter("udp portrange 22101-22102", true);
     println!("listening on {}...", device_name);
 
-    let mut count = 0;
     let (sender, receiver) = std::sync::mpsc::channel();
 
-    let processing_thread = std::thread::spawn(move||{
+    let _processing_thread = std::thread::spawn(move||{
         client_server_pair::processing_thread(receiver)
     });
     
 
     while RUNNING.load(Ordering::SeqCst) {
         if let Ok(packet) = cap.next_packet() {
-            println!("received packet! {} size: {}", count, packet.len());
-            count += 1;
             let pktdata = packet.data.to_vec();
-            // println!("{:?}", pktdata);
-            // handle data
-
             _ = sender.send(remove_headers(pktdata));
             
         }
     }
 
-    _ = processing_thread.join()
+    // _ = processing_thread.join()
 }
 
 

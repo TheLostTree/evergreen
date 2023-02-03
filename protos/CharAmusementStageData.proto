@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+
+message CharAmusementStageData {
+	uint32 finishTime = 11;
+	uint32 stageId = 12;
+	bool isOpen = 9;
+}

@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+
+
+
+message SalvagePreventInfo {
+	uint32 monsterCount = 2;
+}

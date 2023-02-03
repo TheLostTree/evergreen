@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+
+
+import "ClientMassiveEntity.proto";
+
+message DestroyMassiveEntityNotify {
+	enum NJBEJKONIMB {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 383;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+		EAJIABGAOCI = 1;
+	}
+
+	repeated ClientMassiveEntity massiveEntityList = 9;
+}

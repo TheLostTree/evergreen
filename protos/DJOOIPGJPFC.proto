@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+import "AbilityString.proto";
+
+message DJOOIPGJPFC {
+	float value = 14;
+	AbilityString key = 8;
+}

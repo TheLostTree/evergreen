@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+
+message BuoyantCombatInfo {
+	uint32 killMonsterCount = 3;
+	uint32 killSpecialMonsterCount = 15;
+	uint32 score = 12;
+}

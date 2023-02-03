@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+
+message SceneGalleryInstableSprayBuffInfo {
+	uint32 buffId = 9;
+	uint64 Unk3300_EPHAABKNLHC = 3;
+	uint64 Unk3300_KKDFLBMKGEF = 8;
+}

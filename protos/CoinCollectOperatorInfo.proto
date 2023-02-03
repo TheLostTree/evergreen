@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+
+
+
+message CoinCollectOperatorInfo {
+	uint32 levelId = 1;
+}

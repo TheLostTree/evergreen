@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+
+
+
+message FleurFairFinishGalleryStageNotify {
+	enum ELBNLHPKFDO {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 5394;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+
+
+
+message ElectroherculesBattleSelectDifficultyRsp {
+	enum CPDJJMDIKDO {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 23974;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+		EAJIABGAOCI = 1;
+	}
+
+	repeated uint64 meclfjmmlmh = 2;
+}

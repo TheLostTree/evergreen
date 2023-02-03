@@ -1,4 +1,5 @@
 #![allow(unused)]
+
 pub struct Random {
     //
     // Private Constants

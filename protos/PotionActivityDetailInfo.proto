@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+
+
+import "PotionStageData.proto";
+
+message PotionActivityDetailInfo {
+	repeated PotionStageData stageList = 11;
+}

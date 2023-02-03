@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+
+
+import "Duel.proto";
+
+message NJAPCNDDMBH {
+	uint32 opSeq = 13;
+	uint32 controllerId = 14;
+	oneof EEBALNLJINH {
+		string gm_msg = 12;
+		Duel duel = 5;
+	}
+}

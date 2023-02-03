@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+import "DraftInviteFailReason.proto";
+
+message DraftInviteFailInfo {
+	DraftInviteFailReason reason = 9;
+	uint32 uid = 1;
+}

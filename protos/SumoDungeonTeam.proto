@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+
+
+import "SumoDungeonAvatar.proto";
+
+message SumoDungeonTeam {
+	repeated SumoDungeonAvatar dungeonAvatarList = 4;
+}

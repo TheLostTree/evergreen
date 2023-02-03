@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+
+
+
+message ScenePlayGuestReplyNotify {
+	enum GBDFLIFJGLH {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 4412;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	uint32 guestUid = 15;
+	uint32 playId = 12;
+	bool isAgree = 10;
+}

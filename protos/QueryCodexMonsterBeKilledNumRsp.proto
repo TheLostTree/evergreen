@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+
+
+
+message QueryCodexMonsterBeKilledNumRsp {
+	enum LLBEEMAAILO {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 4205;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	repeated uint32 beKilledNumList = 14;
+	int32 retcode = 6;
+	repeated uint32 codexIdList = 4;
+	repeated uint32 beCapturedNumList = 5;
+}

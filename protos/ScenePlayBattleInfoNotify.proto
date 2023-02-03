@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+
+
+import "ScenePlayBattleInfo.proto";
+
+message ScenePlayBattleInfoNotify {
+	enum FKEPBKKIGPP {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 4355;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	ScenePlayBattleInfo battleInfo = 3;
+}

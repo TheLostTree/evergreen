@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+
+
+
+message PlayerSetLanguageRsp {
+	enum IJMNADFNPIM {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 181;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	int32 retcode = 6;
+}
