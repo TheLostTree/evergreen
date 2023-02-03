@@ -14,14 +14,25 @@ and
 
 with powershell
 
-openssl = {version = "0.10.0", features = ["vendored"]}
-openssl = "0.10.0"
+also install openssl, compiling it from source takes forever.
+
+and set OPENSSL_DIR in your environment variables
 
 
-```rust
-let mut contents = String::new();
-for byte in &mut *data{
-    contents.push_str(&format!("{:02x}", byte))
-}
+~~~~~
 
-```
+drop in all the protos you want into ./protos and then just wait a long time to compile lol
+
+yes, it will take 5 minutes with all 3k protobuf fies
+
+no, i have no clue how to fix it
+
+
+
+~~~~~~
+
+
+todo:
+1. some kind of ui (dps meter a la chrome)
+2. ws connection to iridium
+3. properly do unknown parsing
