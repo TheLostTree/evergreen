@@ -4,13 +4,12 @@ use openssl::rsa::Rsa;
 use protobuf::{Message};
 
 use crate::cmdids::{self, CmdIds};
-use crate::protos::{PacketHead, GetPlayerTokenRsp};
+use crate::protos::{PacketHead, GetPlayerTokenRsp, SceneTeamUpdateNotify};
 use crate::{RUNNING, key_bruteforce, proto_decode};
 use crate::mtkey::{MTKey, get_dispatch_keys};
 use std::sync::atomic::Ordering;
 use std::{io::{Write, self}, sync::mpsc::Receiver};
-
-
+use crate::cmdids::CmdIds::UnionCmdNotify;
 
 
 pub fn processing_thread(reciever: Receiver<(Vec<u8>, u16)>){
@@ -226,11 +225,6 @@ impl ClientServerPair{
             is_client,
         };
 
-
-
-        //it better be 12.
-        println!("recv packet {:?}, header+ head+data_size - len= {}", CmdIds::from_u16(cmdid).unwrap(), 12 + p.header_size  as u32 +p.data_size -p.header.len() as u32 - p.data.len() as u32);
-
         self.handle_parsed_packet(&mut p);
     }
 
@@ -240,13 +234,14 @@ impl ClientServerPair{
             println!("unknown cmdid: {}", p.cmdid);
             return;
         }
+
         let cmd = cmd.unwrap();
+        println!("{}: {:?}", if p.is_client {"CLIENT"} else{"SERVER"},cmd);
+        let packethead = PacketHead::PacketHead::parse_from_bytes(&p.header).ok();
         
-        let data: String = match cmd{
-            cmdids::CmdIds::GetPlayerTokenRsp=>{
-                // self.tokenrspsendtime = 
-                let x = PacketHead::PacketHead::parse_from_bytes(&p.header).ok();
-                if let Some(v) = x{
+        let data: Option<String> = match cmd{
+            CmdIds::GetPlayerTokenRsp=>{
+                if let Some(x) = packethead{
                     self.tokenrspsendtime = Some(v.sent_ms);
                 }
 
@@ -264,22 +259,25 @@ impl ClientServerPair{
                         always_output_default_values: true,
                         _future_options: (),
                     };
-                    protobuf_json_mapping::print_to_string_with_options(&v,&options).unwrap()
+                    Some(protobuf_json_mapping::print_to_string_with_options(&v,&options).unwrap())
 
                 }else{
                     let mut contents = String::new();
                     for byte in &mut *p.data{
                         contents.push_str(&format!("{}", byte));
                     }
-                    contents
+                    Some(contents)
                 }
             },
+            CmdIds::UnionCmdNotify=>{
+                let x = crate::protos::UnionCmdNotify::UnionCmdNotify::parse_from_bytes(p.data.as_slice());
+            }
             _ =>{
                 proto_decode::default_decode_proto(p, cmd)
-            }
+            },
         };
 
-        println!("{}", data)
+        println!("{:?}", data)
         
         // up
     }

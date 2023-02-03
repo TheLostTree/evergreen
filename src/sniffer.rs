@@ -50,7 +50,8 @@ fn remove_headers(data: Vec<u8>)->(Vec<u8>, u16){
     // let source_addr = u32::from_be_bytes([data[12], data[13], data[14], data[15]]);
 
     //remove ethernet header
-    let data = &data[14..];
+    // if using a vpn, ignore this lol
+    // let data = &data[14..];
     //beginning of udp header
     let source_port = u16::from_be_bytes([data[20], data[21]]);
 

@@ -94,7 +94,7 @@ fn generate_proto_decodes(cmds: Lines){
 
 
 
-    contents.push_str("pub fn default_decode_proto(p: &mut Packet, cmd: CmdIds)->String{\n");
+    contents.push_str("pub fn default_decode_proto(p: &mut Packet, cmd: CmdIds)->Option<String>{\n");
     contents.push_str("
     
     let options = protobuf_json_mapping::PrintOptions{
@@ -103,7 +103,7 @@ fn generate_proto_decodes(cmds: Lines){
         always_output_default_values: true,
         _future_options: (),
     };
-    ");
+");
     contents.push_str("\tmatch cmd {\n");
     let dir = Path::new("./protos");
     for line in cmds{
@@ -113,6 +113,7 @@ fn generate_proto_decodes(cmds: Lines){
         //check to make sure it has a corresponding .proto file
         if fs::metadata(dir.join(&format!("{}.proto", name))).is_err(){
             //convert the data to hex and thats it
+            continue;
             contents.push_str(&format!("
         CmdIds::{}=>{{
             let mut contents = String::new();
@@ -127,21 +128,21 @@ fn generate_proto_decodes(cmds: Lines){
 
         contents.push_str(&format!("
         CmdIds::{}=>{{
-            let x = {}::{}::parse_from_bytes(&p.header);
-            if let Some(v) = x.ok(){{
-                return print_to_string_with_options(&v,&options).unwrap();
-            }}else{{
-                let mut contents = String::new();
-                for byte in &mut *p.data{{
-                    contents.push_str(&format!(\"{{:02x}}\", byte));
-                }}
-                return contents;
-            }}
-            
+            let x = {}::{}::parse_from_bytes(&p.data);
+            return match x{{
+                Ok(v) => {{
+                    Some(print_to_string_with_options(&v,&options).unwrap())
+                }},
+                Err(err) => {{
+                    println!(\"{{}}\", err);
+                    None
+                }},
+            }};
         }}
             ", name,name,name));
     }
     contents.push_str("
+        _ => {None}
     }
 }
     

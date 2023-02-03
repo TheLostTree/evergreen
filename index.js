@@ -14,6 +14,7 @@ const protolist = [
     "SceneEntityDisappearNotify.proto",
     "SceneEntityAppearNotify.proto",
     "PlayerEnterSceneNotify.proto",    
+    "BattlePassAllDataNotify.proto",
 ]
 
 const includes = []
