@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+import "Rotation.proto";
+
+message KCBBPDJHHBM {
+	Rotation pos = 2;
+	Rotation rot = 7;
+}

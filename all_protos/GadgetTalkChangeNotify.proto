@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+
+
+
+message GadgetTalkChangeNotify {
+	enum LACKJDOGKLE {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 846;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	uint32 gadgetEntityId = 10;
+	uint32 curGadgetTalkState = 2;
+}

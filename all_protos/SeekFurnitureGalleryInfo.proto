@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+
+
+import "HomeSeekFurnitureOneRecord.proto";
+
+message SeekFurnitureGalleryInfo {
+	repeated HomeSeekFurnitureOneRecord recordList = 5;
+}

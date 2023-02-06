@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+
+
+
+message FlowerStartParam {
+	uint32 targetScore = 8;
+}

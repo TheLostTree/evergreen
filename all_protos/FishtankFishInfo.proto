@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+
+message FishtankFishInfo {
+	float fishDistanceFromWater = 1;
+	float fishScale = 2;
+	float initialRotationY = 3;
+}

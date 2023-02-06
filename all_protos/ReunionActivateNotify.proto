@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+
+
+import "ReunionBriefInfo.proto";
+
+message ReunionActivateNotify {
+	enum JBANEJLHMMC {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 5060;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	ReunionBriefInfo reunionBriefInfo = 7;
+	bool isActivate = 5;
+}

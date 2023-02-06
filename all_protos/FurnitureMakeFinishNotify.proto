@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+
+
+
+message FurnitureMakeFinishNotify {
+	enum MIOIGBJOKEO {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 4789;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+}

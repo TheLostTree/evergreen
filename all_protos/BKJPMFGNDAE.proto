@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+
+
+import "AbilityAppliedAbility.proto";
+
+message BKJPMFGNDAE {
+	AbilityAppliedAbility eiemljpbfin = 4;
+}

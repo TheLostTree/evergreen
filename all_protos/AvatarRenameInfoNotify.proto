@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+
+
+import "AvatarRenameInfo.proto";
+
+message AvatarRenameInfoNotify {
+	enum HEGAMGBFDLO {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 1665;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	repeated AvatarRenameInfo avatarRenameList = 12;
+}

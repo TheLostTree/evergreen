@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+
+
+
+message ChangeWidgetBackgroundActiveStateRsp {
+	enum MLOHDHDAHDD {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 6088;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	int32 retcode = 7;
+	uint32 materialId = 13;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+import "PlayerLocationInfo.proto";
+
+message PlayerWorldLocationInfo {
+	uint32 sceneId = 4;
+	PlayerLocationInfo playerLoc = 1;
+}

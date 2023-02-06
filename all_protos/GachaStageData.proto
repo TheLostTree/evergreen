@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+
+message GachaStageData {
+	map<uint32, uint32> targetNumMap = 11;
+	uint32 stageId = 15;
+	bool isOpen = 4;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+
+
+import "Rotation.proto";
+
+message AEIENHDOBGJ {
+	Rotation pos = 7;
+	uint32 roomId = 6;
+	Rotation rot = 15;
+}

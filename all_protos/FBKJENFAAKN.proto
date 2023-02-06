@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+import "EIBBNBEBHGD.proto";
+
+message FBKJENFAAKN {
+	repeated uint32 ehbfihcdoli = 12;
+	repeated EIBBNBEBHGD avatarInfoList = 6;
+}

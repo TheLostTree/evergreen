@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+
+
+import "DMMAGIEOPDG.proto";
+
+message FKJCFGLHNPM {
+	repeated DMMAGIEOPDG stageInfoList = 9;
+}

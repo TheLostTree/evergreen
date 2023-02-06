@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+
+
+
+message GcgFestivalInfo {
+	bool fkefhlbdlcn = 5;
+}

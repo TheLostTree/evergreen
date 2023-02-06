@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+
+
+import "ParentQuest.proto";
+
+message FinishedParentQuestNotify {
+	enum MPBKAANIEOK {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 498;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	repeated ParentQuest parentQuestList = 3;
+}

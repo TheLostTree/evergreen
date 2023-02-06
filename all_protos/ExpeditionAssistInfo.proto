@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+
+
+
+message ExpeditionAssistInfo {
+	uint32 assistTime = 4;
+	uint32 avatarId = 11;
+	string targetNickName = 9;
+	uint32 costumeId = 15;
+	string onlineId = 13;
+}

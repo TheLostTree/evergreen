@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+import "FireworksReformParamType.proto";
+
+message FireworksReformParam {
+	int32 value = 8;
+	FireworksReformParamType type = 11;
+}

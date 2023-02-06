@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+import "GCGOperation.proto";
+
+message DFAIPJMKBCC {
+	GCGOperation op = 15;
+	uint32 controllerId = 10;
+}

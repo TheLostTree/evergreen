@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+
+
+
+message LJEHEDLADBA {
+	repeated uint32 nlfekmmbdfh = 12;
+	repeated uint32 hogkpoggoop = 11;
+}

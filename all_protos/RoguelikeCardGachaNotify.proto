@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+
+
+
+message RoguelikeCardGachaNotify {
+	enum FGAHDKIJFNP {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 8033;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	bool isCanRefresh = 9;
+	repeated uint32 cardList = 5;
+}

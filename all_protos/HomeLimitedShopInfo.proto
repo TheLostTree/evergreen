@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+
+
+import "Rotation.proto";
+
+message HomeLimitedShopInfo {
+	uint32 nextGuestOpenTime = 14;
+	uint32 uid = 4;
+	Rotation djinnRot = 12;
+	uint32 nextCloseTime = 2;
+	Rotation djinnPos = 6;
+	uint32 nextOpenTime = 15;
+}

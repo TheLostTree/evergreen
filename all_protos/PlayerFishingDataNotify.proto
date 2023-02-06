@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+
+
+
+message PlayerFishingDataNotify {
+	enum LBBDPDFKHED {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 5810;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	uint32 lastFishRodId = 4;
+}

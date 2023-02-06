@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+
+
+import "Rotation.proto";
+
+message FGPNDDNEBJO {
+	Rotation pos = 8;
+	Rotation mjehpphliia = 1;
+	uint32 djmnfklkcaf = 2;
+	Rotation rot = 12;
+}

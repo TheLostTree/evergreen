@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+
+
+import "ECEOMAIKPFN.proto";
+import "ForceUdpate.proto";
+import "StopServer.proto";
+import "bytes.proto";
+
+message KPEJOLCOCFL {
+	int32 retcode = 1;
+	string msg = 2;
+	ECEOMAIKPFN regionInfo = 3;
+	oneof AIPAFJFLEJF {
+		ForceUdpate force_udpate = 4;
+		StopServer stop_server = 5;
+	}
+	bytes lkcfpnkfoma = 11;
+	bytes chemhoofhnj = 12;
+	bytes hmafpingppn = 13;
+}

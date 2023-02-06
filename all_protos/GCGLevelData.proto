@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+
+
+
+message GCGLevelData {
+	uint32 levelId = 13;
+	repeated uint32 adobcdcfbpn = 4;
+}

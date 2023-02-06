@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+
+
+
+message LanV3BoatInfo {
+	repeated uint32 playerUidList = 4;
+	uint32 matchId = 11;
+	uint32 mapId = 15;
+	bool mdpgfcplekf = 8;
+}

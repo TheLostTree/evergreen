@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+
+
+
+message ExclusiveRuleNotify {
+	enum GDCHJMMCHEC {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 159;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	uint32 compoundId = 6;
+}

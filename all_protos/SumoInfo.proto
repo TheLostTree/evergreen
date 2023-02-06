@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+
+message SumoInfo {
+	uint32 killEliteMonsterNum = 3;
+	uint32 killNormalMonsterNum = 5;
+	uint32 score = 4;
+}

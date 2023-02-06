@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+
+
+import "Reliquary.proto";
+import "Weapon.proto";
+
+message ShowEquip {
+	uint32 itemId = 1;
+	oneof DCMMPEONFNE {
+		Reliquary reliquary = 2;
+		Weapon weapon = 3;
+	}
+}

@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+
+
+
+message ThunderBirdFeatherInfo {
+	repeated uint32 entityIdList = 12;
+}

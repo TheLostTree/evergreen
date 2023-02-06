@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+
+
+import "GeneralReward.proto";
+
+message GadgetGeneralRewardInfoNotify {
+	enum GFBABMFFJOP {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 878;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	uint32 entityId = 5;
+	GeneralReward generalRewardInfo = 15;
+}

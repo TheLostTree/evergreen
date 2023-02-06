@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+import "ChannelerSlabCamp.proto";
+
+message ChannelerSlabChallenge {
+	repeated ChannelerSlabCamp campList = 15;
+	uint32 activeCampIndex = 14;
+}

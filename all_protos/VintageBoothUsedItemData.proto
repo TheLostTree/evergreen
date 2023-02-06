@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+
+
+
+message VintageBoothUsedItemData {
+	uint32 gadgetId = 12;
+	bool isOpen = 2;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+
+
+import "GadgetBornType.proto";
+
+message CreateGadgetInfo {
+	message Chest {
+		uint32 kghimiienhg = 1;
+		bool isShowCutscene = 2;
+	}
+
+	GadgetBornType bornType = 1;
+	Chest bknaophdkcf = 2;
+}

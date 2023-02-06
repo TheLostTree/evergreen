@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+
+message SumoDungeonAvatar {
+	bool isAlive = 10;
+	bool isTrial = 5;
+	uint64 avatarGuid = 3;
+}

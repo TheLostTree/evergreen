@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+
+
+import "BlessingRecvPicRecord.proto";
+
+message BlessingGetAllRecvPicRecordListRsp {
+	enum PNOIBIOJPPG {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 2118;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	repeated BlessingRecvPicRecord recvPicRecordList = 9;
+	int32 retcode = 4;
+}

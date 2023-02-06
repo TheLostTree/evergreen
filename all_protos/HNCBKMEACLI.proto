@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+
+
+import "Rotation.proto";
+
+message HNCBKMEACLI {
+	uint32 entityId = 2;
+	Rotation curPos = 7;
+	uint32 normalizedTimeCompact = 15;
+	uint32 bafodnbpgic = 1;
+	int32 faceAngleCompact = 10;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+
+message DKOBFHFONLM {
+	uint32 levelId = 2;
+	bool isOpen = 7;
+	uint32 minFinishTime = 12;
+}

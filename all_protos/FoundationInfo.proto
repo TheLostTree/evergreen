@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+
+
+import "FoundationStatus.proto";
+
+message FoundationInfo {
+	FoundationStatus status = 1;
+	repeated uint32 uidList = 2;
+	uint32 currentBuildingId = 3;
+	uint32 lockedByUid = 4;
+}

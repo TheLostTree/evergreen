@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+
+
+import "Rotation.proto";
+
+message AddRandTaskInfoNotify {
+	enum AAMKDIJOLIA {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 123;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	Rotation pos = 6;
+	uint32 randTaskId = 2;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+
+
+import "MLBFNDKNIEM.proto";
+
+message BDKPJAMLNCL {
+	repeated MLBFNDKNIEM levelInfoList = 6;
+}

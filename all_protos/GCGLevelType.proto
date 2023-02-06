@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+
+message GCGLevelType {
+	uint32 levelId = 3;
+	uint32 scenePointId = 2;
+	uint32 id = 6;
+}

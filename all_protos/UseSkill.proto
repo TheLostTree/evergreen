@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+
+
+
+message UseSkill {
+	uint32 cardGuid = 11;
+	uint32 skillId = 14;
+}

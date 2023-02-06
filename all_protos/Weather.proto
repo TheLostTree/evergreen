@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+
+
+
+message Weather {
+	uint32 weatherAreaId = 1;
+}

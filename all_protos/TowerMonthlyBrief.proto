@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+
+
+
+message TowerMonthlyBrief {
+	uint32 bestLevelIndex = 11;
+	uint32 towerScheduleId = 7;
+	uint32 totalStarCount = 14;
+	uint32 bestFloorIndex = 8;
+}

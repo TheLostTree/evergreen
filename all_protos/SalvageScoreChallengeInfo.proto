@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+
+
+
+message SalvageScoreChallengeInfo {
+	uint32 oichdaoampp = 13;
+	uint32 maxScore = 4;
+}

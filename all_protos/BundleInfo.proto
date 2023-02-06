@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+
+
+
+message BundleInfo {
+	repeated uint32 famklmmklpj = 10;
+}

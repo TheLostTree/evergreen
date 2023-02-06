@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+
+
+import "IrodoriChessEntranceInfo.proto";
+
+message IrodoriChessEntranceDetailInfo {
+	repeated IrodoriChessEntranceInfo infoList = 2;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+
+message SyncFinishGame {
+	bool isWin = 1;
+	uint64 serverGameTime = 5;
+	bool chbjiolfkil = 8;
+}

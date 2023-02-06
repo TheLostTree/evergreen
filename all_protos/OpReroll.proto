@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+
+
+
+message OpReroll {
+	repeated uint32 diceIndexList = 3;
+}

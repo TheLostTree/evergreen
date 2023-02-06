@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+
+
+import "IslandPartyStageData.proto";
+
+message IslandPartyInfo {
+	repeated IslandPartyStageData stageDataList = 5;
+}

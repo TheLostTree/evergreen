@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+import "Rotation.proto";
+
+message PMBPGKEONAG {
+	Rotation aapdkabicbn = 10;
+	float damage = 4;
+}

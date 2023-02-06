@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+
+
+import "WorldRoutineTypeInfo.proto";
+
+message WorldAllRoutineTypeNotify {
+	enum DNJFMFNJMBC {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 3545;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	repeated WorldRoutineTypeInfo worldRoutineTypeList = 4;
+}

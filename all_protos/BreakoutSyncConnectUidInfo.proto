@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+
+message BreakoutSyncConnectUidInfo {
+	uint32 uid = 1;
+	repeated uint32 skillIdList = 2;
+	repeated uint32 namghchjljl = 3;
+}

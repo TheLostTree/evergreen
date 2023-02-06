@@ -28,7 +28,7 @@ fn main(){
 fn generate_cmdid_file<P: AsRef<Path>>(path: P){
     let mut contents = String::new();
     // contents.push_str("pub mod cmdids {\n");
-    contents.push_str("#[derive(Debug)]");
+    contents.push_str("#[derive(Debug,Hash,Eq,PartialEq)]\n");
     contents.push_str("pub enum CmdIds {\n");
     let binding = std::fs::read_to_string("./CmdIds.csv").expect("place ur cmdids pls");
     let lines = binding.lines();
@@ -61,19 +61,21 @@ fn generate_cmdid_file<P: AsRef<Path>>(path: P){
 }
 
 fn generate_protobufs(){
-    let files = match std::fs::read_dir("./protos"){
+
+    let protodir = "protos";
+    let files = match std::fs::read_dir(format!("./{}", protodir)){
         Ok(f) => f,
         Err(_) => {
             panic!("Please create a ./protos folder and place your proto files inside.");  
         },
     };
-    let paths = files.map(|f| format!("protos/{}",f.unwrap().file_name().to_str().unwrap()));
+    let paths = files.map(|f| format!("{}/{}",protodir,f.unwrap().file_name().to_str().unwrap()));
 
     protobuf_codegen::Codegen::new()
     .pure()
 
     // All inputs and imports from the inputs must reside in `includes` directories.
-    .includes(&["protos"])
+    .includes(&[protodir])
     .inputs(paths)
     // Specify output directory relative to Cargo output directory.
     .cargo_out_dir("protos_target")

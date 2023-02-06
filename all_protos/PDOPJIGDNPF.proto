@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+import "FFJPPIJOJLI.proto";
+
+message PDOPJIGDNPF {
+	uint32 blockId = 1;
+	repeated FFJPPIJOJLI benoomjlmom = 2;
+}

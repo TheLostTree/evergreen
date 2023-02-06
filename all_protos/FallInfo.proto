@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+import "FallPlayerInfo.proto";
+
+message FallInfo {
+	uint32 endTime = 6;
+	map<uint32, FallPlayerInfo> scenePlayerFallInfoMap = 9;
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+
+
+import "Rotation.proto";
+import "HomePlantSubFieldData.proto";
+
+message HomePlantFieldData {
+	uint32 sceneId = 1;
+	uint32 fieldGuid = 3;
+	repeated HomePlantSubFieldData subFieldList = 2;
+	uint32 furnitureId = 4;
+	Rotation spawnPos = 9;
+}

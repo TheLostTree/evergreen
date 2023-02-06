@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+import "Rotation.proto";
+
+message GFOIPJIJFPP {
+	Rotation initPos = 6;
+	Rotation forward = 9;
+}

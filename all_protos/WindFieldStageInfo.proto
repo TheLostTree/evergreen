@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+
+message WindFieldStageInfo {
+	uint32 openTime = 13;
+	bool isOpen = 2;
+	uint32 stageId = 10;
+}

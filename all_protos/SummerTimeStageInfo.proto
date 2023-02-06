@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+
+message SummerTimeStageInfo {
+	uint32 openTime = 6;
+	bool isOpen = 3;
+	uint32 stageId = 4;
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+
+
+
+message ExitCustomDungeonTryRsp {
+	enum MCADCECCMJL {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 6215;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	int32 retcode = 7;
+}

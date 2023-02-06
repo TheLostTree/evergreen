@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+
+
+import "Rotation.proto";
+
+message GMShowNavMeshReq {
+	enum LOEAPFJINIE {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 2390;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+		EAJIABGAOCI = 1;
+	}
+
+	Rotation center = 6;
+	Rotation extent = 13;
+}

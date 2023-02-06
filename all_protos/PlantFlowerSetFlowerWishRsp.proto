@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+
+
+
+message PlantFlowerSetFlowerWishRsp {
+	enum LOPBLEECJKP {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 8902;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	uint32 scheduleId = 4;
+	int32 retcode = 15;
+}

@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+
+
+import "GallerySettleInfo.proto";
+import "BossSettleInfo.proto";
+
+message FleurFairStageSettleNotify {
+	enum IBGGENNBBPK {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 5336;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	uint32 stageType = 9;
+	oneof HOPDBCIDNDF {
+		GallerySettleInfo gallery_settle_info = 10;
+		BossSettleInfo boss_settle_info = 8;
+	}
+}

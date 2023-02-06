@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+
+
+
+message PlayerDeathZoneNotify {
+	enum IGJOFKIKAAG {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 6296;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	uint32 curDeathZoneId = 11;
+}

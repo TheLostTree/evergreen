@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+import "Rotation.proto";
+
+message DALLDMAANFE {
+	uint32 entityId = 7;
+	Rotation skillAnchorPosition = 9;
+}

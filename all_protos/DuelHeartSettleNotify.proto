@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+
+
+
+message DuelHeartSettleNotify {
+	enum DCPKPJOKOHK {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 20655;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	bool isNewRecord = 4;
+	bool isSucc = 5;
+	uint32 costTime = 1;
+}

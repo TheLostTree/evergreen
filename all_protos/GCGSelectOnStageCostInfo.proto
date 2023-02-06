@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+import "Uint32Pair.proto";
+
+message GCGSelectOnStageCostInfo {
+	uint32 cardGuid = 14;
+	repeated Uint32Pair costMap = 10;
+}

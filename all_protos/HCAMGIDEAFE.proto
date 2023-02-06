@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+
+message HCAMGIDEAFE {
+	uint32 bestScore = 6;
+	bool isOpen = 1;
+	uint32 stageId = 2;
+}

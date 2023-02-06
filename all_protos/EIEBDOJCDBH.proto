@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+import "IDOELHBANCP.proto";
+
+message EIEBDOJCDBH {
+	bool aicefchaici = 1;
+	repeated IDOELHBANCP kcllbppiboo = 999;
+}

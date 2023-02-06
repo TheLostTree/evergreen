@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+
+
+
+message ProductPriceTier {
+	string productId = 10;
+	string priceTier = 6;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+
+
+import "HuntingPair.proto";
+
+message GetHuntingOfferRewardRsp {
+	enum EJOIAIPLPII {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 4343;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	HuntingPair huntingPair = 5;
+	uint32 cityId = 6;
+	int32 retcode = 2;
+}

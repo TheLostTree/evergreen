@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+
+
+
+message HideAndSeekSetReadyRsp {
+	enum IBMIKFGCLGO {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 5379;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	int32 retcode = 13;
+}

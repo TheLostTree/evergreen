@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+
+
+
+message UpdatePlayerShowAvatarListRsp {
+	enum KCKFNPNJBPJ {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 4083;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	repeated uint32 showAvatarIdList = 15;
+	bool isShowAvatar = 14;
+	int32 retcode = 10;
+}

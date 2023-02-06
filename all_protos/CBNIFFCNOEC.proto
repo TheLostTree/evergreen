@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+
+
+
+message CBNIFFCNOEC {
+	uint64 dungeonGuid = 1;
+	uint32 minCostTime = 2;
+}

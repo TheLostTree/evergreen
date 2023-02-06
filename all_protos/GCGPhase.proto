@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+import "GCGPhaseType.proto";
+
+message GCGPhase {
+	GCGPhaseType phaseType = 5;
+	map<uint32, uint32> allowControllerMap = 14;
+}

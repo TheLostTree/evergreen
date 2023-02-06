@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+
+
+import "ReunionSignInInfo.proto";
+
+message TakeReunionSignInRewardRsp {
+	enum HNGPMNELGAJ {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 5085;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	ReunionSignInInfo signInInfo = 5;
+	int32 retcode = 8;
+}

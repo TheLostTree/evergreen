@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+
+
+import "Rotation.proto";
+import "CylinderSize.proto";
+import "PolygonSize.proto";
+
+message PlayerEyePointStateNotify {
+	enum NIOAOMGFLHJ {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 3435;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	bool Unk3300_KFOHOBLMMLB = 1;
+	Rotation eyePointPos = 14;
+	uint32 Unk3300_EOPFNBBBGPK = 11;
+	uint32 Unk3300_GNFJIOEGHOE = 2;
+	uint32 Unk3300_BIHEKNFDDDI = 4;
+	int32 fixLodLevel = 6;
+	uint32 Unk3300_JGEMKKJAHKA = 5;
+	bool Unk3300_NIPFCFCBFAE = 10;
+	oneof CHJHCIGJOLJ {
+		float sphere_radius = 152;
+		Rotation cubic_size = 879;
+		CylinderSize cylinder_size = 1320;
+		PolygonSize polygon_size = 1996;
+	}
+}

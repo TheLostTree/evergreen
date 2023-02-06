@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+
+
+
+message GCGDSTakeCardProficiencyRewardRsp {
+	enum LNHHPEEHCIF {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 7763;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	uint32 retcode = 12;
+	uint32 cardId = 1;
+}

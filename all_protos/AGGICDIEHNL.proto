@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+
+
+enum AGGICDIEHNL {
+	APOHFKNGIIJ = 0;
+	FCCAGMOBPJI = 1;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+
+message DeliveryInfo {
+	uint32 dayIndex = 6;
+	repeated uint32 finishedDeliveryQuestIndex = 7;
+	bool isTakenReward = 4;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+
+message ActivityShopSheetInfo {
+	uint32 beginTime = 5;
+	uint32 sheetId = 14;
+	uint32 endTime = 12;
+}

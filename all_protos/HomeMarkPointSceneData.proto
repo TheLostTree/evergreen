@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+
+
+import "Rotation.proto";
+import "HomeMarkPointFurnitureData.proto";
+
+message HomeMarkPointSceneData {
+	repeated HomeMarkPointFurnitureData furnitureList = 14;
+	uint32 moduleId = 5;
+	uint32 sceneId = 15;
+	Rotation safePointPos = 10;
+	Rotation teapotSpiritPos = 8;
+}

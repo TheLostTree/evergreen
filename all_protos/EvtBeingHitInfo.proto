@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+
+
+import "AttackResult.proto";
+
+message EvtBeingHitInfo {
+	AttackResult attackResult = 5;
+	uint32 peerId = 7;
+	uint32 frameNum = 10;
+}

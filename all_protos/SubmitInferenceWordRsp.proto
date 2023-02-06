@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+
+
+
+message SubmitInferenceWordRsp {
+	enum HDBJOOIELFD {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 495;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	uint32 conclusionId = 7;
+	uint32 pageId = 13;
+	uint32 wordId = 6;
+	int32 retcode = 8;
+}

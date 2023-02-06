@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+
+
+import "DetectorData.proto";
+
+message OneoffGatherPointDetectorDataNotify {
+	enum BBLGDHLPBJJ {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 4257;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	repeated DetectorData oneoffGatherPointDetectorDataList = 10;
+}

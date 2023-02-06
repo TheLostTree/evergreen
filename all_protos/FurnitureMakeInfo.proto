@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+
+
+
+message FurnitureMakeInfo {
+	uint32 makeCount = 9;
+	uint32 furnitureId = 7;
+}

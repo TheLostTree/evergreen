@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+
+
+import "DynamicLayerNodes.proto";
+
+message DynamicNodes {
+	repeated DynamicLayerNodes nodes = 8;
+}

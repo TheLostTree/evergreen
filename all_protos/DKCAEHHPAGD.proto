@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+import "EFJNIGDJCLH.proto";
+
+message DKCAEHHPAGD {
+	repeated EFJNIGDJCLH blnaldeiekj = 1;
+	string createTime = 2;
+}

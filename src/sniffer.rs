@@ -1,4 +1,4 @@
-use crate::{RUNNING, client_server_pair};
+use crate::{RUNNING, client_server_pair, ws_thread};
 use pcap::{Capture, Device};
 use std::io::{stdin, stdout, Write};
 use std::sync::atomic::Ordering;
@@ -27,22 +27,27 @@ pub fn run(){
     _ = cap.filter("udp portrange 22101-22102", true);
     println!("listening on {}...", device_name);
 
-    let (sender, receiver) = std::sync::mpsc::channel();
+    let (packet_sender, packet_receiver) = std::sync::mpsc::channel();
 
-    let _processing_thread = std::thread::spawn(move||{
-        client_server_pair::processing_thread(receiver)
+    let processing_thread = std::thread::spawn(move||{
+        client_server_pair::processing_thread(packet_receiver)
     });
+
+
     
 
     while RUNNING.load(Ordering::SeqCst) {
         if let Ok(packet) = cap.next_packet() {
             let pktdata = packet.data.to_vec();
-            _ = sender.send(remove_headers(pktdata));
-            
+            _ = packet_sender.send(remove_headers(pktdata));
         }
     }
 
-    // _ = processing_thread.join()
+    // not *quite* sure i have to do this explicitly
+    drop(packet_sender);
+    // drop(json_sender);
+
+    _ = processing_thread.join();
 }
 
 

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+
+
+import "CityReputationSimpleInfo.proto";
+
+message CityReputationDataNotify {
+	enum EDHJAKJHIAO {
+		option allow_alias = true;
+		NONE = 0;
+		PEPPOHPHJOJ = 2869;
+		DCDNILFDFLB = 0;
+		NNBKOLMPOEA = 1;
+	}
+
+	repeated CityReputationSimpleInfo simpleInfoList = 8;
+}

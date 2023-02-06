@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+
+
+
+message RogueAvatarInfo {
+	uint32 avatarId = 15;
+	bool isAlive = 5;
+	bool egkmacmbgbe = 1;
+}

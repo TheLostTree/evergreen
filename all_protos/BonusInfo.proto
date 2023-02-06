@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+
+
+
+message BonusInfo {
+	uint32 leftBonusCount = 13;
+}

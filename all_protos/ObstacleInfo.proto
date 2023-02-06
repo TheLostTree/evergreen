@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+
+
+import "Rotation.proto";
+import "Vector3Int.proto";
+import "ShapeType.proto";
+import "RotationSpeed.proto";
+
+message ObstacleInfo {
+	Rotation center = 4;
+	Vector3Int extents = 12;
+	ShapeType shape = 5;
+	int32 obstacleId = 9;
+	RotationSpeed rotation = 2;
+}
