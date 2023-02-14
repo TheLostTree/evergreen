@@ -89,8 +89,7 @@ impl Handler for WSMessageHandler{
             },
             _=>{}
         }
-
-        Err(ws::Error::new(ws::ErrorKind::Internal, "Not implemented"))
+        Ok(())
     }
 }
 
@@ -104,20 +103,17 @@ impl WSHandle{
                 out: x
             }}).unwrap();
 
-        let mut x = WSHandle { 
-            broadcast:  ws.broadcaster(),
-            handler: None
-        };
+        let bs = ws.broadcaster();
+
         let t = std::thread::spawn(move || {
             //this blocks
             _ = ws.listen(server_addr); // idk if i need to do anything with this
         });
 
-        //this is kinda dumb tbh
-        x.handler = Some(t);
-
-        x
-
+        WSHandle { 
+            broadcast: bs,
+            handler: Some(t)
+        }
         // let mut connections = vec![];
     }
 
