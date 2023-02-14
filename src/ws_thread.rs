@@ -96,7 +96,7 @@ impl Handler for WSMessageHandler{
 
 impl WSHandle{
     fn new()->Self{
-        let server_addr = "ws://127.0.0.1:40510";
+        let server_addr = "127.0.0.1:40510";
         // let recievers = vec![];
         let mut ws = ws::WebSocket::new(|x|{
             WSMessageHandler{
