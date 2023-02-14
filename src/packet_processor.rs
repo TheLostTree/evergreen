@@ -63,7 +63,7 @@ impl PacketProcessor{
             },
             None => {
 
-                if let Some(fdesc) = self.descriptors.as_ref().expect("hurr durr").get(&cmdid){
+                if let Some(fdesc) = self.descriptors.as_ref().and_then(|x|x.get(&cmdid)){
 
                     match fdesc.message_by_full_name(&cmdid.to_string()){
                         Some(msg) => {
