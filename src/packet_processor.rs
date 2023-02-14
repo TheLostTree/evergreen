@@ -120,22 +120,23 @@ impl PacketProcessor{
 
                 let mut str = String::new();
                 str.push_str(r#"{
-                    "cmd": "PacketNotify",
-                    "data": {
-                        "packetId": "#);
+    "cmd": "PacketNotify",
+    "data": [{
+        "packetID": "#);
                 str.push_str(&format!("{}", cmdid.clone() as u16));
                 str.push_str(r#",
-                        "protoName": "#);
+    "protoName": ""#);
                 str.push_str(&format!("{:?}", cmdid));
-                str.push_str(r#",
-                        "object": "#);
+                str.push_str(r#"",
+    "object": "#);
                 str.push_str(&st);
                 str.push_str(r#",
-                        "packet": """#);
-                str.push_str(r#"
-                        "source": "#);
+    "packet": """#);
+                str.push_str(r#",
+    "source": "#);
                 str.push_str(&format!("{}", if isServer{0}else{1}));
-                str.push_str("}}");
+                str.push_str("  }]
+}");
 
                 _ = sender.send(str);
             }
