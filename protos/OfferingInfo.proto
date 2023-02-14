@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message OfferingInfo {
-	uint32 offeringId = 1;
-}

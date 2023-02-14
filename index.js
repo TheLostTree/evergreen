@@ -3,24 +3,24 @@ const protolist = [
     "PacketHead.proto",
     "GetPlayerTokenReq.proto",
     "GetPlayerTokenRsp.proto",
-    "AvatarDataNotify.proto",
-    "AvatarFightPropNotify.proto",
-    "AvatarFightPropUpdateNotify.proto",
-    "CombatInvocationsNotify.proto",
-    "PlayerEnterSceneInfoNotify.proto",
-    "UnionCmdNotify.proto",
-    "AbilityInvocationsNotify.proto",
-    "SceneTeamUpdateNotify.proto",
-    "SceneEntityDisappearNotify.proto",
-    "SceneEntityAppearNotify.proto",
-    "PlayerEnterSceneNotify.proto",    
-    "BattlePassAllDataNotify.proto",
-    "AntiAddictNotify.proto",
+    // "AvatarDataNotify.proto",
+    // "AvatarFightPropNotify.proto",
+    // "AvatarFightPropUpdateNotify.proto",
+    // "CombatInvocationsNotify.proto",
+    // "PlayerEnterSceneInfoNotify.proto",
+    // "UnionCmdNotify.proto",
+    // "AbilityInvocationsNotify.proto",
+    // "SceneTeamUpdateNotify.proto",
+    // "SceneEntityDisappearNotify.proto",
+    // "SceneEntityAppearNotify.proto",
+    // "PlayerEnterSceneNotify.proto",    
+    // "BattlePassAllDataNotify.proto",
+    // "AntiAddictNotify.proto",
 ]
 
 const includes = []
 
-const proto_source = `C:\\Users\\admin\\Downloads\\protos-main\\3.4v`
+const proto_source = `./all_protos`
 //copy dependencies + protolist to ./protos
 
 while(protolist.length > 0){

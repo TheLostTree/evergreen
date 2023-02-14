@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-import "Rotation.proto";
-
-message EntityClientExtraInfo {
-	Rotation skillAnchorPosition = 1;
-}

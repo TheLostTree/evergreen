@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message ServantInfo {
-	uint32 masterEntityId = 1;
-	uint32 bornSlotIndex = 2;
-}

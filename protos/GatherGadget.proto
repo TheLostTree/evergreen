@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message GatherGadget {
-	uint32 itemId = 1;
-	bool baplahgkmbl = 2;
-}

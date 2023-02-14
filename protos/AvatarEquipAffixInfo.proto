@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message AvatarEquipAffixInfo {
-	uint32 equipAffixId = 1;
-	uint32 leftCdTime = 2;
-}

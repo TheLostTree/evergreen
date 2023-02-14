@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message ScreenInfo {
-	uint32 liveId = 1;
-	uint32 projectorEntityId = 2;
-}
