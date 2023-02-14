@@ -79,7 +79,15 @@ impl PacketProcessor{
                     }
                 } else{
                     // oh god....
-                    self.descriptors = Some(self.descriptor_load.take().map(|f|JoinHandle::join(f)).unwrap().unwrap());
+                    if let Some(descriptor_results) = self.descriptor_load.take().map(|f|JoinHandle::join(f)){
+                        if let Ok(descriptors) = descriptor_results{
+                            self.descriptors = Some(descriptors);
+                        }else{
+                            println!("failed to load descriptors");
+                        }
+                    }else{
+                        println!("no descriptors loaded, thread something something join idk");
+                    }
                     if let Some(fdesc) = self.descriptors.as_ref().expect("hurr durr").get(&cmdid){
 
                         match fdesc.message_by_full_name(&cmdid.to_string()){
