@@ -22,14 +22,15 @@ pub fn load_dyn_protos()->HashMap<CmdIds, FileDescriptor>{
     .parse_and_typecheck().unwrap();
     // x.file_descriptors
     //haha.... clone....
-    println!("therers only {} descriptors actually", x.file_descriptors.len());
     let mut map = HashMap::new();
     for descriptor in FileDescriptor::new_dynamic_fds(x.file_descriptors, &[]).expect("oopsie!"){
-        let cmd = CmdIds::from_str(descriptor.name());
+        // println!("{}", descriptor.name());
+        let cmd = CmdIds::from_str(descriptor.name().split(".").next().expect("hmm.."));
         if let Ok(c) = cmd{
             map.insert(c, descriptor);
         }
     }
+    println!("therers only {} descriptors actually", map.len());
 
     map
     
@@ -65,7 +66,7 @@ impl PacketProcessor{
 
                 if let Some(fdesc) = self.descriptors.as_ref().and_then(|x|x.get(&cmdid)){
 
-                    match fdesc.message_by_full_name(&cmdid.to_string()){
+                    match fdesc.message_by_package_relative_name(&cmdid.to_string()){
                         Some(msg) => {
                             if let Ok(b) = msg.parse_from_bytes(bytes){
                                 self.send_protobuf(b.as_ref());
@@ -90,7 +91,7 @@ impl PacketProcessor{
                     }
                     if let Some(fdesc) = self.descriptors.as_ref().expect("hurr durr").get(&cmdid){
 
-                        match fdesc.message_by_full_name(&cmdid.to_string()){
+                        match fdesc.message_by_package_relative_name(&cmdid.to_string()){
                             Some(msg) => {
                                 if let Ok(b) = msg.parse_from_bytes(bytes){
                                     self.send_protobuf(b.as_ref());
@@ -116,7 +117,13 @@ impl PacketProcessor{
         };
         if let Ok(st) = print_to_string_with_options(message, &print_options){
             if let Some(sender) = &self.ws.sender{
-                _ = sender.send(st);
+
+                let mut str = String::new();
+                str.push_str("{\"cmd\": \"PacketNotify\", \"data\" :");
+                str.push_str(&st);
+                str.push_str("}");
+
+                _ = sender.send(str);
             }
         }
     }
