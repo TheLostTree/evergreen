@@ -62,10 +62,20 @@ impl PacketProcessor{
                 }
             },
             None => {
-                if let Some(x) = &self.descriptors{
-                    let msg = x.get(&cmdid).unwrap().message_by_full_name(&format!("{}",cmdid)).unwrap();
-                    if let Ok(b) = msg.parse_from_bytes(bytes){
-                        self.send_protobuf(b.as_ref());
+
+                if let Some(fdesc) = self.descriptors.as_ref().expect("hurr durr").get(&cmdid){
+
+                    match fdesc.message_by_full_name(&cmdid.to_string()){
+                        Some(msg) => {
+                            if let Ok(b) = msg.parse_from_bytes(bytes){
+                                self.send_protobuf(b.as_ref());
+                            };
+                        },
+                        None => {
+                            println!("cmdid: {}", cmdid.to_string());
+                            println!("messages expected: {:?}", fdesc.messages().map(|v|v.name().to_string()).collect::<Vec<_>>());
+                            
+                        }
                     }
                 } else{
                     // oh god....
