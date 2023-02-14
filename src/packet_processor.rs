@@ -54,12 +54,12 @@ impl PacketProcessor{
 
     
 
-    pub fn process(&mut self, cmdid: CmdIds, bytes: &[u8]){
+    pub fn process(&mut self, cmdid: CmdIds, bytes: &[u8], isServer: bool){
         match self.handlers.get(&cmdid){
             Some(handler) => {
                 let msg = handler(self, bytes);
                 if let Some(message) = msg{
-                    self.send_protobuf(message.as_ref())
+                    self.send_protobuf(message.as_ref(), cmdid, isServer);
                 }
             },
             None => {
@@ -69,7 +69,7 @@ impl PacketProcessor{
                     match fdesc.message_by_package_relative_name(&cmdid.to_string()){
                         Some(msg) => {
                             if let Ok(b) = msg.parse_from_bytes(bytes){
-                                self.send_protobuf(b.as_ref());
+                                self.send_protobuf(b.as_ref(), cmdid, isServer);
                             };
                         },
                         None => {
@@ -94,7 +94,7 @@ impl PacketProcessor{
                         match fdesc.message_by_package_relative_name(&cmdid.to_string()){
                             Some(msg) => {
                                 if let Ok(b) = msg.parse_from_bytes(bytes){
-                                    self.send_protobuf(b.as_ref());
+                                    self.send_protobuf(b.as_ref(), cmdid, isServer);
                                 };
                             },
                             None => {
@@ -110,7 +110,7 @@ impl PacketProcessor{
         };
     }
 
-    fn send_protobuf(&self, message: &dyn MessageDyn){
+    fn send_protobuf(&self, message: &dyn MessageDyn, cmdid: CmdIds, isServer: bool){
         let print_options = PrintOptions{
             always_output_default_values : true,
             ..PrintOptions::default()
@@ -119,9 +119,23 @@ impl PacketProcessor{
             if let Some(sender) = &self.ws.sender{
 
                 let mut str = String::new();
-                str.push_str("{\"cmd\": \"PacketNotify\", \"data\" :");
+                str.push_str(r#"{
+                    "cmd": "PacketNotify",
+                    "data": {
+                        "packetId": "#);
+                str.push_str(&format!("{}", cmdid.clone() as u16));
+                str.push_str(r#",
+                        "protoName": "#);
+                str.push_str(&format!("{:?}", cmdid));
+                str.push_str(r#",
+                        "object": "#);
                 str.push_str(&st);
-                str.push_str("}");
+                str.push_str(r#",
+                        "packet": """#);
+                str.push_str(r#"
+                        "source": "#);
+                str.push_str(&format!("{}", if isServer{0}else{1}));
+                str.push_str("}}");
 
                 _ = sender.send(str);
             }

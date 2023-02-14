@@ -282,7 +282,7 @@ impl ClientServerPair{
             _ => {}
         };
 
-        self.packet_processor.borrow_mut().process(CmdIds::from_u16(p.cmdid).unwrap(), &p.data);
+        self.packet_processor.borrow_mut().process(CmdIds::from_u16(p.cmdid).unwrap(), &p.data, !p.is_client);
 
         return;
         // up

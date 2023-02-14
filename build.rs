@@ -32,7 +32,7 @@ fn generate_cmdid_file<P: AsRef<Path>>(path: P){
     let mut contents = String::new();
     // contents.push_str("pub mod cmdids {\n");
     contents.push_str("#[allow(non_camel_case_types)]\n");
-    contents.push_str("#[derive(Debug,Hash,Eq,PartialEq)]\n");
+    contents.push_str("#[derive(Debug,Hash,Eq,PartialEq,Clone)]\n");
     contents.push_str("pub enum CmdIds {\n");
     let binding = std::fs::read_to_string("./CmdIds.csv").expect("place ur cmdids pls");
     let lines = binding.lines();
