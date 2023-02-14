@@ -97,21 +97,20 @@ impl Handler for WSMessageHandler{
 impl WSHandle{
     fn new()->Self{
         let server_addr = "127.0.0.1:40510";
-        // let recievers = vec![];
-        let mut ws = ws::WebSocket::new(|x|{
+
+
+        let ws = ws::Builder::new().build(|x|{
             WSMessageHandler{
                 out: x
-            }
-        }).unwrap();
-
-        ws.connect(url::Url::from_str(server_addr).unwrap()).unwrap();
+            }}).unwrap();
 
         let mut x = WSHandle { 
             broadcast:  ws.broadcaster(),
             handler: None
         };
         let t = std::thread::spawn(move || {
-            _ = ws.run(); // idk if i need to do anything with this
+            //this blocks
+            _ = ws.listen(server_addr); // idk if i need to do anything with this
         });
 
         //this is kinda dumb tbh
