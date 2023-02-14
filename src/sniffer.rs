@@ -1,11 +1,14 @@
-use crate::{RUNNING, client_server_pair};
+use crate::{RUNNING, client_server_pair, packet_processor};
 use pcap::{Capture, Device};
+use std::cell::RefCell;
 use std::io::{stdin, stdout, Write};
+use std::rc::Rc;
 use std::sync::atomic::Ordering;
 
 
 
 pub fn run(){
+    let packet_processor = packet_processor::PacketProcessor::new();
     let main_device = get_device(false).unwrap();
 
     let device_name = format!(
@@ -29,7 +32,7 @@ pub fn run(){
     let (packet_sender, packet_receiver) = std::sync::mpsc::channel();
 
     let processing_thread = std::thread::spawn(move||{
-        client_server_pair::processing_thread(packet_receiver)
+        client_server_pair::processing_thread(packet_receiver, Rc::new(RefCell::new(packet_processor)))
     });
 
 

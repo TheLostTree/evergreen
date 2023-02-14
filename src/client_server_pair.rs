@@ -6,11 +6,13 @@ use crate::packet_processor::PacketProcessor;
 use crate::protos::{PacketHead, GetPlayerTokenRsp};
 use crate::random_cs::bruteforce;
 use crate::mtkey::{MTKey, get_dispatch_keys};
+use std::cell::RefCell;
+use std::rc::Rc;
 use std::sync::mpsc::{Receiver};
 use std::io::{Write, self};
 
 
-pub fn processing_thread(reciever: Receiver<(Vec<u8>, u16)>){
+pub fn processing_thread(reciever: Receiver<(Vec<u8>, u16)>, processor: Rc<RefCell<PacketProcessor>>){
     let mut pair : Option<ClientServerPair> = None;
 
     loop {
@@ -34,7 +36,7 @@ pub fn processing_thread(reciever: Receiver<(Vec<u8>, u16)>){
                                 //server sends connect
                                 let conv = u32::from_be_bytes([data[4], data[5], data[6], data[7]]);
                                 let token = u32::from_be_bytes([data[8], data[9], data[10], data[11]]);
-                                pair = Some(ClientServerPair::new(conv, token));
+                                pair = Some(ClientServerPair::new(conv, token, processor.clone()));
                                 // println!("omg handshake")
                                 
                             },
@@ -79,11 +81,7 @@ pub struct ClientServerPair{
 
     rsa_key: rsa::RsaPrivateKey,
 
-    packet_processor: PacketProcessor,
-
-
-
-
+    packet_processor: Rc<RefCell<PacketProcessor>>
 }
 
 pub struct Packet{
@@ -101,7 +99,7 @@ impl Packet{
 }
 
 impl ClientServerPair{
-    pub fn new(conv: u32, token:u32)->ClientServerPair{
+    pub fn new(conv: u32, token:u32, processor: Rc<RefCell<PacketProcessor>>)->ClientServerPair{
         
         let rsakey = rsa::RsaPrivateKey::from_pkcs1_pem(include_str!("../private.pem")).unwrap();
 
@@ -113,7 +111,7 @@ impl ClientServerPair{
             tokenrspsendtime: None,
             tokenrspserverseed: None,
             rsa_key: rsakey,
-            packet_processor: PacketProcessor::new(),
+            packet_processor: processor,
         };
         p.client.set_nodelay(true, 10, 2, false);
         p.client.set_wndsize(128, 128);
@@ -283,7 +281,10 @@ impl ClientServerPair{
             },
             _ => {}
         };
-        self.packet_processor.process(CmdIds::from_u16(p.cmdid).unwrap(), &p.data)
+
+        self.packet_processor.borrow_mut().process(CmdIds::from_u16(p.cmdid).unwrap(), &p.data);
+
+        return;
         // up
     }
 }
