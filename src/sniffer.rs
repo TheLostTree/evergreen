@@ -26,7 +26,6 @@ pub fn run(){
 
     _ = cap.filter("udp portrange 22101-22102", true);
     println!("listening on {}...", device_name);
-
     let (packet_sender, packet_receiver) = std::sync::mpsc::channel();
 
     let processing_thread = std::thread::spawn(move||{
@@ -39,7 +38,7 @@ pub fn run(){
     while RUNNING.load(Ordering::SeqCst) {
         if let Ok(packet) = cap.next_packet() {
             let pktdata = packet.data.to_vec();
-            _ = packet_sender.send(remove_headers(pktdata));
+            _ = packet_sender.send(remove_headers(pktdata, cap.get_datalink().eq(&pcap::Linktype::ETHERNET)));
         }
     }
 
@@ -51,20 +50,11 @@ pub fn run(){
 }
 
 
-fn remove_headers(data: Vec<u8>)->(Vec<u8>, u16){
-    let len = u16::from_be_bytes([data[24], data[25]]);
-    if len != (data.len()+20) as u16{
-        // well, this means we have a ethernet header here?
-        // is 14 bytes long, so we can just remove that
-        let data = &data[14..];
-        let source_port = u16::from_be_bytes([data[20], data[21]]);
-
-
-        // //remove ipv4 header and udp header
-        let data = &data[20+8..];
-        return (Vec::from(data), source_port);
+fn remove_headers(mut data: Vec<u8>, is_ether: bool)->(Vec<u8>, u16){
+    // todo: maybe investigate if cloning the data is necessary
+    if is_ether {
+        data = (&data[14..]).to_vec();
     }
-
 
     let source_port = u16::from_be_bytes([data[20], data[21]]);
 

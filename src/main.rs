@@ -31,14 +31,14 @@ fn main() {
     })
     .expect("Error setting Ctrl-C handler");
 
-    let start = std::time::Instant::now();
-    let protos = crate::packet_processor::load_dyn_protos();
-    let end = std::time::Instant::now();
-    println!("loaded {} protos in {:?}", protos.len(),end - start);
+    // let start = std::time::Instant::now();
+    // let protos = crate::packet_processor::load_dyn_protos();
+    // let end = std::time::Instant::now();
+    // println!("loaded {} protos in {:?}", protos.len(),end - start);
 
-    // let sniffing = std::thread::spawn(sniffer::run);
+    let sniffing = std::thread::spawn(sniffer::run);
 
-    // _ = sniffing.join();
+    _ = sniffing.join();
     println!("closing...")
 }
 

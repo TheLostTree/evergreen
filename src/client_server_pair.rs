@@ -54,11 +54,11 @@ pub fn processing_thread(reciever: Receiver<(Vec<u8>, u16)>){
                 }
         }
             Err(_) => {
-                // println!("sender closed...");
-                if pair.is_some(){
-                    //again, not sure if i have to explicitly do this
-                    //drop(json_sender) prob not, its been moved
-                }
+                println!("pcap sender closed...");
+                // if pair.is_some(){
+                //     //again, not sure if i have to explicitly do this
+                //     //drop(json_sender) prob not, its been moved
+                // }
                 break;
             },
         }
@@ -181,6 +181,7 @@ impl ClientServerPair{
             } else{
                 println!("attempting to bf!");
                 //bruteforce session key!
+                //also theres definitely a better way to do this than the 3 nested if let Some's
                 if let Some(sent_time) = self.tokenrspsendtime{
                     if let Some(server_seed) = self.tokenrspserverseed{
                         if let Some(seed) = bruteforce(sent_time, server_seed, data){
@@ -196,7 +197,7 @@ impl ClientServerPair{
                 }
 
                 if let None = self.session_key{
-                    //crying screaming 
+                    // crying screaming 
                     // println!("im rlly sad rn bc bruteforce failed");
                     return;
                 }

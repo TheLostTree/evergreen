@@ -1,6 +1,6 @@
 // this code is intended to use the data from parsed packets to calculate dps or whatnot
 use std::{collections::HashMap, str::FromStr, thread::JoinHandle};
-use protobuf::{MessageDyn, descriptor::FileDescriptorProto, plugin::code_generator_response::File, reflect::FileDescriptor};
+use protobuf::{MessageDyn, reflect::FileDescriptor};
 use protobuf_json_mapping::{print_to_string_with_options, PrintOptions};
 use protobuf_parse::Parser;
 
@@ -39,8 +39,8 @@ pub fn load_dyn_protos()->HashMap<CmdIds, FileDescriptor>{
 impl PacketProcessor{
     pub fn new() -> Self{
         let mut handlers: HashMap<CmdIds, Handler> = HashMap::new();
-        handlers.insert(SceneEntityAppearNotify, Self::scene_entity_appear);
-        handlers.insert(GetPlayerTokenReq, Self::get_player_token);
+        // handlers.insert(SceneEntityAppearNotify, Self::scene_entity_appear);
+        // handlers.insert(GetPlayerTokenReq, Self::get_player_token);
         Self{
             handlers,
             ws: IDKMan::new(),
@@ -58,28 +58,28 @@ impl PacketProcessor{
             Some(handler) => {
                 let msg = handler(self, bytes);
                 if let Some(message) = msg{
-                    self.sendProtobuf(message.as_ref())
+                    self.send_protobuf(message.as_ref())
                 }
             },
             None => {
                 if let Some(x) = &self.descriptors{
                     let msg = x.get(&cmdid).unwrap().message_by_full_name(&format!("{}",cmdid)).unwrap();
                     if let Ok(b) = msg.parse_from_bytes(bytes){
-                        self.sendProtobuf(b.as_ref());
+                        self.send_protobuf(b.as_ref());
                     }
                 } else{
                     // oh god....
                     self.descriptors = Some(self.descriptor_load.take().map(|f|JoinHandle::join(f)).unwrap().unwrap());
                     let msg = self.descriptors.as_ref().expect("hurr durr").get(&cmdid).unwrap().message_by_full_name(&format!("{}",cmdid)).unwrap();
                     if let Ok(b) = msg.parse_from_bytes(bytes){
-                        self.sendProtobuf(b.as_ref());
+                        self.send_protobuf(b.as_ref());
                     }
                 }
             },
         };
     }
 
-    fn sendProtobuf(&self, message: &dyn MessageDyn){
+    fn send_protobuf(&self, message: &dyn MessageDyn){
         let print_options = PrintOptions{
             always_output_default_values : true,
             ..PrintOptions::default()
