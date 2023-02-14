@@ -59,6 +59,49 @@ fn generate_cmdid_file<P: AsRef<Path>>(path: P){
     contents.push_str("\t}\n");
     contents.push_str("}\n");
 
+    contents.push_str("
+#[derive(Debug, PartialEq, Eq)]
+pub struct ParseCmdErr;
+impl std::str::FromStr for CmdIds{
+    ");
+    contents.push_str("
+type Err = ParseCmdErr;
+fn from_str(s:&str) -> Result<Self, Self::Err> {
+
+");
+    contents.push_str("\tmatch s {\n");
+    lines.clone().for_each(|line|{
+        let mut split = line.split(",");
+        let name = split.next().unwrap();
+        // let cmdid = split.next().unwrap();
+        contents.push_str(&format!("\t\t\t\"{}\" => Ok(CmdIds::{}),\n", name, name));
+    });
+    contents.push_str("\t\t\t_ => Err(ParseCmdErr),\n");
+    contents.push_str("\t\t}\n");
+    contents.push_str("\t}\n");
+    contents.push_str("}\n");
+
+    contents.push_str("
+use std::fmt;
+impl std::fmt::Display for CmdIds{
+    ");
+    contents.push_str("
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result  {
+
+");
+    contents.push_str("\tmatch self {\n");
+    lines.clone().for_each(|line|{
+        let mut split = line.split(",");
+        let name = split.next().unwrap();
+        // let cmdid = split.next().unwrap();
+        contents.push_str(&format!("\t\t\tCmdIds::{} => write!(f, \"{}\"),\n", name, name));
+    });
+    contents.push_str("\t\t\t_ => Err(std::fmt::Error),\n");
+    contents.push_str("\t\t}\n");
+    contents.push_str("\t}\n");
+    contents.push_str("}\n");
+
+
     generate_file(&path, contents.as_bytes());
 
     

@@ -282,6 +282,7 @@ impl ClientServerPair{
             },
             _ => {}
         };
+        self.packet_processor.process(CmdIds::from_u16(p.cmdid).unwrap(), &p.data)
         // up
     }
 }

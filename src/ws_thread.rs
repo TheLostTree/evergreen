@@ -3,26 +3,27 @@ use std::{sync::mpsc::Receiver, str::FromStr, thread::JoinHandle, any::Any};
 use serde::{Serialize, Deserialize};
 use ws::{Sender, Handler};
 
-struct WSHandle1{
+pub struct IDKMan{
     join_handle:Option<JoinHandle<()>>,
-    sender: std::sync::mpsc::Sender<String>
+    pub sender: Option<std::sync::mpsc::Sender<String>>
 }
-impl WSHandle1{
-    fn new()->Self{
+impl IDKMan{
+    pub fn new()->Self{
         let (json_sender, ws_receiver) = std::sync::mpsc::channel();
         let ws = std::thread::spawn(move ||{
             crate::ws_thread::run(ws_receiver);
         });
 
-        WSHandle1{
-            sender: json_sender,
+        IDKMan{
+            sender: Some(json_sender),
             join_handle:Some(ws)
         }
         // _ = ws.join();
     }
 
-    fn join(&mut self)->Option<Result<(), Box<dyn Any + Send>>>{
+    pub fn join(&mut self)->Option<Result<(), Box<dyn Any + Send>>>{
         //this is kinda smart https://stackoverflow.com/questions/57670145/how-to-store-joinhandle-of-a-thread-to-close-it-later
+        self.sender.take().map(|x|drop(x));
         self.join_handle.take().map(JoinHandle::join)
     }
 }
@@ -36,11 +37,11 @@ pub fn run(reciever: Receiver<String>){
     let handle = WSHandle::new();
     loop{
         if let Ok(msg) = reciever.recv(){
-            println!("Received: {}", msg);
+            // println!("Received: {}", msg);
             handle.broadcast.send(msg).unwrap();
         }else{
             //error
-
+            break;
         }
     }
 }
@@ -61,12 +62,16 @@ struct PacketNotify{
     data: Vec::<IridiumPacket>
 }
 
+
 #[derive(Serialize, Deserialize)]
 struct IridiumPacket{
     cmd: WSCmd,
     data: String
 }
-
+#[derive(Serialize, Deserialize)]
+struct Retcode{
+    retcode:i32
+}
 
 struct WSMessageHandler{
     out: Sender,
@@ -79,7 +84,7 @@ impl Handler for WSMessageHandler{
             WSCmd::ConnectReq=>{
                 self.out.send(serde_json::to_string(&IridiumPacket{
                     cmd: WSCmd::ConnectRsp,
-                    data: "lol".to_string()
+                    data: "{\"retcode\":0}".to_string()
                 }).unwrap()).unwrap();
             },
             _=>{}
