@@ -6,8 +6,9 @@ mod mtkey;
 mod packet_processor;
 mod ws_thread;
 
+
 use ctrlc;
-use std::sync::atomic::{AtomicBool, Ordering};
+use std::{sync::atomic::{AtomicBool, Ordering}};
 
 pub static RUNNING: AtomicBool = AtomicBool::new(true);
 
@@ -17,9 +18,9 @@ mod protos {
 mod cmdids{
     include!(concat!(env!("OUT_DIR"), "/cmdids_target/cmdids.rs"));
 }
-mod proto_decode{
-    include!(concat!(env!("OUT_DIR"), "/proto_decode.rs"));
-}
+// mod proto_decode{
+//     include!(concat!(env!("OUT_DIR"), "/proto_decode.rs"));
+// }
 
 
 
@@ -30,16 +31,14 @@ fn main() {
     })
     .expect("Error setting Ctrl-C handler");
 
-    // println!("{:?}",protos::GetPlayerTokenReq::file_descriptor());
-    // testparse();
+    let start = std::time::Instant::now();
+    let protos = crate::packet_processor::load_dyn_protos();
+    let end = std::time::Instant::now();
+    println!("loaded {} protos in {:?}", protos.len(),end - start);
 
-    // testbf();
+    // let sniffing = std::thread::spawn(sniffer::run);
 
-    let sniffing = std::thread::spawn(sniffer::run);
-
-    _ = sniffing.join();
-    // mtkey::get_dispatch_keys();
-    // key_bruteforce::bruteforce(1658814410247, 4502709363913224634, &[0x0b, 0xb9]);
+    // _ = sniffing.join();
     println!("closing...")
 }
 

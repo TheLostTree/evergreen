@@ -26,8 +26,12 @@ fn main(){
 
 
 fn generate_cmdid_file<P: AsRef<Path>>(path: P){
+
+    //yes i know this is a mess
+    
     let mut contents = String::new();
     // contents.push_str("pub mod cmdids {\n");
+    contents.push_str("#[allow(non_camel_case_types)]\n");
     contents.push_str("#[derive(Debug,Hash,Eq,PartialEq)]\n");
     contents.push_str("pub enum CmdIds {\n");
     let binding = std::fs::read_to_string("./CmdIds.csv").expect("place ur cmdids pls");
@@ -57,7 +61,8 @@ fn generate_cmdid_file<P: AsRef<Path>>(path: P){
 
     generate_file(&path, contents.as_bytes());
 
-    generate_proto_decodes(lines)
+    
+    // generate_proto_decodes(lines)
 }
 
 fn generate_protobufs(){
@@ -83,6 +88,7 @@ fn generate_protobufs(){
 }
 
 
+#[allow(dead_code)]
 fn generate_proto_decodes(cmds: Lines){
     let mut contents = String::new();
     contents.push_str("use crate::protos::*;\n");
@@ -114,17 +120,6 @@ fn generate_proto_decodes(cmds: Lines){
         // let cmdid = split.next().unwrap();
         //check to make sure it has a corresponding .proto file
         if fs::metadata(dir.join(&format!("{}.proto", name))).is_err(){
-            //convert the data to hex and thats it
-            continue;
-            contents.push_str(&format!("
-        CmdIds::{}=>{{
-            let mut contents = String::new();
-            for byte in &mut *p.data{{
-                contents.push_str(&format!(\"{{:02x}}\", byte));
-            }}
-            return contents;
-        }}
-            ", name));  
             continue;
         }
 
@@ -154,9 +149,6 @@ fn generate_proto_decodes(cmds: Lines){
 
     let gen_dir = Path::new(&dir).join("./proto_decode.rs");
     generate_file(gen_dir, contents.as_bytes());
-
-
-    
 
 }
 

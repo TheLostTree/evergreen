@@ -61,7 +61,7 @@ impl Random {
     }
 
     pub fn with_seed(seed: i32) -> Random {
-        let mut ii = 0;
+        let mut ii ;
         let mut rand = Random::default();
 
         let subtraction = if seed == i32::MIN {
@@ -84,7 +84,7 @@ impl Random {
             mj = rand.seed_array[ii]
         }
 
-        for k in 1..5 {
+        for _ in 1..5 {
             for i in 1..56 {
                 rand.seed_array[i] = rand.seed_array[i].wrapping_sub(rand.seed_array[1 + (i + 30) % 55]);
                 if rand.seed_array[i] < 0 {

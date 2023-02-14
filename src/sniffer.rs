@@ -1,4 +1,4 @@
-use crate::{RUNNING, client_server_pair, ws_thread};
+use crate::{RUNNING, client_server_pair};
 use pcap::{Capture, Device};
 use std::io::{stdin, stdout, Write};
 use std::sync::atomic::Ordering;
@@ -52,13 +52,22 @@ pub fn run(){
 
 
 fn remove_headers(data: Vec<u8>)->(Vec<u8>, u16){
-    // let source_addr = u32::from_be_bytes([data[12], data[13], data[14], data[15]]);
+    let len = u16::from_be_bytes([data[24], data[25]]);
+    if len != (data.len()+20) as u16{
+        // well, this means we have a ethernet header here?
+        // is 14 bytes long, so we can just remove that
+        let data = &data[14..];
+        let source_port = u16::from_be_bytes([data[20], data[21]]);
 
-    //remove ethernet header
-    // if using a vpn, ignore this lol
-    // let data = &data[14..];
-    //beginning of udp header
+
+        // //remove ipv4 header and udp header
+        let data = &data[20+8..];
+        return (Vec::from(data), source_port);
+    }
+
+
     let source_port = u16::from_be_bytes([data[20], data[21]]);
+
 
     // //remove ipv4 header and udp header
     let data = &data[20+8..];

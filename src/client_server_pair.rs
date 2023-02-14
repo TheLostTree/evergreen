@@ -2,14 +2,12 @@ use protobuf::Message;
 use rsa::pkcs1::DecodeRsaPrivateKey;
 
 use crate::cmdids::CmdIds;
+use crate::packet_processor::PacketProcessor;
 use crate::protos::{PacketHead, GetPlayerTokenRsp};
 use crate::random_cs::bruteforce;
-use crate::{proto_decode};
 use crate::mtkey::{MTKey, get_dispatch_keys};
-use std::any::Any;
-use std::sync::mpsc::{Receiver, Sender};
+use std::sync::mpsc::{Receiver};
 use std::io::{Write, self};
-use std::thread::JoinHandle;
 
 
 pub fn processing_thread(reciever: Receiver<(Vec<u8>, u16)>){
@@ -81,7 +79,10 @@ pub struct ClientServerPair{
 
     rsa_key: rsa::RsaPrivateKey,
 
-    count: i32,
+    packet_processor: PacketProcessor,
+
+
+
 
 }
 
@@ -92,6 +93,7 @@ pub struct Packet{
     is_client: bool,
     pub header: Vec<u8>,
     pub data: Vec<u8>,
+
 }
 
 impl Packet{
@@ -111,7 +113,7 @@ impl ClientServerPair{
             tokenrspsendtime: None,
             tokenrspserverseed: None,
             rsa_key: rsakey,
-            count: 0,
+            packet_processor: PacketProcessor::new(),
         };
         p.client.set_nodelay(true, 10, 2, false);
         p.client.set_wndsize(128, 128);
@@ -125,7 +127,6 @@ impl ClientServerPair{
 
         p
     }
-
     
     fn decode_base64_rsa(&self, data: String)->Vec<u8>{
         let d = base64::decode(data).unwrap();
@@ -134,7 +135,6 @@ impl ClientServerPair{
         let res = self.rsa_key.decrypt(rsa::Pkcs1v15Encrypt, &d);
         res.unwrap()
     }
-
 
     fn recv_kcp(&mut self, is_client: bool){
         let kcp = if is_client{
@@ -169,14 +169,6 @@ impl ClientServerPair{
     }
 
     fn decrypt_packet(&mut self, data: &mut Vec<u8>, is_client: bool){
-        //probably xor.
-        self.count += 1;
-        // let mut contents = String::new();
-        // for byte in &mut *data{
-        //     contents.push_str(&format!("{:02x}", byte))
-        // }
-
-        // println!("packet count {} from client: {} , {}", self.count, is_client, contents);
         if let Some(session_key) = &self.session_key{
             session_key.xor(data);
 
@@ -256,11 +248,11 @@ impl ClientServerPair{
         // send data to ws etc
     }
 
-    fn handle_parsed_packet(&mut self, p: &mut Packet)-> Option<String>{
+    fn handle_parsed_packet(&mut self, p: &mut Packet){
         let cmd = CmdIds::from_u16(p.cmdid);
         if let None = cmd{
             println!("unknown cmdid: {}", p.cmdid);
-            return None;
+            return;
         }
 
         let cmd = cmd.unwrap();
@@ -268,7 +260,8 @@ impl ClientServerPair{
         
         let packethead = if p.header.len() > 0 {PacketHead::PacketHead::parse_from_bytes(&p.header).ok()}else{None};
         
-        let data: Option<String> = match cmd{   
+        //this really is the only one that matters for the packet parsing
+        _ = match cmd{   
             CmdIds::GetPlayerTokenRsp=>{
                 if let Some(x) = packethead{
                     self.tokenrspsendtime = Some(x.sent_ms);
@@ -281,70 +274,15 @@ impl ClientServerPair{
                     //v.serverRandKey
                     let x = self.decode_base64_rsa(v.serverRandKey.clone());
                     self.tokenrspserverseed = Some(u64::from_be_bytes([x[0], x[1], x[2], x[3], x[4], x[5], x[6], x[7]]));
-                    // lol!
-                    let options = protobuf_json_mapping::PrintOptions{
-                        enum_values_int :false,
-                        proto_field_name: false,
-                        always_output_default_values: true,
-                        _future_options: (),
-                    };
-                    Some(protobuf_json_mapping::print_to_string_with_options(&v,&options).unwrap())
+                    // Some(protobuf_json_mapping::print_to_string_with_options(&v,&options).unwrap())
                 }else{
-                    None
+                    // None
                 }
 
             },
-            CmdIds::UnionCmdNotify=>{
-                let x = crate::protos::UnionCmdNotify::UnionCmdNotify::parse_from_bytes(p.data.as_slice());
-                if let Some(v) = x.ok(){
-                    for unioncmd in v.cmdList{
-                        let op = self.handle_parsed_packet(&mut Packet{
-                            cmdid: unioncmd.messageId as u16,
-                            header_size: 0,
-                            data_size: unioncmd.body.len() as u32,
-                            is_client: true,
-                            header: vec![],
-                            data: unioncmd.body,
-                        });
-                    }
-                }
-                Some(String::new())
-            },
-            _ =>{
-                proto_decode::default_decode_proto(p, cmd)
-            },
+            _ => {}
         };
-
-        if data.is_some(){
-            println!("{}", data.clone().unwrap())
-        }
-
-        data
         // up
-    }
-}
-
-struct WSHandle{
-    join_handle:Option<JoinHandle<()>>,
-    sender: Sender<String>
-}
-impl WSHandle{
-    fn new()->Self{
-        let (json_sender, ws_receiver) = std::sync::mpsc::channel();
-        let ws = std::thread::spawn(move ||{
-            crate::ws_thread::run(ws_receiver);
-        });
-
-        WSHandle{
-            sender: json_sender,
-            join_handle:Some(ws)
-        }
-        // _ = ws.join();
-    }
-
-    fn join(&mut self)->Option<Result<(), Box<dyn Any + Send>>>{
-        //this is kinda smart https://stackoverflow.com/questions/57670145/how-to-store-joinhandle-of-a-thread-to-close-it-later
-        self.join_handle.take().map(JoinHandle::join)
     }
 }
 
