@@ -4,7 +4,7 @@ use protobuf::{MessageDyn, reflect::FileDescriptor};
 use protobuf_json_mapping::{print_to_string_with_options, PrintOptions};
 use protobuf_parse::Parser;
 
-use crate::{cmdids::CmdIds::{*, self}, ws_thread::IDKMan};
+use crate::{cmdids::CmdIds::{self}, ws_thread::IDKMan};
 
 pub struct PacketProcessor{
     handlers: HashMap<CmdIds, Handler>,
@@ -39,7 +39,7 @@ pub fn load_dyn_protos()->HashMap<CmdIds, FileDescriptor>{
 #[allow(unused_variables)]
 impl PacketProcessor{
     pub fn new() -> Self{
-        let mut handlers: HashMap<CmdIds, Handler> = HashMap::new();
+        let handlers: HashMap<CmdIds, Handler> = HashMap::new();
         // handlers.insert(SceneEntityAppearNotify, Self::scene_entity_appear);
         // handlers.insert(GetPlayerTokenReq, Self::get_player_token);
         Self{
@@ -54,12 +54,12 @@ impl PacketProcessor{
 
     
 
-    pub fn process(&mut self, cmdid: CmdIds, bytes: &[u8], isServer: bool){
+    pub fn process(&mut self, cmdid: CmdIds, bytes: &[u8], is_server: bool){
         match self.handlers.get(&cmdid){
             Some(handler) => {
                 let msg = handler(self, bytes);
                 if let Some(message) = msg{
-                    self.send_protobuf(message.as_ref(), cmdid, isServer);
+                    self.send_protobuf(message.as_ref(), cmdid, is_server);
                 }
             },
             None => {
@@ -69,7 +69,7 @@ impl PacketProcessor{
                     match fdesc.message_by_package_relative_name(&cmdid.to_string()){
                         Some(msg) => {
                             if let Ok(b) = msg.parse_from_bytes(bytes){
-                                self.send_protobuf(b.as_ref(), cmdid, isServer);
+                                self.send_protobuf(b.as_ref(), cmdid, is_server);
                             };
                         },
                         None => {
@@ -94,7 +94,7 @@ impl PacketProcessor{
                         match fdesc.message_by_package_relative_name(&cmdid.to_string()){
                             Some(msg) => {
                                 if let Ok(b) = msg.parse_from_bytes(bytes){
-                                    self.send_protobuf(b.as_ref(), cmdid, isServer);
+                                    self.send_protobuf(b.as_ref(), cmdid, is_server);
                                 };
                             },
                             None => {
@@ -110,7 +110,7 @@ impl PacketProcessor{
         };
     }
 
-    fn send_protobuf(&self, message: &dyn MessageDyn, cmdid: CmdIds, isServer: bool){
+    fn send_protobuf(&self, message: &dyn MessageDyn, cmdid: CmdIds, is_server: bool){
         let print_options = PrintOptions{
             always_output_default_values : true,
             ..PrintOptions::default()
@@ -134,7 +134,7 @@ impl PacketProcessor{
     "packet": """#);
                 str.push_str(r#",
     "source": "#);
-                str.push_str(&format!("{}", if isServer{0}else{1}));
+                str.push_str(&format!("{}", if is_server{0}else{1}));
                 str.push_str("  }]
 }");
 

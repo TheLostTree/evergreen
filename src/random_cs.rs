@@ -1,31 +1,60 @@
+use std::sync::Mutex;
 
+use lazy_static::lazy_static;
+lazy_static!{
+    static ref PREVIOUS_SEEDS : Mutex<Vec<i64>>= Mutex::new(Vec::<i64>::new());
+}
+
+fn guess(test_buf: &[u8], ts:i64, server_seed: u64, depth:i32)->Option<u64>{
+    let key_prefix = [test_buf[0]^0x45, test_buf[1]^0x67];
+    let key_suffix = [test_buf[test_buf.len()-2]^0x89, test_buf[test_buf.len()-1]^0xAB];
+
+    //ts = sent_time as i64 + offset
+    let rand_seed :i32 = (ts) as i32;
+    let mut rand = Random::with_seed(rand_seed);
+
+    for _ in 0..depth{
+        let client_seed = rand.next_safe_uint64();
+        let seed = client_seed ^ server_seed;
+        let key = crate::mtkey::MTKey::from_seed(seed);
+
+        let is_valid_prefix = key.keybuf[0] == key_prefix[0] && key.keybuf[1] == key_prefix[1];
+        let is_valid_suffix = key.keybuf[(test_buf.len()-2) % key.keybuf.len()] == key_suffix[0] && key.keybuf[(test_buf.len()-1) % key.keybuf.len()] == key_suffix[1];
+        //
+
+        if is_valid_prefix && is_valid_suffix{
+            // found it!
+            return Some(seed)
+        }
+
+    }
+
+    None
+
+
+} 
 //todo: do the guess/ prevkey thing to prevent this from only working once per game launch
 pub fn bruteforce(sent_time: u64, server_seed: u64, bytes: &[u8])->Option<u64>{
-    println!("Sent time: {}", sent_time);
-    println!("Server seed: {}", server_seed);
-    let key_prefix = [bytes[0]^0x45, bytes[1]^0x67];
-
-    println!("Key prefix: {:?}", key_prefix);
-
-    let bf_bounds = 1000;
-    for i in 0..bf_bounds{
-        let offset = if i % 2 == 0 {i / 2}else{-(i as i64 - 1) / 2}; 
-        // println!("Trying offset: {}", offset);
-
-        //:vomit:
-        let rand_seed :i32 = (sent_time as i64 + offset) as i32;
-        let mut rand = Random::with_seed(rand_seed);
-        let client_seed = rand.next_safe_uint64();
-
-        let seed = client_seed ^ server_seed;
-
-        //todo: partial key generation? might be faster
-        let key = crate::mtkey::MTKey::from_seed(seed);
-        if key.keybuf[0] == key_prefix[0] && key.keybuf[1] == key_prefix[1]{
-            println!("Found key with seed: {} with offset {}", seed, offset);
-            return Some(seed);
+   
+    for oldseed in PREVIOUS_SEEDS.lock().unwrap().iter(){
+        if let Some(key) = guess(bytes, oldseed.clone(), server_seed, 1000){
+            println!("found from old seeds!");
+            return Some(key)
         }
     }
+
+    for i in 0..3000{
+        let offset = if i % 2 == 0 {i / 2}else{-(i as i64 - 1) / 2}; 
+        let ts = sent_time as i64 + offset;
+
+        if let Some(key) = guess(bytes, ts, server_seed, 1000){
+            PREVIOUS_SEEDS.lock().unwrap().push(ts); //save static random seed
+            return Some(key)
+        }
+    }
+    // sad!
+    println!("unfortunate...");
+
     None
 
 }
@@ -130,3 +159,40 @@ impl Random {
         (self.next_double() * (u64::MAX as f64)) as u64
     }
 }
+
+
+// orig
+
+/*
+
+pub fn bruteforce(sent_time: u64, server_seed: u64, bytes: &[u8])->Option<u64>{
+    println!("Sent time: {}", sent_time);
+    println!("Server seed: {}", server_seed);
+    let key_prefix = [bytes[0]^0x45, bytes[1]^0x67];
+
+    println!("Key prefix: {:?}", key_prefix);
+
+    let bf_bounds = 1000;
+    for i in 0..bf_bounds{
+        let offset = if i % 2 == 0 {i / 2}else{-(i as i64 - 1) / 2}; 
+        // println!("Trying offset: {}", offset);
+
+        //:vomit:
+        let rand_seed :i32 = (sent_time as i64 + offset) as i32;
+        let mut rand = Random::with_seed(rand_seed);
+        let client_seed = rand.next_safe_uint64();
+
+        let seed = client_seed ^ server_seed;
+
+        //todo: partial key generation? might be faster
+        let key = crate::mtkey::MTKey::from_seed(seed);
+        if key.keybuf[0] == key_prefix[0] && key.keybuf[1] == key_prefix[1]{
+            println!("Found key with seed: {} with offset {}", seed, offset);
+            return Some(seed);
+        }
+    }
+    None
+
+}
+
+*/

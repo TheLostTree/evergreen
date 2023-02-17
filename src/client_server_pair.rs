@@ -50,6 +50,7 @@ pub fn processing_thread(reciever: Receiver<(Vec<u8>, u16)>, processor: Rc<RefCe
                             },
                             _ => {
                                 //unknown?
+                                println!("unknown magic: {:x?}", magic)
                             }
                         }
                     }

@@ -1,4 +1,4 @@
-use std::{sync::mpsc::Receiver, str::FromStr, thread::JoinHandle, any::Any};
+use std::{sync::mpsc::Receiver, thread::JoinHandle, any::Any};
 
 use serde::{Serialize, Deserialize};
 use ws::{Sender, Handler};

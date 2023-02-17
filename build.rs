@@ -96,7 +96,7 @@ impl std::fmt::Display for CmdIds{
         // let cmdid = split.next().unwrap();
         contents.push_str(&format!("\t\t\tCmdIds::{} => write!(f, \"{}\"),\n", name, name));
     });
-    contents.push_str("\t\t\t_ => Err(std::fmt::Error),\n");
+    // contents.push_str("\t\t\t_ => Err(std::fmt::Error),\n");
     contents.push_str("\t\t}\n");
     contents.push_str("\t}\n");
     contents.push_str("}\n");
