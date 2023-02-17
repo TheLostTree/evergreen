@@ -49,6 +49,14 @@ pub fn processing_thread(reciever: Receiver<(Vec<u8>, u16)>, processor: Rc<RefCe
                         }
                     }
                 }
+                if let Some(pair) = &mut pair{
+                    pair.add_data(&data, is_client);
+                    pair.recv_kcp(true);
+                    pair.recv_kcp(false);
+                    
+                }else{
+                    
+                }
         }
             Err(_) => {
                 println!("pcap sender closed...");
