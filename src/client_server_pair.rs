@@ -21,39 +21,31 @@ pub fn processing_thread(reciever: Receiver<(Vec<u8>, u16)>, processor: Rc<RefCe
                 // println!("got data! {}", data.len());
                 //handle data
                 let is_client = port != 22101 && port != 22102;
-
-                if let Some(pair) = &mut pair{
-                    pair.add_data(&data, is_client);
-                    pair.recv_kcp(true);
-                    pair.recv_kcp(false);
+                if data.len() == 20{
+                    let magic = u32::from_be_bytes([data[0], data[1], data[2], data[3]]);
                     
-                }else{
-                    if data.len() == 20{
-                        let magic = u32::from_be_bytes([data[0], data[1], data[2], data[3]]);
-                        
-                        match magic{
-                            0x00000145 => {
-                                //server sends connect
-                                let conv = u32::from_be_bytes([data[4], data[5], data[6], data[7]]);
-                                let token = u32::from_be_bytes([data[8], data[9], data[10], data[11]]);
-                                pair = Some(ClientServerPair::new(conv, token, processor.clone()));
-                                // println!("omg handshake")
-                                
-                            },
-                            0x00000194 =>{
-                                //disconnect lol 
-                                //todo: handle
-                                println!("{} disconnected", if is_client {"CLIENT"} else{"SERVER"});
+                    match magic{
+                        0x00000145 => {
+                            //server sends connect
+                            let conv = u32::from_be_bytes([data[4], data[5], data[6], data[7]]);
+                            let token = u32::from_be_bytes([data[8], data[9], data[10], data[11]]);
+                            pair = Some(ClientServerPair::new(conv, token, processor.clone()));
+                            // println!("omg handshake")
+                            
+                        },
+                        0x00000194 =>{
+                            //disconnect lol 
+                            //todo: handle
+                            println!("{} disconnected", if is_client {"CLIENT"} else{"SERVER"});
 
-                                if pair.is_some(){
-                                    println!("this should print...");
-                                    pair = None;
-                                }
-                            },
-                            _ => {
-                                //unknown?
-                                println!("unknown magic: {:x?}", magic)
+                            if pair.is_some(){
+                                println!("this should print...");
+                                pair = None;
                             }
+                        },
+                        _ => {
+                            //unknown?
+                            println!("unknown magic: {:x?}", magic)
                         }
                     }
                 }
@@ -172,6 +164,12 @@ impl ClientServerPair{
     fn decrypt_packet(&mut self, data: &mut Vec<u8>, is_client: bool){
         if let Some(session_key) = &self.session_key{
             session_key.xor(data);
+
+            if !Self::is_valid(data){
+                //invalidate session key
+                self.session_key = None;
+                println!("invalidated session key");
+            }
 
         } else if let Some(dispatch_key) = &self.dispatch_key{
             //test dispatch key xor
