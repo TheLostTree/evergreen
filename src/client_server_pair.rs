@@ -43,8 +43,10 @@ pub fn processing_thread(reciever: Receiver<(Vec<u8>, u16)>, processor: Rc<RefCe
                             0x00000194 =>{
                                 //disconnect lol 
                                 //todo: handle
+                                println!("{} disconnected", if is_client {"CLIENT"} else{"SERVER"});
+
                                 if pair.is_some(){
-                                    println!("{} disconnected", if is_client {"CLIENT"} else{"SERVER"});
+                                    println!("this should print...");
                                     pair = None;
                                 }
                             },
