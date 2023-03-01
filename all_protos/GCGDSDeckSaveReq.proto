@@ -1,19 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GCGDSDeckSaveReq
+// CmdId: 7597
 message GCGDSDeckSaveReq {
-	enum IOLDDAGKLEA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 7769;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	bool isValid = 7;
-	string createTime = 1;
-	uint32 rewardIndex = 5;
+    repeated uint32 character_card_list = 2;
+    string name = 3;
+    uint32 deck_id = 1;
+    repeated uint32 card_list = 5;
 }
+

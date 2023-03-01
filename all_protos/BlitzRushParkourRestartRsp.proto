@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: PGPBECEADJH
+// CmdId: 8538
 message BlitzRushParkourRestartRsp {
-	enum PBBJICEIPJD {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8502;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 scheduleId = 2;
-	uint32 groupId = 15;
-	int32 retcode = 3;
+    int32 retcode = 12;
+    uint32 schedule_id = 2;
+    uint32 group_id = 10;
 }
+

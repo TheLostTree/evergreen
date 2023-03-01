@@ -1,33 +1,28 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "RogueCellInfo.proto";
 import "RoguelikeRuneRecord.proto";
 
+// Name: NEEILMNDONI
+// CmdId: 8557
 message EnterRoguelikeDungeonNotify {
-	enum NNLLNKHBFEH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8098;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated uint64 onstageAvatarGuidList = 11;
-	map<uint32, RogueCellInfo> cellInfoMap = 14;
-	uint32 dungeonId = 2;
-	uint32 Unk3300_PKDLOJADIPA = 15;
-	uint32 Unk3300_KLFDKOCGAHN = 917;
-	uint32 Unk3300_DBDABNIINEL = 3;
-	float bonusResourceProp = 1;
-	uint32 reviseMonsterLevel = 1665;
-	uint32 stageId = 8;
-	repeated uint32 exploredCellList = 5;
-	repeated uint64 backstageAvatarGuidList = 7;
-	uint32 curLevel = 12;
-	bool Unk3300_GBHHLEDAGAM = 6;
-	repeated RoguelikeRuneRecord runeRecordList = 4;
-	uint32 Unk3300_IIIJDDNJEBB = 13;
-	bool Unk3300_PKPOKOAAOKF = 379;
+    uint32 BJADJOIPEEH = 9;
+    uint32 DBFLAKMGLDO = 2;
+    uint32 stage_id = 15;
+    bool OPDPNOMPABB = 201;
+    map<uint32, RogueCellInfo> cell_info_map = 7;
+    repeated uint32 explored_cell_list = 10;
+    uint32 JPMLEINIMHA = 13;
+    bool MFEEKOFIEDM = 6;
+    repeated RoguelikeRuneRecord rune_record_list = 11;
+    uint32 dungeon_id = 4;
+    uint32 PJNELCLHMOH = 14;
+    uint32 NAFIKKJDDDN = 275;
+    repeated uint64 onstage_avatar_guid_list = 12;
+    float bonus_resource_prop = 8;
+    uint32 HHGNHDDJHLA = 1502;
+    repeated uint64 backstage_avatar_guid_list = 5;
 }
+

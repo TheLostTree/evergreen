@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "AvatarTeamResonanceInfo.proto";
 
+// Name: CPNPPLHLMCP
+// CmdId: 1066
 message TeamResonanceChangeNotify {
-	enum KOMHHDNJJIH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1006;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated AvatarTeamResonanceInfo infoList = 3;
+    repeated AvatarTeamResonanceInfo info_list = 15;
 }
+

@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: NACABFGKHCO
+// CmdId: 171
 message PlayerTimeNotify {
-	enum GABKEMDLGGF {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 103;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint64 playerTime = 13;
-	uint64 serverTime = 15;
-	bool isPaused = 7;
+    bool is_paused = 6;
+    uint64 server_time = 8;
+    uint64 player_time = 10;
 }
+

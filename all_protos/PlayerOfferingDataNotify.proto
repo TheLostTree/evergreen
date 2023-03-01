@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "PlayerOfferingData.proto";
 
+// Name: PCJOJLBIOGF
+// CmdId: 2925
 message PlayerOfferingDataNotify {
-	enum OPEPKCGEOBI {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2915;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated PlayerOfferingData offeringDataList = 8;
+    repeated PlayerOfferingData offering_data_list = 9;
 }
+

@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "PlayerHomeCompInfo.proto";
 
+// Name: FAFABIGFAMI
+// CmdId: 4886
 message PlayerHomeCompInfoNotify {
-	enum KECOKOCMONG {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4844;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	PlayerHomeCompInfo compInfo = 5;
+    PlayerHomeCompInfo comp_info = 14;
 }
+

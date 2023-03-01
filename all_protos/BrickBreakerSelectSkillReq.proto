@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: KFOLCACFGJM
+// CmdId: 5362
 message BrickBreakerSelectSkillReq {
-	enum JHOENKPNEGJ {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5319;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	repeated uint32 skillId = 15;
+    repeated uint32 skill_id = 9;
 }
+

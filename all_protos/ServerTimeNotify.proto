@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: OJGHKIIHLIG
+// CmdId: 50
 message ServerTimeNotify {
-	enum ODMLPFBCGNH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 14;
-		DCDNILFDFLB = 1;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint64 serverTime = 12;
+    uint64 server_time = 8;
 }
+

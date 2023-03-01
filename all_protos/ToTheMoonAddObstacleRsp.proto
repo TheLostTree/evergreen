@@ -1,19 +1,14 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "DynamicNodes.proto";
 
+// Name: IANIIFGHKLG
+// CmdId: 6172
 message ToTheMoonAddObstacleRsp {
-	enum FAJPJAOONHC {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 6180;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 11;
-	int32 queryId = 8;
-	DynamicNodes dynamicNodes = 4;
+    int32 query_id = 4;
+    DynamicNodes dynamic_nodes = 1;
+    int32 retcode = 10;
 }
+

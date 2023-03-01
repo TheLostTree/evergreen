@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: JHGOPMOFJNN
+// CmdId: 734
 message GetShopmallDataRsp {
-	enum BOEFCOMLKMF {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 774;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated uint32 shopTypeList = 10;
-	int32 retcode = 3;
+    repeated uint32 shop_type_list = 3;
+    int32 retcode = 14;
 }
+

@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message StatueGadget {
-	repeated uint32 nkbgahefmbn = 1;
-}

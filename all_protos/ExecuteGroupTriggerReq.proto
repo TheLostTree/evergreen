@@ -1,22 +1,16 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: MHFIBJJBEMG
+// CmdId: 204
 message ExecuteGroupTriggerReq {
-	enum JHBIBOPILPJ {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 290;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	int32 param3 = 2;
-	int32 param1 = 7;
-	uint32 sourceEntityId = 8;
-	int32 param2 = 4;
-	uint32 targetEntityId = 3;
-	string sourceName = 5;
+    int32 param3 = 2;
+    string source_name = 4;
+    int32 param2 = 9;
+    uint32 target_entity_id = 7;
+    int32 param1 = 3;
+    uint32 source_entity_id = 14;
 }
+

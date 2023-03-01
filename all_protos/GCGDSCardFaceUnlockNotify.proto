@@ -1,16 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GCGDSCardFaceUnlockNotify
+// CmdId: 7814
 message GCGDSCardFaceUnlockNotify {
-	enum EEDHFJJLEOA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 7493;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 faceType = 9;
+    uint32 face_type = 7;
+    uint32 card_id = 6;
 }
+

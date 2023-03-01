@@ -1,18 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "OtherCustomDungeonBrief.proto";
 
+// Name: DFLFGBCHEMP
+// CmdId: 6210
 message GetStoreCustomDungeonRsp {
-	enum JBMEBJFDOLE {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 6212;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated OtherCustomDungeonBrief customDungeonList = 1;
-	int32 retcode = 10;
+    repeated OtherCustomDungeonBrief custom_dungeon_list = 3;
+    int32 retcode = 9;
 }
+

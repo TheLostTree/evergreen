@@ -1,10 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: JFDBGKHOPHN
 message CityReputationExploreInfo {
-	repeated uint32 takenExploreRewardList = 9;
-	bool isOpen = 1;
-	uint32 explorePercent = 11;
+    uint32 explore_percent = 5;
+    repeated uint32 taken_explore_reward_list = 7;
+    bool is_open = 10;
 }
+

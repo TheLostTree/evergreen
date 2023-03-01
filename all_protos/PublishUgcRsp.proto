@@ -1,19 +1,14 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "UgcType.proto";
 
+// Name: KPBGKBNCNBB
+// CmdId: 6331
 message PublishUgcRsp {
-	enum HKGPLKNPMED {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 6325;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	UgcType ugcType = 8;
-	int32 retcode = 14;
-	uint64 ugcGuid = 4;
+    uint64 ugc_guid = 4;
+    UgcType ugc_type = 9;
+    int32 retcode = 3;
 }
+

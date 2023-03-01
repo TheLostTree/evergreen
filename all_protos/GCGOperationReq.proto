@@ -1,20 +1,14 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "GCGOperation.proto";
 
+// Name: GCGOperationReq
+// CmdId: 7648
 message GCGOperationReq {
-	enum GMDGEMKCKPF {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 7487;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 redirectUid = 3;
-	uint32 opSeq = 6;
-	GCGOperation op = 11;
+    uint32 op_seq = 14;
+    GCGOperation op = 7;
+    uint32 redirect_uid = 3;
 }
+

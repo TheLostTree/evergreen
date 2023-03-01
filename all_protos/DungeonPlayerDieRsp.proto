@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: PAANABIGFPI
+// CmdId: 927
 message DungeonPlayerDieRsp {
-	enum CGFJGGMFKLA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 969;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 14;
+    int32 retcode = 1;
 }
+

@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: EEFPKEOALJB
+// CmdId: 21131
 message VintageMarketNpcEventFinishNotify {
-	enum NLEDGJEHOFD {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 21065;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated uint32 unlockStrategyList = 15;
-	uint32 coinA = 12;
-	uint32 coinC = 8;
+    uint32 ENDHNCGMOEK = 8;
+    uint32 EGDOECANIOK = 6;
+    repeated uint32 unlock_strategy_list = 12;
 }
+

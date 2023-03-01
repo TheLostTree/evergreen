@@ -1,18 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "HomePictureFrameInfo.proto";
 
+// Name: HDNELOLFNKB
+// CmdId: 4813
 message HomeUpdatePictureFrameInfoReq {
-	enum NJGGHGCIMOF {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4858;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	HomePictureFrameInfo pictureFrameInfo = 9;
+    HomePictureFrameInfo picture_frame_info = 5;
 }
+

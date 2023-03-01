@@ -1,18 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "InstableSprayAvatarInfo.proto";
 
+// Name: MHMMGOMDDGC
+// CmdId: 24932
 message InstableSpraySwitchTeamReq {
-	enum OGDEKKEJBFI {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 23451;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	repeated InstableSprayAvatarInfo avatarInfoList = 11;
+    repeated InstableSprayAvatarInfo avatar_info_list = 6;
 }
+

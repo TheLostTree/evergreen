@@ -1,11 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "Vector.proto";
 
-import "Rotation.proto";
-
+// Name: OLACJIOMDIO
 message PlayerLocationInfo {
-	Rotation rot = 7;
-	Rotation pos = 4;
-	uint32 uid = 9;
+    uint32 uid = 5;
+    Vector rot = 3;
+    Vector pos = 7;
 }
+

@@ -1,21 +1,15 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ReunionMissionInfo.proto";
 
+// Name: POLODMBEAHE
+// CmdId: 5067
 message TakeReunionMissionRewardRsp {
-	enum PIAGJEKANBM {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5092;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	ReunionMissionInfo missionInfo = 12;
-	uint32 rewardIndex = 5;
-	int32 retcode = 4;
-	uint32 rewardId = 11;
+    int32 retcode = 5;
+    uint32 reward_index = 10;
+    ReunionMissionInfo mission_info = 4;
+    uint32 reward_id = 12;
 }
+

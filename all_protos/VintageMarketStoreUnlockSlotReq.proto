@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: PJLABFKJAOI
+// CmdId: 22121
 message VintageMarketStoreUnlockSlotReq {
-	enum MOJMFNKIIMK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 24687;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 storeId = 4;
+    uint32 store_id = 7;
 }
+

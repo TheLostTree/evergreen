@@ -1,13 +1,15 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ProfilePicture.proto";
 
+// Name: CFHNBMHCAAN
 message ActivityRecvGiftData {
-	string remarkName = 15;
-	string nickname = 10;
-	uint32 uid = 2;
-	map<uint32, uint32> giftNumMap = 8;
-	ProfilePicture profilePicture = 5;
+    string nickname = 7;
+    string remark_name = 12;
+    uint32 uid = 14;
+    map<uint32, uint32> gift_num_map = 10;
+    ProfilePicture profile_picture = 13;
 }
+

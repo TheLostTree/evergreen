@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: PJAKFLDMACJ
+// CmdId: 1050
 message ProudSkillUpgradeRsp {
-	enum PIKNHMPCPCH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1014;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 proudSkillId = 8;
-	uint64 avatarGuid = 11;
-	int32 retcode = 5;
+    uint32 proud_skill_id = 1;
+    int32 retcode = 11;
+    uint64 avatar_guid = 8;
 }
+

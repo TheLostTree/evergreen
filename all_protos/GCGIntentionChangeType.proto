@@ -1,8 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
+// Name: OCBHBGFOOHK
 enum GCGIntentionChangeType {
-	GCG_INTENTION_CHANGE_TYPE_NONE = 0;
-	GCG_INTENTION_CHANGE_TYPE_RM = 1;
+    GCG_INTENTION_CHANGE_NONE = 0;
+    GCG_INTENTION_CHANGE_RM = 1;
 }
+

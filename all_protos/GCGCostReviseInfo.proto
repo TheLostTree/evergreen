@@ -1,15 +1,17 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "JFDLFELGAEJ.proto";
+import "MJMMGKPBGGH.proto";
+import "PLPINEPGFHD.proto";
 
-import "GCGSelectOnStageCostInfo.proto";
-import "GCGAttackCostInfo.proto";
-import "GCGPlayCardCostInfo.proto";
-
+// Name: DPBAJDJIMAA
 message GCGCostReviseInfo {
-	bool isCanAttack = 2;
-	repeated GCGSelectOnStageCostInfo selectOnStageCostList = 5;
-	repeated GCGAttackCostInfo attackCostList = 8;
-	repeated uint32 canUseHandCardIdList = 7;
-	repeated GCGPlayCardCostInfo playCardCostList = 15;
+    repeated JFDLFELGAEJ EFLDLOMLAHO = 13;
+    bool is_can_attack = 15;
+    repeated uint32 can_use_hand_card_id_list = 1;
+    repeated PLPINEPGFHD FIJCIJMNPLB = 6;
+    repeated MJMMGKPBGGH GNPBHDMACIH = 5;
 }
+

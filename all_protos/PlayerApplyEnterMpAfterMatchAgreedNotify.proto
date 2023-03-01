@@ -1,20 +1,15 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
-
-import "OnlinePlayerInfo.proto";
 import "MatchType.proto";
+import "OnlinePlayerInfo.proto";
 
+// Name: BAGAKCIOLPE
+// CmdId: 4171
 message PlayerApplyEnterMpAfterMatchAgreedNotify {
-	enum MJIKOBLKFGP {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4190;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 matchserverId = 9;
-	OnlinePlayerInfo srcPlayerInfo = 8;
-	MatchType matchType = 2;
+    MatchType match_type = 9;
+    uint32 matchserver_id = 3;
+    OnlinePlayerInfo src_player_info = 2;
 }
+

@@ -1,14 +1,16 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "EHHKFDCDNLN.proto";
+import "Vector.proto";
 
-import "Rotation.proto";
-import "HomePlantSubFieldData.proto";
-
+// Name: IGKGJNCLPBA
 message HomePlantFieldData {
-	uint32 sceneId = 1;
-	uint32 fieldGuid = 3;
-	repeated HomePlantSubFieldData subFieldList = 2;
-	uint32 furnitureId = 4;
-	Rotation spawnPos = 9;
+    uint32 furniture_id = 10;
+    Vector spawn_pos = 2;
+    uint32 field_guid = 6;
+    uint32 scene_id = 15;
+    repeated EHHKFDCDNLN JAHEFCKOHGL = 11;
 }
+

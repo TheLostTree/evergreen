@@ -1,15 +1,17 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
-
-import "BartenderTaskInfo.proto";
 import "BartenderLevelInfo.proto";
+import "BartenderTaskInfo.proto";
 
+// Name: KHJFNIAKPID
 message BartenderActivityDetailInfo {
-	repeated BartenderTaskInfo unlockTaskList = 15;
-	bool isDevelopModuleOpen = 10;
-	repeated uint32 unlockItemList = 8;
-	repeated uint32 unlockFormulaList = 14;
-	bool leftMonsters = 2;
-	repeated BartenderLevelInfo unlockLevelList = 4;
+    repeated BartenderLevelInfo unlock_level_list = 10;
+    bool is_develop_module_open = 4;
+    repeated uint32 HABKKALDAHF = 6;
+    bool is_content_closed = 5;
+    repeated uint32 DPFPEEGPEKO = 15;
+    repeated BartenderTaskInfo unlock_task_list = 1;
 }
+

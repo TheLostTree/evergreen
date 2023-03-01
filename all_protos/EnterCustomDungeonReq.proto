@@ -1,20 +1,14 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "EnterCustomDungeonType.proto";
 
+// Name: MNMCGIADIEN
+// CmdId: 6248
 message EnterCustomDungeonReq {
-	enum IOAECBCGFOB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 6238;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	EnterCustomDungeonType enterType = 2;
-	uint32 dungeonId = 13;
-	uint64 dungeonGuid = 3;
+    uint64 dungeon_guid = 3;
+    uint32 dungeon_id = 2;
+    EnterCustomDungeonType enter_type = 6;
 }
+

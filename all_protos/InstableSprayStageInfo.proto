@@ -1,12 +1,14 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "InstableSprayTeamInfo.proto";
 
+// Name: KPMFNAPKPOK
 message InstableSprayStageInfo {
-	uint32 maxScore = 2;
-	repeated InstableSprayTeamInfo teamInfoList = 3;
-	bool isFinished = 13;
-	uint32 stageId = 8;
+    repeated InstableSprayTeamInfo team_info_list = 14;
+    bool is_finished = 1;
+    uint32 stage_id = 3;
+    uint32 max_score = 11;
 }
+

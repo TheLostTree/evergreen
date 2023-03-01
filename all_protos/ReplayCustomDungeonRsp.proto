@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: BCLFOLHEHCP
+// CmdId: 6234
 message ReplayCustomDungeonRsp {
-	enum HFCFBNPLPIP {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 6217;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	int32 retcode = 7;
+    int32 retcode = 9;
 }
+

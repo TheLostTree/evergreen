@@ -1,20 +1,15 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "MainCoop.proto";
 
+// Name: MMKIGHGCLAJ
+// CmdId: 1967
 message StartCoopPointRsp {
-	enum FHHNHADMJNM {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1992;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 10;
-	bool isStart = 5;
-	MainCoop startMainCoop = 7;
-	uint32 coopPoint = 13;
+    int32 retcode = 6;
+    bool is_start = 12;
+    uint32 coop_point = 10;
+    MainCoop start_main_coop = 7;
 }
+

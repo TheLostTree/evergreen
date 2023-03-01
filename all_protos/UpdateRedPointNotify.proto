@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "RedPointData.proto";
 
+// Name: GFBNCCLPKFP
+// CmdId: 74
 message UpdateRedPointNotify {
-	enum KBKBPIHKKKB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 58;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated RedPointData redPointList = 8;
+    repeated RedPointData red_point_list = 7;
 }
+

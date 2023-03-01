@@ -1,18 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "BlossomBriefInfo.proto";
 
+// Name: MGMLLCMBMAM
+// CmdId: 2764
 message WorldOwnerBlossomBriefInfoNotify {
-	enum COICGBPKPCK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2798;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	repeated BlossomBriefInfo briefInfoList = 11;
+    repeated BlossomBriefInfo brief_info_list = 13;
 }
+

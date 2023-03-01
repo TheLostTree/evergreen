@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: OBGHKPEINLJ
+// CmdId: 5434
 message DraftGuestReplyInviteReq {
-	enum PBDFCHILMPK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5474;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	bool isAgree = 13;
-	uint32 draftId = 10;
+    uint32 draft_id = 12;
+    bool is_agree = 2;
 }
+

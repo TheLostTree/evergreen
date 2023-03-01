@@ -1,17 +1,19 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
-
+import "MathQuaternion.proto";
 import "ShapeType.proto";
-import "Rotation.proto";
-import "RotationSpeed.proto";
+import "Vector.proto";
 import "Vector3Int.proto";
 
+// Name: KKLMEPGAGJK
 message GMObstacleInfo {
-	int64 timestamp = 13;
-	ShapeType shape = 3;
-	Rotation center = 9;
-	int32 obstacleId = 15;
-	RotationSpeed rotation = 4;
-	Vector3Int extents = 5;
+    ShapeType shape = 12;
+    Vector3Int extents = 5;
+    int32 obstacle_id = 8;
+    int64 timestamp = 7;
+    Vector center = 9;
+    MathQuaternion rotation = 13;
 }
+

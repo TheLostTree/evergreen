@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "QuestGlobalVar.proto";
 
+// Name: ABJNGHFNOGP
+// CmdId: 426
 message QuestGlobalVarNotify {
-	enum JPMJBPBHBDK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 451;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated QuestGlobalVar varList = 12;
+    repeated QuestGlobalVar var_list = 4;
 }
+

@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: MFMKAJHKJPK
+// CmdId: 4633
 message HomeAvatarSummonEventRsp {
-	enum MIGNGLCMDJB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4696;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 eventId = 9;
-	int32 retcode = 13;
+    uint32 event_id = 4;
+    int32 retcode = 6;
 }
+

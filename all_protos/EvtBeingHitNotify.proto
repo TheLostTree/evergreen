@@ -1,20 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
-
-import "ForwardType.proto";
 import "EvtBeingHitInfo.proto";
+import "ForwardType.proto";
 
+// Name: OGDEAJNCGKB
+// CmdId: 367
 message EvtBeingHitNotify {
-	enum OBLDJNMPBNB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 305;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	ForwardType forwardType = 4;
-	EvtBeingHitInfo beingHitInfo = 15;
+    EvtBeingHitInfo being_hit_info = 11;
+    ForwardType forward_type = 4;
 }
+

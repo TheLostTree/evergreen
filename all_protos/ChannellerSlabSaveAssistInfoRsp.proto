@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "ChannellerSlabAssistInfo.proto";
 
-import "ChannelerSlabAssistInfo.proto";
-
+// Name: FMEFPPMPJIA
+// CmdId: 8269
 message ChannellerSlabSaveAssistInfoRsp {
-	enum HIPMBCPBNOK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8443;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated ChannelerSlabAssistInfo assistInfoList = 6;
-	int32 retcode = 4;
+    repeated ChannellerSlabAssistInfo assist_info_list = 2;
+    int32 retcode = 6;
 }
+

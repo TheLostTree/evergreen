@@ -1,10 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "SalvageEscortGallerySettleInfo.proto";
 
+// Name: JGCJDJCLGIC
 message SalvageEscortSettleInfo {
-	SalvageEscortGallerySettleInfo settleInfo = 8;
-	bool isNewRecord = 9;
+    bool is_new_record = 7;
+    SalvageEscortGallerySettleInfo settle_info = 8;
 }
+

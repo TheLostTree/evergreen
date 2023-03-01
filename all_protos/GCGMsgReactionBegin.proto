@@ -1,9 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: IJJHCPIEIGK
 message GCGMsgReactionBegin {
-	uint32 skillId = 8;
-	uint32 cardGuid = 3;
+    uint32 card_guid = 2;
+    uint32 skill_id = 6;
 }
+

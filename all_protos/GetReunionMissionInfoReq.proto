@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: ECIHKMHMAMH
+// CmdId: 5089
 message GetReunionMissionInfoReq {
-	enum CDAEGIGJJLC {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5066;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 missionId = 8;
+    uint32 mission_id = 4;
 }
+

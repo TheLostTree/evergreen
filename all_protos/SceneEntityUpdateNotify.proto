@@ -1,20 +1,15 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
-
-import "VisionType.proto";
 import "SceneEntityInfo.proto";
+import "VisionType.proto";
 
+// Name: MHIKAPEPCDF
+// CmdId: 3095
 message SceneEntityUpdateNotify {
-	enum JGJBEEKIPIN {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 3388;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	VisionType appearType = 10;
-	uint32 param = 2;
-	repeated SceneEntityInfo entityList = 7;
+    uint32 param = 7;
+    VisionType appear_type = 2;
+    repeated SceneEntityInfo entity_list = 14;
 }
+

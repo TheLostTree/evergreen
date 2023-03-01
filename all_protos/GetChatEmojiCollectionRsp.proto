@@ -1,18 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ChatEmojiCollectionData.proto";
 
+// Name: ADOKOEBEDKI
+// CmdId: 4001
 message GetChatEmojiCollectionRsp {
-	enum CAAOHECMDJO {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4091;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 4;
-	ChatEmojiCollectionData chatEmojiCollectionData = 12;
+    ChatEmojiCollectionData chat_emoji_collection_data = 3;
+    int32 retcode = 10;
 }
+

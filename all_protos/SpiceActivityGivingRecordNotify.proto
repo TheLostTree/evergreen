@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: NBLFJCPIPFO
+// CmdId: 8049
 message SpiceActivityGivingRecordNotify {
-	enum ALEEMLGBKPO {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8085;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 Unk3300_LAKPMMIPBMI = 3;
-	uint32 avatarId = 8;
-	uint32 Unk3300_CIHIAJEGCBO = 4;
+    uint32 OFGCHEAEEAG = 7;
+    uint32 avatar_id = 12;
+    uint32 OCLAPMEFLPK = 11;
 }
+

@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: MHMEEJPCPDH
+// CmdId: 8631
 message TriggerRoguelikeRuneRsp {
-	enum OIHAKOPDPCG {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8390;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 availableCount = 11;
-	uint32 runeId = 2;
-	int32 retcode = 7;
+    uint32 available_count = 5;
+    int32 retcode = 2;
+    uint32 rune_id = 4;
 }
+

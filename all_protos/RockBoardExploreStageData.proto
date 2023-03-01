@@ -1,11 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: DPCDIAIDDOP
 message RockBoardExploreStageData {
-	bool isFinish = 1;
-	uint32 stageId = 9;
-	bool isOpen = 6;
-	uint32 openTime = 7;
+    uint32 stage_id = 6;
+    bool is_finish = 11;
+    uint32 open_time = 1;
+    bool is_open = 4;
 }
+

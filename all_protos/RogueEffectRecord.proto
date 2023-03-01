@@ -1,11 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: HEFKJGDGCOD
 message RogueEffectRecord {
-	bool isNew = 3;
-	uint32 sourceId = 5;
-	uint32 count = 1;
-	repeated uint32 extraParamList = 9;
+    uint32 source_id = 4;
+    repeated uint32 extra_param_list = 5;
+    uint32 count = 1;
+    bool is_new = 13;
 }
+

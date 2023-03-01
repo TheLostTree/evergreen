@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: CJDCKAGKBDN
+// CmdId: 5550
 message GalleryPreStartNotify {
-	enum NCOOMMNLEFI {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5514;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 preStartEndTime = 6;
-	uint32 galleryId = 7;
+    uint32 gallery_id = 9;
+    uint32 pre_start_end_time = 13;
 }
+

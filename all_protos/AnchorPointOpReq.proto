@@ -1,18 +1,19 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: EJJFDKEPDBP
+// CmdId: 4296
 message AnchorPointOpReq {
-	enum OAIEELHBGLI {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4291;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
+    // Name: KFMHCPAPAEI
+    enum KFMHCPAPAEI {
+        KFMHCPAPAEI_PIPFHBGIFDP = 0;
+        KFMHCPAPAEI_KKBPNDIFMLB = 1;
+        KFMHCPAPAEI_GGECCCDJFEF = 2;
+    }
 
-	uint32 anchorPointId = 15;
-	uint32 anchorPointOpType = 3;
+    uint32 anchor_point_op_type = 1;
+    uint32 anchor_point_id = 11;
 }
+

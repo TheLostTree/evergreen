@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: EGEAODMLFOP
+// CmdId: 8260
 message TreasureMapHostInfoNotify {
-	enum MCEBPNGIEEH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8218;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated uint32 mpChallengeRegionList = 15;
+    repeated uint32 mp_challenge_region_list = 14;
 }
+

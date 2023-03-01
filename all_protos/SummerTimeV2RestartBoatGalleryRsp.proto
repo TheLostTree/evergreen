@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: MMMMGDMFAEG
+// CmdId: 8599
 message SummerTimeV2RestartBoatGalleryRsp {
-	enum EOFGNIPMHNL {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8972;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 galleryId = 15;
-	int32 retcode = 12;
+    uint32 gallery_id = 14;
+    int32 retcode = 9;
 }
+

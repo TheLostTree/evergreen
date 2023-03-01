@@ -1,19 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "Vector.proto";
 
-import "Rotation.proto";
-
+// Name: FCNGHDHCBJL
+// CmdId: 2304
 message GMShowNavMeshReq {
-	enum LOEAPFJINIE {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2390;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	Rotation center = 6;
-	Rotation extent = 13;
+    Vector center = 6;
+    Vector extent = 13;
 }
+

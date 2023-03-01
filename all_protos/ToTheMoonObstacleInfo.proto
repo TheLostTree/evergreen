@@ -1,15 +1,22 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "MathQuaternion.proto";
+import "Vector.proto";
 
-import "Rotation.proto";
-import "RotationSpeed.proto";
-import "ShapeType.proto";
-
+// Name: ECDLKNIAMAF
 message ToTheMoonObstacleInfo {
-	Rotation center = 3;
-	int32 handleId = 5;
-	RotationSpeed rotation = 8;
-	Rotation halfExtents = 9;
-	ShapeType type = 1;
+    // Name: PIFLNEEKLJG
+    enum ShapeType {
+        OBSTACLE_SHAPE_CAPSULE = 0;
+        OBSTACLE_SHAPE_BOX = 1;
+    }
+
+    ShapeType type = 11;
+    Vector half_extents = 6;
+    Vector center = 7;
+    int32 handle_id = 5;
+    MathQuaternion rotation = 12;
 }
+

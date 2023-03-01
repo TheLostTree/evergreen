@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: NLNMEONBNGB
+// CmdId: 8647
 message ChannelerSlabStageActiveChallengeIndexNotify {
-	enum FKBDDLDGEPN {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8354;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 activeCampIndex = 6;
-	uint32 challengeIndex = 8;
-	uint32 stageId = 7;
+    uint32 active_camp_index = 9;
+    uint32 challenge_index = 2;
+    uint32 stage_id = 5;
 }
+

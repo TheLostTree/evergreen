@@ -1,19 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "UgcType.proto";
 
+// Name: DPBNMIFDCJH
+// CmdId: 6309
 message GetUgcBriefInfoReq {
-	enum CIFODABEJMB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 6346;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	UgcType ugcType = 10;
-	uint64 ugcGuid = 11;
+    UgcType ugc_type = 1;
+    uint64 ugc_guid = 12;
 }
+

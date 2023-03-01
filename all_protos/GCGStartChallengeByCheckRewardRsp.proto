@@ -1,19 +1,17 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "NIELIIFHJCO.proto";
 
-import "uint32.proto";
-
+// Name: GCGStartChallengeByCheckRewardRsp
+// CmdId: 7942
 message GCGStartChallengeByCheckRewardRsp {
-	enum BPPOMFBCIKL {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 7890;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	bool bphdgokdnnk = 7;
-	uint32 nextRefreshTime = 9;
-	repeated uint32 exceededItemTypeList = 8;
+    repeated uint32 DNJDACFOEJA = 11;
+    uint32 level_id = 1;
+    int32 retcode = 8;
+    uint32 config_id = 4;
+    NIELIIFHJCO PPHCMNDNEBE = 3;
+    repeated uint32 NPLFIOFPAKH = 12;
 }
+

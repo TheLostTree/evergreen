@@ -1,20 +1,15 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: KFMKKDJPHOA
+// CmdId: 3186
 message ShowTemplateReminderNotify {
-	enum EEFICIPGAAG {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 3353;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	bool Unk3300_AENIIBBBPJC = 13;
-	bool Unk3300_LABCNBEGCED = 11;
-	repeated uint32 paramUidList = 6;
-	repeated int32 paramList = 12;
-	uint32 templateReminderId = 9;
+    bool NHKGGOIDHKL = 3;
+    uint32 template_reminder_id = 10;
+    repeated uint32 param_uid_list = 11;
+    bool GJKNBONLFAJ = 8;
+    repeated int32 param_list = 7;
 }
+

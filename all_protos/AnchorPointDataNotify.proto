@@ -1,18 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "AnchorPointData.proto";
 
+// Name: NJIPFBKJBLI
+// CmdId: 4298
 message AnchorPointDataNotify {
-	enum ABGDBOHAGJL {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4288;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 nextUsableTime = 10;
-	repeated AnchorPointData anchorPointList = 11;
+    repeated AnchorPointData anchor_point_list = 15;
+    uint32 next_usable_time = 7;
 }
+

@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "AuthorityChange.proto";
 
+// Name: LKDHOPJKJJF
+// CmdId: 384
 message EntityAuthorityChangeNotify {
-	enum FILIKBJBANB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 375;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated AuthorityChange authorityChangeList = 2;
+    repeated AuthorityChange authority_change_list = 3;
 }
+

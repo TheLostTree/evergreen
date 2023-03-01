@@ -1,9 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "MIEFECKEOMK.proto";
 
-import "FurnitureMakeData.proto";
-
+// Name: DIIKFAIPKGG
 message FurnitureMakeSlot {
-	repeated FurnitureMakeData furnitureMakeDataList = 4;
+    repeated MIEFECKEOMK PEIPFAEPBPO = 1;
 }
+

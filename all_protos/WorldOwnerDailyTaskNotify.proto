@@ -1,20 +1,14 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "DailyTaskInfo.proto";
 
+// Name: IHPCDCEIDJD
+// CmdId: 130
 message WorldOwnerDailyTaskNotify {
-	enum PJGBNBLMPKE {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 163;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 finishedDailyTaskNum = 4;
-	repeated DailyTaskInfo taskList = 9;
-	uint32 filterCityId = 15;
+    uint32 CDFPMDEEHKO = 10;
+    uint32 DOCJEPPBKOH = 8;
+    repeated DailyTaskInfo task_list = 6;
 }
+

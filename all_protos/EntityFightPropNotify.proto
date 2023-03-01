@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GHAPMIGCIAM
+// CmdId: 1254
 message EntityFightPropNotify {
-	enum OCJILNPKBEB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1287;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 entityId = 7;
-	map<uint32, float> fightPropMap = 15;
+    map<uint32, float> fight_prop_map = 3;
+    uint32 entity_id = 7;
 }
+

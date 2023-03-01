@@ -1,9 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: PGKMKCDIPCM
 message CookRecipeData {
-	uint32 proficiency = 1;
-	uint32 recipeId = 6;
+    uint32 DIIJPMJFNOL = 14;
+    uint32 EJKLKNPMHMC = 4;
 }
+

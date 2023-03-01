@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "HomeLimitedShopGoods.proto";
 
+// Name: EKNBJFLCGCH
+// CmdId: 4722
 message HomeLimitedShopInfoChangeNotify {
-	enum ALMFKCPBAGI {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4552;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated HomeLimitedShopGoods goodsList = 1;
+    repeated HomeLimitedShopGoods goods_list = 3;
 }
+

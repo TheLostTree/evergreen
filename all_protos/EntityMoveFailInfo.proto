@@ -1,13 +1,15 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "MotionInfo.proto";
 
+// Name: ACILJIDBAAL
 message EntityMoveFailInfo {
-	MotionInfo failMotion = 2;
-	uint32 sceneTime = 7;
-	int32 retcode = 3;
-	uint32 entityId = 6;
-	uint32 reliableSeq = 4;
+    uint32 scene_time = 7;
+    uint32 reliable_seq = 5;
+    uint32 entity_id = 1;
+    int32 retcode = 15;
+    MotionInfo fail_motion = 14;
 }
+

@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "SceneGalleryInfo.proto";
 
+// Name: EEGDPECCGNC
+// CmdId: 5529
 message SceneGalleryInfoNotify {
-	enum KHBMFBHDECI {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5513;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	SceneGalleryInfo galleryInfo = 7;
+    SceneGalleryInfo gallery_info = 6;
 }
+

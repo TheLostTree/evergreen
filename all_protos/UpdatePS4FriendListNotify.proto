@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: CFLMLFLEPBM
+// CmdId: 4056
 message UpdatePS4FriendListNotify {
-	enum BEEENKINLJM {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4046;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	repeated string psnIdList = 8;
+    repeated string psn_id_list = 2;
 }
+

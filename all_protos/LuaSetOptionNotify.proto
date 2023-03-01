@@ -1,18 +1,18 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-import "LuaOptionType.proto";
-
+// Name: FGFHDCEEKIH
+// CmdId: 343
 message LuaSetOptionNotify {
-	enum LEAGHMADJLM {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 395;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
+    // Name: MNCLPFLPPFD
+    enum LuaOptionType {
+        LUA_OPTION_NONE = 0;
+        LUA_OPTION_PLAYER_INPUT = 1;
+    }
 
-	string luaSetParam = 4;
-	LuaOptionType optionType = 14;
+    LuaOptionType option_type = 3;
+    string lua_set_param = 9;
 }
+

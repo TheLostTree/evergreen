@@ -1,13 +1,15 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "CharAmusementAvatarInfo.proto";
 
+// Name: DKAJENPELLD
 message CharAmusementInfo {
-	repeated CharAmusementAvatarInfo avatarInfoList = 11;
-	uint32 emdkpmhihmp = 3;
-	uint32 levelId = 6;
-	uint32 stageId = 8;
-	uint32 inllhgjoaco = 5;
+    repeated CharAmusementAvatarInfo avatar_info_list = 9;
+    uint32 JNLHFFKMCNM = 5;
+    uint32 stage_id = 7;
+    uint32 OEHEMHPFFBO = 14;
+    uint32 level_id = 1;
 }
+

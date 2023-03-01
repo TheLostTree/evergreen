@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: JAKABKHGDHD
+// CmdId: 8289
 message MichiaeMatsuriGainCrystalExpUpdateNotify {
-	enum LDNKPLMLKLM {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8794;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 gainCrystalExp = 13;
-	uint32 activityId = 4;
+    uint32 gain_crystal_exp = 15;
+    uint32 activity_id = 10;
 }
+

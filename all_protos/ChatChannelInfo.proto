@@ -1,9 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: FFEPOPDPELC
 message ChatChannelInfo {
-	uint32 channelId = 4;
-	bool isShield = 2;
+    uint32 channel_id = 7;
+    bool is_shield = 9;
 }
+

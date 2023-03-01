@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: LEAMJFGPJOI
+// CmdId: 29
 message ClientReportNotify {
-	enum JFEGFPOGIHL {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 13;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	string reportValue = 7;
-	string reportType = 12;
+    string EAPMOECPEPG = 7;
+    string EMODEICADOO = 15;
 }
+

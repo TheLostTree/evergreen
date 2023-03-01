@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GBKPAIOPIMP
+// CmdId: 5397
 message HideAndSeekSelectAvatarReq {
-	enum PMKMHNKLMFE {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5381;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 avatarId = 4;
+    uint32 avatar_id = 11;
 }
+

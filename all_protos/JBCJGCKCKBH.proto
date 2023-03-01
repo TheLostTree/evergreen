@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message JBCJGCKCKBH {
-	float value = 1;
-}

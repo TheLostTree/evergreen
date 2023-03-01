@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "DungeonCandidateTeamDismissReason.proto";
 
-import "DungeonCandidateTeamPlayerDismissReason.proto";
-
+// Name: FIGCFICPKED
+// CmdId: 913
 message DungeonCandidateTeamDismissNotify {
-	enum HFEANILHKJP {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 922;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 playerUid = 3;
-	DungeonCandidateTeamPlayerDismissReason reason = 4;
+    uint32 player_uid = 15;
+    DungeonCandidateTeamDismissReason reason = 3;
 }
+

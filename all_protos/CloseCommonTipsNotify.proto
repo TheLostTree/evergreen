@@ -1,15 +1,10 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: AFLOLBEDPJM
+// CmdId: 3196
 message CloseCommonTipsNotify {
-	enum JDPGPPCNPNJ {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 3010;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
 }
+

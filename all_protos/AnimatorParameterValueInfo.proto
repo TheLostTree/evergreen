@@ -1,13 +1,15 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: NNHECDNAAAO
 message AnimatorParameterValueInfo {
-	uint32 paraType = 1;
-	oneof MMJOJNNFGCN {
-		int32 int_val = 2;
-		float float_val = 3;
-		bool bool_val = 4;
-	}
+    uint32 para_type = 1;
+    oneof paraVal {
+        int32 int_val = 2;
+        float float_val = 3;
+        bool bool_val = 4;
+    }
 }
+

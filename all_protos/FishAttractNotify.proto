@@ -1,19 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "Vector.proto";
 
-import "Rotation.proto";
-
+// Name: HHCLAFPEBEE
+// CmdId: 5812
 message FishAttractNotify {
-	enum NMCHBPBNIKA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5815;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	Rotation pos = 3;
-	repeated uint32 fishIdList = 5;
-	uint32 uid = 10;
+    uint32 uid = 4;
+    Vector pos = 9;
+    repeated uint32 fish_id_list = 3;
 }
+

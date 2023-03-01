@@ -1,11 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "GravenInnocencePhotoObjectInfo.proto";
 import "GravenInnocencePhotoStageInfo.proto";
 
+// Name: GMBOONICPBM
 message GravenInnocencePhotoInfo {
-	repeated GravenInnocencePhotoObjectInfo objectInfoList = 10;
-	repeated GravenInnocencePhotoStageInfo stageInfoList = 3;
+    repeated GravenInnocencePhotoStageInfo stage_info_list = 10;
+    repeated GravenInnocencePhotoObjectInfo object_info_list = 9;
 }
+

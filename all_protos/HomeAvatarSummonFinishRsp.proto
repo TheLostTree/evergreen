@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: OIJKJGBKLPB
+// CmdId: 4566
 message HomeAvatarSummonFinishRsp {
-	enum PABPAMCDBJF {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4657;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 eventId = 15;
-	int32 retcode = 10;
+    int32 retcode = 12;
+    uint32 event_id = 13;
 }
+

@@ -1,20 +1,15 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "CustomDungeonBanInfo.proto";
 import "CustomDungeonBrief.proto";
 
+// Name: KCDAEOFDJHO
+// CmdId: 6220
 message GetCustomDungeonRsp {
-	enum ILKHCPIKFHF {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 6234;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	CustomDungeonBanInfo banInfo = 14;
-	int32 retcode = 8;
-	repeated CustomDungeonBrief briefList = 12;
+    CustomDungeonBanInfo ban_info = 14;
+    int32 retcode = 8;
+    repeated CustomDungeonBrief brief_list = 7;
 }
+

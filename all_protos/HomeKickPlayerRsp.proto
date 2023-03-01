@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: OLILJCHDNJF
+// CmdId: 4889
 message HomeKickPlayerRsp {
-	enum BIDJABGFPDJ {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4883;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	bool isKickAll = 8;
-	uint32 targetUid = 5;
-	int32 retcode = 2;
+    int32 retcode = 2;
+    uint32 target_uid = 6;
+    bool is_kick_all = 10;
 }
+

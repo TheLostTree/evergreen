@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: BPOJAEECFFJ
+// CmdId: 8431
 message SetLimitOptimizationNotify {
-	enum NEIGJFHOBKP {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8763;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	bool isActive = 10;
+    bool is_active = 7;
 }
+

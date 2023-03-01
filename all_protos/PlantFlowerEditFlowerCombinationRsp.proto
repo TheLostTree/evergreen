@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: LDEIHIHDJOC
+// CmdId: 8975
 message PlantFlowerEditFlowerCombinationRsp {
-	enum GDJMEMKPBCA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8476;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 7;
-	uint32 scheduleId = 10;
+    int32 retcode = 5;
+    uint32 schedule_id = 11;
 }
+

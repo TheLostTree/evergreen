@@ -1,9 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
+// Name: EBLPNABPEMI
 enum FishEscapeReason {
-	FISH_ESCAPE_REASON_NONE = 0;
-	FISH_ESCAPE_REASON_SHOCKED = 1;
-	FISH_ESCAPE_REASON_UNHOOK = 2;
+    FISN_ESCAPE_NONE = 0;
+    FISH_ESCAPE_SHOCKED = 1;
+    FISH_ESCAPE_UNHOOK = 2;
 }
+

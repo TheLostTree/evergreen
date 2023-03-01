@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: ABHDPPOLMHE
+// CmdId: 1621
 message AvatarDelNotify {
-	enum JCFIEDDPCDF {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1670;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated uint64 avatarGuidList = 1;
+    repeated uint64 avatar_guid_list = 11;
 }
+

@@ -1,9 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: BBFLDMEFACH
 message BreakoutElementReactionCounter {
-	uint32 aknhdghiblg = 1;
-	uint32 count = 2;
+    uint32 element_reaction = 1;
+    uint32 count = 2;
 }
+

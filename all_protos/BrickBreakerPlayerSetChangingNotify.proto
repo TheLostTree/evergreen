@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: IGLFMBGPMPN
+// CmdId: 5363
 message BrickBreakerPlayerSetChangingNotify {
-	enum MKCDBGCBFAL {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5366;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	bool isChanging = 1;
-	uint32 uid = 9;
+    bool is_changing = 15;
+    uint32 uid = 14;
 }
+

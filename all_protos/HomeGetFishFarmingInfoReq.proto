@@ -1,16 +1,10 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: LIELLFBIBMF
+// CmdId: 4575
 message HomeGetFishFarmingInfoReq {
-	enum ADPCLOIJMAD {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4892;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
 }
+

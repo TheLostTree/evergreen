@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: PFHIOOMPNBH
+// CmdId: 1442
 message GetAllMailNotify {
-	enum LDGGOIEFPDE {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1416;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	bool isCollected = 11;
+    bool is_collected = 6;
 }
+

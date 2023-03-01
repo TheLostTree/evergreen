@@ -1,10 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: BLAPHKFLNJB
 message FungusTrainingDungeonDetail {
-	bool isOpen = 8;
-	uint32 bestScore = 7;
-	uint32 dungeonId = 6;
+    uint32 best_score = 9;
+    bool is_open = 8;
+    uint32 dungeon_id = 2;
 }
+

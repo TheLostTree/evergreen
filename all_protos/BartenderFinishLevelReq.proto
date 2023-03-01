@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: LPPHGLAOCJN
+// CmdId: 9000
 message BartenderFinishLevelReq {
-	enum IFEFINFMELN {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8424;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 levelId = 10;
+    uint32 level_id = 13;
 }
+

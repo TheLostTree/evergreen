@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "HomePictureFrameInfo.proto";
 
+// Name: LAHNBCKAGEN
+// CmdId: 4895
 message HomePictureFrameInfoNotify {
-	enum PANLKEDPGDD {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4677;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated HomePictureFrameInfo pictureFrameInfoList = 8;
+    repeated HomePictureFrameInfo picture_frame_info_list = 10;
 }
+

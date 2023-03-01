@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GCGLevelChallengeDeleteNotify
+// CmdId: 7373
 message GCGLevelChallengeDeleteNotify {
-	enum BDOLPLLDNIN {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 7737;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated uint32 fdpppbpejae = 14;
+    repeated uint32 level_id_list = 6;
 }
+

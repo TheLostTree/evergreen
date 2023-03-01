@@ -1,16 +1,10 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: EPMNNEBIBEH
+// CmdId: 2128
 message BlessingGetFriendPicListReq {
-	enum NEFNBCLPDFI {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2026;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
 }
+

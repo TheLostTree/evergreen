@@ -1,19 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "Vector.proto";
 
-import "Rotation.proto";
-
+// Name: ALELKJHFJDH
+// CmdId: 8576
 message SummerTimeFloatSignalUpdateNotify {
-	enum GOGNJHJJCJB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8586;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	Rotation position = 2;
-	bool isTransferAnchor = 11;
-	uint32 floatSignalId = 14;
+    bool is_transfer_anchor = 5;
+    uint32 float_signal_id = 15;
+    Vector position = 9;
 }
+

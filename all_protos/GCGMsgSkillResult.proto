@@ -1,19 +1,21 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "GCGDamageDetail.proto";
 
+// Name: KCOGKGBHJKE
 message GCGMsgSkillResult {
-	uint32 Unk3300_NNJAOEHNPPD = 15;
-	uint32 Unk3300_EPNDCIAJOJP = 2;
-	uint32 ahkoidfnbgc = 3;
-	uint32 targetCardGuid = 7;
-	uint32 Unk3300_NIGDCIGLAKE = 1;
-	uint32 Unk3300_PDBAGJINFPF = 13;
-	uint32 npllnhifdoo = 6;
-	repeated GCGDamageDetail detailList = 12;
-	uint32 damage = 11;
-	uint32 skillId = 4;
-	uint32 Unk3300_LPGLOCDDPCL = 14;
+    uint32 DCEIDIOOFAG = 3;
+    uint32 GKLDDNNENDO = 2;
+    uint32 OOMEGPIIIMH = 8;
+    uint32 damage = 10;
+    repeated GCGDamageDetail detail_list = 15;
+    uint32 FMAFLBOMAFK = 14;
+    uint32 skill_id = 7;
+    uint32 MNOMJNEOJHD = 6;
+    uint32 IHNDAGJJMJK = 12;
+    uint32 PPADCGGEDOO = 4;
+    uint32 JNDNDBNFEHG = 11;
 }
+

@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: FIELNLJBGKB
+// CmdId: 4357
 message ScenePlayBattleInterruptNotify {
-	enum ECOKOFIAKGO {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4379;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 playType = 4;
-	uint32 interruptState = 12;
-	uint32 playId = 14;
+    uint32 interrupt_state = 14;
+    uint32 play_type = 1;
+    uint32 play_id = 4;
 }
+

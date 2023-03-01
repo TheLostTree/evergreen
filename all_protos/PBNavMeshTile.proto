@@ -1,11 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "PBNavMeshPoly.proto";
-import "Rotation.proto";
+import "Vector.proto";
 
+// Name: BEINIMOEPND
 message PBNavMeshTile {
-	repeated PBNavMeshPoly polys = 11;
-	repeated Rotation vecs = 1;
+    repeated Vector vecs = 7;
+    repeated PBNavMeshPoly polys = 15;
 }
+

@@ -1,19 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: NCBMOJCMENN
+// CmdId: 2081
 message SelectEffigyChallengeConditionRsp {
-	enum GMDMNGELPBF {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2068;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 12;
-	repeated uint32 conditionIdList = 1;
-	uint32 challengeId = 11;
-	uint32 difficultyId = 10;
+    uint32 challenge_id = 6;
+    int32 retcode = 5;
+    uint32 difficulty_id = 8;
+    repeated uint32 condition_id_list = 14;
 }
+

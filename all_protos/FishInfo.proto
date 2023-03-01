@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message FishInfo {
-	uint32 pjkdcbfhaoo = 4;
-	uint32 defebhbifge = 6;
-}

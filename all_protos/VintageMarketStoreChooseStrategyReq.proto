@@ -1,20 +1,14 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "VintageMarketStoreOpInfo.proto";
 
+// Name: OLEFELEOAHG
+// CmdId: 20628
 message VintageMarketStoreChooseStrategyReq {
-	enum MEMBHLBAAFD {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 20971;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 storeId = 10;
-	repeated uint32 strategyList = 2;
-	repeated VintageMarketStoreOpInfo storeOpList = 15;
+    repeated VintageMarketStoreOpInfo store_op_list = 9;
+    uint32 store_id = 8;
+    repeated uint32 strategy_list = 3;
 }
+

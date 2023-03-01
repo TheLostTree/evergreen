@@ -1,9 +1,11 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "PotionStageData.proto";
 
+// Name: CMFJGDKFPBH
 message PotionActivityDetailInfo {
-	repeated PotionStageData stageList = 11;
+    repeated PotionStageData stage_list = 13;
 }
+

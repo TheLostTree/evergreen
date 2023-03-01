@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ReunionBriefInfo.proto";
 
+// Name: DNFALBNOKOJ
+// CmdId: 5072
 message ReunionDailyRefreshNotify {
-	enum BDDMAMGBIHB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5098;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	ReunionBriefInfo reunionBriefInfo = 13;
+    ReunionBriefInfo reunion_brief_info = 8;
 }
+

@@ -1,20 +1,14 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "EvtRushMoveInfo.proto";
 import "ForwardType.proto";
 
+// Name: CEFMDDMOGIF
+// CmdId: 307
 message EvtRushMoveNotify {
-	enum BMLMEMGLNHK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 329;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	EvtRushMoveInfo evtRushMoveInfo = 13;
-	ForwardType forwardType = 1;
+    EvtRushMoveInfo evt_rush_move_info = 2;
+    ForwardType forward_type = 13;
 }
+

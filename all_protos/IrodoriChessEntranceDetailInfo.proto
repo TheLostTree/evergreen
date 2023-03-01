@@ -1,9 +1,11 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "IrodoriChessEntranceInfo.proto";
 
+// Name: DPIKGFELMFD
 message IrodoriChessEntranceDetailInfo {
-	repeated IrodoriChessEntranceInfo infoList = 2;
+    repeated IrodoriChessEntranceInfo info_list = 4;
 }
+

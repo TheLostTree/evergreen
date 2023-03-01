@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: HCFHCCKHJMN
+// CmdId: 5215
 message MiracleRingDropResultNotify {
-	enum LELIGICINFF {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5243;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 dropResult = 6;
-	int32 lastTakeRewardTime = 9;
+    int32 JCFKODDCBIH = 15;
+    int32 OIMOAGJJCOI = 13;
 }
+

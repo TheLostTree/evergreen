@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: MADHMGMOJPM
+// CmdId: 1910
 message TakeInvestigationRewardRsp {
-	enum CCKCENEODAC {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1920;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 id = 13;
-	int32 retcode = 15;
+    uint32 id = 10;
+    int32 retcode = 6;
 }
+

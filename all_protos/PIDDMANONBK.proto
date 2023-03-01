@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-import "AbilityScalarValueEntry.proto";
-
-message PIDDMANONBK {
-	repeated AbilityScalarValueEntry overrideMap = 2;
-}

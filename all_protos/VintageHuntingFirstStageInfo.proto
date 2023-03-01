@@ -1,11 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: OMOBLJGICAI
 message VintageHuntingFirstStageInfo {
-	uint32 Unk3300_NILGNHOPGLD = 14;
-	uint32 Unk3300_HIKADHBLPEB = 1;
-	uint32 Unk3300_IPAJLKOBDKC = 12;
-	uint32 score = 15;
+    uint32 FHICAKKCBPF = 15;
+    uint32 MEJPBKFHFNH = 9;
+    uint32 MKAMDEJJPAO = 14;
+    uint32 score = 5;
 }
+

@@ -1,9 +1,11 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "DynamicLayerNodes.proto";
 
+// Name: AAPBIOOIMNP
 message DynamicNodes {
-	repeated DynamicLayerNodes nodes = 8;
+    repeated DynamicLayerNodes nodes = 11;
 }
+

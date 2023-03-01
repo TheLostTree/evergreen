@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: OAAGDDGMABF
+// CmdId: 2494
 message TowerGetFloorStarRewardReq {
-	enum FINPOGPENHF {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2425;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 floorId = 11;
+    uint32 floor_id = 15;
 }
+

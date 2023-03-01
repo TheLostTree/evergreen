@@ -1,21 +1,16 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: FPJJGBEBAAD
+// CmdId: 5533
 message CoinCollectGallerySettleNotify {
-	enum LBHFNLLPEKD {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5542;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 Unk3300_CPLDPCMBHOE = 6;
-	bool isNewRecord = 8;
-	uint32 Unk3300_KDHDMOGJDNL = 15;
-	uint32 multistagePlayIndex = 10;
-	uint32 levelId = 1;
-	uint32 Unk3300_DKBJMLJGLIB = 14;
+    uint32 EINKOMCFNDN = 5;
+    uint32 BOFDHHNBNCH = 1;
+    uint32 JIEODOEOBID = 8;
+    uint32 level_id = 7;
+    uint32 multistage_play_index = 10;
+    bool is_new_record = 15;
 }
+

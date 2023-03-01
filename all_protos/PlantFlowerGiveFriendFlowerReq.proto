@@ -1,19 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: PHDAHGOHAFC
+// CmdId: 8593
 message PlantFlowerGiveFriendFlowerReq {
-	enum CIHJPANCNLH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8176;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 uid = 1;
-	map<uint32, uint32> flowerNumMap = 14;
-	uint32 scheduleId = 5;
+    uint32 uid = 3;
+    uint32 schedule_id = 8;
+    map<uint32, uint32> flower_num_map = 9;
 }
+

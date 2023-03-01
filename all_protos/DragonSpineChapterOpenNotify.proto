@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: NGJENNOIACG
+// CmdId: 2126
 message DragonSpineChapterOpenNotify {
-	enum HNFIEEJIJHJ {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2037;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 chapterId = 10;
-	uint32 scheduleId = 8;
+    uint32 schedule_id = 15;
+    uint32 chapter_id = 4;
 }
+

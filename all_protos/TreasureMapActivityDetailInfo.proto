@@ -1,18 +1,20 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
-
-import "TreasureMapRegionInfo.proto";
 import "TreasureMapBonusChallengeInfo.proto";
+import "TreasureMapRegionInfo.proto";
 
+// Name: NNKJCIGNINA
 message TreasureMapActivityDetailInfo {
-	bool isMpChallengeTouched = 6;
-	uint32 totalMpSpotNum = 14;
-	repeated TreasureMapRegionInfo regionInfoList = 7;
-	uint32 currencyNum = 1;
-	uint32 minOpenPlayerLevel = 3;
-	uint32 activeRegionIndex = 2;
-	repeated TreasureMapBonusChallengeInfo bonusChallengeList = 15;
-	uint32 previewRewardId = 12;
-	uint32 treasureCloseTime = 5;
+    repeated TreasureMapRegionInfo region_info_list = 14;
+    repeated TreasureMapBonusChallengeInfo bonus_challenge_list = 11;
+    uint32 active_region_index = 10;
+    uint32 PKCNGGOJEJA = 13;
+    uint32 MLCDFLBDNHP = 3;
+    uint32 currency_num = 12;
+    uint32 EPFPMGJEMJH = 4;
+    uint32 treasure_close_time = 6;
+    bool is_mp_challenge_touched = 15;
 }
+

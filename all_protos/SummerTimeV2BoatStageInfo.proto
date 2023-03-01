@@ -1,11 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: DIABFFLIANK
 message SummerTimeV2BoatStageInfo {
-	uint32 openTime = 3;
-	bool isOpen = 14;
-	uint32 stageId = 2;
-	uint32 bestScore = 4;
+    uint32 best_score = 10;
+    bool is_open = 15;
+    uint32 open_time = 6;
+    uint32 stage_id = 14;
 }
+

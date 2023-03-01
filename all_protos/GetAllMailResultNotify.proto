@@ -1,22 +1,17 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "MailData.proto";
 
+// Name: ILFMLLOCKFB
+// CmdId: 1429
 message GetAllMailResultNotify {
-	enum IGKIIEJOOAC {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1413;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	bool isCollected = 12;
-	repeated MailData mailList = 1;
-	uint32 totalPageCount = 7;
-	int32 retcode = 8;
-	uint32 pageIndex = 6;
-	string transaction = 15;
+    int32 retcode = 6;
+    uint32 FCGFGPDOKOH = 1;
+    repeated MailData mail_list = 10;
+    string transaction = 5;
+    bool is_collected = 8;
+    uint32 GKAOFKGNGGO = 13;
 }
+

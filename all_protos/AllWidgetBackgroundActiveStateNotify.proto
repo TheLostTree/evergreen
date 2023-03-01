@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: NCNAGFNCBKE
+// CmdId: 6034
 message AllWidgetBackgroundActiveStateNotify {
-	enum FHMOGDOBJLM {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 6011;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated uint32 backgroundActiveWidgetList = 11;
+    repeated uint32 background_active_widget_list = 12;
 }
+

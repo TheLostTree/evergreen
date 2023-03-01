@@ -1,10 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: KEJMEHAPBOJ
 message IrodoriChessPlayerInfo {
-	uint32 settleScore = 4;
-	uint32 buildingPoints = 8;
-	uint32 uid = 9;
+    uint32 GKBILFJMMAO = 3;
+    uint32 uid = 4;
+    uint32 CGCEKHJDBBP = 9;
 }
+

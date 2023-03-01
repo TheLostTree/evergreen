@@ -1,20 +1,15 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
-
-import "VisionType.proto";
 import "SceneEntityInfo.proto";
+import "VisionType.proto";
 
+// Name: BCHLJPNBBJJ
+// CmdId: 3389
 message ScenePlayerBackgroundAvatarRefreshNotify {
-	enum ABMJKMHPLAD {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 3464;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 param = 1;
-	repeated SceneEntityInfo entityList = 14;
-	VisionType appearType = 2;
+    uint32 param = 12;
+    repeated SceneEntityInfo entity_list = 9;
+    VisionType appear_type = 15;
 }
+

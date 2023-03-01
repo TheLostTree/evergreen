@@ -1,20 +1,15 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "AranaraCollectionState.proto";
 
+// Name: OFLAHJBIJCJ
+// CmdId: 6393
 message AddAranaraCollectionNotify {
-	enum DCJEFDEAHBE {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 6395;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	AranaraCollectionState Unk3300_AFBIBLNKCOD = 10;
-	AranaraCollectionState Unk3300_NJLJBBMJLBK = 15;
-	uint32 collectionId = 1;
-	uint32 collectionType = 5;
+    uint32 collection_type = 2;
+    AranaraCollectionState MENDLEGAOCB = 14;
+    AranaraCollectionState NJBIEHOJMCO = 5;
+    uint32 collection_id = 15;
 }
+

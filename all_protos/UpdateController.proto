@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-import "Uint32Pair.proto";
-
-message UpdateController {
-	repeated Uint32Pair allowControllerMap = 3;
-}

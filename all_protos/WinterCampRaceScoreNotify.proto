@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: EONLNJIEIKH
+// CmdId: 8664
 message WinterCampRaceScoreNotify {
-	enum CCOOGBHIEDD {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8068;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 maxScore = 7;
-	uint32 id = 11;
+    uint32 id = 4;
+    uint32 max_score = 9;
 }
+

@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: ONDFFNHEBHF
+// CmdId: 2089
 message TakeEffigyRewardRsp {
-	enum LKHFEKHJJJB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2180;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 rewardIndex = 13;
-	int32 retcode = 6;
+    int32 retcode = 5;
+    uint32 reward_index = 2;
 }
+

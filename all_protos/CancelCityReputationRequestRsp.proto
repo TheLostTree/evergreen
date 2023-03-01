@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GIKCINFICDG
+// CmdId: 2859
 message CancelCityReputationRequestRsp {
-	enum DPFLDELPNAJ {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2824;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 requestId = 9;
-	int32 retcode = 12;
-	uint32 cityId = 14;
+    uint32 request_id = 7;
+    int32 retcode = 12;
+    uint32 city_id = 3;
 }
+

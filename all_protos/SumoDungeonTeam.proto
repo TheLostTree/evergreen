@@ -1,9 +1,11 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "SumoDungeonAvatar.proto";
 
+// Name: KKCFBPFKGKM
 message SumoDungeonTeam {
-	repeated SumoDungeonAvatar dungeonAvatarList = 4;
+    repeated SumoDungeonAvatar dungeon_avatar_list = 12;
 }
+

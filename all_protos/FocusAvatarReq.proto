@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: JFCDLLPKDEE
+// CmdId: 1712
 message FocusAvatarReq {
-	enum BHCOIMJLIFJ {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1608;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	bool isFocus = 15;
-	uint64 avatarGuid = 10;
+    uint64 avatar_guid = 1;
+    bool is_focus = 7;
 }
+

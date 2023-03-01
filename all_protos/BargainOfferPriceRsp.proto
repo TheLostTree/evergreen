@@ -1,20 +1,15 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "BargainResultType.proto";
 
+// Name: OHPGDNIJKNM
+// CmdId: 446
 message BargainOfferPriceRsp {
-	enum HAOJEFGNHMK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 418;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	BargainResultType bargainResult = 2;
-	int32 retcode = 13;
-	int32 curMood = 7;
-	uint32 resultParam = 11;
+    int32 retcode = 3;
+    int32 cur_mood = 11;
+    BargainResultType bargain_result = 4;
+    uint32 result_param = 12;
 }
+

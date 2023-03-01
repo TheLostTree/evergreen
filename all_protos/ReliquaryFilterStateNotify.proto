@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: MAGNGONBPEI
+// CmdId: 680
 message ReliquaryFilterStateNotify {
-	enum OEOHONEIBDO {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 631;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	map<uint32, uint32> reliquaryFilterStateMap = 11;
+    map<uint32, uint32> reliquary_filter_state_map = 11;
 }
+

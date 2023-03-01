@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: OFFOAFKCHOL
+// CmdId: 8336
 message ResetRogueDiaryPlayRsp {
-	enum BENNENFHCLM {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8282;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 15;
+    int32 retcode = 10;
 }
+

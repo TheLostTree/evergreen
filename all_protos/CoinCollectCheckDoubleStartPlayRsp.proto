@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: JCDONBNMJNG
+// CmdId: 23249
 message CoinCollectCheckDoubleStartPlayRsp {
-	enum FOBGPGMPJMO {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 24464;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 11;
-	uint32 levelId = 8;
+    int32 retcode = 5;
+    uint32 level_id = 3;
 }
+

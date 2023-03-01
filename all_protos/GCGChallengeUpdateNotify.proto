@@ -1,18 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "GCGDuelChallenge.proto";
 
+// Name: GCGChallengeUpdateNotify
+// CmdId: 7403
 message GCGChallengeUpdateNotify {
-	enum PHDBJKPOOMO {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 7731;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	GCGDuelChallenge challenge = 4;
-	uint32 serverSeq = 9;
+    GCGDuelChallenge challenge = 4;
+    uint32 server_seq = 10;
 }
+

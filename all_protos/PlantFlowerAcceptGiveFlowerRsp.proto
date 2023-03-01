@@ -1,19 +1,14 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "PlantFlowerAcceptFlowerResultInfo.proto";
 
+// Name: NHFLBOGLALJ
+// CmdId: 8343
 message PlantFlowerAcceptGiveFlowerRsp {
-	enum OGIBDMNLBEK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8039;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 scheduleId = 4;
-	int32 retcode = 12;
-	PlantFlowerAcceptFlowerResultInfo acceptFlowerResultInfo = 14;
+    int32 retcode = 9;
+    uint32 schedule_id = 12;
+    PlantFlowerAcceptFlowerResultInfo accept_flower_result_info = 14;
 }
+

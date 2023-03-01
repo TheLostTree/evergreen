@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: HAJKCLEOHJL
+// CmdId: 224
 message ExecuteGadgetLuaRsp {
-	enum NFAENIKEMPJ {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 209;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 13;
+    int32 retcode = 7;
 }
+

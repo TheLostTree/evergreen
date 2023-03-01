@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "AsterMidDetailInfo.proto";
 
+// Name: LJKDKKDMJGM
+// CmdId: 2118
 message AsterMidInfoNotify {
-	enum NLCFBMFHHDC {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2007;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	AsterMidDetailInfo info = 8;
+    AsterMidDetailInfo info = 11;
 }
+

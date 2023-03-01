@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: EGDIIGHFPJB
+// CmdId: 2037
 message ActivityBannerClearRsp {
-	enum CCNNOICPILH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2143;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 activityId = 14;
-	uint32 scheduleId = 1;
-	int32 retcode = 2;
+    uint32 activity_id = 8;
+    int32 retcode = 12;
+    uint32 schedule_id = 11;
 }
+

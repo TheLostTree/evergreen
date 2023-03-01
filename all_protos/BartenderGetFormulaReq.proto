@@ -1,19 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ItemParam.proto";
 
+// Name: OCFIEICFEEP
+// CmdId: 8500
 message BartenderGetFormulaReq {
-	enum PINHACBMFME {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8258;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	repeated ItemParam itemList = 4;
-	uint32 questId = 6;
+    repeated ItemParam item_list = 12;
+    uint32 quest_id = 9;
 }
+

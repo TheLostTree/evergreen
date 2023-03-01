@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: FONADLHMICH
+// CmdId: 2246
 message GetPushTipsRewardReq {
-	enum APEBLJFAICF {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2218;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	repeated uint32 pushTipsIdList = 7;
+    repeated uint32 push_tips_id_list = 11;
 }
+

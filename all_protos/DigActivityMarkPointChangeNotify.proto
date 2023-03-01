@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "DigMarkPoint.proto";
 
+// Name: MIDHCHFOCFJ
+// CmdId: 8585
 message DigActivityMarkPointChangeNotify {
-	enum PDOCNKGLODB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8508;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated DigMarkPoint digMarkPointList = 4;
+    repeated DigMarkPoint dig_mark_point_list = 9;
 }
+

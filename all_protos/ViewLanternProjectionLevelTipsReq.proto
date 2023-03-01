@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: BOAINCLDMBC
+// CmdId: 8937
 message ViewLanternProjectionLevelTipsReq {
-	enum BJPOFMHIIJH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8211;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 levelId = 14;
+    uint32 level_id = 3;
 }
+

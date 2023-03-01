@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: JLLLDKBHOMJ
+// CmdId: 4846
 message HomeClearGroupRecordRsp {
-	enum BKKFNEHCCMP {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4536;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 6;
-	uint32 groupId = 7;
+    int32 retcode = 1;
+    uint32 group_id = 7;
 }
+

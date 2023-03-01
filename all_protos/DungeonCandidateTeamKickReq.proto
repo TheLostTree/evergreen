@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GGEHPHNJAJB
+// CmdId: 916
 message DungeonCandidateTeamKickReq {
-	enum ICKNJIBDCMK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 950;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 playerUid = 14;
+    uint32 player_uid = 6;
 }
+

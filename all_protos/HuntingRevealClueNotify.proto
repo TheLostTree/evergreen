@@ -1,21 +1,16 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
-
-import "Rotation.proto";
 import "HuntingPair.proto";
+import "Vector.proto";
 
+// Name: MLMHNJMNFPI
+// CmdId: 4332
 message HuntingRevealClueNotify {
-	enum ONMDIFHEJFA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4335;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 finishedGroupId = 13;
-	uint32 finishClueCount = 11;
-	Rotation cluePosition = 5;
-	HuntingPair huntingPair = 4;
+    Vector clue_position = 13;
+    uint32 finished_group_id = 3;
+    uint32 finish_clue_count = 14;
+    HuntingPair hunting_pair = 7;
 }
+

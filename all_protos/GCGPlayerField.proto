@@ -1,28 +1,30 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
-
+import "AEEKABMMKNE.proto";
 import "GCGZone.proto";
-import "GCGDiceSideType.proto";
-import "GCGPVEIntention.proto";
-import "GCGWaitingCharacter.proto";
+import "HHKFLCHIBJJ.proto";
+import "PENJFODAGGI.proto";
 
+// Name: GCGPlayerField
 message GCGPlayerField {
-	GCGZone Unk3300_EIHOMDLENMK = 4;
-	uint32 Unk3300_FDFPHNDOJML = 12;
-	repeated GCGDiceSideType diceSideList = 7;
-	uint32 Unk3300_GGHKFFADEAL = 181;
-	repeated GCGPVEIntention intentionList = 1273;
-	uint32 Unk3300_GLNIFLOKBPM = 14;
-	uint32 Unk3300_PBECINKKHND = 1;
-	uint32 Unk3300_IKJMGAHCFPM = 6;
-	uint32 controllerId = 3;
-	map<uint32, GCGZone> modifyZoneMap = 11;
-	GCGZone Unk3300_IPLMHKCNDLE = 10;
-	uint32 deckCardNum = 15;
-	GCGZone Unk3300_EFNAEFBECHD = 5;
-	GCGZone Unk3300_INDJNJJJNKL = 8;
-	GCGZone Unk3300_AOPJIOHMPOF = 9;
-	repeated GCGWaitingCharacter waitingList = 2;
-	bool isPassed = 13;
+    uint32 ONKDMOMNGBG = 824;
+    repeated PENJFODAGGI GGGHONFOAKP = 1;
+    uint32 IGMNOEBOCJP = 3;
+    repeated HHKFLCHIBJJ AICAJEFEHLF = 1540;
+    repeated AEEKABMMKNE PLPMEJFNDKA = 12;
+    bool is_passed = 10;
+    uint32 AJFMMFEEDFF = 14;
+    uint32 IAEJLGAILAK = 2;
+    uint32 AGPFPMEDGKI = 9;
+    GCGZone KOIGNIFNCMI = 7;
+    GCGZone HBCOFFFLNAI = 5;
+    GCGZone JLPLPDNEFJA = 15;
+    GCGZone DIFHGPIAFNK = 13;
+    map<uint32, GCGZone> modify_zone_map = 8;
+    GCGZone CGBIBGGMGEF = 11;
+    uint32 controller_id = 4;
+    uint32 NKNMAGGJMFP = 6;
 }
+

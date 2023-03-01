@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GALFAELEKAE
+// CmdId: 23655
 message CharAmusementSettleNotify {
-	enum PPKKMCEDOFG {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 21939;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 finishTime = 9;
-	bool isNewRecord = 11;
-	bool isSucc = 13;
+    uint32 finish_time = 3;
+    bool is_succ = 9;
+    bool is_new_record = 1;
 }
+

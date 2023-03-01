@@ -1,9 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: KFALPHIPJOK
 message HuntingPair {
-	uint32 refreshId = 5;
-	uint32 monsterConfigId = 12;
+    uint32 monster_config_id = 14;
+    uint32 refresh_id = 7;
 }
+

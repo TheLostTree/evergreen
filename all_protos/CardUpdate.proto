@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-import "GCGCard.proto";
-
-message CardUpdate {
-	GCGCard card = 10;
-}

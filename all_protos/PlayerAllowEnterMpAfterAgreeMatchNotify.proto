@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: KPCPHKEHBDO
+// CmdId: 4181
 message PlayerAllowEnterMpAfterAgreeMatchNotify {
-	enum JMPMDPDEAMP {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4175;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 targetUid = 2;
+    uint32 target_uid = 11;
 }
+

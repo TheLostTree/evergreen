@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "AranaraCollectionSuite.proto";
 
+// Name: KPDCOFIBKFD
+// CmdId: 6398
 message AranaraCollectionDataNotify {
-	enum FPPAFIEEHCA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 6388;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated AranaraCollectionSuite collectionSuiteList = 7;
+    repeated AranaraCollectionSuite collection_suite_list = 6;
 }
+

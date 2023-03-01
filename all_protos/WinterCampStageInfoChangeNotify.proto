@@ -1,18 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "WinterCampStageInfo.proto";
 
+// Name: DCAJHAFCEHL
+// CmdId: 8531
 message WinterCampStageInfoChangeNotify {
-	enum MHOIDAFEDGN {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8517;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	WinterCampStageInfo battleInfo = 15;
-	WinterCampStageInfo exploreInfo = 3;
+    WinterCampStageInfo battle_info = 8;
+    WinterCampStageInfo explore_info = 1;
 }
+

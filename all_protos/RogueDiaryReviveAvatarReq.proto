@@ -1,18 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "RogueDiaryAvatar.proto";
 
+// Name: IFLEHJCJGEM
+// CmdId: 8575
 message RogueDiaryReviveAvatarReq {
-	enum DNLLFNJJMLP {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8076;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	RogueDiaryAvatar reviveAvatar = 13;
+    RogueDiaryAvatar revive_avatar = 14;
 }
+

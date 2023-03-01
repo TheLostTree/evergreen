@@ -1,9 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: KJBDKIHKDBE
 message CylinderRegionSize {
-	float height = 4;
-	float radius = 14;
+    float radius = 4;
+    float height = 13;
 }
+

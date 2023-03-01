@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: ILOEELJDPFD
+// CmdId: 8135
 message MichiaeMatsuriDarkPressureLevelUpdateNotify {
-	enum MMAJHJDKHCH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8618;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 darkPressureLevel = 15;
+    uint32 dark_pressure_level = 5;
 }
+

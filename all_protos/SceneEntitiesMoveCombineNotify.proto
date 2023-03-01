@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "EntityMoveInfo.proto";
 
+// Name: NEIKDDNJBOM
+// CmdId: 3188
 message SceneEntitiesMoveCombineNotify {
-	enum JACHFFDDKEI {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 3025;
-		DCDNILFDFLB = 1;
-		NNBKOLMPOEA = 0;
-	}
-
-	repeated EntityMoveInfo entityMoveInfoList = 9;
+    repeated EntityMoveInfo entity_move_info_list = 12;
 }
+

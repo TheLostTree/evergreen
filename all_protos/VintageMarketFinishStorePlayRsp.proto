@@ -1,25 +1,20 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: FMIJABLAGEK
+// CmdId: 21469
 message VintageMarketFinishStorePlayRsp {
-	enum MNGADGCMBJB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 23367;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 Unk3300_DGECJOKMDGN = 4;
-	uint32 Unk3300_DJILELFHFHJ = 14;
-	int32 retcode = 11;
-	repeated uint32 Unk3300_HJIHIOIGAPP = 2;
-	uint32 Unk3300_DLNFCBPDBBH = 15;
-	uint32 Unk3300_GCDNOPJEIBG = 7;
-	map<uint32, uint32> storeIncomeMap = 1;
-	uint32 storeRound = 6;
-	repeated uint32 Unk3300_BDAIONEPKIK = 5;
-	repeated uint32 Unk3300_OCIMKEPJOOL = 9;
+    uint32 JMNHDHPGGAD = 1;
+    uint32 MFIPINDGKDL = 11;
+    repeated uint32 OLNLGBFKJHM = 5;
+    repeated uint32 NAMBHBHGNAC = 9;
+    uint32 store_round = 13;
+    repeated uint32 JGPDNHJEDFJ = 7;
+    uint32 ABKMNONAJLK = 4;
+    map<uint32, uint32> store_income_map = 15;
+    uint32 AIHLDCOLJPB = 8;
+    int32 retcode = 3;
 }
+

@@ -1,17 +1,15 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GCGInviteGuestBattleRsp
+// CmdId: 7325
 message GCGInviteGuestBattleRsp {
-	enum EFADHMKIAIP {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 7671;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 13;
-	uint32 level = 6;
+    uint32 uid = 3;
+    uint32 EGKHACMKHMD = 7;
+    uint32 confirm_end_time = 10;
+    int32 retcode = 4;
+    uint32 punish_end_time = 2;
 }
+

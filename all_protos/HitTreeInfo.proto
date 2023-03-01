@@ -1,10 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "Vector.proto";
 
-import "Rotation.proto";
-
+// Name: GPDPAAPFOML
 message HitTreeInfo {
-	uint32 treeType = 1;
-	Rotation treePos = 2;
+    Vector tree_pos = 12;
+    uint32 tree_type = 15;
 }
+

@@ -1,16 +1,18 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "BHKGAINOAON.proto";
+import "OLAHPIKKKOM.proto";
 
-import "FungusTrainingPoolPreviewDetail.proto";
-import "FungusFighterMonsterDetail.proto";
-
+// Name: NBBNIDCNBNJ
 message FungusTrainingProgressDetail {
-	repeated uint32 Unk3300_EEOIMDJOHCM = 15;
-	uint32 curRound = 1;
-	repeated uint32 Unk3300_NLHEFGBEOAC = 8;
-	repeated FungusTrainingPoolPreviewDetail monsterPoolPreviewList = 9;
-	uint32 totalUsedTime = 4;
-	repeated FungusFighterMonsterDetail monsterDetailList = 2;
-	uint32 dungeonId = 13;
+    repeated uint32 OHPPOCHJMHE = 15;
+    uint32 cur_round = 5;
+    uint32 dungeon_id = 11;
+    uint32 total_used_time = 10;
+    repeated uint32 JACIJBCLOMD = 6;
+    repeated OLAHPIKKKOM OKIHACBIMGP = 12;
+    repeated BHKGAINOAON PPJNMMHPAKP = 14;
 }
+

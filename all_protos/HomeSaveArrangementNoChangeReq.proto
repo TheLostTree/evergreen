@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: DNEOJOBPKKB
+// CmdId: 4475
 message HomeSaveArrangementNoChangeReq {
-	enum PFOELMJCIFN {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4562;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 sceneId = 14;
+    uint32 scene_id = 3;
 }
+

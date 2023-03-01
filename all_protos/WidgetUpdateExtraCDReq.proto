@@ -1,20 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "WIDGET_EXTRA_CD_TYPE.proto";
 
-import "WidgetExtraCdType.proto";
-
+// Name: AFHHJEOFHBL
+// CmdId: 6005
 message WidgetUpdateExtraCDReq {
-	enum KJAOLHJBCOP {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5973;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	WidgetExtraCdType extraCdType = 9;
-	uint32 materialId = 11;
-	uint32 cdGroup = 7;
+    uint32 cd_group = 3;
+    WIDGET_EXTRA_CD_TYPE extra_cd_type = 15;
+    uint32 material_id = 4;
 }
+

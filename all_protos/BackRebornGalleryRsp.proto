@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: KLOOLKBOAKM
+// CmdId: 5546
 message BackRebornGalleryRsp {
-	enum BKBIFNPADFG {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5518;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 14;
-	uint32 galleryId = 3;
+    int32 retcode = 5;
+    uint32 gallery_id = 11;
 }
+

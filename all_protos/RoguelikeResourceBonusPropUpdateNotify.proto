@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: NLBGODAGDJI
+// CmdId: 8376
 message RoguelikeResourceBonusPropUpdateNotify {
-	enum HMCGAAGGLCJ {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8858;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	float bonusResourceProp = 2;
+    float bonus_resource_prop = 11;
 }
+

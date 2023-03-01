@@ -1,12 +1,14 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ProfilePicture.proto";
 
+// Name: AEGNPAKEEEJ
 message PlantFlowerRecvFlowerData {
-	string nickname = 12;
-	uint32 uid = 8;
-	ProfilePicture profilePicture = 3;
-	map<uint32, uint32> flowerNumMap = 9;
+    map<uint32, uint32> flower_num_map = 1;
+    ProfilePicture profile_picture = 7;
+    uint32 uid = 2;
+    string nickname = 3;
 }
+

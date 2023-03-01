@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: OHPBKOBFIPH
+// CmdId: 5334
 message InBattleMechanicusLeftMonsterNotify {
-	enum DJBCGKHKHPN {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5374;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 leftMonsterNum = 6;
+    uint32 left_monster = 13;
 }
+

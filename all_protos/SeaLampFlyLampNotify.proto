@@ -1,20 +1,15 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "Vector.proto";
 
-import "Rotation.proto";
-
+// Name: FOPNAJKAPDA
+// CmdId: 2161
 message SeaLampFlyLampNotify {
-	enum CMJFJOJJKLN {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2014;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 itemNum = 7;
-	Rotation pos = 5;
-	int32 param = 10;
-	uint32 itemId = 3;
+    int32 param = 4;
+    Vector pos = 8;
+    uint32 item_num = 2;
+    uint32 item_id = 7;
 }
+

@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GDJPFOJKDIM
+// CmdId: 4603
 message HomeAvatarTalkReq {
-	enum KFPCFFDEEGA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4729;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 talkId = 4;
-	uint32 avatarId = 6;
+    uint32 talk_id = 13;
+    uint32 avatar_id = 14;
 }
+

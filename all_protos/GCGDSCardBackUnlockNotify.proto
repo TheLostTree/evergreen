@@ -1,18 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GCGDSCardBackUnlockNotify
+// CmdId: 7762
 message GCGDSCardBackUnlockNotify {
-	enum JAKDACJEGNP {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 7884;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	string egefalocknh = 2;
-	bool isSuccess = 8;
-	string cardBackId = 4;
+    uint32 card_back_id = 10;
 }
+

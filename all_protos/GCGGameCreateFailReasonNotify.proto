@@ -1,17 +1,20 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-import "GCGGameCreateReason.proto";
-
+// Name: GCGGameCreateFailReasonNotify
+// CmdId: 7060
 message GCGGameCreateFailReasonNotify {
-	enum NGJHBGBPDDB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 7551;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
+    // Name: GCGGameCreateReason
+    enum GCGGameCreateReason {
+        REASON_NONE = 0;
+        REASON_GAME_MAX = 1;
+        REASON_CLIENT_VERSION_NOT_LASTEST = 2;
+        REASON_RESOURCE_NOT_COMPLETE = 3;
+        REASON_TIMEOUT = 4;
+    }
 
-	GCGGameCreateReason reason = 2;
+    GCGGameCreateReason reason = 6;
 }
+

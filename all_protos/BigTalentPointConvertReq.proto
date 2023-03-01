@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: NJDGBCDHEIP
+// CmdId: 1014
 message BigTalentPointConvertReq {
-	enum HANKPODKPOA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1020;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	repeated uint64 itemGuidList = 5;
-	uint64 avatarGuid = 3;
+    repeated uint64 item_guid_list = 15;
+    uint64 avatar_guid = 10;
 }
+

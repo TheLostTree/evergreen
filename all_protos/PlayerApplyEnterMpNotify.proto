@@ -1,19 +1,14 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "OnlinePlayerInfo.proto";
 
+// Name: PKHNOEDAGBD
+// CmdId: 1848
 message PlayerApplyEnterMpNotify {
-	enum BALMBLBPAGP {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1838;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 srcThreadIndex = 14;
-	OnlinePlayerInfo srcPlayerInfo = 11;
-	uint32 srcAppId = 12;
+    OnlinePlayerInfo src_player_info = 5;
+    uint32 src_thread_index = 7;
+    uint32 src_app_id = 8;
 }
+

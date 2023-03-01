@@ -1,7 +1,0 @@
-syntax = "proto3";
-
-
-
-enum NullValue {
-	CEPOMEPFIME = 0;
-}

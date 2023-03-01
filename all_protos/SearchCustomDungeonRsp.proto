@@ -1,18 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "OtherCustomDungeonBrief.proto";
 
+// Name: MDNBJIOGKHI
+// CmdId: 6228
 message SearchCustomDungeonRsp {
-	enum PBOGKMIAOKK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 6224;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	OtherCustomDungeonBrief customDungeonBrief = 6;
-	int32 retcode = 5;
+    OtherCustomDungeonBrief custom_dungeon_brief = 2;
+    int32 retcode = 15;
 }
+

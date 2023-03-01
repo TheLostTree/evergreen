@@ -1,9 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: CGAKMGMPFDD
 message HideAndSeekMapInfo {
-	uint32 id = 7;
-	repeated uint32 kccalkjgkkd = 5;
+    uint32 id = 1;
+    repeated uint32 match_lock_reason_list = 3;
 }
+

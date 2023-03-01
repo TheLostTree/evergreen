@@ -1,35 +1,30 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
-
+import "DKDAOPDHNED.proto";
 import "TowerCurLevelRecord.proto";
-import "TowerMonthlyBrief.proto";
 import "TowerFloorRecord.proto";
 
+// Name: NFDBAJIDFBG
+// CmdId: 2465
 message TowerAllDataRsp {
-	enum ADOPBFIMDJI {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2462;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 Unk3300_OHCHCJGJIDK = 7;
-	TowerCurLevelRecord curLevelRecord = 1;
-	bool isFirstInteract = 8;
-	repeated TowerFloorRecord towerFloorRecordList = 6;
-	uint32 nextScheduleChangeTime = 15;
-	uint32 towerScheduleId = 9;
-	map<uint32, uint32> floorOpenTimeMap = 12;
-	uint32 validTowerRecordNum = 5;
-	map<uint32, uint32> skipFloorGrantedRewardItemMap = 11;
-	uint32 scheduleStartTime = 591;
-	TowerMonthlyBrief lastScheduleMonthlyBrief = 1482;
-	uint32 Unk3300_LEKODCFPINJ = 10;
-	uint32 Unk3300_HCDFJBHMHHF = 3;
-	uint32 Unk3300_JBACKENDHDG = 14;
-	bool isFinishedEntranceFloor = 2;
-	TowerMonthlyBrief monthlyBrief = 13;
-	int32 retcode = 4;
+    map<uint32, uint32> BPOEDICFILA = 6;
+    DKDAOPDHNED GPCJOCOKPCL = 2;
+    uint32 BAJALPKLOHN = 11;
+    uint32 OGLKMJOBNAK = 3;
+    int32 retcode = 9;
+    uint32 CKCFIIGKHMJ = 15;
+    bool is_first_interact = 14;
+    uint32 EJMAMALGICG = 12;
+    uint32 IOOHBFIGKHH = 13;
+    map<uint32, uint32> AHFICLOPFLC = 10;
+    repeated TowerFloorRecord tower_floor_record_list = 1;
+    bool is_finished_entrance_floor = 4;
+    uint32 CFEHKIFIKFB = 7;
+    uint32 AMFOBDDCIHK = 1758;
+    DKDAOPDHNED HCLHNDJDAPC = 622;
+    uint32 AKANNMFELNA = 8;
+    TowerCurLevelRecord cur_level_record = 5;
 }
+

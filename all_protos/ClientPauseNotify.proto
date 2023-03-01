@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: EJECHOLKFFM
+// CmdId: 276
 message ClientPauseNotify {
-	enum BLDACOPAFHI {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 277;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	bool isOpen = 10;
+    bool is_open = 14;
 }
+

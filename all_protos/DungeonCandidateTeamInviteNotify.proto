@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GLNEMEJGFJB
+// CmdId: 984
 message DungeonCandidateTeamInviteNotify {
-	enum HODGCDLNFPG {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 975;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 dungeonId = 15;
-	uint32 playerUid = 9;
-	uint32 validDeadlineTimeSec = 4;
+    uint32 vaild_deadline_time_sec = 7;
+    uint32 player_uid = 6;
+    uint32 dungeon_id = 9;
 }
+

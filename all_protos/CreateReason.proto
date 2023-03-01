@@ -1,9 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
+// Name: DPJENBKKAAG
 enum CreateReason {
-	CREATE_REASON_NONE = 0;
-	CREATE_REASON_QUEST = 1;
-	CREATE_REASON_ENERGY = 2;
+    CREATE_NONE = 0;
+    CREATE_QUEST = 1;
+    CREATE_ENERGY = 2;
 }
+

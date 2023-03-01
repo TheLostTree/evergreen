@@ -1,19 +1,14 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "HuntingPair.proto";
 
+// Name: IMLADOCAGIG
+// CmdId: 4315
 message GetHuntingOfferRewardRsp {
-	enum EJOIAIPLPII {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4343;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	HuntingPair huntingPair = 5;
-	uint32 cityId = 6;
-	int32 retcode = 2;
+    uint32 city_id = 4;
+    int32 retcode = 3;
+    HuntingPair hunting_pair = 1;
 }
+

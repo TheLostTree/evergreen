@@ -1,13 +1,15 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "Vector.proto";
 
-import "Rotation.proto";
-
+// Name: GBGELAPCNII
 message AnchorPointData {
-	uint32 sceneId = 15;
-	Rotation rot = 13;
-	uint32 endTime = 10;
-	Rotation pos = 12;
-	uint32 anchorPointId = 11;
+    Vector pos = 1;
+    uint32 end_time = 9;
+    Vector rot = 6;
+    uint32 anchor_point_id = 5;
+    uint32 scene_id = 15;
 }
+

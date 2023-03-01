@@ -1,9 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: MPOHNPIMAAJ
 message GCGLimitsInfo {
-	uint32 Unk3300_MNCNOLHHGPA = 15;
-	uint32 Unk3300_PHKPKFBDGJF = 3;
+    uint32 HPPJEEIHHEG = 11;
+    uint32 LNDNPPAMIIN = 8;
 }
+

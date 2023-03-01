@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: FAMNNOAEKLJ
+// CmdId: 1835
 message PlayerSetOnlyMPWithPSPlayerReq {
-	enum DFIFOODJINK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1802;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	bool isOnly = 6;
+    bool is_only = 11;
 }
+

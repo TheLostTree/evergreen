@@ -1,14 +1,16 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: AOOFANGHMOJ
 message IrodoriPoetryThemeData {
-	repeated uint32 Unk3300_CNNMEHOGGLL = 6;
-	repeated uint32 Unk3300_HODJKKDBJDJ = 4;
-	uint32 progress = 14;
-	uint32 maxProgress = 13;
-	uint32 Unk3300_NJHMNLIAGIK = 7;
-	uint32 themeId = 1;
-	uint32 Unk3300_HFMKPNOBPDK = 15;
+    repeated uint32 NEAELGDFMIL = 8;
+    uint32 progress = 3;
+    uint32 DMKGFAJADNC = 9;
+    uint32 OBDOEOGAGHH = 13;
+    uint32 CGGCACEMFPB = 14;
+    uint32 OGDCJBFODEB = 11;
+    repeated uint32 IEIFGEDGHLI = 6;
 }
+

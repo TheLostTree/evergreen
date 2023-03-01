@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: NPPGHIKIPJH
+// CmdId: 5931
 message WidgetWeatherWizardDataNotify {
-	enum HLAPCNOKIHB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5947;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 shieldValue = 15;
+    uint32 shield_value = 4;
 }
+

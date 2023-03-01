@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "Investigation.proto";
 
+// Name: KFLGDLECPAK
+// CmdId: 1901
 message PlayerInvestigationNotify {
-	enum OFJHHHCCEGN {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1911;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated Investigation investigationList = 12;
+    repeated Investigation investigation_list = 6;
 }
+

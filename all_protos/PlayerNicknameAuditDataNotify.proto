@@ -1,16 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "ContentAuditInfo.proto";
 
-
+// Name: BEHGMOHIKOM
+// CmdId: 200
 message PlayerNicknameAuditDataNotify {
-	enum KIGNJGEJPDO {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 133;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	string nickname = 11;
+    ContentAuditInfo info = 9;
 }
+

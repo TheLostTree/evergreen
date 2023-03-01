@@ -1,21 +1,15 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ToTheMoonObstacleInfo.proto";
 
+// Name: LPJBABKFPFO
+// CmdId: 6134
 message ToTheMoonAddObstacleReq {
-	enum JNHMMGGPKOO {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 6174;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	ToTheMoonObstacleInfo obstacle = 6;
-	uint32 sceneId = 7;
-	int32 queryId = 5;
-	bool useEdge = 15;
+    uint32 scene_id = 4;
+    int32 query_id = 8;
+    ToTheMoonObstacleInfo obstacle = 14;
+    bool use_edge = 15;
 }
+

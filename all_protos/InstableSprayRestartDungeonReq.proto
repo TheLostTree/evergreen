@@ -1,18 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "InstableSprayAvatarInfo.proto";
 
+// Name: MHAKCHCPHGM
+// CmdId: 23108
 message InstableSprayRestartDungeonReq {
-	enum IOEAANEKHFD {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 20911;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	repeated InstableSprayAvatarInfo avatarInfoList = 3;
+    repeated InstableSprayAvatarInfo avatar_info_list = 14;
 }
+

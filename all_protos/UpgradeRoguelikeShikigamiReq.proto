@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: EIPDIAEPMIH
+// CmdId: 8907
 message UpgradeRoguelikeShikigamiReq {
-	enum FIPFBHBMEIM {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8153;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 shikigamiGroupId = 10;
-	uint32 upgradeLevel = 6;
+    uint32 JDPMCDMBDBO = 15;
+    uint32 CAGAJANMNOP = 14;
 }
+

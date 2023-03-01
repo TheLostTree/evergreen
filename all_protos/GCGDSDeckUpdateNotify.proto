@@ -1,16 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GCGDSDeckUpdateNotify
+// CmdId: 7387
 message GCGDSDeckUpdateNotify {
-	enum FCEEKKCPDBD {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 7096;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 rewardIndex = 12;
+    uint32 deck_id = 6;
+    bool is_valid = 2;
 }
+

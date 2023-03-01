@@ -1,18 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-import "GCGPlayerGCGState.proto";
-
+// Name: GCGResourceStateNotify
+// CmdId: 7769
 message GCGResourceStateNotify {
-	enum NGMOOLEDMPJ {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 7280;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 2;
-	repeated GCGPlayerGCGState lolbinbndgc = 5;
+    bool is_complete = 10;
 }
+

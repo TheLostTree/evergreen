@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: LJEMOBEDBMB
+// CmdId: 20017
 message GearActivityFinishPlayGearRsp {
-	enum JCOMKKMJBKP {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 24722;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	bool isSuccess = 15;
-	int32 retcode = 9;
-	uint32 levelId = 7;
+    uint32 level_id = 13;
+    int32 retcode = 8;
+    bool is_success = 10;
 }
+

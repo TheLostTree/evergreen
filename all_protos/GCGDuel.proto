@@ -1,37 +1,37 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
-
-import "GCGCostReviseInfo.proto";
-import "GCGGameBusinessType.proto";
-import "GCGPhase.proto";
-import "GCGCard.proto";
-import "GCGMessagePack.proto";
-import "GCGControllerShowInfo.proto";
-import "Unk3300_ADHENCIFKNI.proto";
-import "GCGPVEIntention.proto";
 import "GCGPlayerField.proto";
+import "GCGPhase.proto";
+import "FMOEOCJBOPN.proto";
+import "GPCKNDGKBBD.proto";
+import "HHKFLCHIBJJ.proto";
 import "GCGDuelChallenge.proto";
+import "MNNNHOOHGHF.proto";
+import "GCGMessagePack.proto";
+import "GCGCard.proto";
 
+// Name: GCGDuel
 message GCGDuel {
-	repeated GCGCard cardList = 1;
-	uint32 Unk3300_JHDDNKFPINA = 5;
-	repeated uint32 forbidFinishChallengeList = 1985;
-	repeated GCGCard historyCardList = 1326;
-	repeated GCGMessagePack historyMsgPackList = 1636;
-	uint32 Unk3300_BIANMOPDEHO = 14;
-	repeated GCGControllerShowInfo showInfoList = 10;
-	repeated Unk3300_ADHENCIFKNI Unk3300_CDCMBOKBLAK = 1950;
-	repeated GCGPVEIntention intentionList = 15;
-	GCGCostReviseInfo costRevise = 6;
-	uint32 controllerId = 2;
-	repeated GCGPlayerField fieldList = 3;
-	GCGGameBusinessType businessType = 7;
-	GCGPhase phase = 8;
-	repeated GCGDuelChallenge challengeList = 37;
-	repeated uint32 cardIdList = 12;
-	uint32 serverSeq = 11;
-	uint32 round = 4;
-	uint32 gameId = 9;
-	uint32 Unk3300_JBBMBKGOONO = 13;
+    uint32 server_seq = 15;
+    repeated HHKFLCHIBJJ FLECBBNJDOB = 8;
+    uint32 DELFEGPPGMK = 6;
+    repeated GCGDuelChallenge MBCDFDKJFIG = 1778;
+    GCGPhase phase = 11;
+    repeated MNNNHOOHGHF CBNFENJBKKE = 1;
+    repeated GCGCard AAOFBGCFKGN = 301;
+    repeated GCGPlayerField field_list = 9;
+    uint32 OAEDGPFFFIB = 4;
+    repeated GCGMessagePack KBPJNIFEAHN = 924;
+    repeated GCGCard card_list = 2;
+    repeated uint32 card_id_list = 5;
+    repeated GPCKNDGKBBD FJFPKAGBFPE = 345;
+    FMOEOCJBOPN AECBJKLBGFK = 14;
+    uint32 LGCAPIJMFHK = 13;
+    repeated uint32 forbid_finish_challenge_list = 217;
+    uint32 controller_id = 10;
+    uint32 AGDIFNGNFOK = 12;
+    uint32 AMLPEHKILKH = 3;
 }
+

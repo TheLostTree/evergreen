@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: FOKIDJLHAEL
+// CmdId: 8340
 message PlantFlowerTakeSeedRewardRsp {
-	enum OFNKPCOGCCN {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8727;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 1;
-	uint32 scheduleId = 14;
+    uint32 schedule_id = 7;
+    int32 retcode = 1;
 }
+

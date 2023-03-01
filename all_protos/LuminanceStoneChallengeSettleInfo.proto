@@ -1,10 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "LuminanceStoneChallengeGallerySettleInfo.proto";
 
+// Name: DIEEDAKFLAJ
 message LuminanceStoneChallengeSettleInfo {
-	bool isNewRecord = 8;
-	LuminanceStoneChallengeGallerySettleInfo settleInfo = 11;
+    bool is_new_record = 10;
+    LuminanceStoneChallengeGallerySettleInfo settle_info = 15;
 }
+

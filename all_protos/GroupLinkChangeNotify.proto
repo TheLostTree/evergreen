@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "GroupLinkBundle.proto";
 
+// Name: GHJIGIBCCFE
+// CmdId: 5793
 message GroupLinkChangeNotify {
-	enum MPNFEFPIIGN {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5795;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	GroupLinkBundle bundle = 2;
+    GroupLinkBundle bundle = 2;
 }
+

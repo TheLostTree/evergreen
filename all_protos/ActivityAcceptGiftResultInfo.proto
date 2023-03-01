@@ -1,10 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: JENKCFOKNFE
 message ActivityAcceptGiftResultInfo {
-	map<uint32, uint32> Unk3300_JFHLEBLOFMA = 14;
-	uint32 uid = 11;
-	map<uint32, uint32> Unk3300_COCFNBJCFGP = 4;
+    map<uint32, uint32> KBOHLJAEOGO = 13;
+    uint32 uid = 12;
+    map<uint32, uint32> DJPMCNLFJEO = 15;
 }
+

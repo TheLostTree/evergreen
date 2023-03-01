@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: OHAEBHIGNAK
+// CmdId: 2284
 message GetPushTipsRewardRsp {
-	enum DHEGGHNEKCF {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2275;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated uint32 pushTipsIdList = 8;
-	int32 retcode = 13;
+    repeated uint32 push_tips_id_list = 2;
+    int32 retcode = 14;
 }
+

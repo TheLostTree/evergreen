@@ -1,11 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: AOMIIMMNEGI
 message VintageCampChallengeLevelData {
-	bool isOpen = 11;
-	bool isFinish = 6;
-	uint32 stageId = 8;
-	uint32 levelId = 9;
+    bool is_open = 4;
+    bool is_finish = 3;
+    uint32 stage_id = 6;
+    uint32 level_id = 9;
 }
+

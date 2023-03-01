@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "WorldRoutineTypeInfo.proto";
 
+// Name: KEHJMHEMANF
+// CmdId: 3509
 message WorldRoutineTypeRefreshNotify {
-	enum BDLFKJJGKII {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 3546;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	WorldRoutineTypeInfo worldRoutineType = 15;
+    WorldRoutineTypeInfo world_routine_type = 13;
 }
+

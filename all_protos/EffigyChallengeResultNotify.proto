@@ -1,19 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: BABNNLEIHGJ
+// CmdId: 2028
 message EffigyChallengeResultNotify {
-	enum PJAHGOOCLJB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2145;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 challengeId = 14;
-	uint32 challengeMaxScore = 1;
-	uint32 challengeScore = 5;
-	bool isSuccess = 4;
+    uint32 challenge_max_score = 3;
+    uint32 challenge_score = 8;
+    bool is_success = 1;
+    uint32 challenge_id = 15;
 }
+

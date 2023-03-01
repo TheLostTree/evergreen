@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: CMNFHHGFKMM
+// CmdId: 958
 message DungeonCandidateTeamReplyInviteReq {
-	enum IPHFJLNEGHL {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 907;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	bool isAccept = 3;
+    bool is_accept = 7;
 }
+

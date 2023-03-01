@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: ILGPBLHBKNJ
+// CmdId: 3313
 message DungeonEntryToBeExploreNotify {
-	enum KNJKHGDNHID {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 3446;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 sceneId = 9;
-	uint32 dungeonEntryScenePointId = 6;
-	uint32 dungeonEntryConfigId = 4;
+    uint32 GGGEMNHNCNJ = 7;
+    uint32 scene_id = 2;
+    uint32 NAKJJEJCAJI = 4;
 }
+

@@ -1,20 +1,27 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-import "Reason.proto";
-
+// Name: ILBJDEDMJPG
+// CmdId: 4568
 message PlayerApplyEnterHomeResultNotify {
-	enum KEHLDHBMMFM {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4642;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
+    // Name: IPMMLLFGLDB
+    enum Reason {
+        PLAYER_JUDGE = 0;
+        PLAYER_ENTER_OPTION_REFUSE = 1;
+        PLAYER_ENTER_OPTION_DIRECT = 2;
+        SYSTEM_JUDGE = 3;
+        HOST_IN_MATCH = 4;
+        PS_PLAYER_NOT_ACCEPT_OTHERS = 5;
+        OPEN_STATE_NOT_OPEN = 6;
+        HOST_IN_EDIT_MODE = 7;
+        PRIOR_CHECK = 8;
+    }
 
-	uint32 targetUid = 2;
-	Reason reason = 3;
-	bool isAgreed = 10;
-	string targetNickname = 9;
+    Reason reason = 11;
+    uint32 target_uid = 3;
+    bool is_agreed = 8;
+    string target_nickname = 1;
 }
+

@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-import "GCGTavernNpcInfo.proto";
-
+// Name: GCGBasicDataNotify
+// CmdId: 7005
 message GCGBasicDataNotify {
-	enum MFOGKBFIDLO {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 7511;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	GCGTavernNpcInfo option = 13;
+    uint32 exp = 11;
+    uint32 level = 7;
+    repeated uint32 level_reward_taken_list = 9;
 }
+

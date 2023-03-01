@@ -1,19 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: MJFAHMBOCBP
+// CmdId: 3907
 message EnterMechanicusDungeonRsp {
-	enum PELGLFCIAIO {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 3929;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 difficultLevel = 6;
-	int32 retcode = 8;
-	uint32 dungeonId = 9;
-	uint32 wrongUid = 14;
+    uint32 wrong_uid = 14;
+    uint32 dungeon_id = 1;
+    int32 retcode = 2;
+    uint32 difficult_level = 10;
 }
+

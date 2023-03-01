@@ -1,9 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: DEIIEJODMDG
 message ChessCardInfo {
-	uint32 cardId = 11;
-	uint32 effectStack = 12;
+    uint32 card_id = 1;
+    uint32 effect_stack = 13;
 }
+

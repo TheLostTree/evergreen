@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: FJCECJGCHJP
+// CmdId: 8091
 message ActivityGetFriendGiftWishListReq {
-	enum BCIOGIDBNAF {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8246;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 scheduleId = 11;
+    uint32 schedule_id = 9;
 }
+

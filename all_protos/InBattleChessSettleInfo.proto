@@ -1,15 +1,17 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ExhibitionDisplayInfo.proto";
 
+// Name: KCCNICENMAJ
 message InBattleChessSettleInfo {
-	uint32 Unk3300_NKHDFHAPNCN = 9;
-	uint64 sceneTimeMs = 11;
-	uint32 Unk3300_LPANFEBFJOJ = 15;
-	bool isSuccess = 2;
-	repeated ExhibitionDisplayInfo scoreList = 1;
-	uint32 Unk3300_IPGILJCBABK = 3;
-	uint32 Unk3300_EMNLLDJHMEI = 10;
+    bool is_success = 15;
+    uint32 MPCPKIIJOLM = 8;
+    uint32 JBBDBIKIILL = 12;
+    repeated ExhibitionDisplayInfo score_list = 4;
+    uint32 FBODLPEMNMN = 3;
+    uint32 AICKCKBBCMG = 14;
+    uint64 scene_time_ms = 2;
 }
+

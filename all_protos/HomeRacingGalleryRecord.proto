@@ -1,11 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "HomeGroupPlayerInfo.proto";
 
+// Name: FBLJNNEKAKB
 message HomeRacingGalleryRecord {
-	uint32 useTime = 3;
-	uint32 timestamp = 8;
-	HomeGroupPlayerInfo playerInfo = 4;
+    uint32 use_time = 13;
+    HomeGroupPlayerInfo player_info = 6;
+    uint32 timestamp = 15;
 }
+

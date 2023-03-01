@@ -1,11 +1,16 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
+
+
+// Name: KCEHIDGIEEF
 enum MapMarkPointType {
-  MAP_MARK_POINT_TYPE_NPC = 0;
-  MAP_MARK_POINT_TYPE_QUEST = 1;
-  MAP_MARK_POINT_TYPE_SPECIAL = 2;
-  MAP_MARK_POINT_TYPE_MINE = 3;
-  MAP_MARK_POINT_TYPE_COLLECTION = 4;
-  MAP_MARK_POINT_TYPE_MONSTER = 5;
-  MAP_MARK_POINT_TYPE_FISH_POOL = 6;
+    NPC = 0;
+    QUEST = 1;
+    SPECIAL = 2;
+    MINE = 3;
+    COLLECTION = 4;
+    MONSTER = 5;
+    FISH_POOL = 6;
 }
+

@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: FJOBAJGGBCO
+// CmdId: 1821
 message PlayerSetOnlyMPWithPSPlayerRsp {
-	enum GIOGPHLONAP {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1840;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	bool isOnly = 10;
-	int32 retcode = 2;
+    bool is_only = 4;
+    int32 retcode = 13;
 }
+

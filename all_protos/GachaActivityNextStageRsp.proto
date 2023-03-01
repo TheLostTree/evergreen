@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: OGFCBJNLKDH
+// CmdId: 8304
 message GachaActivityNextStageRsp {
-	enum NDJKAKCKAHA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8592;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 stageId = 4;
-	int32 retcode = 12;
+    int32 retcode = 13;
+    uint32 stage_id = 8;
 }
+

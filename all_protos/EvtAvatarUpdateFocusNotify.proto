@@ -1,21 +1,15 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ForwardType.proto";
-import "Rotation.proto";
+import "Vector.proto";
 
+// Name: PHJCOONMBKP
+// CmdId: 346
 message EvtAvatarUpdateFocusNotify {
-	enum MBMKKADEAPP {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 318;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 entityId = 5;
-	ForwardType forwardType = 15;
-	Rotation focusForward = 3;
+    Vector focus_forward = 3;
+    uint32 entity_id = 13;
+    ForwardType forward_type = 2;
 }
+

@@ -1,19 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "Vector.proto";
 
-import "Rotation.proto";
-
+// Name: NMDPHMJNAJA
+// CmdId: 230
 message MarkEntityInMinMapNotify {
-	enum CAEKOFFNIBF {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 263;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 monsterId = 12;
-	uint32 entityId = 3;
-	Rotation position = 13;
+    uint32 entity_id = 7;
+    uint32 monster_id = 2;
+    Vector position = 12;
 }
+

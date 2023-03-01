@@ -1,13 +1,15 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: NHLAHNCCBFA
 message PlantFlowerActivityDetailInfo {
-	map<uint32, uint32> Unk3300_ELAIBMDIBFJ = 14;
-	uint32 dayIndex = 8;
-	bool isTodayHasAwarded = 2;
-	bool leftMonsters = 1;
-	map<uint32, uint32> Unk3300_EPMKDFOBLFK = 11;
-	uint32 todaySeedRewardId = 4;
+    uint32 today_seed_reward_id = 15;
+    map<uint32, uint32> KNKPDDKPBBD = 9;
+    map<uint32, uint32> MBHJNEMIKII = 5;
+    bool is_today_has_awarded = 8;
+    bool is_content_closed = 7;
+    uint32 day_index = 12;
 }
+

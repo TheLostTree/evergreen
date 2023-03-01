@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ChatInfo.proto";
 
+// Name: BAIPCMEIMJF
+// CmdId: 5004
 message PrivateChatNotify {
-	enum NIGEJLOFMAO {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5037;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	ChatInfo chatInfo = 15;
+    ChatInfo chat_info = 4;
 }
+

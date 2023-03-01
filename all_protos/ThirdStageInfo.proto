@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message ThirdStageInfo {
-	uint32 leftTime = 7;
-	bool isSuccess = 6;
-}

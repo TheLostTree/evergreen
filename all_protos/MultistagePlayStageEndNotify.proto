@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: DIHCGHDLJLP
+// CmdId: 5322
 message MultistagePlayStageEndNotify {
-	enum FDGPHDCEFMM {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5341;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 groupId = 9;
-	uint32 playIndex = 14;
+    uint32 play_index = 12;
+    uint32 group_id = 3;
 }
+

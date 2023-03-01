@@ -1,19 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ClientInputType.proto";
 
+// Name: MHGDLKCNJOF
+// CmdId: 8818
 message ViewLanternProjectionTipsReq {
-	enum BPDKNPMCDCF {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8102;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	bool isInputTips = 2;
-	ClientInputType inputType = 1;
+    ClientInputType input_type = 5;
+    bool is_input_tips = 15;
 }
+

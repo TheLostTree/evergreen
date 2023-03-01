@@ -1,19 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: LPLPFPBLPIJ
+// CmdId: 901
 message DungeonReviseLevelNotify {
-	enum FOMJMOBFJHH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 991;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 reviseLevel = 11;
-	uint32 sceneLevel = 13;
-	uint32 dungeonId = 12;
+    uint32 dungeon_id = 15;
+    uint32 OONLIAFCPDN = 3;
+    uint32 AMIKKOIOAPN = 7;
 }
+

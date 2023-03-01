@@ -1,13 +1,15 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "LunaRiteHintStatusType.proto";
 
+// Name: BOMMBPDKMOH
 message LunaRiteAreaInfo {
-	uint32 challengeIndex = 9;
-	repeated uint32 sacrificeRewardList = 13;
-	repeated uint32 sacrificeList = 2;
-	LunaRiteHintStatusType hintStatus = 3;
-	uint32 areaId = 12;
+    uint32 area_id = 9;
+    repeated uint32 sacrifice_reward_list = 5;
+    LunaRiteHintStatusType hint_status = 7;
+    uint32 challenge_index = 13;
+    repeated uint32 sacrifice_list = 3;
 }
+

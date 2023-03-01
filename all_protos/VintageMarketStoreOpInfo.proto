@@ -1,12 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: CNMOCADLDKL
 message VintageMarketStoreOpInfo {
-	uint32 helpUid = 14;
-	uint32 helpSkillId = 13;
-	repeated uint32 addAttrList = 3;
-	uint32 storeId = 2;
-	repeated uint32 strategyList = 4;
+    uint32 OMJNBCDJOOM = 5;
+    uint32 store_id = 11;
+    uint32 FMMECOPACKC = 10;
+    repeated uint32 add_attr_list = 12;
+    repeated uint32 strategy_list = 4;
 }
+

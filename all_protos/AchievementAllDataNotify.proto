@@ -1,18 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "Achievement.proto";
 
+// Name: IHGEAOHBLMH
+// CmdId: 2698
 message AchievementAllDataNotify {
-	enum BPPEPMJFOPO {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2688;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated uint32 rewardTakenGoalIdList = 8;
-	repeated Achievement achievementList = 4;
+    repeated Achievement achievement_list = 15;
+    repeated uint32 reward_taken_goal_id_list = 4;
 }
+

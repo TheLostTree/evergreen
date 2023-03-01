@@ -1,20 +1,15 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: LBNJNEAOGAO
+// CmdId: 2021
 message StartEffigyChallengeRsp {
-	enum GPMFAGCDACP {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2070;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 pointId = 8;
-	uint32 difficultyId = 9;
-	repeated uint32 conditionIdList = 2;
-	uint32 challengeId = 4;
-	int32 retcode = 1;
+    uint32 challenge_id = 3;
+    repeated uint32 condition_id_list = 11;
+    int32 retcode = 5;
+    uint32 point_id = 13;
+    uint32 difficulty_id = 4;
 }
+

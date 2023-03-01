@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GCGClientSettleRsp
+// CmdId: 7689
 message GCGClientSettleRsp {
-	enum FPGBMFBIEEF {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 7894;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	bool njfkmlcpbbh = 2;
+    uint32 close_time = 5;
+    int32 retcode = 2;
 }
+

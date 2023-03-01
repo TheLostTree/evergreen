@@ -1,20 +1,15 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: NLABOFOJGEC
+// CmdId: 4404
 message ScenePlayOwnerCheckRsp {
-	enum LFJEPKAIKOD {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4437;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 5;
-	repeated uint32 paramList = 14;
-	bool isSkipMatch = 7;
-	uint32 playId = 8;
-	uint32 wrongUid = 6;
+    uint32 wrong_uid = 6;
+    int32 retcode = 15;
+    uint32 play_id = 14;
+    repeated uint32 param_list = 8;
+    bool is_skip_match = 7;
 }
+

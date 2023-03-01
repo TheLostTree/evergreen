@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message LJGFPJKMGDO {
-	int32 value = 1;
-}

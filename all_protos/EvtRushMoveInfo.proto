@@ -1,16 +1,18 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "Vector.proto";
 
-import "Rotation.proto";
-
+// Name: HDKIFBIDOBJ
 message EvtRushMoveInfo {
-	Rotation velocity = 13;
-	uint32 entityId = 5;
-	Rotation Unk3300_FGAPBJIPJFG = 6;
-	float timeRange = 10;
-	int32 faceAngleCompact = 9;
-	Rotation pos = 14;
-	Rotation Unk3300_NEBMDDGPBON = 8;
-	int32 stateNameHash = 7;
+    Vector pos = 1;
+    Vector MCOJDHHIFCH = 2;
+    int32 state_name_hash = 9;
+    uint32 entity_id = 6;
+    float time_range = 14;
+    Vector NMOLBICBICJ = 11;
+    int32 face_angle_compact = 8;
+    Vector velocity = 13;
 }
+

@@ -1,14 +1,16 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "GCGReason.proto";
 import "GCGZoneType.proto";
 
+// Name: HCDEKEGHIMI
 message GCGMsgAddCards {
-	uint32 controllerId = 11;
-	GCGReason reason = 1;
-	uint32 pos = 6;
-	GCGZoneType zone = 9;
-	repeated uint32 cardGuidList = 5;
+    repeated uint32 card_guid_list = 6;
+    GCGReason reason = 13;
+    uint32 controller_id = 9;
+    GCGZoneType zone = 2;
+    uint32 pos = 5;
 }
+

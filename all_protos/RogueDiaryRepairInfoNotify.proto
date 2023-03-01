@@ -1,26 +1,20 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "RogueDiaryAvatar.proto";
 import "RogueDiaryRoomInfo.proto";
 
+// Name: PEFDGELCIDM
+// CmdId: 8835
 message RogueDiaryRepairInfoNotify {
-	enum HHDFAEBLEMA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8681;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 stageId = 10;
-	repeated RogueDiaryAvatar avatarList = 13;
-	repeated RogueDiaryAvatar selectAvatarList = 7;
-	repeated uint32 randCardList = 12;
-	repeated uint32 selectCardList = 1;
-	repeated uint32 chosenCardList = 8;
-	repeated RogueDiaryAvatar trialAvatarList = 3;
-	repeated RogueDiaryRoomInfo roomList = 5;
+    repeated RogueDiaryRoomInfo room_list = 13;
+    repeated uint32 chosen_card_list = 6;
+    repeated RogueDiaryAvatar trial_avatar_list = 8;
+    repeated uint32 rand_card_list = 2;
+    repeated RogueDiaryAvatar select_avatar_list = 11;
+    repeated uint32 select_card_list = 1;
+    uint32 stage_id = 5;
+    repeated RogueDiaryAvatar avatar_list = 14;
 }
+

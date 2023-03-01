@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: HPIAGOCCCCA
+// CmdId: 2053
 message BlessingGiveFriendPicRsp {
-	enum GFFEOGMCJKA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2082;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 uid = 5;
-	uint32 picId = 15;
-	int32 retcode = 11;
+    uint32 uid = 6;
+    uint32 pic_id = 8;
+    int32 retcode = 2;
 }
+

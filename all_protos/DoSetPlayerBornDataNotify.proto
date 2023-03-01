@@ -1,15 +1,10 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: ILFGJLJBACE
+// CmdId: 161
 message DoSetPlayerBornDataNotify {
-	enum CALNHJLOBKC {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 139;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
 }
+

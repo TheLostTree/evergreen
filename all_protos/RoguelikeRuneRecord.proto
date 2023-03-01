@@ -1,10 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: KEKIOJDBHEP
 message RoguelikeRuneRecord {
-	uint32 Unk3300_JLOLMLFAPHH = 7;
-	uint32 Unk3300_IGBOJLPPKON = 12;
-	uint32 runeId = 6;
+    uint32 rune_id = 7;
+    uint32 LCOGBNOCODJ = 12;
+    uint32 CCOGCAMBNAD = 14;
 }
+

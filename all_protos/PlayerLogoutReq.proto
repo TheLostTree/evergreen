@@ -1,18 +1,24 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-import "Reason.proto";
-
+// Name: GDMEIEGGFOL
+// CmdId: 114
 message PlayerLogoutReq {
-	enum HGECFPJJINL {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 120;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
+    // Name: MOCICMDGAAH
+    enum Reason {
+        DISCONNECT = 0;
+        CLIENT_REQ = 1;
+        TIMEOUT = 2;
+        ADMIN_REQ = 3;
+        SERVER_CLOSE = 4;
+        GM_CLEAR = 5;
+        PLAYER_TRANSFER = 6;
+        CLIENT_CHECKSUM_INVALID = 7;
+        REASON_BDJAMJFAPDB = 8;
+    }
 
-	Reason reason = 1;
+    Reason reason = 4;
 }
+

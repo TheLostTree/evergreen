@@ -1,20 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "Vector.proto";
 
-import "Rotation.proto";
-
+// Name: FCOELCNJHFD
+// CmdId: 3299
 message HitTreeNotify {
-	enum IGPKPGNGFHB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 3118;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	Rotation dropPos = 11;
-	Rotation treePos = 4;
-	uint32 treeType = 5;
+    Vector drop_pos = 6;
+    Vector tree_pos = 2;
+    uint32 tree_type = 11;
 }
+

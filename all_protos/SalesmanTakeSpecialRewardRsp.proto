@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: FDEBLNBOEIF
+// CmdId: 2184
 message SalesmanTakeSpecialRewardRsp {
-	enum KIOEPIJBBOB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2103;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 1;
-	uint32 scheduleId = 7;
+    int32 retcode = 9;
+    uint32 schedule_id = 10;
 }
+

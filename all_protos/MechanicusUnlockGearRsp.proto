@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: JABBEEICGBD
+// CmdId: 3982
 message MechanicusUnlockGearRsp {
-	enum KFMBLOHIIAC {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 3970;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 2;
-	uint32 gearId = 9;
-	uint32 mechanicusId = 13;
+    uint32 mechanicus_id = 4;
+    uint32 gear_id = 13;
+    int32 retcode = 12;
 }
+

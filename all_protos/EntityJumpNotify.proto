@@ -1,21 +1,22 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "Vector.proto";
 
-import "Rotation.proto";
-import "Type.proto";
-
+// Name: IHFJJGEJPCK
+// CmdId: 219
 message EntityJumpNotify {
-	enum GFBPAOPKOEK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 292;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
+    // Name: DBEOHMKBCOH
+    enum Type {
+        NULL = 0;
+        ACTIVE = 1;
+        PASSIVE = 2;
+    }
 
-	Rotation rot = 8;
-	Rotation pos = 5;
-	uint32 entityId = 11;
-	Type jumpType = 3;
+    Vector pos = 13;
+    uint32 entity_id = 9;
+    Vector rot = 15;
+    Type jump_type = 7;
 }
+

@@ -1,19 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: IMDJMIGFNDA
+// CmdId: 8565
 message ClearRoguelikeCurseNotify {
-	enum FACMIBLDHHO {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8183;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	bool isCurseAllClear = 14;
-	bool isClearAll = 9;
-	map<uint32, uint32> clearCurseMap = 12;
-	uint32 cardId = 6;
+    map<uint32, uint32> clear_curse_map = 13;
+    uint32 card_id = 7;
+    bool EABGIEFBONK = 4;
+    bool DJDLPJELAMM = 10;
 }
+

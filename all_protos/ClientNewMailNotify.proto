@@ -1,17 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: DNKOPLJDKHH
+// CmdId: 1450
 message ClientNewMailNotify {
-	enum BJODFBDCPEK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1414;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 notReadNum = 3;
-	uint32 notGotAttachmentNum = 11;
+    bool CNCDJHLGHKA = 7;
+    uint32 KIKLOMKNELG = 6;
+    uint32 GPMOAAPPPNN = 8;
 }
+

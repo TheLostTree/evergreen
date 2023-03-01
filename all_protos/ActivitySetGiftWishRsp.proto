@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: AJIEGCNPIIN
+// CmdId: 8764
 message ActivitySetGiftWishRsp {
-	enum PFLMMCDAHKN {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8828;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 scheduleId = 14;
-	int32 retcode = 11;
+    uint32 schedule_id = 15;
+    int32 retcode = 13;
 }
+

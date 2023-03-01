@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "WidgetSlotData.proto";
 
+// Name: FMGIFBHJHEP
+// CmdId: 4264
 message WidgetActiveChangeNotify {
-	enum LEFFDDICKCL {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4278;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated WidgetSlotData widgetDataList = 13;
+    repeated WidgetSlotData widget_data_list = 1;
 }
+

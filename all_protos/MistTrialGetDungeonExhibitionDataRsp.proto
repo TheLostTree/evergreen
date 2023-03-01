@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: MHNKLABAELD
+// CmdId: 8058
 message MistTrialGetDungeonExhibitionDataRsp {
-	enum MNECAJJIILI {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8208;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 trialId = 10;
-	int32 retcode = 13;
+    int32 retcode = 8;
+    uint32 trial_id = 7;
 }
+

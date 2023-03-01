@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: EKFMJMNHNGB
+// CmdId: 8896
 message HideAndSeekSelectSkillReq {
-	enum IGIMBFKHFEK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8142;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	repeated uint32 skillList = 6;
+    repeated uint32 skill_list = 13;
 }
+

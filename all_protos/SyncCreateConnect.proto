@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-import "BreakoutSyncConnectUidInfo.proto";
-
-message SyncCreateConnect {
-	repeated BreakoutSyncConnectUidInfo uidInfoList = 6;
-}

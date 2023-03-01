@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "InvestigationTarget.proto";
 
+// Name: MOGCBFKFHDN
+// CmdId: 1930
 message PlayerInvestigationTargetNotify {
-	enum LPONNFCCGLL {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1930;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated InvestigationTarget investigationTargetList = 12;
+    repeated InvestigationTarget investigation_target_list = 1;
 }
+

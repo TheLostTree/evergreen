@@ -1,19 +1,14 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "AbilityInvokeEntry.proto";
 
+// Name: FEOKKPIAIJF
+// CmdId: 1114
 message AbilityInvocationFailNotify {
-	enum PIEICCOCBLN {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1120;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	string reason = 4;
-	uint32 entityId = 13;
-	AbilityInvokeEntry invoke = 14;
+    uint32 entity_id = 12;
+    string reason = 3;
+    AbilityInvokeEntry invoke = 8;
 }
+

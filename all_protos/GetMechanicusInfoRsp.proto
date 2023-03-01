@@ -1,18 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "MechanicusInfo.proto";
 
+// Name: FGNKBHOCEPG
+// CmdId: 3975
 message GetMechanicusInfoRsp {
-	enum CFKHICOHFPO {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 3955;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	MechanicusInfo mechanicusInfo = 1;
-	int32 retcode = 12;
+    int32 retcode = 12;
+    MechanicusInfo mechanicus_info = 1;
 }
+

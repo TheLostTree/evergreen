@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-import "BreakoutAction.proto";
-
-message SyncAction {
-	BreakoutAction henpegmkbie = 9;
-}

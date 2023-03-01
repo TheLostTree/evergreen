@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: NLNHDOFDJAB
+// CmdId: 2159
 message BlessingAcceptAllGivePicRsp {
-	enum NNHNAGFFCLE {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2048;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	map<uint32, uint32> acceptPicNumMap = 13;
-	repeated uint32 acceptIndexList = 3;
-	int32 retcode = 11;
+    int32 retcode = 12;
+    map<uint32, uint32> accept_pic_num_map = 6;
+    repeated uint32 accept_index_list = 7;
 }
+

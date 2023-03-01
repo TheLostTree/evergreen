@@ -1,16 +1,10 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: KNNCLKDLJGP
+// CmdId: 24138
 message GearActivityStartPlayPictureReq {
-	enum CFMGHGKBEMF {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 22919;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
 }
+

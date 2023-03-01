@@ -1,11 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GLEKJEAFNOD
 message IrodoriChessMonsterInfo {
-	uint32 monsterId = 12;
-	uint32 level = 13;
-	uint32 hhmklcpngkl = 14;
-	repeated uint32 affixList = 1;
+    repeated uint32 affix_list = 8;
+    uint32 level = 5;
+    uint32 grant_points = 2;
+    uint32 monster_id = 12;
 }
+

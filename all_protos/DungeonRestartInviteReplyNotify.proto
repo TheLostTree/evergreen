@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: BCHCJGKHLAH
+// CmdId: 936
 message DungeonRestartInviteReplyNotify {
-	enum NJIFOEPPIGA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 967;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	bool isAccept = 8;
-	uint32 playerUid = 1;
+    bool is_accept = 2;
+    uint32 player_uid = 6;
 }
+

@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "FriendBrief.proto";
 
+// Name: LMHNPPGHGAC
+// CmdId: 4008
 message PSNBlackListNotify {
-	enum AAFPAFGGMIE {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4001;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated FriendBrief psnBlacklist = 10;
+    repeated FriendBrief psn_blacklist = 11;
 }
+

@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: OPICKCNIEAC
+// CmdId: 8457
 message ReserveRogueDiaryAvatarRsp {
-	enum CMJHJPMFJIH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8800;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 14;
+    int32 retcode = 5;
 }
+

@@ -1,16 +1,10 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: LAMJHMACNGB
+// CmdId: 4026
 message GetRecentMpPlayerListReq {
-	enum GINPDAMMMNL {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4051;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
 }
+

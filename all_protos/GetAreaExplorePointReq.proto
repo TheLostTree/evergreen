@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: EPLOBIPMGNK
+// CmdId: 258
 message GetAreaExplorePointReq {
-	enum DJPJAAALGPH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 207;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	repeated uint32 areaIdList = 5;
+    repeated uint32 area_id_list = 14;
 }
+

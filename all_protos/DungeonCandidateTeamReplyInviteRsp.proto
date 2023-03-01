@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: JOCEDFKHMHB
+// CmdId: 905
 message DungeonCandidateTeamReplyInviteRsp {
-	enum MGFIHEDCGOJ {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 952;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	bool isTransPoint = 2;
-	int32 retcode = 1;
+    int32 retcode = 6;
+    bool is_trans_point = 8;
 }
+

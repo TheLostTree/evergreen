@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: EMIKPGMJCAG
+// CmdId: 8964
 message ActivityTakeAllScoreRewardRsp {
-	enum AGJHBFOEPGP {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8501;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 activityId = 13;
-	repeated uint32 rewardConfigList = 7;
-	int32 retcode = 4;
+    int32 retcode = 12;
+    repeated uint32 reward_config_list = 8;
+    uint32 activity_id = 14;
 }
+

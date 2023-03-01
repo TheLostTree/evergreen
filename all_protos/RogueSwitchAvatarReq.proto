@@ -1,20 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: BANCBBMHEKO
+// CmdId: 8770
 message RogueSwitchAvatarReq {
-	enum ILOKDHFKNLC {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8262;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint64 curAvatarGuid = 15;
-	repeated uint64 onstageAvatarGuidList = 14;
-	uint32 cellId = 8;
-	uint32 dungeonId = 1;
+    uint64 cur_avatar_guid = 5;
+    repeated uint64 onstage_avatar_guid_list = 2;
+    uint32 cell_id = 1;
+    uint32 dungeon_id = 12;
 }
+

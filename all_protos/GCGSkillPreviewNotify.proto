@@ -1,23 +1,18 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "AJCFJJFJJMB.proto";
+import "KOFKLFNBDNA.proto";
+import "LJFMLGDFELG.proto";
 
-import "GCGChangeOnstageInfo.proto";
-import "GCGSkillPreviewInfo.proto";
-import "GCGSkillPreviewPlayCardInfo.proto";
-
+// Name: GCGSkillPreviewNotify
+// CmdId: 7951
 message GCGSkillPreviewNotify {
-	enum EBIPPGMBKOL {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 7368;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated GCGChangeOnstageInfo changeOnstagePreviewList = 2;
-	uint32 controllerId = 3;
-	repeated GCGSkillPreviewInfo skillPreviewList = 6;
-	repeated GCGSkillPreviewPlayCardInfo playCardList = 9;
-	uint32 onstageCardGuid = 10;
+    repeated LJFMLGDFELG PDFBKOLMBCC = 1;
+    uint32 onstage_card_guid = 2;
+    repeated KOFKLFNBDNA OKMPNOPIEAP = 15;
+    repeated AJCFJJFJJMB GPFBBLIJPDG = 5;
+    uint32 controller_id = 8;
 }
+

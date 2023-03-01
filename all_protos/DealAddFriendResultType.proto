@@ -1,8 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
+// Name: HKNICPJLBBF
 enum DealAddFriendResultType {
-	DEAL_ADD_FRIEND_RESULT_TYPE_REJECT = 0;
-	DEAL_ADD_FRIEND_RESULT_TYPE_ACCEPT = 1;
+    DEAL_ADD_FRIEND_REJECT = 0;
+    DEAL_ADD_FRIEND_ACCEPT = 1;
 }
+

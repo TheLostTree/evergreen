@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: CKMLMNALECC
+// CmdId: 1786
 message RefreshBackgroundAvatarRsp {
-	enum CIHAMKMFODI {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1720;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 13;
-	map<uint64, uint32> hpFullTimeMap = 4;
+    map<uint64, uint32> hp_full_time_map = 8;
+    int32 retcode = 12;
 }
+

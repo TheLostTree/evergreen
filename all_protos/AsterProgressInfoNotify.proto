@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "AsterProgressDetailInfo.proto";
 
+// Name: LMNNPFFMONB
+// CmdId: 2173
 message AsterProgressInfoNotify {
-	enum LIELBIINANH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2091;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	AsterProgressDetailInfo info = 7;
+    AsterProgressDetailInfo info = 12;
 }
+

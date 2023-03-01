@@ -1,9 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: CPANDOCFHFN
 message ProductPriceTier {
-	string productId = 10;
-	string priceTier = 6;
+    string price_tier = 8;
+    string product_id = 3;
 }
+

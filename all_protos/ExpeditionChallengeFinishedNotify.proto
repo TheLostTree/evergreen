@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: JDEMFAMIKOH
+// CmdId: 2075
 message ExpeditionChallengeFinishedNotify {
-	enum BAJDKJFEJAB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2094;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 id = 8;
+    uint32 id = 6;
 }
+

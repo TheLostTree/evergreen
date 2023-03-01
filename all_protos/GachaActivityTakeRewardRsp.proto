@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: OHIGEMKPMPC
+// CmdId: 8272
 message GachaActivityTakeRewardRsp {
-	enum PPKEPNJBPCF {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8228;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 14;
-	map<uint32, uint32> robotNumMap = 2;
+    int32 retcode = 15;
+    map<uint32, uint32> robot_num_map = 12;
 }
+

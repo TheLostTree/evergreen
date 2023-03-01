@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-import "IPLHKNLPPHD.proto";
-
-message BoatMultiInfo {
-	repeated IPLHKNLPPHD playerData = 14;
-}

@@ -1,9 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: OHOPHOBAPIL
 message TaskVar {
-	repeated int32 valueList = 15;
-	uint32 key = 8;
+    repeated int32 value_list = 10;
+    uint32 key = 5;
 }
+

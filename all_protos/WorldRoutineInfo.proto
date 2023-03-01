@@ -1,11 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: EMOKHPEDGKH
 message WorldRoutineInfo {
-	bool isFinished = 9;
-	uint32 finishProgress = 15;
-	uint32 progress = 5;
-	uint32 routineId = 4;
+    bool is_finished = 10;
+    uint32 routine_id = 15;
+    uint32 progress = 9;
+    uint32 finish_progress = 6;
 }
+

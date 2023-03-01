@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "RogueCellInfo.proto";
 
+// Name: MGMCOIIAJLO
+// CmdId: 8624
 message RogueCellUpdateNotify {
-	enum BBAMALKNIEP {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8067;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	RogueCellInfo cellInfo = 15;
+    RogueCellInfo cell_info = 13;
 }
+

@@ -1,19 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: JBMLBNBOFDM
+// CmdId: 243
 message LevelupCityReq {
-	enum HJKHCLPEMCB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 295;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 sceneId = 14;
-	uint32 itemNum = 8;
-	uint32 areaId = 13;
+    uint32 scene_id = 5;
+    uint32 area_id = 7;
+    uint32 item_num = 9;
 }
+

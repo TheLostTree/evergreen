@@ -1,19 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "Vector.proto";
 
-import "Rotation.proto";
-
+// Name: PIBJPDAAJLK
+// CmdId: 379
 message EvtAvatarLockChairReq {
-	enum FINEJFAMDOG {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 337;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint64 chairId = 3;
-	Rotation position = 14;
+    uint64 chair_id = 7;
+    Vector position = 15;
 }
+

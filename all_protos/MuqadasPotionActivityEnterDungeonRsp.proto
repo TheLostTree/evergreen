@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: NEENJIBAKKA
+// CmdId: 22334
 message MuqadasPotionActivityEnterDungeonRsp {
-	enum PFCAJHFEFDM {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 20138;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 levelId = 8;
-	int32 retcode = 15;
+    uint32 level_id = 1;
+    int32 retcode = 11;
 }
+

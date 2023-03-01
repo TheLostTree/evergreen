@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: DGNIFIFMMCP
+// CmdId: 189
 message ClientLockGameTimeNotify {
-	enum BPHAFNCFEOA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 112;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	bool isLock = 1;
+    bool is_lock = 4;
 }
+

@@ -1,11 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: BEBIONDAIJE
 message TrialAvatarActivityRewardDetailInfo {
-	uint32 trialAvatarIndexId = 5;
-	bool opecleddeom = 2;
-	uint32 rewardId = 7;
-	bool jbghkencdaj = 14;
+    bool MCCAEONNHPH = 12;
+    uint32 reward_id = 8;
+    bool JNEMHMEMNEB = 14;
+    uint32 trial_avatar_index_id = 13;
 }
+

@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ClientReconnectReason.proto";
 
+// Name: COHPOPIPCKO
+// CmdId: 7
 message ClientReconnectNotify {
-	enum JKMOFHFEHML {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 29;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	ClientReconnectReason reason = 1;
+    ClientReconnectReason reason = 14;
 }
+

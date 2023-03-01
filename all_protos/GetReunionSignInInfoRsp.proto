@@ -1,18 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ReunionSignInInfo.proto";
 
+// Name: JGPECFNNFJP
+// CmdId: 5065
 message GetReunionSignInInfoRsp {
-	enum NMIPECFCKPH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5093;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 14;
-	ReunionSignInInfo signInInfo = 4;
+    ReunionSignInInfo sign_in_info = 8;
+    int32 retcode = 10;
 }
+

@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: NAGPFLFFPEA
+// CmdId: 22764
 message CoinCollectPrepareRsp {
-	enum GGNBJAOJLFK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 23815;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 5;
+    int32 retcode = 6;
 }
+

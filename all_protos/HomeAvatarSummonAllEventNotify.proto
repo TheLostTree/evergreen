@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "HomeAvatarSummonEventInfo.proto";
 
+// Name: BDOLBAAPHNE
+// CmdId: 4892
 message HomeAvatarSummonAllEventNotify {
-	enum NNFLPNJAKDN {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4579;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated HomeAvatarSummonEventInfo summonEventList = 15;
+    repeated HomeAvatarSummonEventInfo summon_event_list = 7;
 }
+

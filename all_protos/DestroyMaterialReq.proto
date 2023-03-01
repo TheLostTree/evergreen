@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "MaterilaInfo.proto";
 
-import "MaterialInfo.proto";
-
+// Name: NNCOOJDHINJ
+// CmdId: 608
 message DestroyMaterialReq {
-	enum IAALDMPBIIM {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 601;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	repeated MaterialInfo materialList = 10;
+    repeated MaterilaInfo material_list = 12;
 }
+

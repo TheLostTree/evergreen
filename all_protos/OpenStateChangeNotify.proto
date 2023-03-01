@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: OBMHCDJPJEA
+// CmdId: 146
 message OpenStateChangeNotify {
-	enum COFNHLPKACO {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 118;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	map<uint32, uint32> openStateMap = 15;
+    map<uint32, uint32> open_state_map = 13;
 }
+

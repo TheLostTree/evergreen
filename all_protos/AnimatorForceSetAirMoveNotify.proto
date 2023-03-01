@@ -1,20 +1,14 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ForwardType.proto";
 
+// Name: NDJOFLFACGC
+// CmdId: 337
 message AnimatorForceSetAirMoveNotify {
-	enum BKKMLNOEIGJ {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 330;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	bool inAirMove = 1;
-	ForwardType forwardType = 11;
-	uint32 entityId = 2;
+    bool in_air_move = 4;
+    ForwardType forward_type = 13;
+    uint32 entity_id = 12;
 }
+

@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: COBFGJPINMG
+// CmdId: 2055
 message BlessingScanRsp {
-	enum BHEHFEHNFDK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2122;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 8;
-	uint32 curDayScanNum = 4;
-	uint32 scanPicId = 9;
+    uint32 DCGGOOJOEPB = 15;
+    int32 retcode = 4;
+    uint32 EHJJNMKIPEF = 1;
 }
+

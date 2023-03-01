@@ -1,18 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ReunionPrivilegeInfo.proto";
 
+// Name: DHEGODFHPPJ
+// CmdId: 5062
 message GetReunionPrivilegeInfoRsp {
-	enum PFCEOPKKNAE {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5065;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 15;
-	ReunionPrivilegeInfo privilegeInfo = 14;
+    int32 retcode = 4;
+    ReunionPrivilegeInfo privilege_info = 8;
 }
+

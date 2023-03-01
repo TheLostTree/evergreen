@@ -1,18 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "RogueDiaryAvatar.proto";
 
+// Name: DNADNPFNICC
+// CmdId: 8416
 message ReserveRogueDiaryAvatarReq {
-	enum GJMGKLDHJBF {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8607;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	repeated RogueDiaryAvatar reserveAvatarList = 1;
+    repeated RogueDiaryAvatar reserve_avatar_list = 4;
 }
+

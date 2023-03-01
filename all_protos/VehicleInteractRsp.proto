@@ -1,21 +1,16 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
-
-import "VehicleMember.proto";
 import "VehicleInteractType.proto";
+import "VehicleMember.proto";
 
+// Name: GPOEFPAIHOE
+// CmdId: 894
 message VehicleInteractRsp {
-	enum HPGMAKHGBBO {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 825;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	VehicleMember member = 15;
-	uint32 entityId = 2;
-	int32 retcode = 10;
-	VehicleInteractType interactType = 8;
+    uint32 entity_id = 8;
+    int32 retcode = 14;
+    VehicleInteractType interact_type = 3;
+    VehicleMember member = 4;
 }
+

@@ -1,19 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: BNDBBLFOHEF
+// CmdId: 8271
 message ChannellerSlabTakeoffBuffReq {
-	enum CMDMMBPNAPD {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8329;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	bool fhableimdgl = 8;
-	uint32 buffId = 10;
-	uint32 slotId = 13;
+    uint32 buff_id = 9;
+    bool is_mp = 3;
+    uint32 slot_id = 13;
 }
+

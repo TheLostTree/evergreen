@@ -1,20 +1,15 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "CoopChapter.proto";
 
+// Name: KMBIEGGBPMF
+// CmdId: 1994
 message CoopDataNotify {
-	enum MBJJGCCJMPG {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1981;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated uint32 viewedChapterList = 8;
-	bool isHaveProgress = 14;
-	repeated CoopChapter chapterList = 12;
-	uint32 curCoopPoint = 1;
+    repeated CoopChapter chapter_list = 15;
+    repeated uint32 viewed_chapter_list = 2;
+    bool is_have_progress = 11;
+    uint32 cur_coop_point = 4;
 }
+

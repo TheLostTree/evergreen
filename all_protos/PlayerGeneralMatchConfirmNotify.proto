@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: AFPAEEIEEFD
+// CmdId: 4152
 message PlayerGeneralMatchConfirmNotify {
-	enum JDFJECJBAFL {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4164;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	bool isAgree = 7;
-	uint32 matchId = 14;
-	uint32 uid = 8;
+    bool is_agree = 15;
+    uint32 uid = 10;
+    uint32 match_id = 2;
 }
+

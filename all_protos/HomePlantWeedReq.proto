@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: NGHMEIDKIMD
+// CmdId: 4614
 message HomePlantWeedReq {
-	enum PBIOBLNGELM {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4603;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 index = 1;
-	uint32 fieldGuid = 7;
+    uint32 index = 3;
+    uint32 field_guid = 10;
 }
+

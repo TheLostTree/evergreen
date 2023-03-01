@@ -1,19 +1,14 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "IrodoriPoetryThemeData.proto";
 
+// Name: JNAJHIBAKHC
+// CmdId: 8730
 message IrodoriScanEntityRsp {
-	enum GFBIAOOFKPB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8540;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	bool isGetInspiration = 4;
-	IrodoriPoetryThemeData themeData = 8;
-	int32 retcode = 12;
+    IrodoriPoetryThemeData theme_data = 1;
+    bool is_get_inspiration = 3;
+    int32 retcode = 6;
 }
+

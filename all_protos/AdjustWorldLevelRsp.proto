@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: ABHCIIEPGEI
+// CmdId: 131
 message AdjustWorldLevelRsp {
-	enum ADJPAGLIHHE {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 140;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 cdOverTime = 7;
-	uint32 afterWorldLevel = 15;
-	int32 retcode = 14;
+    int32 retcode = 7;
+    uint32 after_world_level = 9;
+    uint32 cd_over_time = 12;
 }
+

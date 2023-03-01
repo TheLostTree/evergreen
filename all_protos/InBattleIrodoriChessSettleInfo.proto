@@ -1,13 +1,15 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: JIJKNLIIGAF
 message InBattleIrodoriChessSettleInfo {
-	bool isActivityEnd = 10;
-	uint32 killMonsterNum = 2;
-	bool isNewRecord = 12;
-	uint64 sceneTimeMs = 14;
-	uint32 settleScore = 15;
-	bool isPerfect = 5;
+    uint64 scene_time_ms = 14;
+    bool is_perfect = 4;
+    bool is_activity_end = 1;
+    bool is_new_record = 2;
+    uint32 LFMGDDMJGIP = 9;
+    uint32 CGCEKHJDBBP = 6;
 }
+

@@ -1,21 +1,15 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "MotionInfo.proto";
 
+// Name: BEIMGIKDBPE
+// CmdId: 237
 message EntityForceSyncReq {
-	enum FDCKKALCCGO {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 230;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	MotionInfo motionInfo = 13;
-	uint32 sceneTime = 11;
-	uint32 entityId = 8;
-	uint32 roomId = 9;
+    uint32 scene_time = 14;
+    uint32 entity_id = 5;
+    MotionInfo motion_info = 8;
+    uint32 room_id = 9;
 }
+

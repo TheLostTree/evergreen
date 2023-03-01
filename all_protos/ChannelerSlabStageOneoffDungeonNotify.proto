@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: KLLDCDHIOEH
+// CmdId: 8690
 message ChannelerSlabStageOneoffDungeonNotify {
-	enum HCJDENJOCNA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8449;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	bool isDone = 4;
-	uint32 stageId = 14;
+    uint32 stage_id = 3;
+    bool is_done = 15;
 }
+

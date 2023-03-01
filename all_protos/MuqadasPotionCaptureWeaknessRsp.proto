@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: BJNPNMEGMMP
+// CmdId: 23854
 message MuqadasPotionCaptureWeaknessRsp {
-	enum PGPPGNEGGEL {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 22408;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 4;
+    int32 retcode = 12;
 }
+

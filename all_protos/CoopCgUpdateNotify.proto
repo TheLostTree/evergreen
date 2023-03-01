@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: LIHNNBNGBAF
+// CmdId: 1989
 message CoopCgUpdateNotify {
-	enum HDNLOLLHBNM {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1966;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated uint32 cgList = 14;
+    repeated uint32 cg_list = 9;
 }
+

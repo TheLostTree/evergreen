@@ -1,10 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "BuoyantCombatGallerySettleInfo.proto";
 
+// Name: MGKPNGHCGBA
 message BuoyantCombatSettleInfo {
-	BuoyantCombatGallerySettleInfo settleInfo = 9;
-	bool isNewRecord = 1;
+    BuoyantCombatGallerySettleInfo settle_info = 1;
+    bool is_new_record = 6;
 }
+

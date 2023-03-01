@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: IINNLEJKOBH
+// CmdId: 21486
 message SingleRestartBrickBreakerReq {
-	enum GOKOHKEIIJE {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 23113;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 levelId = 2;
-	bool isDungeon = 14;
+    bool is_dungeon = 1;
+    uint32 level_id = 5;
 }
+

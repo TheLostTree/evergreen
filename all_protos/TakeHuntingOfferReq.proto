@@ -1,19 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "HuntingPair.proto";
 
+// Name: LLCNMBFHCNP
+// CmdId: 4348
 message TakeHuntingOfferReq {
-	enum IBCEKBFOLAN {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4338;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	HuntingPair huntingPair = 1;
-	uint32 cityId = 14;
+    uint32 city_id = 7;
+    HuntingPair hunting_pair = 4;
 }
+

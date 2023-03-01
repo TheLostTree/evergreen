@@ -1,20 +1,15 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GOIEHDNPELN
+// CmdId: 292
 message SealBattleProgressNotify {
-	enum POGEHCCIKLC {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 226;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 maxProgress = 15;
-	uint32 sealRadius = 8;
-	uint32 progress = 4;
-	uint32 endTime = 14;
-	uint32 sealEntityId = 7;
+    uint32 HOECKCBABAL = 1;
+    uint32 end_time = 13;
+    uint32 seal_entity_id = 11;
+    uint32 OBDOEOGAGHH = 3;
+    uint32 progress = 7;
 }
+

@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message BDFNLKLGIBI {
-	uint64 value = 1;
-}

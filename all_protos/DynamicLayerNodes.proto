@@ -1,10 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "DynamicSVONode.proto";
 
+// Name: LPCBJDFPFII
 message DynamicLayerNodes {
-	repeated DynamicSVONode nodes = 8;
-	int32 level = 12;
+    int32 level = 15;
+    repeated DynamicSVONode nodes = 10;
 }
+

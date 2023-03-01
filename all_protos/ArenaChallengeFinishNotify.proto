@@ -1,20 +1,15 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ArenaChallengeChildChallengeInfo.proto";
 
+// Name: GDHDICEJDBP
+// CmdId: 2169
 message ArenaChallengeFinishNotify {
-	enum MNGBJBKHOEP {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2199;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	bool isSuccess = 7;
-	repeated ArenaChallengeChildChallengeInfo childChallengeList = 6;
-	uint32 Unk3300_DBHAGHMMLAI = 15;
-	uint32 Unk3300_FDFNFLAKONG = 9;
+    bool is_success = 5;
+    repeated ArenaChallengeChildChallengeInfo child_challenge_list = 13;
+    uint32 NEFKFHIPLHG = 1;
+    uint32 BCHEDLFFNKC = 8;
 }
+

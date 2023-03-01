@@ -1,18 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "HomeBlueprintSearchInfo.proto";
 
+// Name: MLACPPJOPOM
+// CmdId: 4659
 message HomeSearchBlueprintRsp {
-	enum IFDAAOOKFDC {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4611;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	HomeBlueprintSearchInfo searchInfo = 9;
-	int32 retcode = 3;
+    int32 retcode = 8;
+    HomeBlueprintSearchInfo search_info = 13;
 }
+

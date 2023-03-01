@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: DCLKDPAJLHG
+// CmdId: 4496
 message HomeSetBlueprintFriendOptionRsp {
-	enum NJMIPNFDCKE {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4818;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 6;
-	bool isAllowFriendCopy = 9;
+    int32 retcode = 9;
+    bool is_allow_friend_copy = 12;
 }
+

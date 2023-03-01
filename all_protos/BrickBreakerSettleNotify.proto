@@ -1,27 +1,29 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
-
-import "SettleReason.proto";
 import "Uint32Pair.proto";
 
+// Name: IBDDDPHGINA
+// CmdId: 23542
 message BrickBreakerSettleNotify {
-	enum EHJNACJCAIL {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 21188;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
+    // Name: OLIFCDPAHJD
+    enum SettleReason {
+        SETTLE_REASON_TIME_OUT = 0;
+        SETTLE_PLAY_END = 1;
+        SETTLE_PLAYER_QUIT = 2;
+        SETTLE_LIFE_COUNT = 3;
+    }
 
-	uint32 galleryId = 11;
-	uint32 combo = 13;
-	uint32 time = 3;
-	repeated Uint32Pair updateSkillList = 8;
-	uint32 score = 1;
-	bool isDungeon = 4;
-	uint32 levelId = 5;
-	SettleReason reason = 10;
-	bool isSingleMode = 14;
-	bool isNewRecord = 7;
+    uint32 level_id = 8;
+    SettleReason reason = 10;
+    bool is_dungeon = 6;
+    uint32 combo = 15;
+    uint32 score = 13;
+    uint32 gallery_id = 3;
+    uint32 time = 5;
+    bool is_new_record = 2;
+    bool is_single_mode = 7;
+    repeated Uint32Pair update_skill_list = 14;
 }
+

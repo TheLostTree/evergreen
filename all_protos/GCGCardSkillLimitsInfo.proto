@@ -1,9 +1,11 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "GCGSkillLimitsInfo.proto";
 
+// Name: FNNHNPCGJIM
 message GCGCardSkillLimitsInfo {
-	repeated GCGSkillLimitsInfo skillLimitsList = 13;
+    repeated GCGSkillLimitsInfo skill_limits_list = 3;
 }
+

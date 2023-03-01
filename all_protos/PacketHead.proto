@@ -1,5 +1,7 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
+
 message PacketHead {
   uint32 packet_id = 1;
   uint32 rpc_id = 2;

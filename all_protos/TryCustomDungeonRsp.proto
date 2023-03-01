@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: ELJHEMEBCOA
+// CmdId: 6201
 message TryCustomDungeonRsp {
-	enum OMGIOMPJLGE {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 6237;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 roomId = 13;
-	int32 retcode = 9;
+    int32 retcode = 4;
+    uint32 room_id = 13;
 }
+

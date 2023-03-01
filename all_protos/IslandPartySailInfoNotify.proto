@@ -1,20 +1,15 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "IslandPartySailStage.proto";
 
+// Name: EKBGCNALDLF
+// CmdId: 5594
 message IslandPartySailInfoNotify {
-	enum EODELEEFEGF {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5525;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 progress = 5;
-	uint32 coin = 1;
-	uint32 killMonsterCount = 9;
-	IslandPartySailStage stage = 2;
+    uint32 kill_monster_count = 8;
+    uint32 coin = 3;
+    IslandPartySailStage stage = 12;
+    uint32 progress = 6;
 }
+

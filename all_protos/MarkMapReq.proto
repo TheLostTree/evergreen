@@ -1,21 +1,22 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
-
-import "Operation.proto";
 import "MapMarkPoint.proto";
 
+// Name: FOPFBIBHDFN
+// CmdId: 3087
 message MarkMapReq {
-	enum LJKBDJKNENE {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 3176;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
+    // Name: LHHMCBIINHG
+    enum Operation {
+        ADD = 0;
+        MOD = 1;
+        DEL = 2;
+        GET = 3;
+    }
 
-	Operation op = 3;
-	MapMarkPoint old = 7;
-	MapMarkPoint mark = 10;
+    MapMarkPoint old = 9;
+    MapMarkPoint mark = 15;
+    Operation op = 1;
 }
+

@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: ENBHOOEOBBP
+// CmdId: 2152
 message SeaLampFlyLampRsp {
-	enum AOFHNJCFDOM {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2127;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 itemNum = 13;
-	int32 retcode = 3;
-	uint32 itemId = 2;
+    int32 retcode = 7;
+    uint32 item_id = 1;
+    uint32 item_num = 10;
 }
+

@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: PGINCJNIBPI
+// CmdId: 8059
 message RogueDiaryCoinAddNotify {
-	enum OGHOEHPLMNI {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8264;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 num = 7;
+    uint32 num = 9;
 }
+

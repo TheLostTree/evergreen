@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: FBDFLEFGHGN
+// CmdId: 8024
 message RogueFinishRepairRsp {
-	enum LPIFHDJBKOK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8860;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 2;
+    int32 retcode = 3;
 }
+

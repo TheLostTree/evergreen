@@ -1,21 +1,15 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "HomeSceneArrangementInfo.proto";
 
+// Name: FDIKAEEIFOI
+// CmdId: 4865
 message HomeCreateBlueprintReq {
-	enum LHOAMCJJEGB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4645;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	HomeSceneArrangementInfo sceneArrangementInfo = 15;
-	uint32 slotId = 13;
-	string serverShareCode = 8;
-	uint32 genShareCodeCount = 1;
+    string server_share_code = 3;
+    HomeSceneArrangementInfo scene_arrangement_info = 14;
+    uint32 slot_id = 8;
+    uint32 gen_share_code_count = 1;
 }
+

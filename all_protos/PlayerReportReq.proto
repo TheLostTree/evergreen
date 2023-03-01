@@ -1,22 +1,16 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ReportReasonType.proto";
 
+// Name: HBKODGGFEBJ
+// CmdId: 4002
 message PlayerReportReq {
-	enum APBPFDIOFNH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4053;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	string content = 10;
-	ReportReasonType reason = 8;
-	uint32 targetUid = 6;
-	uint32 targetHomeModuleId = 12;
-	string targetHomeModuleName = 2;
+    uint32 target_home_module_id = 7;
+    ReportReasonType reason = 10;
+    string content = 4;
+    string target_home_module_name = 15;
+    uint32 target_uid = 9;
 }
+

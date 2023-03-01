@@ -192,7 +192,17 @@ impl ClientServerPair{
                 if let Some(sent_time) = self.tokenrspsendtime{
                     if let Some(server_seed) = self.tokenrspserverseed{
                         if let Some(seed) = bruteforce(sent_time, server_seed, data){
-                            self.session_key = Some(MTKey::from_seed(seed));
+                            let key = MTKey::from_seed(seed);
+                            key.xor(data);
+
+                            self.session_key = Some(key);
+                            if !Self::is_valid(data){
+                                //invalidate session key
+                                self.session_key = None;
+                                println!("invalidated session key");
+                            }
+                            // return self.decrypt_packet(data, is_client);
+                            
                         }else{
                             println!("honestly we just failed");
                         }
@@ -205,7 +215,7 @@ impl ClientServerPair{
 
                 if let None = self.session_key{
                     // crying screaming 
-                    // println!("im rlly sad rn bc bruteforce failed");
+                    println!("im rlly sad rn bc bruteforce failed");
                     return;
                 }
                 
@@ -264,7 +274,7 @@ impl ClientServerPair{
         }
 
         let cmd = cmd.unwrap();
-        println!("{}: {:?}", if p.is_client {"CLIENT"} else{"SERVER"},cmd);
+        // println!("{}: {:?}", if p.is_client {"CLIENT"} else{"SERVER"},cmd);
         
         let packethead = if p.header.len() > 0 {PacketHead::PacketHead::parse_from_bytes(&p.header).ok()}else{None};
         
@@ -280,7 +290,7 @@ impl ClientServerPair{
                     
                     // self.tokenrspserverseed = Some();
                     //v.serverRandKey
-                    let x = self.decode_base64_rsa(v.serverRandKey.clone());
+                    let x = self.decode_base64_rsa(v.server_rand_key.clone());
                     self.tokenrspserverseed = Some(u64::from_be_bytes([x[0], x[1], x[2], x[3], x[4], x[5], x[6], x[7]]));
                     // Some(protobuf_json_mapping::print_to_string_with_options(&v,&options).unwrap())
                 }else{

@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: EIKPABMOCEM
+// CmdId: 497
 message NpcTalkStateNotify {
-	enum ONOEOAPMNBI {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 481;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	bool isBan = 1;
+    bool is_ban = 10;
 }
+

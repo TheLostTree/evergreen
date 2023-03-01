@@ -1,12 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GKLEOCHANNG
 message FleurFairGallerySettleInfo {
-	bool isSuccess = 5;
-	uint32 energy = 7;
-	map<uint32, int32> energyStatMap = 9;
-	uint32 galleryStageCount = 14;
-	uint32 galleryStageIndex = 15;
+    uint32 MAOKHBICFDC = 14;
+    uint32 energy = 6;
+    map<uint32, int32> energy_stat_map = 9;
+    bool is_success = 7;
+    uint32 JAPOOOOHCEN = 5;
 }
+

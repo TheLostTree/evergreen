@@ -1,10 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "OnlinePlayerInfo.proto";
 
+// Name: DKFNMCMGENJ
 message MatchPlayerInfo {
-	bool isAgreed = 11;
-	OnlinePlayerInfo playerInfo = 4;
+    bool is_agreed = 3;
+    OnlinePlayerInfo player_info = 7;
 }
+

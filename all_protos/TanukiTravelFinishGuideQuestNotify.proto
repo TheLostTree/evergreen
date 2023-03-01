@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: PFAJMCBMPGH
+// CmdId: 8130
 message TanukiTravelFinishGuideQuestNotify {
-	enum LFBHGBPGHNO {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8824;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 activityId = 7;
+    uint32 activity_id = 15;
 }
+

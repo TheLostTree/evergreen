@@ -1,28 +1,28 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
-
+import "PKGGDPOEDKH.proto";
+import "Vector.proto";
 import "Vector3Int.proto";
-import "OptionType.proto";
-import "QueryFilter.proto";
-import "Rotation.proto";
 
+// Name: ACMGFNOFCKB
+// CmdId: 2367
 message QueryPathReq {
-	enum OIOAGLJGAJP {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2305;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
+    // Name: FFFLJDJCEPL
+    enum FFFLJDJCEPL {
+        FFFLJDJCEPL_NFEKPNDGKLO = 0;
+        FFFLJDJCEPL_FDONIBMDFGP = 1;
+        FFFLJDJCEPL_DKOMLNNPIHP = 2;
+    }
 
-	int32 queryId = 13;
-	repeated Rotation destinationPos = 4;
-	Vector3Int Unk3300_LHNGPJFOMIK = 5;
-	OptionType queryType = 12;
-	QueryFilter filter = 2;
-	Vector3Int Unk3300_CLGJBBJDOLN = 15;
-	uint32 sceneId = 7;
-	Rotation sourcePos = 10;
+    Vector source_pos = 10;
+    PKGGDPOEDKH LHOAGINKBOK = 3;
+    Vector3Int APGDHBMJKHO = 12;
+    Vector3Int JDGEGADKHCL = 6;
+    FFFLJDJCEPL BFLACBIGMCJ = 13;
+    int32 query_id = 14;
+    repeated Vector destination_pos = 15;
+    uint32 scene_id = 11;
 }
+

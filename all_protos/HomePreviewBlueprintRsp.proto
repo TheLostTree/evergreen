@@ -1,19 +1,14 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "HomeSceneArrangementInfo.proto";
 
+// Name: DACJJCPINAB
+// CmdId: 4600
 message HomePreviewBlueprintRsp {
-	enum GACMGFBMJLD {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4625;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	string shareCode = 3;
-	int32 retcode = 4;
-	HomeSceneArrangementInfo sceneArrangementInfo = 15;
+    string share_code = 12;
+    HomeSceneArrangementInfo scene_arrangement_info = 3;
+    int32 retcode = 13;
 }
+

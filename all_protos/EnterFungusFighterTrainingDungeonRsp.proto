@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: EHGFBOIFGHC
+// CmdId: 22541
 message EnterFungusFighterTrainingDungeonRsp {
-	enum MIFBOFOBNBC {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 21261;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 15;
-	uint32 dungeonId = 14;
+    int32 retcode = 2;
+    uint32 dungeon_id = 9;
 }
+

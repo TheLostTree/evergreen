@@ -1,15 +1,10 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: IIGBKOEECJM
+// CmdId: 67
 message KeepAliveNotify {
-	enum BILNMHLCBHH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
 }
+

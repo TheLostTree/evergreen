@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: AFJADNKECLB
+// CmdId: 2135
 message SeaLampTakePhaseRewardReq {
-	enum OKJNDPGMFKH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2119;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 activityId = 1;
-	uint32 phaseId = 4;
+    uint32 activity_id = 15;
+    uint32 phase_id = 3;
 }
+

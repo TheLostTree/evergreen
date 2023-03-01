@@ -1,9 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "Vector.proto";
 
-import "Rotation.proto";
-
+// Name: MJCEMFIHNCD
 message EntityClientExtraInfo {
-	Rotation skillAnchorPosition = 1;
+    Vector skill_anchor_position = 1;
 }
+

@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "ChannellerSlabAssistInfo.proto";
 
-import "ChannelerSlabAssistInfo.proto";
-
+// Name: LHHCPJEFGGD
+// CmdId: 8877
 message ChannellerSlabSaveAssistInfoReq {
-	enum FOOBHNAHDGM {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8304;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	repeated ChannelerSlabAssistInfo assistInfoList = 6;
+    repeated ChannellerSlabAssistInfo assist_info_list = 3;
 }
+

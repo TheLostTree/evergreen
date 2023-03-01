@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: KLEPHMMFBPB
+// CmdId: 1987
 message MainCoopFailNotify {
-	enum KOGKDCGMHFO {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1976;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	string textmapId = 4;
-	uint32 chapterId = 13;
+    string textmap_id = 15;
+    uint32 chapter_id = 6;
 }
+

@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: NOFFEEDPAEB
+// CmdId: 5564
 message GalleryStopNotify {
-	enum BAOOPHPHBOC {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5598;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 galleryId = 3;
+    uint32 gallery_id = 10;
 }
+

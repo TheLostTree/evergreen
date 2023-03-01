@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: JBCFNKJOKBB
+// CmdId: 5523
 message HomeGalleryInPlayingNotify {
-	enum IFBIKOKLDGN {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5600;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 galleryId = 12;
+    uint32 gallery_id = 13;
 }
+

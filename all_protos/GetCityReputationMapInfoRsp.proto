@@ -1,20 +1,15 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: CCLBAOGDCOJ
+// CmdId: 2891
 message GetCityReputationMapInfoRsp {
-	enum EKAODNDOHAN {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2878;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	bool Unk3300_NCMHMODIIKM = 13;
-	int32 retcode = 4;
-	repeated uint32 unlockHuntingCityList = 12;
-	bool Unk3300_GJFNOPNMFNG = 7;
-	repeated uint32 rewardCityList = 1;
+    int32 retcode = 8;
+    bool OKBOMBFOLFC = 12;
+    bool PDBKHBFDCEE = 15;
+    repeated uint32 FEMEAFKLPFC = 6;
+    repeated uint32 EBCMJLKFHGJ = 9;
 }
+

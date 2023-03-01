@@ -1,18 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "TeamEntityInfo.proto";
 
+// Name: GHJLPNCDIHF
+// CmdId: 393
 message SyncTeamEntityNotify {
-	enum BGFILLLPAFC {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 327;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated TeamEntityInfo teamEntityInfoList = 14;
-	uint32 sceneId = 5;
+    uint32 scene_id = 6;
+    repeated TeamEntityInfo team_entity_info_list = 5;
 }
+

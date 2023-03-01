@@ -1,10 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "DungeonEntryBlockReason.proto";
 
+// Name: NFHIIJNJBGB
 message DungeonEntryCond {
-	DungeonEntryBlockReason condReason = 14;
-	uint32 param1 = 12;
+    uint32 param1 = 8;
+    DungeonEntryBlockReason cond_reason = 11;
 }
+

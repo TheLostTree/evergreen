@@ -1,10 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: JOOKDOBEDLP
 message WindFieldStageInfo {
-	uint32 openTime = 13;
-	bool isOpen = 2;
-	uint32 stageId = 10;
+    uint32 stage_id = 10;
+    bool is_open = 6;
+    uint32 open_time = 9;
 }
+

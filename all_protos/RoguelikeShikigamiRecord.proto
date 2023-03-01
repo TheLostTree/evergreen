@@ -1,9 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: ODKNHPHCDCG
 message RoguelikeShikigamiRecord {
-	uint32 id = 8;
-	uint32 level = 4;
+    uint32 level = 4;
+    uint32 id = 13;
 }
+

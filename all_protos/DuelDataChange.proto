@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message DuelDataChange {
-	uint32 round = 8;
-}

@@ -1,11 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "MatchPlayerInfo.proto";
 
+// Name: GKBBFHOOIOD
 message GeneralMatchInfo {
-	uint32 matchParam = 6;
-	uint32 matchId = 8;
-	repeated MatchPlayerInfo playerList = 13;
+    repeated MatchPlayerInfo player_list = 8;
+    uint32 match_param = 2;
+    uint32 match_id = 3;
 }
+

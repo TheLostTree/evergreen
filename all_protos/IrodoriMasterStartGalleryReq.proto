@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: IGENANOLEOL
+// CmdId: 8344
 message IrodoriMasterStartGalleryReq {
-	enum MGEPMJKJIEP {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8933;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 levelId = 3;
-	uint32 difficulty = 5;
+    uint32 level_id = 11;
+    uint32 difficulty = 14;
 }
+

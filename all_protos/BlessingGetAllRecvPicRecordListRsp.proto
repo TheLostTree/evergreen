@@ -1,18 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "BlessingRecvPicRecord.proto";
 
+// Name: PFDIKIJJFLG
+// CmdId: 2111
 message BlessingGetAllRecvPicRecordListRsp {
-	enum PNOIBIOJPPG {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2118;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated BlessingRecvPicRecord recvPicRecordList = 9;
-	int32 retcode = 4;
+    int32 retcode = 4;
+    repeated BlessingRecvPicRecord recv_pic_record_list = 15;
 }
+

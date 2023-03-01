@@ -1,10 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "VectorPlane.proto";
 
+// Name: DIKOEKMPPAO
 message PolygonRegionSize {
-	float height = 13;
-	repeated VectorPlane pointList = 15;
+    float height = 1;
+    repeated VectorPlane point_list = 9;
 }
+

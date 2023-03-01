@@ -1,12 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: AJCAFFBMNAO
 message DragonSpineChapterInfo {
-	uint32 finishedMissionNum = 7;
-	uint32 chapterId = 4;
-	bool isOpen = 6;
-	uint32 progress = 8;
-	uint32 openTime = 3;
+    uint32 progress = 12;
+    uint32 chapter_id = 7;
+    bool is_open = 15;
+    uint32 finished_mission_num = 6;
+    uint32 open_time = 5;
 }
+

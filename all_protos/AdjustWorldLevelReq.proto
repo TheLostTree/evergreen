@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: EDAOBIJNNKG
+// CmdId: 132
 message AdjustWorldLevelReq {
-	enum DAFJHPIGAIN {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 138;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 Unk3300_DNLKIMGLBLP = 3;
-	uint32 Unk3300_DJBKBPDCBFH = 11;
+    uint32 GKPAJDAOHDN = 10;
+    uint32 HFANGCIKHFI = 6;
 }
+

@@ -1,17 +1,20 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "GameplayRecommendationElementReliquaryResponse.proto";
+import "GameplayRecommendationReliquaryResponse.proto";
+import "GameplayRecommendationSkillResponse.proto";
 
-
+// Name: OPIKDPBOILF
+// CmdId: 135
 message GetGameplayRecommendationRsp {
-	enum ILBNNCBEICH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 144;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 givingId = 10;
+    int32 retcode = 8;
+    uint32 avatar_id = 1;
+    oneof detail {
+        GameplayRecommendationSkillResponse skill_response = 824;
+        GameplayRecommendationReliquaryResponse reliquary_response = 1103;
+        GameplayRecommendationElementReliquaryResponse element_reliquary_response = 1186;
+    }
 }
+

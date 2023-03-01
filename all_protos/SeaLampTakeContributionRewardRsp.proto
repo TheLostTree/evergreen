@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: ECJCMKNADJP
+// CmdId: 2170
 message SeaLampTakeContributionRewardRsp {
-	enum JEMBIKJOJCG {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2101;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 13;
-	uint32 configId = 14;
+    int32 retcode = 2;
+    uint32 config_id = 6;
 }
+

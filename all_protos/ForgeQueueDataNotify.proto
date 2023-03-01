@@ -1,19 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ForgeQueueData.proto";
 
+// Name: BAOPLDFMMIC
+// CmdId: 625
 message ForgeQueueDataNotify {
-	enum EBMKPJICDKP {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 643;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	repeated uint32 removedForgeQueueList = 10;
-	map<uint32, ForgeQueueData> forgeQueueMap = 14;
+    map<uint32, ForgeQueueData> forge_queue_map = 9;
+    repeated uint32 removed_forge_queue_list = 14;
 }
+

@@ -1,18 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: PCFGKBLLAEF
+// CmdId: 6301
 message UgcNotify {
-	enum HIFIPOHDLOE {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 6337;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	bool Unk3300_IBLDINGJJFI = 13;
-	bool Unk3300_KPABJPMLHCD = 5;
-	bool isUgcFeatureClosed = 10;
+    bool FNFJAIOGDIL = 6;
+    bool OLEDANJLOEI = 5;
+    bool NFBPGNCIKPD = 8;
+    bool EBONPFLOCKN = 3;
 }
+
