@@ -31,6 +31,13 @@ run index.js to move a few protos into ./protos (the ones that ares statically c
 
 
 
+# Updating to a new game version
+1. update protos by dropping new protos into ./all_protos
+2. update cmdids by either 
+    a) updating packetIds.json then running index.js + the generateCmdIdsCsv function
+    b) update cmdids.csv directly
+3. hopefully no name changes are in the protos, but fix if they appear
+
 
 todo:
 
