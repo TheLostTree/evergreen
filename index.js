@@ -55,4 +55,4 @@ const generateCmdIdsCsv = ()=>{
     fs.writeFileSync('./cmdids.csv', csv)
 }
 
-generateCmdIdsCsv()
+copyProtos()
