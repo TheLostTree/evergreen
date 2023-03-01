@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option java_package = "layla.sleep.proto";
+
+import "MAABOGBOJFC.proto";
+import "RegionInfo.proto";
+import "StopServerInfo.proto";
+
+// Name: AHMNLAOFJBB
+message AHMNLAOFJBB {
+    int32 retcode = 1;
+    string msg = 2;
+    RegionInfo region_info = 3;
+    bytes ODHGCKGDENJ = 11;
+    bytes OEJHLDFBBKA = 12;
+    bytes NHNKFFPCOJI = 13;
+    string HHDIBBJDLAN = 14;
+    oneof detail {
+        MAABOGBOJFC force_udpate = 4;
+        StopServerInfo stop_server = 5;
+    }
+}
+

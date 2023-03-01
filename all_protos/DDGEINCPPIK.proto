@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "layla.sleep.proto";
+
+
+// Name: DDGEINCPPIK
+message DDGEINCPPIK {
+    uint32 state = 1;
+    uint32 LLNJKILEEBC = 14;
+    uint32 quest_id = 8;
+}
+

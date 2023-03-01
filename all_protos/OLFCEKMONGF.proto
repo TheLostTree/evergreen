@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "layla.sleep.proto";
+
+import "EEGMCCNFBHE.proto";
+import "LAFGBFLAEGH.proto";
+
+// Name: OLFCEKMONGF
+message OLFCEKMONGF {
+    string name = 1;
+    repeated LAFGBFLAEGH value = 2;
+    EEGMCCNFBHE PNFIHGPGNKD = 3;
+}
+

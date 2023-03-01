@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "layla.sleep.proto";
+
+import "AbilityAppliedAbility.proto";
+
+// Name: EABBCDCGFLL
+message EABBCDCGFLL {
+    AbilityAppliedAbility LICDLAICHAJ = 8;
+}
+

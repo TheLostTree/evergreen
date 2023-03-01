@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "layla.sleep.proto";
+
+import "BreakoutSnapShot.proto";
+
+// Name: DKPDHJGFLKM
+message DKPDHJGFLKM {
+    BreakoutSnapShot ENNAPNPNDNB = 4;
+}
+

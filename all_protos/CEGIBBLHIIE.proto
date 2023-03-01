@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "layla.sleep.proto";
+
+
+// Name: CEGIBBLHIIE
+// CmdId: 20935
+message CEGIBBLHIIE {
+    uint32 pos_id = 9;
+    int32 retcode = 3;
+}
+

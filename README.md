@@ -1,3 +1,11 @@
+# Evergreen
+
+a dntk successor!
+
+also works as a backend for iridium!
+
+
+
 ## Npcap
 
 execute this in your commandline(cmd) after installing npcap + the sdk
@@ -14,25 +22,17 @@ and
 
 with powershell
 
-also install openssl, compiling it from source takes forever.
-
-and set OPENSSL_DIR in your environment variables
 
 
-~~~~~
+# Building
+drop in all the protos you want into ./all_protos 
 
-drop in all the protos you want into ./protos and then just wait a long time to compile lol
-
-yes, it will take 5 minutes with all 3k protobuf fies
-
-no, i have no clue how to fix it
+run index.js to move a few protos into ./protos (the ones that ares statically compiled for use in the actual code)
 
 
-
-~~~~~~
 
 
 todo:
-1. some kind of ui (dps meter a la chrome)
-2. ws connection to iridium
-3. properly do unknown parsing
+
+1. properly do unknown parsing
+2. some kind of tauri gui window (various reasons)

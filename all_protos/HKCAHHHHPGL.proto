@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "layla.sleep.proto";
+
+import "LDNBDMBELBA.proto";
+
+// Name: HKCAHHHHPGL
+message HKCAHHHHPGL {
+    repeated LDNBDMBELBA stage_info_list = 3;
+}
+
