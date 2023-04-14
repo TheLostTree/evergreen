@@ -76,6 +76,7 @@ struct Retcode{
 struct WSMessageHandler{
     out: Sender,
 }
+
 impl Handler for WSMessageHandler{
     fn on_message(&mut self, msg: ws::Message) -> ws::Result<()> {
         let iridium_msg :IridiumPacket = serde_json::from_str(&msg.to_string()).unwrap();

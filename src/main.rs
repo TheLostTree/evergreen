@@ -1,23 +1,21 @@
 #![allow(dead_code)]
-mod sniffer;
 mod client_server_pair;
-mod random_cs;
+mod key_bruteforce;
 mod mtkey;
 mod packet_processor;
 mod ws_thread;
+mod evergreen;
+mod protobuf_decoder;
 
 
+use crossbeam_channel::unbounded;
 use ctrlc;
-use std::{sync::atomic::{AtomicBool, Ordering}};
+use std::sync::atomic::{AtomicBool, Ordering};
 
+use crate::evergreen::Evergreen;
 pub static RUNNING: AtomicBool = AtomicBool::new(true);
 
-mod protos {
-    include!(concat!(env!("OUT_DIR"), "/protos_target/mod.rs"));
-}
-mod cmdids{
-    include!(concat!(env!("OUT_DIR"), "/cmdids_target/cmdids.rs"));
-}
+
 // mod proto_decode{
 //     include!(concat!(env!("OUT_DIR"), "/proto_decode.rs"));
 // }
@@ -36,9 +34,18 @@ fn main() {
     // let end = std::time::Instant::now();
     // println!("loaded {} protos in {:?}", protos.len(),end - start);
 
-    let sniffing = std::thread::spawn(sniffer::run);
+    let (s, r) = unbounded();
+    let mut evergreen = Evergreen::new();
 
-    _ = sniffing.join();
+    evergreen.run(s);
+
+
+
+
+
+
+    // evergreen
+
     println!("closing...")
 }
 
