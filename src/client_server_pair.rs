@@ -1,80 +1,19 @@
+use crossbeam_channel::Sender;
 use protobuf::Message;
 use rsa::pkcs1::DecodeRsaPrivateKey;
 
-use crate::cmdids::CmdIds;
-use crate::packet_processor::PacketProcessor;
-use crate::protos::{PacketHead, GetPlayerTokenRsp};
-use crate::random_cs::bruteforce;
+use common::cmdids::CmdIds;
+use common::protos::{PacketHead, GetPlayerTokenRsp};
+use crate::key_bruteforce::KeyBruteforce;
 use crate::mtkey::{MTKey, get_dispatch_keys};
-use std::cell::RefCell;
-use std::rc::Rc;
-use std::sync::mpsc::{Receiver};
 use std::io::{Write, self};
 
 
-pub fn processing_thread(reciever: Receiver<(Vec<u8>, u16)>, processor: Rc<RefCell<PacketProcessor>>){
-    let mut pair : Option<ClientServerPair> = None;
 
-    loop {
-        match reciever.recv(){
-            Ok((data, port)) =>{
-                // println!("got data! {}", data.len());
-                //handle data
-                let is_client = port != 22101 && port != 22102;
-                if data.len() == 20{
-                    let magic = u32::from_be_bytes([data[0], data[1], data[2], data[3]]);
-                    
-                    match magic{
-                        0x00000145 => {
-                            //server sends connect
-                            let conv = u32::from_be_bytes([data[4], data[5], data[6], data[7]]);
-                            let token = u32::from_be_bytes([data[8], data[9], data[10], data[11]]);
-                            pair = Some(ClientServerPair::new(conv, token, processor.clone()));
-                            // println!("omg handshake")
-                            
-                        },
-                        0x00000194 =>{
-                            //disconnect lol 
-                            //todo: handle
-                            println!("{} disconnected", if is_client {"CLIENT"} else{"SERVER"});
-
-                            if pair.is_some(){
-                                println!("this should print...");
-                                pair = None;
-                            }
-                        },
-                        _ => {
-                            //unknown?
-                            println!("unknown magic: {:x?}", magic)
-                        }
-                    }
-                }
-                if let Some(pair) = &mut pair{
-                    pair.add_data(&data, is_client);
-                    pair.recv_kcp(true);
-                    pair.recv_kcp(false);
-                    
-                }else{
-                    
-                }
-        }
-            Err(_) => {
-                println!("pcap sender closed...");
-                // if pair.is_some(){
-                //     //again, not sure if i have to explicitly do this
-                //     //drop(json_sender) prob not, its been moved
-                // }
-                break;
-            },
-        }
-    }
-    
-
-}
 
 pub struct ClientServerPair{
-    client: kcp::Kcp<Source>,
-    server: kcp::Kcp<Source>,
+    client: Option<kcp::Kcp<Source>>,
+    server: Option<kcp::Kcp<Source>>,
     dispatch_key: Option<MTKey>,
     session_key: Option<MTKey>,
 
@@ -83,50 +22,60 @@ pub struct ClientServerPair{
     tokenrspserverseed: Option<u64>,
 
     rsa_key: rsa::RsaPrivateKey,
+    key_bf: KeyBruteforce,
 
-    packet_processor: Rc<RefCell<PacketProcessor>>
+    // sender: Sender<Packet>,
 }
 
+#[derive(Debug,Clone)]
 pub struct Packet{
     pub cmdid: u16,
     header_size: u16,
     data_size: u32,
-    is_client: bool,
+    pub is_client: bool,
     pub header: Vec<u8>,
     pub data: Vec<u8>,
 
 }
-
-impl Packet{
-
-}
-
 impl ClientServerPair{
-    pub fn new(conv: u32, token:u32, processor: Rc<RefCell<PacketProcessor>>)->ClientServerPair{
+
+    pub fn new()->ClientServerPair{
         
         let rsakey = rsa::RsaPrivateKey::from_pkcs1_pem(include_str!("../private.pem")).unwrap();
 
         let mut p = ClientServerPair{
-            client: kcp::Kcp::new(conv, token, Source {  is_client: true}),
-            server: kcp::Kcp::new(conv, token, Source {  is_client: false}),
+            client: None,
+            server: None,
             dispatch_key: None,
             session_key: None,
             tokenrspsendtime: None,
             tokenrspserverseed: None,
             rsa_key: rsakey,
-            packet_processor: processor,
+            key_bf: KeyBruteforce::new(),
+            // sender: sender,
         };
-        p.client.set_nodelay(true, 10, 2, false);
-        p.client.set_wndsize(128, 128);
-        // p.client.set_mtu(512);
-
-        p.server.set_nodelay(true, 10, 2, false);
-        p.server.set_wndsize(128, 128);
+        
         // p.server.set_mtu(512);
 
         // register packet handlers
 
         p
+    }
+
+
+    pub fn init_kcp(&mut self, conv: u32, token:u32){
+        let mut client = kcp::Kcp::new(conv, token, Source {  is_client: true});
+        let mut server = kcp::Kcp::new(conv, token, Source {  is_client: true});
+
+        client.set_nodelay(true, 10, 2, false);
+        client.set_wndsize(128, 128);
+        // p.client.set_mtu(512);
+
+        server.set_nodelay(true, 10, 2, false);
+        server.set_wndsize(128, 128);
+
+        _ = self.client.insert(client);
+        _ = self.server.insert(server);
     }
     
     fn decode_base64_rsa(&self, data: String)->Vec<u8>{
@@ -137,28 +86,34 @@ impl ClientServerPair{
         res.unwrap()
     }
 
-    fn recv_kcp(&mut self, is_client: bool){
+    pub fn recv_kcp(&mut self, is_client: bool)->Option<Packet>{
         let kcp = if is_client{
             &mut self.client
         }else{
             &mut self.server
         };
+        if kcp.is_none() { return None; }
+        let kcp = kcp.as_mut().unwrap();
+
         let size = match kcp.peeksize(){
             Ok(size) => size,
-            Err(_) => return,
+            Err(_) => return None,
         };
         let mut buf = vec![0; size];
         let _ = kcp.recv(&mut buf);
-        self.decrypt_packet(&mut buf, is_client);
+        self.decrypt_packet(&mut buf, is_client)
         // copy data
     }
 
     pub fn add_data(&mut self, data: &[u8], is_client: bool){
-        if is_client{
-            _ = self.client.input(data);
+        let kcp = if is_client{
+            &mut self.client
         }else{
-            _ = self.server.input(data);
-        }
+            &mut self.server
+        };
+        if kcp.is_none() { return; }
+        let kcp = kcp.as_mut().unwrap();
+        _ = kcp.input(data);
     }
 
     fn is_valid(data: &[u8])->bool{
@@ -169,7 +124,7 @@ impl ClientServerPair{
         }
     }
 
-    fn decrypt_packet(&mut self, data: &mut Vec<u8>, is_client: bool){
+    fn decrypt_packet(&mut self, data: &mut Vec<u8>, is_client: bool) -> Option<Packet>{
         if let Some(session_key) = &self.session_key{
             session_key.xor(data);
 
@@ -191,7 +146,7 @@ impl ClientServerPair{
                 //also theres definitely a better way to do this than the 3 nested if let Some's
                 if let Some(sent_time) = self.tokenrspsendtime{
                     if let Some(server_seed) = self.tokenrspserverseed{
-                        if let Some(seed) = bruteforce(sent_time, server_seed, data){
+                        if let Some(seed) = self.key_bf.bruteforce(sent_time, server_seed, data){
                             let key = MTKey::from_seed(seed);
                             key.xor(data);
 
@@ -215,8 +170,8 @@ impl ClientServerPair{
 
                 if let None = self.session_key{
                     // crying screaming 
-                    println!("im rlly sad rn bc bruteforce failed");
-                    return;
+                    // println!("im rlly sad rn bc bruteforce failed");
+                    return None;
                 }
                 
             }
@@ -239,7 +194,7 @@ impl ClientServerPair{
         if !Self::is_valid(data){
             //crying screaming 
             println!("invalid packet.... encryption probably fucked up");
-            return;
+            return None;
         }
 
 
@@ -262,6 +217,7 @@ impl ClientServerPair{
         };
 
         self.handle_parsed_packet(&mut p);
+        Some(p)
 
         // send data to ws etc
     }
@@ -290,7 +246,7 @@ impl ClientServerPair{
                     
                     // self.tokenrspserverseed = Some();
                     //v.serverRandKey
-                    let x = self.decode_base64_rsa(v.server_rand_key.clone());
+                    let x = self.decode_base64_rsa(v.serverRandKey.clone());
                     self.tokenrspserverseed = Some(u64::from_be_bytes([x[0], x[1], x[2], x[3], x[4], x[5], x[6], x[7]]));
                     // Some(protobuf_json_mapping::print_to_string_with_options(&v,&options).unwrap())
                 }else{
@@ -301,7 +257,7 @@ impl ClientServerPair{
             _ => {}
         };
 
-        self.packet_processor.borrow_mut().process(CmdIds::from_u16(p.cmdid).unwrap(), &p.data, !p.is_client);
+        // todo: pass to whatever handles the packets
 
         return;
         // up
