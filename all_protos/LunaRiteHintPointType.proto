@@ -1,9 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
+// Name: KHKAOPHMMJJ
 enum LunaRiteHintPointType {
-	LUNA_RITE_HINT_POINT_TYPE_NONE = 0;
-	LUNA_RITE_HINT_POINT_TYPE_RUNE = 1;
-	LUNA_RITE_HINT_POINT_TYPE_CHEST = 2;
+    LUNA_RITE_HINT_TYPE_NONE = 0;
+    LUNA_RITE_HINT_TYPE_RUNE = 1;
+    LUNA_RITE_HINT_TYPE_CHEST = 2;
 }
+

@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: HGPFLODNOJD
+// CmdId: 3210
 message SceneDataNotify {
-	enum CBEIJHHHJEA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 3295;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated string levelConfigNameList = 6;
-	repeated uint32 sceneTagIdList = 8;
+    repeated string level_config_name_list = 11;
+    repeated uint32 scene_tag_id_list = 5;
 }
+

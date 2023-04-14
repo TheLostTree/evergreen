@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GLFEGKIJKDD
+// CmdId: 44
 message EchoNotify {
-	enum LOPEEDHIPKE {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 88;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	string content = 4;
-	uint32 seqId = 3;
+    string content = 9;
+    uint32 seq_id = 11;
 }
+

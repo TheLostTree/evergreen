@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "HomePlantFieldData.proto";
 
+// Name: IEEEICOKCLM
+// CmdId: 4545
 message HomePlantInfoNotify {
-	enum PKDEJFIFJJJ {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4547;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated HomePlantFieldData fieldList = 8;
+    repeated HomePlantFieldData field_list = 4;
 }
+

@@ -1,18 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GCGDSChangeDeckNameRsp
+// CmdId: 7293
 message GCGDSChangeDeckNameRsp {
-	enum IHFJEPEMDGL {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 7818;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 ccdlgbcdpbp = 12;
-	uint32 rewardIndex = 1;
-	int32 retcode = 6;
+    string name = 5;
+    bool NKAEGAJGMIK = 9;
+    int32 retcode = 6;
+    uint32 deck_id = 10;
 }
+

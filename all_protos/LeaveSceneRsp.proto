@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: HKDEEOLMDJA
+// CmdId: 254
 message LeaveSceneRsp {
-	enum LMHNKPGJEDJ {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 287;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 7;
+    int32 retcode = 12;
 }
+

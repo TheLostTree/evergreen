@@ -1,26 +1,21 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "ADMIOIMGPLK.proto";
+import "GalleryFlowerStartParam.proto";
 
-import "FlowerStartParam.proto";
-import "ElectroherculesStartParam.proto";
-
+// Name: ODHIAGMBHOJ
+// CmdId: 5567
 message GalleryStartNotify {
-	enum ACINIBNBKCJ {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5505;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 startTime = 3;
-	uint32 ownerUid = 14;
-	uint32 playerCount = 4;
-	uint32 galleryId = 12;
-	uint32 endTime = 1;
-	oneof EAODOIBIHEN {
-		FlowerStartParam flower_start_param = 10;
-		ElectroherculesStartParam electrohercules_start_param = 7;
-	}
+    uint32 end_time = 8;
+    uint32 start_time = 3;
+    uint32 player_count = 9;
+    uint32 gallery_id = 11;
+    uint32 owner_uid = 15;
+    oneof detail {
+        GalleryFlowerStartParam flower_start_param = 5;
+        ADMIOIMGPLK electrohercules_start_param = 13;
+    }
 }
+

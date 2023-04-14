@@ -1,18 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "BargainSnapshot.proto";
 
+// Name: PPLOGNILEPJ
+// CmdId: 494
 message BargainStartNotify {
-	enum BOPACPEHDDK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 425;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 bargainId = 12;
-	BargainSnapshot snapshot = 2;
+    uint32 bargain_id = 8;
+    BargainSnapshot snapshot = 14;
 }
+

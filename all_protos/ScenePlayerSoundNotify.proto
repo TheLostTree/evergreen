@@ -1,20 +1,21 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "Vector.proto";
 
-import "Rotation.proto";
-import "PlaySoundType.proto";
-
+// Name: EMBMCPPLGPA
+// CmdId: 201
 message ScenePlayerSoundNotify {
-	enum IMHOJGHBFGB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 291;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
+    // Name: MCCICFBIADN
+    enum PlaySoundType {
+        PLAY_SOUND_NONE = 0;
+        PLAY_SOUND_START = 1;
+        PLAY_SOUND_STOP = 2;
+    }
 
-	string soundName = 11;
-	Rotation playPos = 6;
-	PlaySoundType playType = 10;
+    PlaySoundType play_type = 14;
+    Vector play_pos = 1;
+    string sound_name = 4;
 }
+

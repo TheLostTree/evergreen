@@ -1,22 +1,16 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "PotionAvatarInfo.proto";
 
+// Name: DFLDHLOHEEI
+// CmdId: 8630
 message PotionEnterDungeonReq {
-	enum MOHGCCGKGPE {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8571;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 modeId = 14;
-	repeated PotionAvatarInfo avatarInfoList = 8;
-	uint32 levelId = 6;
-	repeated uint32 buffIdList = 11;
-	uint32 stageId = 1;
+    repeated PotionAvatarInfo avatar_info_list = 5;
+    uint32 level_id = 8;
+    repeated uint32 buff_id_list = 12;
+    uint32 stage_id = 6;
+    uint32 mode_id = 14;
 }
+

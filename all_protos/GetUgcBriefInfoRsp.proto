@@ -1,23 +1,18 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
-
+import "UgcMusicBriefInfo.proto";
 import "UgcType.proto";
-import "MusicBriefInfo.proto";
 
+// Name: HCHEBMEEOJO
+// CmdId: 6346
 message GetUgcBriefInfoRsp {
-	enum FEOCBIBAOAK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 6341;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint64 ugcGuid = 15;
-	UgcType ugcType = 9;
-	int32 retcode = 1;
-	oneof ODGCKIFHHNP {
-		MusicBriefInfo music_brief_info = 8;
-	}
+    UgcType ugc_type = 14;
+    int32 retcode = 4;
+    uint64 ugc_guid = 7;
+    oneof brief {
+        UgcMusicBriefInfo music_brief_info = 8;
+    }
 }
+

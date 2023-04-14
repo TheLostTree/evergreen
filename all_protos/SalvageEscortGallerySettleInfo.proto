@@ -1,10 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "SalvageEscortStopReason.proto";
 
+// Name: DLKKODBHNOD
 message SalvageEscortGallerySettleInfo {
-	SalvageEscortStopReason reason = 6;
-	uint32 timeRemain = 8;
+    uint32 time_remain = 7;
+    SalvageEscortStopReason reason = 15;
 }
+

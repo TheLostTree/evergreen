@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: MFBJGHDOJON
+// CmdId: 23136
 message GearActivityStartPlayPictureRsp {
-	enum KPKOMBPAIEN {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 23454;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 2;
+    int32 retcode = 11;
 }
+

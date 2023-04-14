@@ -1,20 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: CCGEPDKJGBB
+// CmdId: 2002
 message ExpeditionStartReq {
-	enum CJLHEKIMJCC {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2020;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 Unk3300_AIEJKADFLKG = 4;
-	uint32 pathId = 10;
-	repeated uint32 avatarIdList = 8;
-	uint32 Unk3300_AFGPGIIGAKA = 7;
+    repeated uint32 avatar_id_list = 11;
+    uint32 LOHMHPCOLBG = 8;
+    uint32 OOKCMLMGMJB = 1;
+    uint32 path_id = 10;
 }
+

@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: KHHINOIPNPA
+// CmdId: 2005
 message ReceivedTrialAvatarActivityRewardReq {
-	enum GKNKKEOBOJO {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2106;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 trialAvatarIndexId = 3;
+    uint32 trial_avatar_index_id = 3;
 }
+

@@ -1,19 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: IKHCDGKOMNP
+// CmdId: 3387
 message ClientLoadingCostumeVerificationNotify {
-	enum ADGJCEJGDDD {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 3441;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint64 prefabHash = 15;
-	uint32 costumeId = 8;
-	uint64 guid = 13;
+    uint64 guid = 2;
+    uint64 prefab_hash = 3;
+    uint32 costume_id = 12;
 }
+

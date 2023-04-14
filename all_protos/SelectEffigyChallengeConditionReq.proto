@@ -1,19 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: IOFPKNEPPEP
+// CmdId: 2199
 message SelectEffigyChallengeConditionReq {
-	enum GEBHGPMLGLG {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2115;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 difficultyId = 11;
-	uint32 challengeId = 2;
-	repeated uint32 conditionIdList = 3;
+    uint32 difficulty_id = 4;
+    uint32 challenge_id = 14;
+    repeated uint32 condition_id_list = 1;
 }
+

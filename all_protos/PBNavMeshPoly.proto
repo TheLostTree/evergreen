@@ -1,11 +1,20 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-import "EdgeType.proto";
-
+// Name: PAIAJAJDMPF
 message PBNavMeshPoly {
-	repeated EdgeType edgeTypes = 1;
-	int32 area = 5;
-	repeated int32 vects = 14;
+    // Name: KFKPCGHIEHA
+    enum EdgeType {
+        INNER = 0;
+        TILE_BOUND = 1;
+        TILE_BOUND_UNCONNECT = 2;
+        TILE_BOUND_OVERIDE = 3;
+    }
+
+    repeated int32 vects = 3;
+    repeated EdgeType edge_types = 12;
+    int32 area = 6;
 }
+

@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GCGApplyInviteBattleNotify
+// CmdId: 7514
 message GCGApplyInviteBattleNotify {
-	enum ALFOCFCKOIK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 7300;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	bool isAgree = 7;
+    bool is_agree = 7;
+    int32 retcode = 4;
 }
+

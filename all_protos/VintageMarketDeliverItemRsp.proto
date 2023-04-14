@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: MDOKHMOGGKL
+// CmdId: 24023
 message VintageMarketDeliverItemRsp {
-	enum MLCPBOCDIPB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 21050;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 traderId = 14;
-	int32 retcode = 10;
+    int32 retcode = 7;
+    uint32 trader_id = 12;
 }
+

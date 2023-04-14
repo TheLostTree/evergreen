@@ -1,18 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "SceneGalleryInfo.proto";
 
+// Name: NDFIMLKDALE
+// CmdId: 5582
 message GetAllSceneGalleryInfoRsp {
-	enum HDBJFCPMCIK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5570;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 14;
-	repeated SceneGalleryInfo galleryInfoList = 8;
+    repeated SceneGalleryInfo gallery_info_list = 6;
+    int32 retcode = 9;
 }
+

@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: JKKGNIAKIEM
+// CmdId: 5686
 message SetH5ActivityRedDotTimestampRsp {
-	enum AAGMAJAFGEE {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5669;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 4;
+    int32 retcode = 6;
 }
+

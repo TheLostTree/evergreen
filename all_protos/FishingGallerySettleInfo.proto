@@ -1,11 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "GMIFBLJMMNA.proto";
+import "PDKLFCHIAMH.proto";
 
-import "FishingScore.proto";
-import "FishInfo.proto";
-
+// Name: OPNBGGNPPOE
 message FishingGallerySettleInfo {
-	repeated FishingScore fishingScoreList = 4;
-	map<uint32, FishInfo> fishMap = 9;
+    repeated GMIFBLJMMNA EKEAHMCHEOH = 5;
+    map<uint32, PDKLFCHIAMH> HIPPDLHJGGN = 6;
 }
+

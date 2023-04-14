@@ -1,19 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: BFEBALKACOC
+// CmdId: 5391
 message InBattleMechanicusConfirmCardNotify {
-	enum AEAMAFIMLIM {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5378;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 playerUid = 2;
-	uint32 cardId = 1;
-	uint32 playIndex = 7;
-	uint32 groupId = 12;
+    uint32 play_index = 11;
+    uint32 player_uid = 1;
+    uint32 card_id = 3;
+    uint32 group_id = 12;
 }
+

@@ -1,9 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: ODHFJKNEAJB
 message CataLogGlobalWatcherFinishedData {
-	uint32 catalogType = 5;
-	repeated uint32 finishedGlobalWatcherList = 2;
+    repeated uint32 finished_global_watcher_list = 10;
+    uint32 catalog_type = 3;
 }
+

@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "SkyCrystalDetectorData.proto";
 
+// Name: GPKEKJAKPMO
+// CmdId: 4262
 message SkyCrystalDetectorDataUpdateNotify {
-	enum GGDPCBGCNAA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4265;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	SkyCrystalDetectorData skyCrystalDetectorData = 12;
+    SkyCrystalDetectorData sky_crystal_detector_data = 12;
 }
+

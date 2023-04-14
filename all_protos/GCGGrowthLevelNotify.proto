@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-import "GCGTCTavernChallengeData.proto";
-
+// Name: GCGGrowthLevelNotify
+// CmdId: 7680
 message GCGGrowthLevelNotify {
-	enum POPILOEOCIK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 7722;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated GCGTCTavernChallengeData eekdbogblnc = 5;
+    uint32 level = 10;
+    uint32 exp = 7;
 }
+

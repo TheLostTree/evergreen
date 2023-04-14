@@ -1,17 +1,19 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
-
-import "ProfilePicture.proto";
 import "ExhibitionDisplayInfo.proto";
+import "ProfilePicture.proto";
 
+// Name: EDLDMPIMDAB
 message ScenePlayBattleSettlePlayerInfo {
-	string nickname = 9;
-	string onlineId = 11;
-	uint32 statisticId = 3;
-	repeated ExhibitionDisplayInfo cardList = 1;
-	uint32 uid = 6;
-	ProfilePicture profilePicture = 13;
-	uint32 headImage = 4;
-	int64 param = 12;
+    string online_id = 9;
+    string nickname = 5;
+    ProfilePicture profile_picture = 2;
+    repeated ExhibitionDisplayInfo card_list = 10;
+    uint32 uid = 1;
+    int64 param = 13;
+    uint32 statistic_id = 4;
+    uint32 head_image = 6;
 }
+

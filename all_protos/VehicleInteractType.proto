@@ -1,9 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
+// Name: CGOOHEEBLLK
 enum VehicleInteractType {
-	VEHICLE_INTERACT_TYPE_NONE = 0;
-	VEHICLE_INTERACT_TYPE_IN = 1;
-	VEHICLE_INTERACT_TYPE_OUT = 2;
+    VEHICLE_INTERACT_NONE = 0;
+    VEHICLE_INTERACT_IN = 1;
+    VEHICLE_INTERACT_OUT = 2;
 }
+

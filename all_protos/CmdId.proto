@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-
-
-enum CmdId {
-	SUCC = 0;
-	FAIL = 1;
-}

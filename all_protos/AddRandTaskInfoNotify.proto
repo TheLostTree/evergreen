@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "Vector.proto";
 
-import "Rotation.proto";
-
+// Name: KOBACDPOPJI
+// CmdId: 187
 message AddRandTaskInfoNotify {
-	enum AAMKDIJOLIA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 123;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	Rotation pos = 6;
-	uint32 randTaskId = 2;
+    Vector pos = 11;
+    uint32 rand_task_id = 6;
 }
+

@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: IFADNLEFAHC
+// CmdId: 2104
 message TakeEffigyRewardReq {
-	enum IBCOIGPAKGA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2049;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 rewardIndex = 2;
+    uint32 reward_index = 4;
 }
+

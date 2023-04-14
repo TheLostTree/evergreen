@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: IDEJMFKHMII
+// CmdId: 8004
 message SpiceActivityFinishMakeSpiceRsp {
-	enum NAAFOEEFFKF {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8964;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 2;
-	bool isSuccess = 4;
-	uint32 stageId = 1;
+    bool is_success = 9;
+    int32 retcode = 8;
+    uint32 stage_id = 7;
 }
+

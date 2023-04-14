@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "layla.sleep.proto";
+
+import "Vector.proto";
+
+// Name: CIMFCKOOJEG
+message CIMFCKOOJEG {
+    Vector JKBNDOPLHCE = 15;
+}
+

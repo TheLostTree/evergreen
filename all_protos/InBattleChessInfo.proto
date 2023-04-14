@@ -1,19 +1,21 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
-
+import "ChessCardInfo.proto";
 import "ChessMysteryInfo.proto";
 import "ChessPlayerInfo.proto";
-import "ChessCardInfo.proto";
 
+// Name: PGAFCGFEDED
 message InBattleChessInfo {
-	uint32 ddhmhajjmfk = 12;
-	repeated uint32 gkhmchgepli = 11;
-	map<uint32, ChessPlayerInfo> abhkjjjcfcd = 15;
-	uint32 round = 2;
-	ChessMysteryInfo dcfcppdjgod = 10;
-	uint32 leftMonsters = 3;
-	uint32 escapedMonsters = 9;
-	repeated ChessCardInfo selectedCardInfoList = 1;
-	uint32 mechanicusId = 14;
+    uint32 MHNBCGLCKFG = 8;
+    uint32 round = 14;
+    uint32 excaped_monsters = 11;
+    repeated uint32 ban_card_tag_list = 1;
+    repeated ChessCardInfo selected_card_info_list = 15;
+    uint32 left_monsters = 4;
+    ChessMysteryInfo mystery_info = 7;
+    map<uint32, ChessPlayerInfo> player_info_map = 2;
+    uint32 PCJFLHLDDOF = 9;
 }
+

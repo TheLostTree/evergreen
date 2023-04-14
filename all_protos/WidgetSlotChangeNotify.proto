@@ -1,19 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
-
-import "WidgetSlotOp.proto";
 import "WidgetSlotData.proto";
+import "WidgetSlotOp.proto";
 
+// Name: CAPCHPIFEGL
+// CmdId: 4254
 message WidgetSlotChangeNotify {
-	enum CHDJEDPHBIO {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4283;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	WidgetSlotOp op = 14;
-	WidgetSlotData slot = 2;
+    WidgetSlotOp op = 7;
+    WidgetSlotData slot = 13;
 }
+

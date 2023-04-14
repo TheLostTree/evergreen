@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: FDCFKALNIED
+// CmdId: 4482
 message HomeSceneJumpRsp {
-	enum BCOGMNPNJPD {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4822;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	bool isEnterRoomScene = 1;
-	int32 retcode = 2;
+    bool is_enter_room_scene = 3;
+    int32 retcode = 4;
 }
+

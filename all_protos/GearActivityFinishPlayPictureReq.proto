@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: BGCJIPNGAHK
+// CmdId: 21009
 message GearActivityFinishPlayPictureReq {
-	enum EFOHCLKANMK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 24600;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	bool isSuccess = 3;
+    bool is_success = 3;
 }
+

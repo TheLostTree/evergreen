@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: DFJHCHKKDHF
+// CmdId: 8587
 message ChannellerSlabLoopDungeonTakeScoreRewardRsp {
-	enum GELENGHNKBJ {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8186;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 5;
-	uint32 rewardIndex = 11;
+    uint32 reward_index = 10;
+    int32 retcode = 8;
 }
+

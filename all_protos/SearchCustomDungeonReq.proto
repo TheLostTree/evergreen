@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: JKFFBLOKFIC
+// CmdId: 6207
 message SearchCustomDungeonReq {
-	enum BCCAOMNFMGM {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 6222;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	string dungeonCode = 12;
+    string dungeon_code = 13;
 }
+

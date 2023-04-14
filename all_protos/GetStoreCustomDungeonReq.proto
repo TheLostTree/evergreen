@@ -1,16 +1,10 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: COGGLHGJKEP
+// CmdId: 6222
 message GetStoreCustomDungeonReq {
-	enum KPBJDCOGNLA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 6248;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
 }
+

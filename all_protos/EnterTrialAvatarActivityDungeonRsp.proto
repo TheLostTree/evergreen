@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: PAFBDJNHHJB
+// CmdId: 2154
 message EnterTrialAvatarActivityDungeonRsp {
-	enum MMNFECNBJIG {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2046;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 trialAvatarIndexId = 8;
-	uint32 activityId = 2;
-	int32 retcode = 11;
+    int32 retcode = 3;
+    uint32 activity_id = 12;
+    uint32 trial_avatar_index_id = 5;
 }
+

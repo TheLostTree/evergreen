@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "MainCoop.proto";
 
+// Name: OEEBFHGFMOD
+// CmdId: 1993
 message MainCoopUpdateNotify {
-	enum JOAFDEMHCJO {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1995;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated MainCoop mainCoopList = 5;
+    repeated MainCoop main_coop_list = 6;
 }
+

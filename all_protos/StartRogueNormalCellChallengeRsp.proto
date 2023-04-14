@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: APBCOILLJIL
+// CmdId: 8834
 message StartRogueNormalCellChallengeRsp {
-	enum FGCJIOFDHHK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8485;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 dungeonId = 4;
-	int32 retcode = 2;
-	uint32 cellId = 7;
+    int32 retcode = 8;
+    uint32 dungeon_id = 4;
+    uint32 cell_id = 7;
 }
+

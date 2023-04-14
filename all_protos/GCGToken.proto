@@ -1,9 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GCGToken
 message GCGToken {
-	uint32 key = 9;
-	uint32 value = 5;
+    uint32 value = 6;
+    uint32 key = 13;
 }
+

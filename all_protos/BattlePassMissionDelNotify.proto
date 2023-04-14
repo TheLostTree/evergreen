@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: OCHBNHHHGEC
+// CmdId: 2609
 message BattlePassMissionDelNotify {
-	enum INMLJEGLKNJ {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2646;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated uint32 delMissionIdList = 11;
+    repeated uint32 del_mission_id_list = 14;
 }
+

@@ -1,9 +1,11 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "HomeBalloonGalleryRecord.proto";
 
+// Name: KNLFEMENDPG
 message HomeBalloonRecord {
-	repeated HomeBalloonGalleryRecord recordList = 7;
+    repeated HomeBalloonGalleryRecord record_list = 15;
 }
+

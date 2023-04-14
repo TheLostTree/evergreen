@@ -1,18 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "SignInInfo.proto";
 
+// Name: HOBHMLNNDKH
+// CmdId: 2534
 message GetSignInRewardRsp {
-	enum CDBCCPFGGON {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2574;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 7;
-	SignInInfo signInInfo = 13;
+    int32 retcode = 9;
+    SignInInfo sign_in_info = 3;
 }
+

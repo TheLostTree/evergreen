@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: NKMADPICAMJ
+// CmdId: 5094
 message TakeReunionSignInRewardReq {
-	enum DLLEHPPIPEL {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5081;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 rewardDay = 2;
-	uint32 configId = 3;
+    uint32 reward_day = 3;
+    uint32 config_id = 14;
 }
+

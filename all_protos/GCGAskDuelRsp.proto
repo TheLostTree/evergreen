@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "GCGDuel.proto";
 
-import "Duel.proto";
-
+// Name: GCGAskDuelRsp
+// CmdId: 7287
 message GCGAskDuelRsp {
-	enum BJKEODEOFEE {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 7928;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	Duel duel = 5;
-	int32 retcode = 7;
+    GCGDuel duel = 4;
+    int32 retcode = 13;
 }
+

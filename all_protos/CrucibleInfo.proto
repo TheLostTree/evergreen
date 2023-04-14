@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message CrucibleInfo {
-	uint32 mpPlayId = 1;
-	uint32 prepareEndTime = 2;
-}

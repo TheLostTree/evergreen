@@ -1,11 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "RegionSearch.proto";
 
+// Name: ODOHCAKBFJC
 message RegionSearchInfo {
-	uint32 id = 7;
-	repeated RegionSearch regionSearchList = 4;
-	bool isEntered = 14;
+    bool is_entered = 2;
+    uint32 id = 14;
+    repeated RegionSearch region_search_list = 10;
 }
+

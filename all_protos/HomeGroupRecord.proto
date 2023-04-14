@@ -1,18 +1,20 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "HomeBalloonRecord.proto";
+import "HomeRacingRecord.proto";
+import "HomeSeekFurnitureAllRecord.proto";
+import "HomeStakeRecord.proto";
 
-import "RacingGalleryInfo.proto";
-import "BalloonGalleryInfo.proto";
-import "StakePlayInfo.proto";
-import "SeekFurnitureGalleryInfo.proto";
-
+// Name: NIMPOFILFMP
 message HomeGroupRecord {
-	uint32 groupId = 8;
-	oneof MHAMJJPLNLL {
-		RacingGalleryInfo racing_gallery_info = 1457;
-		BalloonGalleryInfo balloon_gallery_info = 1480;
-		StakePlayInfo stake_play_info = 1758;
-		SeekFurnitureGalleryInfo seek_furniture_gallery_info = 1801;
-	}
+    uint32 group_id = 4;
+    oneof detail {
+        HomeRacingRecord racing_gallery_info = 559;
+        HomeBalloonRecord balloon_gallery_info = 1437;
+        HomeStakeRecord stake_play_info = 1356;
+        HomeSeekFurnitureAllRecord seek_furniture_gallery_info = 1603;
+    }
 }
+

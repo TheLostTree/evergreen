@@ -1,32 +1,27 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "CylinderRegionSize.proto";
+import "PolygonRegionSize.proto";
+import "Vector.proto";
 
-import "Rotation.proto";
-import "CylinderSize.proto";
-import "PolygonSize.proto";
-
+// Name: HKKDPBGCGHK
+// CmdId: 3065
 message PlayerEyePointStateNotify {
-	enum NIOAOMGFLHJ {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 3435;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	bool Unk3300_KFOHOBLMMLB = 1;
-	Rotation eyePointPos = 14;
-	uint32 Unk3300_EOPFNBBBGPK = 11;
-	uint32 Unk3300_GNFJIOEGHOE = 2;
-	uint32 Unk3300_BIHEKNFDDDI = 4;
-	int32 fixLodLevel = 6;
-	uint32 Unk3300_JGEMKKJAHKA = 5;
-	bool Unk3300_NIPFCFCBFAE = 10;
-	oneof CHJHCIGJOLJ {
-		float sphere_radius = 152;
-		Rotation cubic_size = 879;
-		CylinderSize cylinder_size = 1320;
-		PolygonSize polygon_size = 1996;
-	}
+    bool BBGEGPLJIEE = 13;
+    int32 fix_lod_level = 12;
+    Vector eye_point_pos = 14;
+    bool DIEJPBFPPFC = 9;
+    uint32 JFMPEFGAHLF = 10;
+    uint32 EMOIPBDAMAA = 11;
+    uint32 IKMIOFDEJNF = 1;
+    uint32 LJNLOCELKND = 2;
+    oneof region_size {
+        float sphere_radius = 1214;
+        Vector cubic_size = 1267;
+        CylinderRegionSize cylinder_size = 778;
+        PolygonRegionSize polygon_size = 1154;
+    }
 }
+

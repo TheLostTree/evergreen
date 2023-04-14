@@ -1,19 +1,14 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ItemParam.proto";
 
+// Name: DKNPPBGLAHP
+// CmdId: 4784
 message HomeAvatarRewardEventGetRsp {
-	enum IKKAMEFGHNH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4534;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 15;
-	repeated ItemParam itemList = 2;
-	uint32 eventId = 6;
+    int32 retcode = 2;
+    repeated ItemParam item_list = 9;
+    uint32 event_id = 8;
 }
+

@@ -1,18 +1,17 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GCGTCTavernInfoNotify
+// CmdId: 7757
 message GCGTCTavernInfoNotify {
-	enum JNIEFIACMPI {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 7198;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 11;
-	uint32 cardId = 14;
-	uint32 rewardIndex = 12;
+    bool CGPNOOAGBFK = 4;
+    uint32 level_id = 9;
+    bool PEKLJFNMPPE = 8;
+    uint32 element_type = 14;
+    uint32 point_id = 2;
+    uint32 avatar_id = 11;
+    uint32 character_id = 12;
 }
+

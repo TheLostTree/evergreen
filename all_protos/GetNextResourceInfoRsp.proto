@@ -1,19 +1,14 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ResVersionConfig.proto";
 
+// Name: BEHGJMLEGNC
+// CmdId: 173
 message GetNextResourceInfoRsp {
-	enum CFMLDJCOIGD {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 189;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	ResVersionConfig nextResVersionConfig = 5;
-	int32 retcode = 9;
-	string nextResourceUrl = 1;
+    ResVersionConfig res_version_config = 11;
+    string next_resource_url = 7;
+    int32 retcode = 3;
 }
+

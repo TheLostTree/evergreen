@@ -1,19 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: KKFKFOCNEDE
+// CmdId: 2070
 message SalesmanTakeRewardRsp {
-	enum KFAEGMMBJMN {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2034;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 rewardId = 14;
-	uint32 scheduleId = 5;
-	int32 retcode = 7;
-	uint32 position = 6;
+    uint32 schedule_id = 15;
+    uint32 reward_id = 2;
+    uint32 position = 11;
+    int32 retcode = 1;
 }
+

@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: HAFIBFIFCMD
+// CmdId: 4415
 message ScenePlayGuestReplyNotify {
-	enum GBDFLIFJGLH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4412;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 guestUid = 15;
-	uint32 playId = 12;
-	bool isAgree = 10;
+    bool is_agree = 8;
+    uint32 guest_uid = 11;
+    uint32 play_id = 7;
 }
+

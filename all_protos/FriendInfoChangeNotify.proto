@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: KBLAEHCOJBB
+// CmdId: 4092
 message FriendInfoChangeNotify {
-	enum FAOBCGEFJBE {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4026;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	string onlineId = 2;
-	uint32 uid = 9;
+    uint32 uid = 6;
+    string online_id = 9;
 }
+

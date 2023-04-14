@@ -1,17 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "GCGPlayerGCGState.proto";
 
-
+// Name: GCGWorldPlayerGCGStateRsp
+// CmdId: 7347
 message GCGWorldPlayerGCGStateRsp {
-	enum FEBOBCEMECA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 7941;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 14;
-	bool isAgree = 10;
+    int32 retcode = 9;
+    repeated GCGPlayerGCGState player_state = 13;
 }
+

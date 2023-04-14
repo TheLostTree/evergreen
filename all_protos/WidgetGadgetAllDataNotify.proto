@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "WidgetGadgetData.proto";
 
+// Name: EDHIDALBDJA
+// CmdId: 4280
 message WidgetGadgetAllDataNotify {
-	enum HOFILGKEMCN {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4259;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated WidgetGadgetData widgetGadgetData = 4;
+    repeated WidgetGadgetData widget_gadget_data = 5;
 }
+

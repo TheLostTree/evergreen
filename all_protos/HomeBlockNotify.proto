@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: KLIGCBPPNKI
+// CmdId: 4857
 message HomeBlockNotify {
-	enum NDFNPBFEMDB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4641;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 endTime = 13;
+    uint32 end_time = 6;
 }
+

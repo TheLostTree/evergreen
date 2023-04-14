@@ -1,13 +1,15 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "Vector.proto";
 
-import "Rotation.proto";
-
+// Name: IMOOKGGFLKA
 message TreasureMapDetectorData {
-	repeated Rotation spotList = 15;
-	uint32 regionId = 6;
-	uint32 radius = 7;
-	Rotation centerPos = 8;
-	bool isRegionDetected = 12;
+    Vector center_pos = 4;
+    uint32 region_id = 13;
+    bool is_region_detected = 1;
+    uint32 radius = 8;
+    repeated Vector spot_list = 7;
 }
+

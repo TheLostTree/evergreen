@@ -1,10 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "IrodoriChessMonsterInfo.proto";
 
+// Name: NBGICJDBGIO
 message IrodoriChessEntranceInfo {
-	uint32 dfpedbghhma = 10;
-	repeated IrodoriChessMonsterInfo lhjhgbpjpkl = 8;
+    repeated IrodoriChessMonsterInfo monster_info_list = 4;
+    uint32 entrance_point_id = 2;
 }
+

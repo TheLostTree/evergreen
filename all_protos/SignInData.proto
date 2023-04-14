@@ -1,10 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ItemParam.proto";
 
+// Name: BHDLMGHIIFJ
 message SignInData {
-	uint32 dayCount = 3;
-	repeated ItemParam rewardItemList = 1;
+    uint32 day_count = 10;
+    repeated ItemParam reward_item_list = 7;
 }
+

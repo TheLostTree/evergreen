@@ -1,10 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: NICDJJJMPJJ
 message ChessNormalCardInfo {
-	uint32 cardId = 6;
-	bool isAttachCurse = 9;
-	uint32 costPoints = 2;
+    uint32 cost_points = 6;
+    bool is_attach_curse = 2;
+    uint32 card_id = 11;
 }
+

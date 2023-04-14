@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-enum State {
-	STATE_INVALID = 0;
-	STATE_START = 1;
-	STATE_TIMEOUT = 2;
-}

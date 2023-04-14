@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ChessPlayerInfo.proto";
 
+// Name: JBGMDJCBNJL
+// CmdId: 5392
 message ChessPlayerInfoNotify {
-	enum GIJKADEPEMA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5326;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	ChessPlayerInfo playerInfo = 15;
+    ChessPlayerInfo player_info = 2;
 }
+

@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: HEADEHODDME
+// CmdId: 8885
 message RoguelikeEffectViewReq {
-	enum BBHPJNGOLFL {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8207;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	repeated uint32 Unk3300_LMIIAEPBKNB = 12;
-	repeated uint32 Unk3300_FKGJGIJHKJI = 10;
+    repeated uint32 ILGIBMIOLPL = 10;
+    repeated uint32 PINDJOBJNJC = 11;
 }
+

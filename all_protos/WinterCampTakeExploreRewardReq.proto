@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: PAADLGLLMEH
+// CmdId: 8750
 message WinterCampTakeExploreRewardReq {
-	enum HBBEBDPDDMH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8290;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 id = 10;
+    uint32 id = 5;
 }
+

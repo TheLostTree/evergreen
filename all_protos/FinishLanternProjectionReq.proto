@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: MHMFOLKBLFK
+// CmdId: 8720
 message FinishLanternProjectionReq {
-	enum MPFJNIPOFOF {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8236;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 finishTime = 15;
-	uint32 levelId = 10;
+    uint32 level_id = 1;
+    uint32 finish_time = 12;
 }
+

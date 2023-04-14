@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "layla.sleep.proto";
+
+import "JFGOFCIOKNH.proto";
+
+// Name: CFAGNNLICOC
+message CFAGNNLICOC {
+    repeated JFGOFCIOKNH IDJDIDMDCAC = 9;
+}
+

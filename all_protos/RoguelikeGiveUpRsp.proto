@@ -1,21 +1,16 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "RoguelikeDungeonSettleInfo.proto";
 
+// Name: IIODPLPFGPP
+// CmdId: 8868
 message RoguelikeGiveUpRsp {
-	enum MNDLHCDPFJE {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8799;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 stageId = 10;
-	int32 retcode = 14;
-	oneof JIIHKHKINIK {
-		RoguelikeDungeonSettleInfo settle_info = 2;
-	}
+    int32 retcode = 14;
+    uint32 stage_id = 5;
+    oneof info {
+        RoguelikeDungeonSettleInfo settle_info = 3;
+    }
 }
+

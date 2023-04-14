@@ -1,13 +1,15 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: IBJFMGLGGIA
 message HomeAvatarSummonEventInfo {
-	uint32 suitId = 4;
-	uint32 randomPosition = 2;
-	uint32 eventId = 3;
-	uint32 avatarId = 12;
-	uint32 eventOverTime = 14;
-	uint32 guid = 1;
+    uint32 CFKBGIGOEEJ = 2;
+    uint32 avatar_id = 9;
+    uint32 EBFHOCIGDOI = 4;
+    uint32 event_id = 10;
+    uint32 guid = 14;
+    uint32 suit_id = 7;
 }
+

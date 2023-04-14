@@ -1,21 +1,23 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: IBPHKCENHNF
 message Quest {
-	uint32 questId = 1;
-	uint32 state = 2;
-	uint32 startTime = 4;
-	bool isRandom = 5;
-	uint32 parentQuestId = 6;
-	uint32 questConfigId = 7;
-	uint32 startGameTime = 8;
-	uint32 acceptTime = 9;
-	repeated uint32 lackedNpcList = 10;
-	repeated uint32 finishProgressList = 11;
-	repeated uint32 failProgressList = 12;
-	map<uint32, uint32> lackedNpcMap = 13;
-	repeated uint32 lackedPlaceList = 14;
-	map<uint32, uint32> lackedPlaceMap = 15;
+    uint32 quest_id = 1;
+    uint32 state = 2;
+    uint32 start_time = 4;
+    bool is_random = 5;
+    uint32 parent_quest_id = 6;
+    uint32 LLNJKILEEBC = 7;
+    uint32 CIPMADJKCFI = 8;
+    uint32 JIBIPIACCNO = 9;
+    repeated uint32 DMLOPDKLBMF = 10;
+    repeated uint32 DOFGANFLADG = 11;
+    repeated uint32 NAJLNEMFEGA = 12;
+    map<uint32, uint32> NCPOOIMAKMO = 13;
+    repeated uint32 KPIKFCDPMMM = 14;
+    map<uint32, uint32> OCDJABANKIH = 15;
 }
+

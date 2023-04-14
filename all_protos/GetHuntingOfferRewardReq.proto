@@ -1,19 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "HuntingPair.proto";
 
+// Name: BAHOPKINBPC
+// CmdId: 4336
 message GetHuntingOfferRewardReq {
-	enum DECGDEFDNBG {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4319;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	HuntingPair huntingPair = 14;
-	uint32 cityId = 13;
+    HuntingPair hunting_pair = 1;
+    uint32 city_id = 8;
 }
+

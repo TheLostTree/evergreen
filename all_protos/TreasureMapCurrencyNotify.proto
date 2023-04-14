@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: FEDJFKEGAKM
+// CmdId: 2046
 message TreasureMapCurrencyNotify {
-	enum IPPBCDKJHAM {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2038;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 currencyNum = 13;
+    uint32 currency_num = 3;
 }
+

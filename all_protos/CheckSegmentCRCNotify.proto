@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "SegmentInfo.proto";
 
+// Name: BAGMHNFGMNB
+// CmdId: 56
 message CheckSegmentCRCNotify {
-	enum KAMEODOLADA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 46;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated SegmentInfo infoList = 9;
+    repeated SegmentInfo info_list = 5;
 }
+

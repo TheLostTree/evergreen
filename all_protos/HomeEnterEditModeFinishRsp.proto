@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: KIEJGNOINFO
+// CmdId: 4562
 message HomeEnterEditModeFinishRsp {
-	enum BEGILMANMEH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4566;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 15;
+    int32 retcode = 9;
 }
+

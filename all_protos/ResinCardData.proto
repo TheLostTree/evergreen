@@ -1,11 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: OMAOJPAGCGH
 message ResinCardData {
-	uint32 configId = 14;
-	uint32 remainRewardDays = 10;
-	uint32 expireTime = 5;
-	uint32 lastDailyRewardTime = 7;
+    uint32 FAHMOAMOKKF = 15;
+    uint32 expire_time = 2;
+    uint32 PPLAEAIJIAD = 11;
+    uint32 config_id = 5;
 }
+

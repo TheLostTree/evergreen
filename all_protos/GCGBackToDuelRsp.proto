@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GCGBackToDuelRsp
+// CmdId: 7877
 message GCGBackToDuelRsp {
-	enum BBAJGFENCAD {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 7304;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 1;
+    int32 retcode = 4;
 }
+

@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: OAMHLICHGHF
+// CmdId: 884
 message RequestLiveInfoReq {
-	enum OMBPGOCMMNK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 875;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 liveId = 10;
+    uint32 live_id = 1;
 }
+

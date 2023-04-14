@@ -1,19 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GENANJCFELF
+// CmdId: 301
 message EvtBeingHealedNotify {
-	enum AHFCMEGDDAA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 391;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 sourceId = 13;
-	float realHealAmount = 12;
-	float healAmount = 11;
-	uint32 targetId = 8;
+    uint32 source_id = 6;
+    float JHONBPIGLCI = 4;
+    uint32 target_id = 3;
+    float PNLNNJHIJFC = 7;
 }
+

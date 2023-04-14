@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: MBKFLIAPDHA
+// CmdId: 20772
 message SingleStartBrickBreakerRsp {
-	enum BIHKAFCIBLF {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 23349;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	bool isDungeon = 15;
-	uint32 levelId = 11;
-	int32 retcode = 3;
+    bool is_dungeon = 13;
+    int32 retcode = 7;
+    uint32 level_id = 5;
 }
+

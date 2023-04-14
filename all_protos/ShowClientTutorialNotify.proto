@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: HNIEJMPFIBA
+// CmdId: 3120
 message ShowClientTutorialNotify {
-	enum IBDBHMBECIO {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 3381;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 tutorialId = 10;
+    uint32 tutorial_id = 6;
 }
+

@@ -1,15 +1,17 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "GCGDamageDetail.proto";
 
+// Name: NIMIDBNFGIA
 message GCGMsgNoDamageSkillResult {
-	uint32 Unk3300_NNJAOEHNPPD = 3;
-	uint32 Unk3300_NIGDCIGLAKE = 1;
-	uint32 Unk3300_LPGLOCDDPCL = 13;
-	repeated GCGDamageDetail detailList = 9;
-	uint32 Unk3300_EPNDCIAJOJP = 5;
-	uint32 skillId = 15;
-	uint32 targetCardGuid = 4;
+    uint32 skill_id = 2;
+    uint32 DCEIDIOOFAG = 9;
+    uint32 PPADCGGEDOO = 15;
+    uint32 IHNDAGJJMJK = 6;
+    uint32 FMAFLBOMAFK = 13;
+    uint32 JNDNDBNFEHG = 12;
+    repeated GCGDamageDetail detail_list = 7;
 }
+

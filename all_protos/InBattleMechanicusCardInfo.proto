@@ -1,14 +1,16 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "InBattleMechanicusCardChallengeState.proto";
 
+// Name: MBPAKAMJPFM
 message InBattleMechanicusCardInfo {
-	uint32 Unk3300_FNAHKHODBKN = 3;
-	uint32 costPoints = 2;
-	uint32 Unk3300_NDAOOKKGJPH = 9;
-	uint32 cardId = 15;
-	uint32 Unk3300_KCIEINMEPDH = 8;
-	InBattleMechanicusCardChallengeState challengeState = 5;
+    uint32 MDBEPJAMPBA = 1;
+    uint32 LHLHKNLIKLK = 2;
+    InBattleMechanicusCardChallengeState challenge_state = 13;
+    uint32 LJHINGOMPDC = 12;
+    uint32 cost_points = 7;
+    uint32 card_id = 10;
 }
+

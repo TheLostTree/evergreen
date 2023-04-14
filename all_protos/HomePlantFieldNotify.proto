@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "HomePlantFieldData.proto";
 
+// Name: COLEPMPNKPG
+// CmdId: 4710
 message HomePlantFieldNotify {
-	enum GPLODLLFKFL {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4731;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	HomePlantFieldData field = 4;
+    HomePlantFieldData field = 3;
 }
+

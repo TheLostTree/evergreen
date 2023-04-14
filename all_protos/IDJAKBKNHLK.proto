@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "layla.sleep.proto";
+
+import "GalleryStopReason.proto";
+
+// Name: IDJAKBKNHLK
+message IDJAKBKNHLK {
+    GalleryStopReason reason = 11;
+}
+

@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GAHFFOEKAAF
+// CmdId: 8985
 message WinterCampSetWishListRsp {
-	enum CEOFANGHNOM {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8827;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 6;
-	repeated uint32 itemIdList = 3;
+    repeated uint32 item_id_list = 2;
+    int32 retcode = 13;
 }
+

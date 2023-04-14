@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: HBCIOCJOLGG
+// CmdId: 8713
 message PhotoActivityFinishRsp {
-	enum COKOCOLPKHF {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8044;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 posId = 10;
-	int32 retcode = 15;
+    uint32 pos_id = 13;
+    int32 retcode = 14;
 }
+

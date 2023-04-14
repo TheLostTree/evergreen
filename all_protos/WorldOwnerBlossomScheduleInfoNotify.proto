@@ -1,18 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "BlossomScheduleInfo.proto";
 
+// Name: DIEHNGECGMB
+// CmdId: 2714
 message WorldOwnerBlossomScheduleInfoNotify {
-	enum BNGIMIJIMIM {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2720;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	BlossomScheduleInfo scheduleInfo = 4;
+    BlossomScheduleInfo schedule_info = 1;
 }
+

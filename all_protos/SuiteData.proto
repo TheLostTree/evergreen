@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message SuiteData {
-	uint32 suiteId = 1;
-}

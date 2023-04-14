@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: AICJMMLGCAJ
+// CmdId: 5561
 message GalleryCrystalLinkKillMonsterNotify {
-	enum LKNNEJEJHFA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5539;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 galleryId = 10;
-	uint32 score = 9;
+    uint32 gallery_id = 1;
+    uint32 score = 8;
 }
+

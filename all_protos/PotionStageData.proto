@@ -1,13 +1,15 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "PotionLevelData.proto";
 
+// Name: NICOCIKJHBL
 message PotionStageData {
-	repeated uint32 Unk3300_NLMEPPPMCKI = 9;
-	uint32 stageId = 14;
-	repeated uint32 Unk3300_BMEHJHFCPMA = 12;
-	repeated PotionLevelData levelList = 1;
-	bool isOpen = 15;
+    bool is_open = 11;
+    repeated uint32 ENEFLMCICBB = 8;
+    repeated PotionLevelData level_list = 10;
+    uint32 stage_id = 6;
+    repeated uint32 NJEEPCAOMNI = 1;
 }
+

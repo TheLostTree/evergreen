@@ -1,19 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "HomePlantFieldData.proto";
 
+// Name: NGONDNAKJGE
+// CmdId: 4848
 message HomePlantInfoRsp {
-	enum PPMPGKHAGBN {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4512;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	repeated HomePlantFieldData fieldList = 8;
-	int32 retcode = 10;
+    repeated HomePlantFieldData field_list = 11;
+    int32 retcode = 5;
 }
+

@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: ODIJFDGBOGG
+// CmdId: 357
 message MonsterForceAlertNotify {
-	enum AKDLNIOOLCH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 345;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 monsterEntityId = 5;
+    uint32 monster_entity_id = 3;
 }
+

@@ -1,19 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: NFPHMNBGONL
+// CmdId: 1482
 message GetAuthkeyReq {
-	enum DIGIIBPFOBE {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1470;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 authkeyVer = 6;
-	string authAppid = 14;
-	uint32 signType = 8;
+    string auth_appid = 8;
+    uint32 BILPDHGPPPO = 6;
+    uint32 FHPGCOBFIOE = 3;
 }
+

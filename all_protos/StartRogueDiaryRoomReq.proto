@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: EJLABJMFMFD
+// CmdId: 8291
 message StartRogueDiaryRoomReq {
-	enum JOCNHIAPHCI {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8792;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	bool isSelectHard = 4;
-	uint32 roomDifficulty = 1;
+    uint32 room_difficulty = 14;
+    bool is_select_hard = 13;
 }
+

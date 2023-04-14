@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: BGHHLICDGBP
+// CmdId: 8167
 message PhotoActivityClientViewReq {
-	enum MAANDINGBJA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8687;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 posId = 14;
+    uint32 pos_id = 14;
 }
+

@@ -1,19 +1,14 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ActivityFriendGiftWishData.proto";
 
+// Name: BNJPGACCJCH
+// CmdId: 8777
 message ActivityGetFriendGiftWishListRsp {
-	enum CAALHDHHDIH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8145;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 scheduleId = 8;
-	repeated ActivityFriendGiftWishData friendGiftWishList = 13;
-	int32 retcode = 15;
+    uint32 schedule_id = 14;
+    int32 retcode = 4;
+    repeated ActivityFriendGiftWishData friend_gift_wish_list = 6;
 }
+

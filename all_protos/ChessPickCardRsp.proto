@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: NPBEEKBHPPE
+// CmdId: 5398
 message ChessPickCardRsp {
-	enum KPCIEJPGOCL {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5360;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 cardIndex = 10;
-	uint32 cardId = 8;
-	int32 retcode = 7;
+    uint32 card_id = 1;
+    int32 retcode = 13;
+    uint32 card_index = 2;
 }
+

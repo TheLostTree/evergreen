@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: BCDLHIDENAP
+// CmdId: 921
 message MistTrialFloorLevelNotify {
-	enum BALAKBNIDBK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 911;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 dungeonSceneId = 9;
-	uint32 floorLevel = 11;
+    uint32 dungeon_scene_id = 8;
+    uint32 floor_level = 9;
 }
+

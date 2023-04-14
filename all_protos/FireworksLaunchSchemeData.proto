@@ -1,11 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "FireworksLaunchParam.proto";
 
+// Name: KOGHPNIOEKJ
 message FireworksLaunchSchemeData {
-	uint32 schemeId = 2;
-	repeated FireworksLaunchParam launchParamList = 13;
-	repeated uint32 fireworksIdList = 1;
+    repeated uint32 fireworks_id_list = 4;
+    repeated FireworksLaunchParam launch_param_list = 14;
+    uint32 scheme_id = 12;
 }
+

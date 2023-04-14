@@ -1,13 +1,15 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "InBattleMechanicusBuildingInfo.proto";
 
+// Name: LJPNPOFMLPJ
 message InBattleMechanicusPlayerInfo {
-	repeated InBattleMechanicusBuildingInfo buildingList = 12;
-	uint32 uid = 6;
-	uint32 gdinnaencko = 15;
-	bool kjckjdpeflc = 9;
-	uint32 buildingPoints = 3;
+    uint32 GKBILFJMMAO = 7;
+    uint32 uid = 3;
+    repeated InBattleMechanicusBuildingInfo building_list = 6;
+    bool is_card_confirmed = 12;
+    uint32 GOPICJPNFKM = 9;
 }
+

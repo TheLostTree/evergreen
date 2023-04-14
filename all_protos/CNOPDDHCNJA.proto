@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "layla.sleep.proto";
+
+
+// Name: CNOPDDHCNJA
+message CNOPDDHCNJA {
+    float BBGFHEIICOB = 13;
+    float NIJAKGLOOAD = 12;
+}
+

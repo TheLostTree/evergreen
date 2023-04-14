@@ -1,10 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "Vector.proto";
 
-import "Rotation.proto";
-
+// Name: GNIJOHNCLNM
 message EvtFaceToDirInfo {
-	Rotation faceDir = 2;
-	uint32 entityId = 5;
+    Vector face_dir = 7;
+    uint32 entity_id = 1;
 }
+

@@ -1,8 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
+// Name: JHPFIBBFMME
 enum InterOpType {
-	INTER_OP_TYPE_FINISH = 0;
-	INTER_OP_TYPE_START = 1;
+    INTER_OP_FINISH = 0;
+    INTER_OP_START = 1;
 }
+

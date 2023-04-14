@@ -1,16 +1,10 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: LJCNFOCFBJA
+// CmdId: 8092
 message RefreshRoguelikeDungeonCardReq {
-	enum GNGAOEIDAMP {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8070;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
 }
+

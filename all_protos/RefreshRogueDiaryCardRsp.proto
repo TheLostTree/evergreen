@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: HEMIOOMFBFM
+// CmdId: 8105
 message RefreshRogueDiaryCardRsp {
-	enum HMELOBEOBBE {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8910;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated uint32 randCardList = 9;
-	int32 retcode = 3;
+    repeated uint32 rand_card_list = 10;
+    int32 retcode = 15;
 }
+

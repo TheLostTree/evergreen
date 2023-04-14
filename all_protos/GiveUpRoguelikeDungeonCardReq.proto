@@ -1,16 +1,10 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GCJILFHLJJG
+// CmdId: 8292
 message GiveUpRoguelikeDungeonCardReq {
-	enum ILIIDIBJGCL {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8131;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
 }
+

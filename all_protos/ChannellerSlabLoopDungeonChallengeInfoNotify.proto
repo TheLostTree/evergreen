@@ -1,20 +1,15 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: HIMLJEHFCOM
+// CmdId: 8364
 message ChannellerSlabLoopDungeonChallengeInfoNotify {
-	enum NGDFPBBOCJE {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8499;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 difficultyId = 9;
-	uint32 challengeScore = 1;
-	repeated uint32 conditionIdList = 10;
-	uint32 dungeonIndex = 3;
-	repeated uint32 gihlcdadndf = 8;
+    repeated uint32 scheme_buff_id_list = 13;
+    uint32 dungeon_index = 4;
+    repeated uint32 condition_id_list = 15;
+    uint32 difficulty_id = 9;
+    uint32 challenge_score = 10;
 }
+

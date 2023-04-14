@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "FungusTrainingProgressDetail.proto";
 
+// Name: NMDMEHICCPN
+// CmdId: 23794
 message FungusFighterRuntimeDataNotify {
-	enum OGHEKMNGNAM {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 22858;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	FungusTrainingProgressDetail progressDetail = 14;
+    FungusTrainingProgressDetail progress_detail = 13;
 }
+

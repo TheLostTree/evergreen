@@ -1,23 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-import "GCGDSCardData.proto";
-import "GCGDSDeckData.proto";
-
+// Name: GCGDSFieldUnlockNotify
+// CmdId: 7529
 message GCGDSFieldUnlockNotify {
-	enum EGDHDJOMKPG {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 7558;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated uint32 mpojoaeafpn = 5;
-	repeated GCGDSCardData cardList = 7;
-	uint32 fkppeakjlmb = 2;
-	repeated uint32 noclfjjcgeo = 13;
-	repeated GCGDSDeckData ocigcagdgml = 11;
-	repeated uint32 bcmbnjhmble = 8;
+    uint32 field_id = 10;
 }
+

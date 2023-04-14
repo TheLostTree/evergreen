@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: NCLIOJCMIHH
+// CmdId: 8036
 message ChannellerSlabOneOffDungeonInfoNotify {
-	enum BKAFOFOEHAN {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8038;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated uint32 gihlcdadndf = 9;
+    repeated uint32 scheme_buff_id_list = 7;
 }
+

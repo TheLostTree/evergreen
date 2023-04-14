@@ -1,14 +1,16 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
-
-import "ChannelerSlabBuffInfo.proto";
-import "ChannelerSlabLoopDungeonStageInfo.proto";
+import "AIGHOMHDNIL.proto";
 import "ChannelerSlabChallengeStage.proto";
+import "HALOLKMILLH.proto";
 
+// Name: OGGPPIKHEDM
 message ChannelerSlabActivityDetailInfo {
-	ChannelerSlabBuffInfo buffInfo = 13;
-	uint32 playEndTime = 7;
-	ChannelerSlabLoopDungeonStageInfo loopDungeonStageInfo = 4;
-	repeated ChannelerSlabChallengeStage stageList = 9;
+    uint32 play_end_time = 3;
+    repeated ChannelerSlabChallengeStage stage_list = 2;
+    AIGHOMHDNIL BNGGDPMFDDH = 15;
+    HALOLKMILLH GLGFLPCODAB = 1;
 }
+

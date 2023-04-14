@@ -1,21 +1,16 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: EHBGNICFNBD
+// CmdId: 8709
 message BartenderCompleteOrderRsp {
-	enum BPKOEDJEEKD {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8192;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated uint32 affixList = 11;
-	int32 retcode = 15;
-	uint32 questId = 6;
-	uint32 finishOrderId = 7;
-	bool isNew = 14;
-	uint32 formulaId = 3;
+    uint32 quest_id = 15;
+    uint32 formula_id = 6;
+    int32 retcode = 1;
+    uint32 finish_order_id = 8;
+    repeated uint32 affix_list = 14;
+    bool is_new = 5;
 }
+

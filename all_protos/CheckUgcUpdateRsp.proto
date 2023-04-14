@@ -1,19 +1,14 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "UgcType.proto";
 
+// Name: CPCDDAMLFFF
+// CmdId: 6321
 message CheckUgcUpdateRsp {
-	enum KICAKIMJIPI {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 6340;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 14;
-	UgcType ugcType = 6;
-	repeated uint64 updateUgcGuidList = 2;
+    UgcType ugc_type = 1;
+    repeated uint64 update_ugc_guid_list = 3;
+    int32 retcode = 8;
 }
+

@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: KFLOPIOJKCA
+// CmdId: 4284
 message UseWidgetCreateGadgetRsp {
-	enum PFEKLKGCPGM {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4267;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 materialId = 13;
-	int32 retcode = 4;
+    uint32 material_id = 5;
+    int32 retcode = 2;
 }
+

@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: KLEIGLIJJAK
+// CmdId: 865
 message GadgetPlayStartNotify {
-	enum MNLJBGOMGMF {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 862;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 playType = 6;
-	uint32 entityId = 13;
-	uint32 startTime = 9;
+    uint32 start_time = 11;
+    uint32 entity_id = 14;
+    uint32 play_type = 8;
 }
+

@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: HAJOOIPKGMA
+// CmdId: 3428
 message EntityTagChangeNotify {
-	enum GOEKNJLNFKG {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 3442;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	string tag = 14;
-	uint32 entityId = 11;
-	bool isAdd = 1;
+    uint32 entity_id = 10;
+    string tag = 6;
+    bool is_add = 9;
 }
+

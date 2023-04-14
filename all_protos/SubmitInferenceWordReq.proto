@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: KCDJLGEMEDJ
+// CmdId: 420
 message SubmitInferenceWordReq {
-	enum MBJGANFDAIG {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 454;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 pageId = 13;
-	uint32 wordId = 9;
+    uint32 page_id = 1;
+    uint32 word_id = 8;
 }
+

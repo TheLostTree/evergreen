@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: JKDHMAIMEJO
+// CmdId: 20234
 message EffigyChallengeV2ChooseSkillRsp {
-	enum NPHDEAPKFJD {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 21025;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 9;
-	uint32 levelId = 14;
-	uint32 challengeModeSkillNo = 13;
+    uint32 level_id = 3;
+    uint32 challenge_mode_skill_no = 7;
+    int32 retcode = 13;
 }
+

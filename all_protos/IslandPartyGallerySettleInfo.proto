@@ -1,11 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
-
-import "OnlinePlayerInfo.proto";
 import "ExhibitionDisplayInfo.proto";
+import "OnlinePlayerInfo.proto";
 
+// Name: FCEIDNPGFGK
 message IslandPartyGallerySettleInfo {
-	OnlinePlayerInfo playerInfo = 3;
-	repeated ExhibitionDisplayInfo cardList = 9;
+    repeated ExhibitionDisplayInfo card_list = 9;
+    OnlinePlayerInfo player_info = 3;
 }
+

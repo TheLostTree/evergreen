@@ -1,25 +1,26 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "GCGOperationAttack.proto";
+import "GCGOperationOnStageSelect.proto";
+import "GCGOperationPass.proto";
+import "GCGOperationPlayCard.proto";
+import "GCGOperationReboot.proto";
+import "GCGOperationRedraw.proto";
+import "GCGOperationReroll.proto";
+import "GCGOperationSurrender.proto";
 
-import "OpRedraw.proto";
-import "OpSelectOnStage.proto";
-import "OpReroll.proto";
-import "OpAttack.proto";
-import "OpPass.proto";
-import "OpPlayCard.proto";
-import "OpReboot.proto";
-import "OpSurrender.proto";
-
+// Name: AOBAFNIHINJ
 message GCGOperation {
-	oneof NOOMFIBHINB {
-		OpRedraw op_redraw = 12;
-		OpSelectOnStage op_select_on_stage = 4;
-		OpReroll op_reroll = 13;
-		OpAttack op_attack = 9;
-		OpPass op_pass = 10;
-		OpPlayCard op_play_card = 8;
-		OpReboot op_reboot = 6;
-		OpSurrender op_surrender = 15;
-	}
+    oneof op {
+        GCGOperationRedraw op_redraw = 3;
+        GCGOperationOnStageSelect op_select_on_stage = 14;
+        GCGOperationReroll op_reroll = 6;
+        GCGOperationAttack op_attack = 2;
+        GCGOperationPass op_pass = 15;
+        GCGOperationPlayCard op_play_card = 9;
+        GCGOperationReboot op_reboot = 12;
+        GCGOperationSurrender op_surrender = 4;
+    }
 }

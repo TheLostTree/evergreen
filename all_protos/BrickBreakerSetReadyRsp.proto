@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: NDEIFEPGCIH
+// CmdId: 5369
 message BrickBreakerSetReadyRsp {
-	enum JDGBGKACGME {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5348;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 13;
+    int32 retcode = 3;
 }
+

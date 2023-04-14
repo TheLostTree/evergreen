@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message SkillRequest {
-	uint32 skillDepotId = 9;
-}

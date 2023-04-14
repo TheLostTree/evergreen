@@ -1,20 +1,15 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "CrystalLinkTeamInfo.proto";
 
+// Name: DBLKKPIOGGG
+// CmdId: 8067
 message CrystalLinkEnterDungeonRsp {
-	enum KDACNHFFGAN {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8936;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 levelId = 11;
-	uint32 difficultyId = 2;
-	int32 retcode = 3;
-	repeated CrystalLinkTeamInfo teamInfoList = 10;
+    int32 retcode = 9;
+    uint32 difficulty_id = 1;
+    repeated CrystalLinkTeamInfo team_info_list = 12;
+    uint32 level_id = 5;
 }
+

@@ -1,19 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "UgcType.proto";
 
+// Name: PMAPPANGOHF
+// CmdId: 6339
 message PublishUgcReq {
-	enum CLKAHKIDCND {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 6316;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	UgcType ugcType = 9;
-	uint64 ugcGuid = 14;
+    UgcType ugc_type = 4;
+    uint64 ugc_guid = 8;
 }
+

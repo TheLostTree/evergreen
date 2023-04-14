@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "HomeScenePointFishFarmingInfo.proto";
 
+// Name: CGHDILJKIGP
+// CmdId: 4530
 message HomeScenePointFishFarmingInfoNotify {
-	enum JNJIJCHNAMH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4895;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated HomeScenePointFishFarmingInfo fishFarmingInfoList = 9;
+    repeated HomeScenePointFishFarmingInfo fish_farming_info_list = 7;
 }
+

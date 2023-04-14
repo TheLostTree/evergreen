@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: CFIBLMHDOOB
+// CmdId: 2514
 message GetSignInRewardReq {
-	enum MLKPHBMDDPA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2520;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 scheduleId = 13;
-	uint32 rewardDay = 8;
+    uint32 reward_day = 13;
+    uint32 schedule_id = 4;
 }
+

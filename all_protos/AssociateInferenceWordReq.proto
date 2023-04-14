@@ -1,19 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GJKELGFMJPG
+// CmdId: 438
 message AssociateInferenceWordReq {
-	enum NCOBIJLLDLL {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 456;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 Unk3300_EPMGHELECNH = 11;
-	uint32 pageId = 3;
-	uint32 Unk3300_FDGLBLJOKOK = 13;
+    uint32 page_id = 9;
+    uint32 PCGFIGLNLLD = 7;
+    uint32 FLFHEDBHLPH = 3;
 }
+

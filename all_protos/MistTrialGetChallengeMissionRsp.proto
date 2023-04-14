@@ -1,19 +1,14 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "MistTrialMissionInfo.proto";
 
+// Name: ABEMHJAPEFE
+// CmdId: 8558
 message MistTrialGetChallengeMissionRsp {
-	enum ADKNOEJPKFF {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8884;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 7;
-	uint32 trialId = 9;
-	repeated MistTrialMissionInfo missionInfoList = 6;
+    int32 retcode = 8;
+    uint32 trial_id = 3;
+    repeated MistTrialMissionInfo mission_info_list = 10;
 }
+

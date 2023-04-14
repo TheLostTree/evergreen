@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: PAMGLOGHDEA
+// CmdId: 8229
 message SelectRoguelikeDungeonCardReq {
-	enum CKLMPMDMONH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8572;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 cardId = 8;
+    uint32 card_id = 3;
 }
+

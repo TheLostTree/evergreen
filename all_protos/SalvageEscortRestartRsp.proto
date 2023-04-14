@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: FEHBCOKMEML
+// CmdId: 8118
 message SalvageEscortRestartRsp {
-	enum NKPAGGECOKJ {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8107;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 galleryId = 6;
-	int32 retcode = 12;
+    int32 retcode = 5;
+    uint32 gallery_id = 14;
 }
+

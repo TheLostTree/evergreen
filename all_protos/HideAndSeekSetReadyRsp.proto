@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: MJEEKCIBOJI
+// CmdId: 5360
 message HideAndSeekSetReadyRsp {
-	enum IBMIKFGCLGO {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5379;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 13;
+    int32 retcode = 6;
 }
+

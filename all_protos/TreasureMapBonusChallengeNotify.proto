@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "TreasureMapBonusChallengeInfo.proto";
 
+// Name: MCJFPFPHMDG
+// CmdId: 2163
 message TreasureMapBonusChallengeNotify {
-	enum LAEPLOHMHNK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2056;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	TreasureMapBonusChallengeInfo info = 5;
+    TreasureMapBonusChallengeInfo info = 5;
 }
+

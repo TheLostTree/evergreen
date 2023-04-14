@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message BounceConjuringInfo {
-	uint32 totalDestroyedMachineCount = 5;
-	uint32 totalScore = 4;
-}

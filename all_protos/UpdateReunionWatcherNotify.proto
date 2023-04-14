@@ -1,18 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ReunionWatcherInfo.proto";
 
+// Name: BJFIJOJGDCA
+// CmdId: 5051
 message UpdateReunionWatcherNotify {
-	enum OHBHKHOLILI {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5087;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 missionId = 12;
-	ReunionWatcherInfo watcherInfo = 14;
+    ReunionWatcherInfo watcher_info = 11;
+    uint32 mission_id = 13;
 }
+

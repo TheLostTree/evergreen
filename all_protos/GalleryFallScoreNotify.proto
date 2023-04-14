@@ -1,18 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "FallPlayerBrief.proto";
 
+// Name: FABGNMBDPKE
+// CmdId: 5534
 message GalleryFallScoreNotify {
-	enum INIGFMPGCGH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5574;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 galleryId = 8;
-	map<uint32, FallPlayerBrief> uidBriefMap = 4;
+    map<uint32, FallPlayerBrief> uid_brief_map = 15;
+    uint32 gallery_id = 12;
 }
+

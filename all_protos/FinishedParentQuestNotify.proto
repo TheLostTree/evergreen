@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ParentQuest.proto";
 
+// Name: BCPKKPKIOIG
+// CmdId: 464
 message FinishedParentQuestNotify {
-	enum MPBKAANIEOK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 498;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated ParentQuest parentQuestList = 3;
+    repeated ParentQuest parent_quest_list = 13;
 }
+

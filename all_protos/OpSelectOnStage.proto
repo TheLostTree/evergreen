@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message OpSelectOnStage {
-	uint32 cardGuid = 6;
-	repeated uint32 costDiceIndexList = 13;
-}

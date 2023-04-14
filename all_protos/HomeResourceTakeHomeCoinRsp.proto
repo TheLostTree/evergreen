@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "FHCMHOPJELB.proto";
 
-import "HomeResource.proto";
-
+// Name: KHPGKFLMLEE
+// CmdId: 4554
 message HomeResourceTakeHomeCoinRsp {
-	enum DFPMKJHEGPN {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4573;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	HomeResource homeCoin = 15;
-	int32 retcode = 14;
+    int32 retcode = 3;
+    FHCMHOPJELB ONMIIOIPGAI = 9;
 }
+

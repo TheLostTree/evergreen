@@ -1,18 +1,19 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-import "Reason.proto";
-
+// Name: FFAADPONCMG
+// CmdId: 4771
 message OtherPlayerEnterHomeNotify {
-	enum JHJIBDFHCDP {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4582;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
+    // Name: LCFCMAGCDAJ
+    enum Reason {
+        INVALID = 0;
+        ENTER = 1;
+        LEAVE = 2;
+    }
 
-	Reason reason = 15;
-	string nickname = 11;
+    string nickname = 15;
+    Reason reason = 8;
 }
+

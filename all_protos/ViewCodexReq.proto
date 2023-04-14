@@ -1,18 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "CodexTypeData.proto";
 
+// Name: GPBLENAMKEO
+// CmdId: 4206
 message ViewCodexReq {
-	enum JPAIFNAGDIG {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4203;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	repeated CodexTypeData typeDataList = 9;
+    repeated CodexTypeData type_data_list = 2;
 }
+

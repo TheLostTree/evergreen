@@ -1,20 +1,15 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "SummerTimeV2BoatGallerySettleInfo.proto";
 
+// Name: DAPMDJEDHFN
+// CmdId: 8436
 message SummerTimeV2BoatSettleNotify {
-	enum GBJCFKPKGJG {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8520;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	SummerTimeV2BoatGallerySettleInfo settleInfo = 2;
-	uint32 stageId = 14;
-	uint32 galleryId = 10;
-	bool isNewRecord = 12;
+    uint32 stage_id = 9;
+    SummerTimeV2BoatGallerySettleInfo settle_info = 8;
+    uint32 gallery_id = 11;
+    bool is_new_record = 10;
 }
+

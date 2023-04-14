@@ -1,18 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "WorldRoutineInfo.proto";
 
+// Name: MCLCAINHBKO
+// CmdId: 3546
 message WorldRoutineChangeNotify {
-	enum LPJNJHEPIDL {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 3541;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 routineType = 11;
-	WorldRoutineInfo routineInfo = 2;
+    uint32 routine_type = 2;
+    WorldRoutineInfo routine_info = 6;
 }
+

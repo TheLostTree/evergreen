@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: OFEDKGKHEKE
+// CmdId: 8211
 message EnterIrodoriChessDungeonRsp {
-	enum OEMFHLPBHEB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8598;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 levelId = 11;
-	int32 retcode = 4;
-	bool isHardMap = 3;
+    int32 retcode = 13;
+    bool is_hard_map = 9;
+    uint32 level_id = 14;
 }
+

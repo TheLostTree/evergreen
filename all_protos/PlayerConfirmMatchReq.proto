@@ -1,19 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "MatchType.proto";
 
+// Name: IGJPKACFAKC
+// CmdId: 4182
 message PlayerConfirmMatchReq {
-	enum LACEOAMEHJL {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4185;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	MatchType matchType = 12;
-	bool isAgreed = 13;
+    bool is_agreed = 7;
+    MatchType match_type = 11;
 }
+

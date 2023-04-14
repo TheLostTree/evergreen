@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: BKDGFCKCJNG
+// CmdId: 398
 message EvtLocalGadgetOwnerLeaveSceneNotify {
-	enum PHEOIIBBDMF {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 360;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 entityId = 11;
+    uint32 entity_id = 4;
 }
+

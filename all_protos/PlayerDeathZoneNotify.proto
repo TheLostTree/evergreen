@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: BDHCKJCEACL
+// CmdId: 6259
 message PlayerDeathZoneNotify {
-	enum IGJOFKIKAAG {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 6296;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 curDeathZoneId = 11;
+    uint32 cur_death_zone_id = 10;
 }
+

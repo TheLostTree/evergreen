@@ -1,9 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: MNNNCKCAGLP
 message Uint32Pair {
-	uint32 key = 1;
-	uint32 value = 2;
+    uint32 key = 1;
+    uint32 value = 2;
 }
+

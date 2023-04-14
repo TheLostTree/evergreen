@@ -1,18 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "BuoyantCombatSettleInfo.proto";
 
+// Name: MAPJPGFCLAE
+// CmdId: 8387
 message BuoyantCombatSettleNotify {
-	enum EHEEOKAHJFL {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8267;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	BuoyantCombatSettleInfo settleInfo = 5;
-	uint32 galleryId = 15;
+    uint32 gallery_id = 11;
+    BuoyantCombatSettleInfo settle_info = 6;
 }
+

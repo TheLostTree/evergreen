@@ -1,23 +1,18 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
-
+import "ExhibitionDisplayInfo.proto";
 import "GalleryStopReason.proto";
 import "IslandPartyGallerySettleInfo.proto";
-import "ExhibitionDisplayInfo.proto";
 
+// Name: DLCNMLLCHCI
+// CmdId: 20411
 message IslandPartySettleNotify {
-	enum KDNCJGALBFP {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 22820;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated IslandPartyGallerySettleInfo settleInfoList = 9;
-	repeated ExhibitionDisplayInfo scoreList = 8;
-	bool isNewRecord = 14;
-	uint32 timeRemain = 2;
-	GalleryStopReason reason = 13;
+    uint32 time_remain = 2;
+    repeated IslandPartyGallerySettleInfo settle_info_list = 3;
+    repeated ExhibitionDisplayInfo score_list = 6;
+    GalleryStopReason reason = 11;
+    bool is_new_record = 7;
 }
+

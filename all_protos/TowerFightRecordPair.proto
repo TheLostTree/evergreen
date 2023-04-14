@@ -1,9 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: NOFAJOIHJPD
 message TowerFightRecordPair {
-	uint32 data = 12;
-	uint32 avatarId = 15;
+    uint32 data = 15;
+    uint32 avatar_id = 2;
 }
+

@@ -1,18 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "GCGGameBriefData.proto";
 
+// Name: GCGGameBriefDataNotify
+// CmdId: 7247
 message GCGGameBriefDataNotify {
-	enum BKKLKPMDKMP {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 7654;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	GCGGameBriefData gcgBriefData = 4;
-	bool isNewGame = 12;
+    bool is_new_game = 10;
+    GCGGameBriefData gcg_brief_data = 11;
 }
+

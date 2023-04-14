@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: JKAFMICKEMF
+// CmdId: 8161
 message BartenderCancelLevelReq {
-	enum OPDJANGCECI {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8567;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 levelId = 4;
+    uint32 level_id = 5;
 }
+

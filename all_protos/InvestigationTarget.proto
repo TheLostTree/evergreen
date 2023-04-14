@@ -1,13 +1,22 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-import "State.proto";
-
+// Name: EJKIKKJCFKL
 message InvestigationTarget {
-	uint32 investigationId = 13;
-	State state = 7;
-	uint32 totalProgress = 1;
-	uint32 questId = 3;
-	uint32 progress = 15;
+    // Name: PMPLOIOCICM
+    enum State {
+        INVALID = 0;
+        IN_PROGRESS = 1;
+        COMPLETE = 2;
+        REWARD_TAKEN = 3;
+    }
+
+    State state = 6;
+    uint32 total_progress = 5;
+    uint32 investigation_id = 7;
+    uint32 quest_id = 14;
+    uint32 progress = 1;
 }
+

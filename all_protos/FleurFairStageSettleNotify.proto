@@ -1,22 +1,17 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "FleurFairBossSettleInfo.proto";
+import "FleurFairGallerySettleInfo.proto";
 
-import "GallerySettleInfo.proto";
-import "BossSettleInfo.proto";
-
+// Name: PDHELJKJFKI
+// CmdId: 5388
 message FleurFairStageSettleNotify {
-	enum IBGGENNBBPK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5336;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 stageType = 9;
-	oneof HOPDBCIDNDF {
-		GallerySettleInfo gallery_settle_info = 10;
-		BossSettleInfo boss_settle_info = 8;
-	}
+    uint32 stage_type = 7;
+    oneof detail {
+        FleurFairGallerySettleInfo gallery_settle_info = 13;
+        FleurFairBossSettleInfo boss_settle_info = 1;
+    }
 }
+

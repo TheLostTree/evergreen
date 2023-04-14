@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: PNFBKOPDCBA
+// CmdId: 8836
 message MichiaeMatsuriInteractStatueReq {
-	enum HFMGFMNFMFB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8553;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 statueEntityId = 3;
+    uint32 statue_entity_id = 3;
 }
+

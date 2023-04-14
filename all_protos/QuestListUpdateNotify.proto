@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "Quest.proto";
 
+// Name: BACDDEEPDDG
+// CmdId: 475
 message QuestListUpdateNotify {
-	enum GJIKBHHMHAC {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 455;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated Quest questList = 13;
+    repeated Quest quest_list = 11;
 }
+

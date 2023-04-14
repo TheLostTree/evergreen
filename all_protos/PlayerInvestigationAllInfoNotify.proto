@@ -1,19 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
-
-import "InvestigationTarget.proto";
 import "Investigation.proto";
+import "InvestigationTarget.proto";
 
+// Name: HCPEEIEKMCL
+// CmdId: 1911
 message PlayerInvestigationAllInfoNotify {
-	enum IFINCGBMAFA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1917;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated InvestigationTarget investigationTargetList = 6;
-	repeated Investigation investigationList = 2;
+    repeated Investigation investigation_list = 10;
+    repeated InvestigationTarget investigation_target_list = 12;
 }
+

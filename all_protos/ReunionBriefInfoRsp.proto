@@ -1,19 +1,14 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ReunionBriefInfo.proto";
 
+// Name: EAMOBGECJML
+// CmdId: 5093
 message ReunionBriefInfoRsp {
-	enum CODFOMKNMLB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5095;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 3;
-	bool isActivate = 11;
-	ReunionBriefInfo reunionBriefInfo = 8;
+    bool is_activate = 9;
+    int32 retcode = 5;
+    ReunionBriefInfo reunion_brief_info = 2;
 }
+

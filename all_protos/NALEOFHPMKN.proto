@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message NALEOFHPMKN {
-	uint32 aeppldffjcf = 5;
-	uint32 ilhofemcpji = 7;
-}

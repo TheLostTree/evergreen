@@ -1,25 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-import "SkillRequest.proto";
-import "ReliquaryRequest.proto";
-import "ElementReliquaryRequest.proto";
-
+// Name: LEGLDFJHFKD
+// CmdId: 155
 message CompoundUnlockNotify {
-	enum BDNMOGLPGBI {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 149;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 avatarId = 8;
-	oneof OOPACEKNFPA {
-		SkillRequest skill_request = 1689;
-		ReliquaryRequest reliquary_request = 118;
-		ElementReliquaryRequest element_reliquary_request = 1105;
-	}
+    uint32 compound_id = 6;
 }
+

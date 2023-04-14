@@ -1,9 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: EPHDHFNBIHF
 message PushTipsData {
-	uint32 pushTipsId = 13;
-	uint32 state = 8;
+    uint32 push_tips_id = 1;
+    uint32 state = 13;
 }
+

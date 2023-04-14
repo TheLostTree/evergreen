@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GCGDSChangeCardFaceReq
+// CmdId: 7206
 message GCGDSChangeCardFaceReq {
-	enum KLACDDBMIDG {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 7126;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 retcode = 8;
-	uint32 cardId = 6;
+    uint32 card_id = 10;
+    uint32 face_type = 15;
 }
+

@@ -1,19 +1,14 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "HuntingPair.proto";
 
+// Name: DCBKNCEELGD
+// CmdId: 4343
 message TakeHuntingOfferRsp {
-	enum ECDAFENOELG {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4345;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 7;
-	uint32 cityId = 8;
-	HuntingPair huntingPair = 6;
+    uint32 city_id = 10;
+    HuntingPair hunting_pair = 8;
+    int32 retcode = 9;
 }
+

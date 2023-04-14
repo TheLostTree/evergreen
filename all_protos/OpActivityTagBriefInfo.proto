@@ -1,10 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: IKGLOHMLBPA
 message OpActivityTagBriefInfo {
-	uint32 configId = 10;
-	bool hasReward = 11;
-	uint32 opActivityType = 3;
+    uint32 op_activity_type = 15;
+    uint32 config_id = 9;
+    bool has_reward = 3;
 }
+

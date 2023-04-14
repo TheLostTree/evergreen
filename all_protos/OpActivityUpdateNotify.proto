@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "OpActivityInfo.proto";
 
+// Name: NHMNKHNKNFK
+// CmdId: 5164
 message OpActivityUpdateNotify {
-	enum MBCLAKJJALC {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5198;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	OpActivityInfo opActivityInfo = 15;
+    OpActivityInfo op_activity_info = 6;
 }
+

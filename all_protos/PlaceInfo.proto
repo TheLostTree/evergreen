@@ -1,10 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "Vector.proto";
 
-import "Rotation.proto";
-
+// Name: EHEAJFFDMMD
 message PlaceInfo {
-	Rotation pos = 1;
-	Rotation rot = 2;
+    Vector pos = 1;
+    Vector rot = 2;
 }
+

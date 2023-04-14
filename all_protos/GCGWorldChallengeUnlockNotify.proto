@@ -1,20 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-import "GCGLevelData.proto";
-import "GCGBossChallengeData.proto";
-
+// Name: GCGWorldChallengeUnlockNotify
+// CmdId: 7083
 message GCGWorldChallengeUnlockNotify {
-	enum HDFPCKFMMLI {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 7016;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated GCGLevelData levelList = 13;
-	repeated uint32 dglpakpipci = 1;
-	repeated GCGBossChallengeData effafbokpha = 11;
+    repeated uint32 unlock_id_list = 4;
 }
+

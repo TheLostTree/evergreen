@@ -1,18 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "GCGMessagePack.proto";
 
+// Name: GCGMessagePackNotify
+// CmdId: 7271
 message GCGMessagePackNotify {
-	enum DNMFDNBGPOC {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 7329;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated GCGMessagePack msgPackList = 13;
-	uint32 serverSeq = 6;
+    uint32 server_seq = 8;
+    repeated GCGMessagePack msg_pack_list = 1;
 }
+

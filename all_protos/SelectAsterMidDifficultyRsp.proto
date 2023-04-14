@@ -1,19 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: IMECNPNGPNG
+// CmdId: 2001
 message SelectAsterMidDifficultyRsp {
-	enum IFGLHGKBJKN {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2139;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 gadgetEntityId = 11;
-	int32 retcode = 1;
-	uint32 difficultyId = 3;
-	uint32 scheduleId = 8;
+    uint32 gadget_entity_id = 11;
+    uint32 difficulty_id = 6;
+    int32 retcode = 15;
+    uint32 schedule_id = 7;
 }
+

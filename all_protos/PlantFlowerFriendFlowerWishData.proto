@@ -1,12 +1,14 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ProfilePicture.proto";
 
+// Name: DBGHDOAFABF
 message PlantFlowerFriendFlowerWishData {
-	ProfilePicture profilePicture = 15;
-	string nickname = 3;
-	uint32 uid = 6;
-	map<uint32, uint32> flowerNumMap = 7;
+    map<uint32, uint32> flower_num_map = 15;
+    string nickname = 1;
+    ProfilePicture profile_picture = 6;
+    uint32 uid = 8;
 }
+

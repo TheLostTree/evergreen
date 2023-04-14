@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: NBPGCOHPDKH
+// CmdId: 247
 message BackMyWorldRsp {
-	enum MHICMFDMFAI {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 276;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 9;
+    int32 retcode = 5;
 }
+

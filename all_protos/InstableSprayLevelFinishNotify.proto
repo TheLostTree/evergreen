@@ -1,20 +1,15 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: JOLHGHEOENL
+// CmdId: 23121
 message InstableSprayLevelFinishNotify {
-	enum EOIABCFNAIK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 24172;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	bool Unk3300_DHKHBKLBIPA = 14;
-	uint32 round = 2;
-	uint32 stageId = 11;
-	uint32 levelId = 9;
-	bool Unk3300_AMEBAPIPLGL = 6;
+    uint32 stage_id = 13;
+    uint32 level_id = 9;
+    bool OMMDIFHOGIA = 15;
+    uint32 round = 6;
+    bool CHFPHPBILMC = 12;
 }
+

@@ -1,19 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: HLMLKHKDLAP
+// CmdId: 2076
 message DragonSpineCoinChangeNotify {
-	enum FNJPMJCMKPB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2067;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 Unk3300_FOHJDGCAKEK = 7;
-	uint32 scheduleId = 14;
-	uint32 Unk3300_IMLKIJAOADF = 1;
-	uint32 Unk3300_NEOCMGJCEOJ = 5;
+    uint32 PEJFBHBOLEA = 9;
+    uint32 schedule_id = 13;
+    uint32 PBPIPINOBLB = 10;
+    uint32 NIPPAPELMPN = 14;
 }
+

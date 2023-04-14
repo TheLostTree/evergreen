@@ -1,19 +1,14 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "HomeGroupRecord.proto";
 
+// Name: JKOBCBECAAM
+// CmdId: 4522
 message HomeGetGroupRecordRsp {
-	enum JOCODCCGGBL {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4691;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 recordType = 12;
-	int32 retcode = 7;
-	HomeGroupRecord groupRecord = 13;
+    uint32 record_type = 7;
+    int32 retcode = 9;
+    HomeGroupRecord group_record = 12;
 }
+

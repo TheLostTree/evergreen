@@ -1,19 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "Vector.proto";
 
-import "Rotation.proto";
-
+// Name: MHKKAAKLPEC
+// CmdId: 250
 message SceneAvatarStaminaStepReq {
-	enum KFGCHKJNBBC {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 214;
-		DCDNILFDFLB = 1;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	Rotation rot = 4;
-	bool useClientRot = 9;
+    bool use_client_rot = 15;
+    Vector rot = 2;
 }
+

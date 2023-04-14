@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: ADNJJDMMMEL
+// CmdId: 8306
 message PotionSaveDungeonResultReq {
-	enum IDPHFPPMIGP {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8862;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 stageId = 14;
-	uint32 levelId = 5;
+    uint32 stage_id = 7;
+    uint32 level_id = 9;
 }
+

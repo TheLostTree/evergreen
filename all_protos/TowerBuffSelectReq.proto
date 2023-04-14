@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: IMCCMLOGCKM
+// CmdId: 2491
 message TowerBuffSelectReq {
-	enum BMAJGLPHLPC {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2478;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 towerBuffId = 12;
+    uint32 tower_buff_id = 4;
 }
+

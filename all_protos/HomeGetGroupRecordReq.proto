@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: PKDNBHHIMDH
+// CmdId: 4844
 message HomeGetGroupRecordReq {
-	enum INEOMFDEBPF {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4662;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 groupId = 13;
+    uint32 group_id = 10;
 }
+

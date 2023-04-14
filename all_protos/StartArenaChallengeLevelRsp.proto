@@ -1,19 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: COHFJIOFAGA
+// CmdId: 2057
 message StartArenaChallengeLevelRsp {
-	enum HEONOMCNHID {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2116;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 Unk3300_DBHAGHMMLAI = 1;
-	uint32 gadgetEntityId = 2;
-	int32 retcode = 6;
-	uint32 Unk3300_FDFNFLAKONG = 7;
+    uint32 BCHEDLFFNKC = 4;
+    uint32 gadget_entity_id = 6;
+    uint32 NEFKFHIPLHG = 8;
+    int32 retcode = 14;
 }
+

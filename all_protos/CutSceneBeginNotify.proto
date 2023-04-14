@@ -1,19 +1,14 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "CutSceneExtraParam.proto";
 
+// Name: OPILHNEICML
+// CmdId: 295
 message CutSceneBeginNotify {
-	enum EODCIEGJJEE {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 217;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	bool isWaitOthers = 3;
-	repeated CutSceneExtraParam extraParamList = 14;
-	uint32 cutsceneId = 2;
+    bool is_wait_others = 12;
+    uint32 cutscene_id = 10;
+    repeated CutSceneExtraParam extra_param_list = 7;
 }
+

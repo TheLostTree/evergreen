@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: JANPFEIFJLH
+// CmdId: 2015
 message ExpeditionRecallRsp {
-	enum NOCOAJDGING {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2156;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 pathId = 3;
-	int32 retcode = 8;
+    uint32 path_id = 7;
+    int32 retcode = 2;
 }
+

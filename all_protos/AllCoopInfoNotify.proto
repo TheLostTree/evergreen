@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "MainCoop.proto";
 
+// Name: DOBLPKBHILE
+// CmdId: 1998
 message AllCoopInfoNotify {
-	enum PDNGDNMLEIN {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1988;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated MainCoop mainCoopList = 14;
+    repeated MainCoop main_coop_list = 4;
 }
+

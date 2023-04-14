@@ -1,19 +1,14 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ProfilePicture.proto";
 
+// Name: FKFHNKPJGND
+// CmdId: 4061
 message SetPlayerHeadImageRsp {
-	enum EDBGDNODIJJ {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4039;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 5;
-	uint32 avatarId = 2;
-	ProfilePicture profilePicture = 9;
+    ProfilePicture profile_picture = 10;
+    int32 retcode = 15;
+    uint32 avatar_id = 2;
 }
+

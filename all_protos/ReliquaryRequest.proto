@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message ReliquaryRequest {
-	uint32 equipType = 7;
-}

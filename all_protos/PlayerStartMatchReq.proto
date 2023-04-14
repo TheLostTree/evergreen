@@ -1,23 +1,17 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "MatchType.proto";
 
+// Name: MIHJMBFBLBI
+// CmdId: 4198
 message PlayerStartMatchReq {
-	enum AAPENNCPBLI {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4188;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 mechanicusDifficultLevel = 10;
-	repeated uint32 matchParamList = 15;
-	uint32 mpPlayId = 5;
-	uint32 dungeonId = 12;
-	uint32 matchId = 11;
-	MatchType matchType = 13;
+    repeated uint32 match_param_list = 15;
+    uint32 mechanicus_difficult_level = 12;
+    uint32 match_id = 8;
+    MatchType match_type = 5;
+    uint32 mp_play_id = 13;
+    uint32 dungeon_id = 4;
 }
+

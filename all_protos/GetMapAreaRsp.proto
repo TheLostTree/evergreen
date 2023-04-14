@@ -1,18 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "MapAreaInfo.proto";
 
+// Name: FDMHPADJFJP
+// CmdId: 3458
 message GetMapAreaRsp {
-	enum JOGNHEGALAH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 3213;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated MapAreaInfo mapAreaInfoList = 3;
-	int32 retcode = 2;
+    int32 retcode = 2;
+    repeated MapAreaInfo map_area_info_list = 1;
 }
+

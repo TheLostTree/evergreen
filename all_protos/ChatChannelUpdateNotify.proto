@@ -1,19 +1,14 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ChatChannelInfo.proto";
 
+// Name: EILDECDLMJF
+// CmdId: 4957
 message ChatChannelUpdateNotify {
-	enum LJAJLOILCKG {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4979;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	bool isCreate = 13;
-	ChatChannelInfo channelInfo = 6;
-	uint32 channelId = 12;
+    uint32 channel_id = 2;
+    ChatChannelInfo channel_info = 14;
+    bool is_create = 10;
 }
+

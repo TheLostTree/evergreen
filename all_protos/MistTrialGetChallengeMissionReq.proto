@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: ICPLHBCLEHA
+// CmdId: 8002
 message MistTrialGetChallengeMissionReq {
-	enum PMPPBJOLPHK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8534;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 trialId = 3;
+    uint32 trial_id = 1;
 }
+

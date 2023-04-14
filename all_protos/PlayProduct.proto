@@ -1,10 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: MBNENOIDIDO
 message PlayProduct {
-	string productId = 1;
-	string priceTier = 2;
-	uint32 scheduleId = 3;
+    string product_id = 1;
+    string price_tier = 2;
+    uint32 schedule_id = 3;
 }
+

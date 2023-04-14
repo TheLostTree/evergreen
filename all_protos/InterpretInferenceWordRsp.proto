@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GLJDKMFBLIJ
+// CmdId: 453
 message InterpretInferenceWordRsp {
-	enum ECEFHKMPMEE {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 415;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 pageId = 2;
-	int32 retcode = 13;
-	uint32 wordId = 6;
+    int32 retcode = 8;
+    uint32 word_id = 7;
+    uint32 page_id = 13;
 }
+

@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: OKIEBJIHCGI
+// CmdId: 8055
 message PlantFlowerGetSeedInfoReq {
-	enum MPINFCKOOLF {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8882;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 scheduleId = 13;
+    uint32 schedule_id = 12;
 }
+

@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: DCNCLONCJHI
+// CmdId: 3469
 message ShowCommonTipsNotify {
-	enum IMHAJDKCICI {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 3048;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	string content = 4;
-	uint32 closeTime = 7;
-	string title = 8;
+    uint32 close_time = 1;
+    string content = 6;
+    string title = 14;
 }
+

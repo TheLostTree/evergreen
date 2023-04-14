@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: LDFNHPJJOIH
+// CmdId: 933
 message DungeonCandidateTeamInviteRsp {
-	enum ALIACMCCKPP {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 942;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated uint32 invalidPlayerUids = 4;
-	int32 retcode = 13;
+    repeated uint32 invalid_player_uids = 6;
+    int32 retcode = 2;
 }
+

@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "DeathZoneInfo.proto";
 
+// Name: JOIPBFPDDGJ
+// CmdId: 6293
 message DeathZoneInfoNotify {
-	enum OHCAJKINFPJ {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 6295;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated DeathZoneInfo deathZoneInfoList = 3;
+    repeated DeathZoneInfo death_zone_info_list = 14;
 }
+

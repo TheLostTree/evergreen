@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: BBLEPADILPI
+// CmdId: 8748
 message CrystalLinkRestartDungeonRsp {
-	enum OHBMCCBCLHH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8574;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 5;
+    int32 retcode = 11;
 }
+

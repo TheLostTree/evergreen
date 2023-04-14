@@ -1,11 +1,19 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-import "State.proto";
-
+// Name: GOMJMGELGFB
 message CoopPoint {
-	uint32 id = 10;
-	State state = 5;
-	uint32 selfConfidence = 15;
+    // Name: IKEEBKGJGJL
+    enum State {
+        STATE_UNSTARTED = 0;
+        STATE_STARTED = 1;
+        STATE_FINISHED = 2;
+    }
+
+    State state = 13;
+    uint32 id = 12;
+    uint32 self_confidence = 11;
 }
+

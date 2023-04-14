@@ -1,20 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: PDEEJHCBEHP
+// CmdId: 8518
 message BartenderLevelProgressNotify {
-	enum MNIPDDGBEKK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8317;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 levelId = 13;
-	uint32 score = 3;
-	bool isNewRecord = 10;
-	bool isFinish = 5;
+    bool is_new_record = 1;
+    uint32 level_id = 2;
+    bool is_finish = 4;
+    uint32 score = 11;
 }
+

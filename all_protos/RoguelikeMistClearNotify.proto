@@ -1,15 +1,10 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: ENBGKAMLPEF
+// CmdId: 8512
 message RoguelikeMistClearNotify {
-	enum AHJLJOADPAK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8670;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
 }
+

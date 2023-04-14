@@ -1,8 +1,10 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: ODDOEKJFOII
 message CutSceneExtraParam {
-	repeated double detailParamList = 3;
+    repeated double detail_param_list = 3;
 }
+

@@ -1,9 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: EDGJBMLJMCD
 message PlayerRoutineInfo {
-	uint32 routineType = 2;
-	uint32 finishedNum = 13;
+    uint32 finished_num = 2;
+    uint32 routine_type = 13;
 }
+

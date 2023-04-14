@@ -1,19 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: PLHKKNINHAE
+// CmdId: 8159
 message LunaRiteSacrificeRsp {
-	enum OFPFNGEPHLD {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8324;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 8;
-	uint32 areaId = 13;
-	uint32 index = 7;
-	repeated uint32 sacrificeList = 9;
+    uint32 area_id = 5;
+    int32 retcode = 1;
+    repeated uint32 sacrifice_list = 7;
+    uint32 index = 3;
 }
+

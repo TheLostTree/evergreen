@@ -1,11 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ChessEntranceDetailInfo.proto";
 
+// Name: PODDCPLMFHG
 message ChessMysteryInfo {
-	repeated uint32 mdilcblhnao = 2;
-	map<uint32, uint32> lneiknbbcdd = 11;
-	map<uint32, ChessEntranceDetailInfo> fhmdalcaomp = 5;
+    map<uint32, uint32> entrance_point_map = 4;
+    map<uint32, ChessEntranceDetailInfo> detail_info_map = 7;
+    repeated uint32 exit_point_id_list = 8;
 }
+

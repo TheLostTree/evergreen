@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: PJAICFMHEIK
+// CmdId: 3536
 message WorldRoutineTypeCloseNotify {
-	enum JKAKCANNAEJ {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 3519;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 routineType = 7;
+    uint32 routine_type = 6;
 }
+

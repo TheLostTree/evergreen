@@ -1,9 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GCGTCTavernChallengeData
 message GCGTCTavernChallengeData {
-	repeated uint32 lidokiohkmh = 13;
-	uint32 caaaccpgkff = 1;
+    uint32 character_id = 3;
+    repeated uint32 unlock_level_id_list = 10;
 }
+

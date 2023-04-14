@@ -1,21 +1,16 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "HuntingPair.proto";
-import "Rotation.proto";
+import "Vector.proto";
 
+// Name: HDMIAHCJMLG
+// CmdId: 4344
 message HuntingStartNotify {
-	enum KPIPGJKJKII {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4331;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 failTime = 4;
-	HuntingPair huntingPair = 12;
-	bool isFinal = 7;
-	Rotation cluePosition = 14;
+    bool is_final = 5;
+    uint32 fail_time = 6;
+    Vector clue_position = 2;
+    HuntingPair hunting_pair = 13;
 }
+

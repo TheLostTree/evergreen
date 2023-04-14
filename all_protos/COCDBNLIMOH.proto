@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "layla.sleep.proto";
+
+
+// Name: COCDBNLIMOH
+message COCDBNLIMOH {
+}
+

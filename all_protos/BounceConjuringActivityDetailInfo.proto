@@ -1,11 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "BounceConjuringChapterInfo.proto";
 
+// Name: CPGHOEPNAID
 message BounceConjuringActivityDetailInfo {
-	uint32 contentCloseTime = 1;
-	bool leftMonsters = 6;
-	repeated BounceConjuringChapterInfo chapterInfoList = 7;
+    repeated BounceConjuringChapterInfo chapter_info_list = 7;
+    uint32 content_close_time = 4;
+    bool is_content_closed = 3;
 }
+

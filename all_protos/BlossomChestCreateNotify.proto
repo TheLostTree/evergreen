@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: BAEHNMNEKLG
+// CmdId: 2734
 message BlossomChestCreateNotify {
-	enum EMNMLFHOMFG {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2774;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 circleCampId = 9;
-	uint32 refreshId = 1;
+    uint32 refresh_id = 1;
+    uint32 circle_camp_id = 9;
 }
+

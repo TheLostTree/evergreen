@@ -1,19 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: FNENCJDNDOH
+// CmdId: 8901
 message TriggerRoguelikeCurseNotify {
-	enum IGPBIGLKIEI {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8642;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	bool isTriggerCurse = 7;
-	uint32 Unk3300_POLIENBCNLF = 13;
-	repeated uint32 effectParamList = 6;
-	uint32 Unk3300_LJHJIBDPBBC = 5;
+    repeated uint32 effect_param_list = 8;
+    uint32 IFGBOGLCBGG = 10;
+    bool is_trigger_curse = 11;
+    uint32 FOPMNAMKHLG = 7;
 }
+

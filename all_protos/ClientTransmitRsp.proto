@@ -1,18 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "TransmitReason.proto";
 
+// Name: FHBLFIAFHCA
+// CmdId: 202
 message ClientTransmitRsp {
-	enum NJGMKOMHHIB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 253;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	TransmitReason reason = 12;
-	int32 retcode = 7;
+    TransmitReason reason = 10;
+    int32 retcode = 5;
 }
+

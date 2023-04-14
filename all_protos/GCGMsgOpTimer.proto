@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "layla.sleep.proto";
+
+import "GCGPhaseType.proto";
+
+// Name: GCGMsgOpTimer
+message GCGMsgOpTimer {
+    uint32 controller_id = 11;
+    uint64 begin_time = 5;
+    uint64 time_stamp = 12;
+    GCGPhaseType phase = 14;
+}
+

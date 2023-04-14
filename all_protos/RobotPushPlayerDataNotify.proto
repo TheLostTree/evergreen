@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-import "bytes.proto";
-
+// Name: AGGLECNHNNJ
+// CmdId: 42
 message RobotPushPlayerDataNotify {
-	enum DELIFMCIALG {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 16;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	bytes bin = 6;
+    bytes bin = 15;
 }
+

@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: ACPFDAHIELE
+// CmdId: 2275
 message WatcherChangeNotify {
-	enum FIOOFFIIJJJ {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2255;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated uint32 newWatcherList = 4;
-	repeated uint32 removedWatcherList = 3;
+    repeated uint32 EOHKBELNKDA = 8;
+    repeated uint32 NCNHKHALDOI = 6;
 }
+

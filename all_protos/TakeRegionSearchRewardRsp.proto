@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: MBABLBGHNJJ
+// CmdId: 5646
 message TakeRegionSearchRewardRsp {
-	enum IJLODKPGGLM {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5641;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 id = 15;
-	uint32 searchId = 14;
-	int32 retcode = 3;
+    uint32 id = 6;
+    int32 retcode = 2;
+    uint32 search_id = 4;
 }
+

@@ -1,19 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: FJCOKAKKIDP
+// CmdId: 5307
 message InBattleMechanicusConfirmCardRsp {
-	enum FOBENOCMABB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5329;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 3;
-	uint32 groupId = 12;
-	uint32 playIndex = 11;
-	uint32 cardId = 6;
+    uint32 play_index = 5;
+    int32 retcode = 3;
+    uint32 card_id = 13;
+    uint32 group_id = 12;
 }
+

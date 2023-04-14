@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: ECINNKNDEAB
+// CmdId: 1928
 message TakeInvestigationRewardReq {
-	enum LBOJNLBKKFH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1921;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 id = 15;
+    uint32 id = 14;
 }
+

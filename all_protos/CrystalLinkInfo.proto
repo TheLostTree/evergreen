@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message CrystalLinkInfo {
-	uint32 score = 6;
-}

@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: BNLOGHJNOGC
+// CmdId: 4480
 message HomeAvtarAllFinishRewardNotify {
-	enum CIFIMONAGCA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4650;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated uint32 eventIdList = 7;
+    repeated uint32 event_id_list = 1;
 }
+

@@ -1,8 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
+// Name: COEAABHEACL
 enum TransmitReason {
-	TRANSMIT_REASON_NONE = 0;
-	TRANSMIT_REASON_QUEST = 1;
+    TRANSMIT_NONE = 0;
+    TRANSMIT_QUEST = 1;
 }
+

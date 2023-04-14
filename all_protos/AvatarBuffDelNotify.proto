@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: IJHBAKEJLGM
+// CmdId: 370
 message AvatarBuffDelNotify {
-	enum EIDJJGIPAOB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 373;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 buffId = 15;
-	uint64 avatarGuid = 8;
+    uint32 buff_id = 13;
+    uint64 avatar_guid = 12;
 }
+

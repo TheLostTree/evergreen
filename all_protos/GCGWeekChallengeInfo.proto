@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "layla.sleep.proto";
+
+
+// Name: GCGWeekChallengeInfo
+message GCGWeekChallengeInfo {
+    uint32 unlock_time = 2;
+    uint32 npc_id = 10;
+    bool is_finished = 7;
+}
+

@@ -1,18 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "Birthday.proto";
 
+// Name: LIDFLIOHLDF
+// CmdId: 4042
 message SetPlayerBirthdayRsp {
-	enum NEBEAFHDGOM {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4016;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	Birthday birthday = 13;
-	int32 retcode = 7;
+    Birthday birthday = 11;
+    int32 retcode = 9;
 }
+

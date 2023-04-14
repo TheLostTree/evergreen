@@ -1,19 +1,14 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "PlantFlowerAcceptFlowerResultInfo.proto";
 
+// Name: BKJMIFECGOF
+// CmdId: 8040
 message PlantFlowerAcceptAllGiveFlowerRsp {
-	enum EMOAEFOMFPA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8764;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 scheduleId = 14;
-	int32 retcode = 1;
-	repeated PlantFlowerAcceptFlowerResultInfo acceptFlowerResultInfoList = 7;
+    uint32 schedule_id = 11;
+    int32 retcode = 5;
+    repeated PlantFlowerAcceptFlowerResultInfo accept_flower_result_info_list = 4;
 }
+

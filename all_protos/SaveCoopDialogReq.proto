@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GOMOAABDCLP
+// CmdId: 1972
 message SaveCoopDialogReq {
-	enum ALFHBLGPEME {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1998;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 Unk3300_AMKDDJEPAKM = 1;
-	uint32 Unk3300_KMBGNIICNAF = 6;
+    uint32 EFLHLGADIOL = 2;
+    uint32 JNIMIKPMODP = 4;
 }
+

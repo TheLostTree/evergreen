@@ -1,11 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: DKJMPKAMKLA
 message ScenePlayInfo {
-	uint32 entryId = 1;
-	uint32 playId = 8;
-	bool isOpen = 2;
-	uint32 playType = 12;
+    bool is_open = 4;
+    uint32 play_type = 15;
+    uint32 play_id = 9;
+    uint32 entry_id = 10;
 }
+

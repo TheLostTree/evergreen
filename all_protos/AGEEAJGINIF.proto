@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-import "bytes.proto";
-
-message AGEEAJGINIF {
-	bytes value = 1;
-}

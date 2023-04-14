@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: NDGDDBCEOPC
+// CmdId: 4143
 message RechargeRsp {
-	enum JCFDBGGBEOO {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4145;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 8;
-	string productId = 11;
-	bool isShowMinorsHint = 5;
+    string product_id = 11;
+    bool is_show_minors_hint = 1;
+    int32 retcode = 9;
 }
+

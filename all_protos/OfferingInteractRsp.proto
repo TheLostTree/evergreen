@@ -1,18 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "PlayerOfferingData.proto";
 
+// Name: JKEIELLELDE
+// CmdId: 2913
 message OfferingInteractRsp {
-	enum DJGBDIKDLBP {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2922;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 10;
-	PlayerOfferingData offeringData = 14;
+    int32 retcode = 2;
+    PlayerOfferingData offering_data = 14;
 }
+

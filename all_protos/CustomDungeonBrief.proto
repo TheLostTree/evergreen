@@ -1,21 +1,23 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
-
-import "CustomDungeonSetting.proto";
 import "CustomDungeonAbstract.proto";
-import "CustomDungeonState.proto";
+import "CustomDungeonSetting.proto";
 import "CustomDungeonSocial.proto";
+import "CustomDungeonState.proto";
 
+// Name: MKIIGHBHFEH
 message CustomDungeonBrief {
-	CustomDungeonSetting setting = 7;
-	bool isPsnPlatform = 4;
-	CustomDungeonAbstract abstract = 13;
-	CustomDungeonState state = 9;
-	uint64 dungeonGuid = 5;
-	repeated uint32 tagList = 15;
-	uint32 lastSaveTime = 10;
-	CustomDungeonSocial social = 8;
-	uint32 battleMinCostTime = 2;
-	uint32 dungeonId = 6;
+    uint64 dungeon_guid = 7;
+    uint32 battle_min_cost_time = 11;
+    CustomDungeonState state = 1;
+    uint32 last_save_time = 14;
+    CustomDungeonSetting setting = 13;
+    uint32 dungeon_id = 15;
+    CustomDungeonAbstract abstract = 6;
+    bool is_psn_platform = 8;
+    CustomDungeonSocial social = 10;
+    repeated uint32 tag_list = 9;
 }
+

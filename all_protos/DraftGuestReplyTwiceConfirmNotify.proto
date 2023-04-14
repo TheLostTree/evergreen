@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: LLJJBCDFKDD
+// CmdId: 5442
 message DraftGuestReplyTwiceConfirmNotify {
-	enum MOKKGEHPGJK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5416;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	bool isAgree = 5;
-	uint32 draftId = 6;
-	uint32 guestUid = 11;
+    uint32 draft_id = 3;
+    bool is_agree = 4;
+    uint32 guest_uid = 13;
 }
+

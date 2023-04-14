@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-
-
-enum LockState {
-	LOCK_STATE_NONE = 0;
-	LOCK_STATE_QUEST = 1;
-}

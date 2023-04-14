@@ -1,11 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: LBLBKNOBLGL
 message BargainSnapshot {
-	uint32 Unk3300_MHFDEBOBFNE = 10;
-	uint32 bargainId = 7;
-	int32 curMood = 13;
-	uint32 Unk3300_KOCJELACJLM = 6;
+    uint32 LKDBPDDOMID = 3;
+    int32 cur_mood = 13;
+    uint32 bargain_id = 6;
+    uint32 DDLPCONIMNM = 5;
 }
+

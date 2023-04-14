@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: PHHDBHPDKGN
+// CmdId: 8692
 message PlantFlowerGetCanGiveFriendFlowerRsp {
-	enum OFNFHIGHGJD {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8699;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 scheduleId = 13;
-	map<uint32, uint32> flowerNumMap = 10;
-	int32 retcode = 1;
+    map<uint32, uint32> flower_num_map = 6;
+    int32 retcode = 13;
+    uint32 schedule_id = 8;
 }
+

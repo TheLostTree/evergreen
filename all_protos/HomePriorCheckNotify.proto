@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: PCNGOIBNHAH
+// CmdId: 4872
 message HomePriorCheckNotify {
-	enum IDFLIHGFGKK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4694;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 endTime = 7;
+    uint32 end_time = 5;
 }
+

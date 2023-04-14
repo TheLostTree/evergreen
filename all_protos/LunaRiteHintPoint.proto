@@ -1,13 +1,15 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
-
-import "Rotation.proto";
 import "LunaRiteHintPointType.proto";
+import "Vector.proto";
 
+// Name: BOKOEDGKGCL
 message LunaRiteHintPoint {
-	uint32 index = 4;
-	Rotation pos = 11;
-	uint32 areaId = 2;
-	LunaRiteHintPointType type = 15;
+    uint32 area_id = 4;
+    Vector pos = 3;
+    uint32 index = 6;
+    LunaRiteHintPointType type = 10;
 }
+

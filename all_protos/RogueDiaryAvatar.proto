@@ -1,13 +1,15 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ActivityDungeonAvatar.proto";
-import "RogueDiaryAvatarDisableStatus.proto";
+import "ANIHIBEGDJC.proto";
 
+// Name: KDDEEFOPBJB
 message RogueDiaryAvatar {
-	repeated RogueDiaryAvatarDisableStatus disableStatusList = 4;
-	uint32 level = 2;
-	uint32 tiredRound = 9;
-	ActivityDungeonAvatar avatar = 6;
+    uint32 level = 13;
+    ActivityDungeonAvatar avatar = 4;
+    repeated ANIHIBEGDJC PGIFCEDONAA = 14;
+    uint32 tired_round = 3;
 }
+

@@ -1,9 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: LDHOOCGFIIP
 message MoonfinTrialLevelInfo {
-	uint32 bestRecord = 11;
-	uint32 openTime = 3;
+    uint32 open_time = 13;
+    uint32 best_record = 15;
 }
+

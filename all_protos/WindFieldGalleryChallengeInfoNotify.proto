@@ -1,22 +1,17 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: JEEFGJMKNKC
+// CmdId: 5513
 message WindFieldGalleryChallengeInfoNotify {
-	enum AJDPFIHEEGF {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5522;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 Unk3300_GLNHBJJJINK = 15;
-	uint32 Unk3300_FFODAKMKGEK = 9;
-	uint32 Unk3300_NBIBKFKOCFK = 13;
-	bool isSuccess = 12;
-	bool isStart = 10;
-	uint32 Unk3300_MMONPDMIEBN = 5;
-	uint32 Unk3300_GNJKOCLJFNM = 3;
+    uint32 LMICEFBKOID = 8;
+    uint32 BPFKPEOHJHO = 5;
+    uint32 IFCFDJKPPEJ = 9;
+    bool is_success = 7;
+    uint32 DPLICOODJLA = 13;
+    bool is_start = 2;
+    uint32 PBABFGGNMDF = 3;
 }
+

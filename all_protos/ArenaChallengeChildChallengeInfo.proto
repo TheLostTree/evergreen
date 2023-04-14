@@ -1,12 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: PCBMFAGFGHJ
 message ArenaChallengeChildChallengeInfo {
-	bool isSuccess = 15;
-	bool isSettled = 4;
-	uint32 challengeType = 5;
-	uint32 challengeIndex = 8;
-	uint32 challengeId = 14;
+    uint32 challenge_id = 8;
+    uint32 challenge_type = 6;
+    uint32 challenge_index = 12;
+    bool is_success = 13;
+    bool is_settled = 3;
 }
+

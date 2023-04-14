@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: LJOBNMAIOOE
+// CmdId: 4089
 message PlayerSignatureNotify {
-	enum AFOHEGLBCHK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4012;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	string signature = 3;
+    string signature = 12;
 }
+

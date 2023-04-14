@@ -1,9 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
+// Name: MIAFPBFKBHC
 enum GalleryStartSource {
-	GALLERY_START_SOURCE_BY_NONE = 0;
-	GALLERY_START_SOURCE_BY_MATCH = 1;
-	GALLERY_START_SOURCE_BY_DRAFT = 2;
+    GALLERY_START_BY_NONE = 0;
+    GALLERY_START_BY_MATCH = 1;
+    GALLERY_START_BY_DRAFT = 2;
 }
+

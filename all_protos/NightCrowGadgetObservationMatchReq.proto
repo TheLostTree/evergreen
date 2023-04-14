@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: PGMFEGIOHIH
+// CmdId: 825
 message NightCrowGadgetObservationMatchReq {
-	enum OEONLKONNIA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 843;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 gadgetEntityId = 7;
-	uint32 targetGadgetState = 9;
+    uint32 gadget_entity_id = 15;
+    uint32 target_gadget_state = 9;
 }
+

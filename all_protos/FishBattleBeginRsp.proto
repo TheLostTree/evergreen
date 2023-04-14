@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: EBGAHLCEIGM
+// CmdId: 5821
 message FishBattleBeginRsp {
-	enum NMPKOMDADLO {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5840;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 6;
+    int32 retcode = 5;
 }
+

@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "AsterLittleDetailInfo.proto";
 
+// Name: JCBCJKAOKLH
+// CmdId: 2006
 message AsterLittleInfoNotify {
-	enum FABDDBGOKAB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2063;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	AsterLittleDetailInfo info = 7;
+    AsterLittleDetailInfo info = 10;
 }
+

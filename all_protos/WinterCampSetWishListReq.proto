@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: BNPEGHDMBII
+// CmdId: 8405
 message WinterCampSetWishListReq {
-	enum GNHHDEGIAID {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8363;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	repeated uint32 itemIdList = 7;
+    repeated uint32 item_id_list = 6;
 }
+

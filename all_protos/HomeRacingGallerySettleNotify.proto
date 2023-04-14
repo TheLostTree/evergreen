@@ -1,20 +1,15 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "RacingGallerySettleInfo.proto";
 
+// Name: KJEMLPBDOBM
+// CmdId: 4764
 message HomeRacingGallerySettleNotify {
-	enum MKKIDPBMLKB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4671;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	RacingGallerySettleInfo settleInfo = 10;
-	uint32 galleryId = 4;
-	uint32 rank = 1;
-	bool isNewRecord = 5;
+    uint32 rank = 9;
+    uint32 gallery_id = 6;
+    RacingGallerySettleInfo settle_info = 8;
+    bool is_new_record = 5;
 }
+

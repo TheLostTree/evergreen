@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: LGFHFABDOKE
+// CmdId: 5243
 message UseMiracleRingRsp {
-	enum OFNIDEHFFBJ {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5245;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 miracleRingOpType = 9;
-	int32 retcode = 8;
+    int32 retcode = 2;
+    uint32 miracle_ring_op_type = 14;
 }
+

@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: PLDNFMGOBBD
+// CmdId: 1166
 message ClientRemoveCombatEndModifierNotify {
-	enum NDBNGOODBHB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1106;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	repeated uint32 combatEndTypeList = 12;
+    repeated uint32 combat_end_type_list = 11;
 }
+

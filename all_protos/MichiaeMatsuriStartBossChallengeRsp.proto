@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: JLJHFLLJJMD
+// CmdId: 8826
 message MichiaeMatsuriStartBossChallengeRsp {
-	enum LIIBPCEKCAG {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8507;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 15;
+    int32 retcode = 13;
 }
+

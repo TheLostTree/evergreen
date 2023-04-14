@@ -1,19 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: IGEHENOCHCG
+// CmdId: 841
 message RequestLiveInfoRsp {
-	enum DDFGFFBNGHD {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 828;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	string Unk3300_DNGGIOIKLHC = 3;
-	int32 retcode = 15;
-	uint32 liveId = 11;
-	string Unk3300_BDOGCPKPLOK = 1;
+    string NGMLPNIKOGK = 12;
+    string IIALNHAJJIO = 13;
+    uint32 live_id = 14;
+    int32 retcode = 4;
 }
+

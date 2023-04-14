@@ -1,21 +1,15 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
-
-import "bytes.proto";
 import "LuaShellType.proto";
 
+// Name: OFMOJCHOCJD
+// CmdId: 101
 message PlayerLuaShellNotify {
-	enum FOIMLLNJHAJ {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 191;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	bytes luaShell = 5;
-	uint32 useType = 8;
-	LuaShellType shellType = 7;
-	uint32 id = 12;
+    uint32 use_type = 14;
+    uint32 id = 5;
+    bytes lua_shell = 13;
+    LuaShellType shell_type = 11;
 }
+

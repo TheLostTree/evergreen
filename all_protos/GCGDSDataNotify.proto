@@ -1,17 +1,18 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "GCGDSCardData.proto";
+import "GCGDSDeckData.proto";
 
-import "CmdId.proto";
-
+// Name: GCGDSDataNotify
+// CmdId: 7188
 message GCGDSDataNotify {
-	enum GHNDNNPCIJP {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 7534;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	CmdId mjjacnclhpf = 1;
+    repeated uint32 AOPCHLEHOKA = 1;
+    repeated uint32 AADGGKDCBGL = 14;
+    repeated GCGDSCardData card_list = 13;
+    repeated uint32 DKJNKKKPBAM = 10;
+    repeated GCGDSDeckData deck_list = 9;
+    uint32 cur_deck_id = 11;
 }
+

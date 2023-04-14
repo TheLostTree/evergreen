@@ -1,12 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "Vector.proto";
 
-import "Rotation.proto";
-
+// Name: KIAFPEPPCEL
 message ChannelerSlabCamp {
-	Rotation pos = 14;
-	uint32 rewardId = 11;
-	uint32 groupId = 5;
-	uint32 bfgophiannc = 15;
+    uint32 reward_id = 6;
+    uint32 buff_num = 14;
+    uint32 group_id = 11;
+    Vector pos = 4;
 }
+

@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: DEFBPEKDIKP
+// CmdId: 5454
 message DraftOwnerStartInviteReq {
-	enum JLCKFEKJMDG {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5487;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 draftId = 1;
+    uint32 draft_id = 14;
 }
+

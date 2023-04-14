@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: FEJLBLCCMDH
+// CmdId: 5314
 message InBattleMechanicusExcapeMonsterNotify {
-	enum LJLHGFNNJMH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5320;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 coin = 2;
+    uint32 excaped_monster_num = 7;
 }
+

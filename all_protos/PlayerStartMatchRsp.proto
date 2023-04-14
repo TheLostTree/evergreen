@@ -1,24 +1,19 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "MatchType.proto";
 
+// Name: MBPJKGIMLAO
+// CmdId: 4193
 message PlayerStartMatchRsp {
-	enum LOCNBAMKKHI {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4195;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	MatchType matchType = 7;
-	uint32 dungeonId = 3;
-	uint32 punishEndTime = 11;
-	int32 retcode = 6;
-	uint32 param = 5;
-	uint32 matchId = 2;
-	uint32 mpPlayId = 9;
-	uint32 mechanicusDifficultLevel = 12;
+    MatchType match_type = 2;
+    uint32 mechanicus_difficult_level = 14;
+    uint32 dungeon_id = 12;
+    int32 retcode = 10;
+    uint32 punish_end_time = 6;
+    uint32 mp_play_id = 3;
+    uint32 match_id = 4;
+    uint32 param = 5;
 }
+

@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GCGInitFinishRsp
+// CmdId: 7587
 message GCGInitFinishRsp {
-	enum JDKIDNJEKCD {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 7186;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 3;
+    int32 retcode = 12;
 }
+

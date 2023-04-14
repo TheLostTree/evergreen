@@ -1,15 +1,17 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
-
-import "ProfilePicture.proto";
 import "ExhibitionDisplayInfo.proto";
+import "ProfilePicture.proto";
 
+// Name: IHGNENANDMD
 message HideAndSeekSettleInfo {
-	uint32 uid = 1;
-	repeated ExhibitionDisplayInfo cardList = 2;
-	uint32 headImage = 3;
-	string onlineId = 10;
-	string nickname = 9;
-	ProfilePicture profilePicture = 5;
+    string online_id = 12;
+    repeated ExhibitionDisplayInfo card_list = 11;
+    uint32 head_image = 1;
+    ProfilePicture profile_picture = 13;
+    string nickname = 14;
+    uint32 uid = 4;
 }
+

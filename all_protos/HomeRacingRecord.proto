@@ -1,9 +1,11 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "HomeRacingGalleryRecord.proto";
 
+// Name: ICPGKGIADBI
 message HomeRacingRecord {
-	repeated HomeRacingGalleryRecord recordList = 2;
+    repeated HomeRacingGalleryRecord record_list = 10;
 }
+

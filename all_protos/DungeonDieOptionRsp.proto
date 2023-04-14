@@ -1,19 +1,14 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "PlayerDieOption.proto";
 
+// Name: CPEFIENCDPH
+// CmdId: 991
 message DungeonDieOptionRsp {
-	enum EKKHFALCGCJ {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 978;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 15;
-	PlayerDieOption dieOption = 4;
-	uint32 reviveCount = 10;
+    PlayerDieOption die_option = 6;
+    int32 retcode = 7;
+    uint32 revive_count = 1;
 }
+

@@ -1,10 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
+// Name: KHINCMAFNBJ
 enum PlayerDieOption {
-	PLAYER_DIE_OPTION_OPT_NONE = 0;
-	PLAYER_DIE_OPTION_OPT_REPLAY = 1;
-	PLAYER_DIE_OPTION_OPT_CANCEL = 2;
-	PLAYER_DIE_OPTION_OPT_REVIVE = 3;
+    DIE_OPT_NONE = 0;
+    DIE_OPT_REPLAY = 1;
+    DIE_OPT_CANCEL = 2;
+    DIE_OPT_REVIVE = 3;
 }
+

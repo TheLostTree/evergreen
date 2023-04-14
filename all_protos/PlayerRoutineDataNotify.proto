@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "PlayerRoutineInfo.proto";
 
+// Name: KFIPGNKDGBH
+// CmdId: 3548
 message PlayerRoutineDataNotify {
-	enum EEONOMLKLOK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 3538;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated PlayerRoutineInfo routineInfoList = 12;
+    repeated PlayerRoutineInfo routine_info_list = 6;
 }
+

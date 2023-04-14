@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: LEDHFKADLOP
+// CmdId: 23997
 message LanV3ShadowFinishLevelRsp {
-	enum NNAIPBAHOBB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 23853;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 14;
+    int32 retcode = 7;
 }
+

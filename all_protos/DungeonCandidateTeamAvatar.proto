@@ -1,10 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "AvatarInfo.proto";
 
+// Name: DGNHHEPOEIP
 message DungeonCandidateTeamAvatar {
-	uint32 playerUid = 5;
-	AvatarInfo avatarInfo = 8;
+    uint32 player_uid = 3;
+    AvatarInfo avatar_info = 4;
 }
+

@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: FBLEAFGKFJG
+// CmdId: 5838
 message PlayerFishingDataNotify {
-	enum LBBDPDFKHED {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5810;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 lastFishRodId = 4;
+    uint32 last_fish_rod_id = 15;
 }
+

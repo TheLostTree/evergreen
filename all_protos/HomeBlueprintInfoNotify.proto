@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: BKKCJILAHKK
+// CmdId: 4463
 message HomeBlueprintInfoNotify {
-	enum KAKDGDJKIHJ {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4870;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	bool isAllowFriendCopy = 11;
+    bool is_allow_friend_copy = 8;
 }
+

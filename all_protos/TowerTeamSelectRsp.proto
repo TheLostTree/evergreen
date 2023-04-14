@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: OIBBOHDENCG
+// CmdId: 2472
 message TowerTeamSelectRsp {
-	enum PBICDAPPBOM {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2480;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 6;
+    int32 retcode = 8;
 }
+

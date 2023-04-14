@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: PBNEDENDCGG
+// CmdId: 8808
 message GachaActivityCreateRobotRsp {
-	enum LFIPCANMILP {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8997;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 2;
-	uint32 robotId = 15;
+    int32 retcode = 3;
+    uint32 robot_id = 14;
 }
+

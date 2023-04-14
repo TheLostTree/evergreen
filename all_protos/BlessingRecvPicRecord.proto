@@ -1,17 +1,19 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ProfilePicture.proto";
 
+// Name: PAEEGEIHHOJ
 message BlessingRecvPicRecord {
-	ProfilePicture profilePicture = 11;
-	string signature = 10;
-	uint32 avatarId = 8;
-	uint32 uid = 5;
-	uint32 index = 1;
-	string remarkName = 14;
-	uint32 picId = 2;
-	string nickname = 12;
-	bool isRecv = 7;
+    uint32 index = 11;
+    string remark_name = 8;
+    uint32 pic_id = 9;
+    uint32 uid = 7;
+    uint32 avatar_id = 5;
+    bool is_recv = 2;
+    string signature = 15;
+    ProfilePicture profile_picture = 6;
+    string nickname = 3;
 }
+

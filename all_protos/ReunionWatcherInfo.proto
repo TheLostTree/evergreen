@@ -1,12 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: MINFKAPPGGC
 message ReunionWatcherInfo {
-	uint32 rewardUnlockTime = 7;
-	uint32 curProgress = 11;
-	uint32 watcherId = 12;
-	uint32 totalProgress = 10;
-	bool isTakenReward = 5;
+    uint32 cur_progress = 12;
+    uint32 total_progress = 9;
+    bool is_taken_reward = 15;
+    uint32 reward_unlock_time = 8;
+    uint32 watcher_id = 1;
 }
+

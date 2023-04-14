@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: IHJBFDAMPGJ
+// CmdId: 8076
 message CommonPlayerTipsNotify {
-	enum IENNOPCOPIB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8996;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 notifyType = 11;
-	repeated string textMapIdList = 14;
+    repeated string text_map_id_list = 5;
+    uint32 notify_type = 9;
 }
+

@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: LHAPHELPIHC
+// CmdId: 1927
 message TakeInvestigationTargetRewardRsp {
-	enum OEMIIDNBBAP {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1923;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 1;
-	uint32 questId = 6;
+    int32 retcode = 6;
+    uint32 quest_id = 14;
 }
+

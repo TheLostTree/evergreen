@@ -1,19 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: HBBCPGLFEBN
+// CmdId: 641
 message AvatarCardChangeReq {
-	enum HPAINGGFDBE {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 628;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 itemId = 11;
-	uint64 avatarGuid = 1;
-	uint32 count = 6;
+    uint32 count = 10;
+    uint64 avatar_guid = 9;
+    uint32 item_id = 4;
 }
+

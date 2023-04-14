@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-import "bytes.proto";
-
+// Name: EPILEBMPDEP
+// CmdId: 192
 message PlayerInjectFixNotify {
-	enum FDKLNPOPKPI {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 126;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 id = 14;
-	bytes injectFix = 6;
+    bytes inject_fix = 2;
+    uint32 id = 5;
 }
+

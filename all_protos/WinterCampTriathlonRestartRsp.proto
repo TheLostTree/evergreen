@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: PFAALLEIHLP
+// CmdId: 8258
 message WinterCampTriathlonRestartRsp {
-	enum HEMFDECFOBD {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8323;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 14;
-	uint32 galleryId = 13;
+    uint32 gallery_id = 13;
+    int32 retcode = 8;
 }
+

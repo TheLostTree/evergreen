@@ -1,11 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "WorldRoutineInfo.proto";
 
+// Name: KMNAIPMHDEG
 message WorldRoutineTypeInfo {
-	uint32 routineType = 13;
-	uint32 nextRefreshTime = 15;
-	repeated WorldRoutineInfo worldRoutineInfoList = 6;
+    repeated WorldRoutineInfo world_routine_info_list = 3;
+    uint32 next_refresh_time = 2;
+    uint32 routine_type = 1;
 }
+

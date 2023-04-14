@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: IMHGEPAOFOP
+// CmdId: 21717
 message FungusFighterTrainingSelectFungusReq {
-	enum EIKEOMNDPJM {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 21917;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	repeated uint32 backupFungusIdList = 5;
-	repeated uint32 fightFungusIdList = 2;
+    repeated uint32 backup_fungus_id_list = 5;
+    repeated uint32 fight_fungus_id_list = 11;
 }
+

@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: DGHACBNAMDF
+// CmdId: 1986
 message FinishMainCoopReq {
-	enum GCDJKLLAJKL {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1969;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 id = 11;
-	uint32 endingSavePointId = 5;
+    uint32 id = 2;
+    uint32 ending_save_point_id = 15;
 }
+

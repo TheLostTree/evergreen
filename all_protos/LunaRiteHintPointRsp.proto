@@ -1,22 +1,16 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
-
-import "LunaRiteHintStatusType.proto";
 import "LunaRiteHintPoint.proto";
+import "LunaRiteHintStatusType.proto";
 
+// Name: KIFONMMEKOM
+// CmdId: 8873
 message LunaRiteHintPointRsp {
-	enum BCLKIMFOOFB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8361;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	int32 retcode = 1;
-	uint32 areaId = 5;
-	LunaRiteHintStatusType hintStatus = 3;
-	repeated LunaRiteHintPoint hintPoint = 12;
+    uint32 area_id = 15;
+    LunaRiteHintStatusType hint_status = 7;
+    int32 retcode = 5;
+    repeated LunaRiteHintPoint hint_point = 14;
 }
+

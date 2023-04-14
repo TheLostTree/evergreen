@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "TaskVar.proto";
 
+// Name: DCGJFPPNBPH
+// CmdId: 176
 message TaskVarNotify {
-	enum JGAIGHMHFAH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 177;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated TaskVar taskVarList = 9;
+    repeated TaskVar task_var_list = 8;
 }
+

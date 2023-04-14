@@ -1,19 +1,14 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ActivityRecvGiftData.proto";
 
+// Name: BLNBFKLGKJA
+// CmdId: 8791
 message ActivityGetRecvGiftListRsp {
-	enum KHCFDOOIHOM {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8705;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 15;
-	repeated ActivityRecvGiftData recvGiftList = 7;
-	uint32 scheduleId = 10;
+    repeated ActivityRecvGiftData recv_gift_list = 8;
+    uint32 schedule_id = 1;
+    int32 retcode = 9;
 }
+

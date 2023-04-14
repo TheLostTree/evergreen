@@ -1,26 +1,27 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ResVersionConfig.proto";
-import "DataResVersionOpType.proto";
 
+// Name: CLPJPELPELM
+// CmdId: 140
 message DataResVersionNotify {
-	enum MCCFGOPDKDA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 164;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
+    // Name: NFPBPLIEDNC
+    enum DataResVersionOpType {
+        OP_TYPE_NONE = 0;
+        OP_TYPE_RELOGIN = 1;
+        OP_TYPE_MP_RELOGIN = 2;
+    }
 
-	string clientSilenceMd5 = 12;
-	string clientMd5 = 1;
-	uint32 clientDataVersion = 3;
-	string clientSilenceVersionSuffix = 15;
-	ResVersionConfig resVersionConfig = 7;
-	bool isDataNeedRelogin = 6;
-	uint32 clientSilenceDataVersion = 5;
-	DataResVersionOpType opType = 14;
-	string clientVersionSuffix = 8;
+    ResVersionConfig next_res_version_config = 14;
+    uint32 client_data_version = 1;
+    DataResVersionOpType op_type = 13;
+    bool is_data_need_relogin = 7;
+    string client_md5 = 11;
+    string client_silence_version_suffix = 6;
+    string client_version_suffix = 9;
+    string client_silence_md5 = 15;
+    uint32 client_silence_data_version = 10;
 }
+

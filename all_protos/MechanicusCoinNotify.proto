@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: KHJMCOBIELE
+// CmdId: 3964
 message MechanicusCoinNotify {
-	enum JPKDEGJCLNN {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 3998;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 mechanicusId = 8;
-	uint32 coin = 13;
+    uint32 mechanicus_id = 12;
+    uint32 coin = 1;
 }
+

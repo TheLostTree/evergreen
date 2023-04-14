@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GNPGGDENLCK
+// CmdId: 8427
 message DoRoguelikeDungeonCardGachaReq {
-	enum GGEHBAGNIOK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8752;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 cellId = 13;
-	uint32 dungeonId = 6;
+    uint32 cell_id = 5;
+    uint32 dungeon_id = 12;
 }
+

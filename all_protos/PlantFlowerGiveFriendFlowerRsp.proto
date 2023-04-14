@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: FFDGPGGOCMH
+// CmdId: 8688
 message PlantFlowerGiveFriendFlowerRsp {
-	enum MEPKGMEGDAI {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8151;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 scheduleId = 9;
-	int32 retcode = 1;
-	repeated uint32 limitFlowerList = 13;
+    int32 retcode = 13;
+    repeated uint32 limit_flower_list = 6;
+    uint32 schedule_id = 7;
 }
+

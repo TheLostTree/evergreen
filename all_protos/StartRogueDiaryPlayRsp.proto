@@ -1,20 +1,15 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "RogueDiaryAvatar.proto";
 
+// Name: DGEHJJJHAHA
+// CmdId: 8169
 message StartRogueDiaryPlayRsp {
-	enum AAONHKPKJBE {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8780;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated RogueDiaryAvatar trialAvatarList = 8;
-	int32 retcode = 3;
-	repeated uint32 randCardList = 2;
-	repeated RogueDiaryAvatar avatarList = 13;
+    repeated RogueDiaryAvatar trial_avatar_list = 10;
+    repeated RogueDiaryAvatar avatar_list = 3;
+    int32 retcode = 11;
+    repeated uint32 rand_card_list = 8;
 }
+

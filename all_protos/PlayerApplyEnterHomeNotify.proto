@@ -1,18 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "OnlinePlayerInfo.proto";
 
+// Name: PHLBANPNLLI
+// CmdId: 4757
 message PlayerApplyEnterHomeNotify {
-	enum DDJPAJOBNFM {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4771;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	OnlinePlayerInfo srcPlayerInfo = 7;
-	uint32 srcAppId = 13;
+    OnlinePlayerInfo src_player_info = 11;
+    uint32 src_app_id = 8;
 }
+

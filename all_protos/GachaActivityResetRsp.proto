@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: FGAMGEDPHEK
+// CmdId: 8296
 message GachaActivityResetRsp {
-	enum ODFODDCPHEE {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8263;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 13;
-	uint32 stageId = 12;
+    uint32 stage_id = 13;
+    int32 retcode = 15;
 }
+

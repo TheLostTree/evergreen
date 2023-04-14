@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message HideAndSeekInfo {
-	repeated uint32 visibleUidList = 5;
-	repeated uint32 caughtUidList = 7;
-}

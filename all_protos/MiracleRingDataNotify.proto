@@ -1,20 +1,15 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: KEDDPGCOJDB
+// CmdId: 5209
 message MiracleRingDataNotify {
-	enum DFBKOCIMEPN {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5246;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	bool isGadgetCreated = 2;
-	uint32 miracleRingCd = 8;
-	uint32 lastDeliverItemTime = 4;
-	uint32 lastTakeRewardTime = 13;
-	uint32 gadgetEntityId = 6;
+    uint32 JCFKODDCBIH = 7;
+    uint32 CNFPOAJGGDN = 3;
+    uint32 gadget_entity_id = 11;
+    bool is_gadget_created = 9;
+    uint32 AHPNKIDCOKC = 6;
 }
+

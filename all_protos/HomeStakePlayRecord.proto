@@ -1,10 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "HomeGroupPlayerInfo.proto";
 
+// Name: ALLMJNDEDOL
 message HomeStakePlayRecord {
-	uint32 timestamp = 10;
-	repeated HomeGroupPlayerInfo engagedPlayerInfoList = 5;
+    repeated HomeGroupPlayerInfo engaged_player_info_list = 8;
+    uint32 timestamp = 1;
 }
+

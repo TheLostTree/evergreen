@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: BFGOJJNBPGI
+// CmdId: 1367
 message MonsterSummonTagNotify {
-	enum DNKEAKFJFDB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1305;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	map<uint32, uint32> summonTagMap = 13;
-	uint32 monsterEntityId = 3;
+    uint32 monster_entity_id = 13;
+    map<uint32, uint32> summon_tag_map = 6;
 }
+

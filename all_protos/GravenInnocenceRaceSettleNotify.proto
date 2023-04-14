@@ -1,26 +1,21 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "GalleryStopReason.proto";
 
+// Name: PPAEMNMJDHB
+// CmdId: 24552
 message GravenInnocenceRaceSettleNotify {
-	enum GECMEJKBGJK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 20447;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 score = 6;
-	bool isNewRecord = 11;
-	bool isSuccess = 1;
-	uint32 Unk3300_OHAHHKNAJKL = 13;
-	GalleryStopReason reason = 9;
-	uint32 Unk3300_IPGJKKFDPJJ = 8;
-	uint32 galleryId = 14;
-	uint32 remainTime = 12;
-	uint32 Unk3300_BOIPHOPMHJM = 3;
-	uint32 levelId = 2;
+    uint32 level_id = 7;
+    bool is_success = 3;
+    uint32 DIOJNDKDDLI = 10;
+    uint32 score = 2;
+    uint32 IHPLEFBHBDG = 5;
+    uint32 PFHHPCPLKGB = 1;
+    bool is_new_record = 12;
+    uint32 FBKJHNDOKFM = 4;
+    GalleryStopReason reason = 6;
+    uint32 gallery_id = 9;
 }
+

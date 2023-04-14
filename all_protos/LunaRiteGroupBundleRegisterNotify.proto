@@ -1,17 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: NFEJAIKMIEF
+// CmdId: 8279
 message LunaRiteGroupBundleRegisterNotify {
-	enum MEECFPEFAJP {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8078;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 groupLinkBundleId = 14;
+    uint32 group_link_bundle_id = 4;
 }
+

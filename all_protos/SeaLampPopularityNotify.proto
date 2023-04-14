@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: PPMLILPAMKP
+// CmdId: 2087
 message SeaLampPopularityNotify {
-	enum HGEHKKLPMHA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2076;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 popularity = 2;
+    uint32 popularity = 10;
 }
+

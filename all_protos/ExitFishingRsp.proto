@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: ILDJIKECIKM
+// CmdId: 5826
 message ExitFishingRsp {
-	enum FLBAKFJOMHB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5807;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 12;
+    int32 retcode = 1;
 }
+

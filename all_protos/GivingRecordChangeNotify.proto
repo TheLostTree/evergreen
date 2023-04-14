@@ -1,18 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "GivingRecord.proto";
 
+// Name: KOAJCOGAHIE
+// CmdId: 136
 message GivingRecordChangeNotify {
-	enum IKNGLHNBOJL {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 167;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	GivingRecord givingRecord = 8;
-	bool isDeactive = 4;
+    bool is_deactive = 9;
+    GivingRecord giving_record = 13;
 }
+

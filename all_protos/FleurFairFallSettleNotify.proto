@@ -1,18 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "FleurFairFallSettleInfo.proto";
 
+// Name: JJHDGPCHPHD
+// CmdId: 2027
 message FleurFairFallSettleNotify {
-	enum FPJHACIOBMD {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2150;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	map<uint32, FleurFairFallSettleInfo> settleInfoMap = 5;
-	uint32 minigameId = 12;
+    map<uint32, FleurFairFallSettleInfo> settle_info_map = 8;
+    uint32 minigame_id = 7;
 }
+

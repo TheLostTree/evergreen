@@ -1,11 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: PHLPMOGFMDN
 message InBattleMechanicusBuildingInfo {
-	uint32 buildingId = 6;
-	uint32 level = 3;
-	uint32 knajgcafgjo = 14;
-	uint32 costPoints = 4;
+    uint32 cost_points = 8;
+    uint32 KEOEDNKONHH = 4;
+    uint32 AHBIFENKEPF = 9;
+    uint32 level = 13;
 }
+

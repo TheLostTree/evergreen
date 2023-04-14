@@ -1,15 +1,17 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ChessNormalCardInfo.proto";
 
+// Name: CEEAFEMNGPJ
 message ChessPlayerInfo {
-	uint32 buildingPoints = 13;
-	uint32 Unk3300_PPFPEAGBHLP = 12;
-	uint32 Unk3300_AOCJHOKCDDM = 2;
-	repeated ChessNormalCardInfo candidateCardInfoList = 6;
-	uint32 uid = 11;
-	uint32 Unk3300_PPFBGIDKCDJ = 8;
-	uint32 Unk3300_GPNDNCCLHKE = 3;
+    uint32 GKBILFJMMAO = 11;
+    uint32 DBCNEFPDHHM = 14;
+    uint32 uid = 13;
+    repeated ChessNormalCardInfo candidate_card_info_list = 15;
+    uint32 CNLJGGLHKAE = 3;
+    uint32 JEGENLBHOCJ = 4;
+    uint32 FABBPOHPPEC = 7;
 }
+

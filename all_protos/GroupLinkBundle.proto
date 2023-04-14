@@ -1,14 +1,16 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "Vector.proto";
 
-import "Rotation.proto";
-
+// Name: DAIJHGFFMFL
 message GroupLinkBundle {
-	bool isActivated = 7;
-	Rotation center = 6;
-	uint32 sceneId = 8;
-	uint32 radius = 13;
-	bool isShowMark = 12;
-	uint32 bundleId = 9;
+    uint32 scene_id = 7;
+    bool is_activated = 11;
+    Vector center = 1;
+    uint32 radius = 12;
+    bool is_show_mark = 6;
+    uint32 bundle_id = 13;
 }
+

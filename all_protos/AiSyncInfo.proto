@@ -1,10 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: FCJLAGHOIFC
 message AiSyncInfo {
-	uint32 entityId = 1;
-	bool Unk3300_EBICCLLGICG = 2;
-	bool Unk3300_NOIPAMJJIDL = 10;
+    uint32 entity_id = 10;
+    bool CJIBIGJNKKE = 6;
+    bool OOJFENIJJDB = 8;
 }
+

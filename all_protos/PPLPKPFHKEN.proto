@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message PPLPKPFHKEN {
-	uint32 himcohkddah = 4;
-}

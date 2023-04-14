@@ -1,10 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: AFKBLLKBKDK
 message ExpeditionChallengeInfo {
-	uint32 openTime = 11;
-	uint32 id = 13;
-	bool isFinished = 15;
+    uint32 id = 14;
+    bool is_finished = 7;
+    uint32 open_time = 10;
 }
+

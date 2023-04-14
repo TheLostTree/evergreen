@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "layla.sleep.proto";
+
+
+// Name: CBGLBMMCPPK
+message CBGLBMMCPPK {
+    string title = 1;
+    string content = 2;
+    string NBNLJCLPGEA = 3;
+}
+

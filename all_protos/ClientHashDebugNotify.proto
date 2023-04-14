@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: APAPDHOMLGI
+// CmdId: 3234
 message ClientHashDebugNotify {
-	enum NKIMHFNEGMO {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 3279;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 jobId = 2;
+    uint32 job_id = 13;
 }
+

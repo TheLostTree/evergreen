@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: LANAGHGCNHJ
+// CmdId: 3190
 message CheckGroupReplacedRsp {
-	enum FJMGJMAPMLK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 3117;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 3;
-	repeated uint32 replacedGroupIdList = 6;
+    int32 retcode = 6;
+    repeated uint32 replaced_group_id_list = 2;
 }
+

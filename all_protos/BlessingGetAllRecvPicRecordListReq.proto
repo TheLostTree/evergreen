@@ -1,16 +1,10 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: DCKIMPEFEHK
+// CmdId: 2010
 message BlessingGetAllRecvPicRecordListReq {
-	enum OFLAFNHNLDF {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2042;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
 }
+

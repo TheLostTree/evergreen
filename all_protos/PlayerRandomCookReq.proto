@@ -1,18 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "ItemParam.proto";
 
+// Name: BIFBPKLPFKC
+// CmdId: 170
 message PlayerRandomCookReq {
-	enum GEMGLHAAMGI {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 173;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	repeated ItemParam materialList = 2;
+    repeated ItemParam material_list = 15;
 }
+

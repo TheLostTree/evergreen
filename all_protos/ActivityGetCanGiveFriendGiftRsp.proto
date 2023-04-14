@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GALOOENJOIK
+// CmdId: 8186
 message ActivityGetCanGiveFriendGiftRsp {
-	enum MJMDIEGOJPJ {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8965;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 scheduleId = 10;
-	map<uint32, uint32> giftNumMap = 4;
-	int32 retcode = 12;
+    uint32 schedule_id = 7;
+    map<uint32, uint32> gift_num_map = 9;
+    int32 retcode = 11;
 }
+

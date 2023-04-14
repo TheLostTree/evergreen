@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: OOJBKGIAGLL
+// CmdId: 1604
 message FocusAvatarRsp {
-	enum BIJICDDEIAN {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1779;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	bool isFocus = 11;
-	int32 retcode = 1;
-	uint64 avatarGuid = 15;
+    uint64 avatar_guid = 5;
+    bool is_focus = 13;
+    int32 retcode = 14;
 }
+

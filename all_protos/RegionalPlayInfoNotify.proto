@@ -1,21 +1,16 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "RegionalPlayVar.proto";
 
+// Name: MFOHEHLPGKC
+// CmdId: 6298
 message RegionalPlayInfoNotify {
-	enum GBOBFCLEGEI {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 6288;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	string playName = 8;
-	repeated RegionalPlayVar varList = 11;
-	uint32 playType = 14;
-	bool isEnabled = 2;
-	bool isInRegion = 7;
+    bool FHMJMHKFMMB = 3;
+    uint32 play_type = 6;
+    repeated RegionalPlayVar var_list = 5;
+    string play_name = 4;
+    bool BEGFKIHIKEI = 14;
 }
+

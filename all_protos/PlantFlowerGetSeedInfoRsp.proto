@@ -1,18 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: DADMACPEACJ
+// CmdId: 8797
 message PlantFlowerGetSeedInfoRsp {
-	enum FHCGEENMEGN {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8249;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 seedRewardId = 3;
-	uint32 scheduleId = 8;
-	int32 retcode = 11;
+    uint32 seed_reward_id = 5;
+    uint32 schedule_id = 8;
+    int32 retcode = 2;
 }
+

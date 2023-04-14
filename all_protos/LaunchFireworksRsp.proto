@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: KAGKJLIIEME
+// CmdId: 6011
 message LaunchFireworksRsp {
-	enum APCODPGHKBM {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5952;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	int32 retcode = 9;
+    int32 retcode = 15;
 }
+

@@ -1,16 +1,10 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: HGKBOMGJCID
+// CmdId: 5059
 message TakeReunionFirstGiftRewardReq {
-	enum KNAGMOKGIDE {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5096;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
 }
+

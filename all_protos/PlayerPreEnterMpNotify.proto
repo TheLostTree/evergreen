@@ -1,19 +1,20 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-import "State.proto";
-
+// Name: NMKDCJBDNHL
+// CmdId: 1832
 message PlayerPreEnterMpNotify {
-	enum GJAPOFHOFMD {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1835;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
+    // Name: NLPMIDEGMNA
+    enum State {
+        INVALID = 0;
+        START = 1;
+        TIMEOUT = 2;
+    }
 
-	State state = 7;
-	uint32 uid = 10;
-	string nickname = 15;
+    string nickname = 10;
+    State state = 14;
+    uint32 uid = 12;
 }
+

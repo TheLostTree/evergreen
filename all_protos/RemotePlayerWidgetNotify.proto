@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "PlayerWidgetInfo.proto";
 
+// Name: NAAFFIPANBK
+// CmdId: 6009
 message RemotePlayerWidgetNotify {
-	enum EEINCMFJCDI {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5996;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated PlayerWidgetInfo playerWidgetInfoList = 8;
+    repeated PlayerWidgetInfo player_widget_info_list = 4;
 }
+

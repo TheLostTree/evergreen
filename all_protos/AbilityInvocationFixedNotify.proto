@@ -1,23 +1,17 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "AbilityInvokeEntry.proto";
 
+// Name: NDELNMOBIJO
+// CmdId: 1167
 message AbilityInvocationFixedNotify {
-	enum LAPNALALFPP {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1105;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	AbilityInvokeEntry Unk3300_LDIAOMFIBPL = 3;
-	AbilityInvokeEntry Unk3300_AHDFHHFHEFM = 6;
-	AbilityInvokeEntry Unk3300_ONGNOHLIIBO = 8;
-	AbilityInvokeEntry Unk3300_EMGKKHKLIEG = 5;
-	AbilityInvokeEntry Unk3300_KFMHLLHECCJ = 15;
-	AbilityInvokeEntry Unk3300_GAFFBFFKDIC = 1;
+    AbilityInvokeEntry JHGOOOAKDKF = 10;
+    AbilityInvokeEntry IPKLDHAPACC = 8;
+    AbilityInvokeEntry LFJKNMKCNMP = 4;
+    AbilityInvokeEntry HLNLPLLLAKN = 13;
+    AbilityInvokeEntry MDFGHEGMPMF = 1;
+    AbilityInvokeEntry MLOIJCEODAD = 12;
 }
+

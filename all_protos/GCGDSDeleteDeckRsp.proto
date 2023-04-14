@@ -1,16 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GCGDSDeleteDeckRsp
+// CmdId: 7363
 message GCGDSDeleteDeckRsp {
-	enum DNLIPHOHIFO {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 7023;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 rewardIndex = 7;
+    uint32 deck_id = 7;
+    int32 retcode = 12;
 }
+

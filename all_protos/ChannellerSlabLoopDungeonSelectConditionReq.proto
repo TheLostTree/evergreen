@@ -1,19 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: LENDNBDJFGL
+// CmdId: 8951
 message ChannellerSlabLoopDungeonSelectConditionReq {
-	enum HOPMIHFAPPB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8368;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 dungeonIndex = 4;
-	uint32 difficultyId = 2;
-	repeated uint32 conditionIdList = 3;
+    uint32 difficulty_id = 11;
+    repeated uint32 condition_id_list = 15;
+    uint32 dungeon_index = 6;
 }
+

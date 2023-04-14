@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: EBNNHBHGOLP
+// CmdId: 1988
 message TakeCoopRewardRsp {
-	enum OGBIHHLPFKN {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1960;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 rewardConfigId = 8;
-	int32 retcode = 4;
+    int32 retcode = 10;
+    uint32 reward_config_id = 2;
 }
+

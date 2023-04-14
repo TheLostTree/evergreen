@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: PANFMHCBCOM
+// CmdId: 4049
 message SetFriendRemarkNameReq {
-	enum MDIEJHHFJDD {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4094;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 uid = 11;
-	string remarkName = 15;
+    string remark_name = 6;
+    uint32 uid = 7;
 }
+

@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: FHJHGHBLDAN
+// CmdId: 1610
 message AvatarPromoteGetRewardReq {
-	enum AHLKOIHOHKI {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 1642;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint64 avatarGuid = 8;
-	uint32 promoteLevel = 10;
+    uint64 avatar_guid = 5;
+    uint32 promote_level = 10;
 }
+

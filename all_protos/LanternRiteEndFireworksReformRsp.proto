@@ -1,24 +1,19 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: FHLFCPBLHBH
+// CmdId: 8142
 message LanternRiteEndFireworksReformRsp {
-	enum MKOEMHKPEPC {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8114;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 finalScore = 8;
-	uint32 challengeId = 10;
-	uint32 stageId = 9;
-	bool Unk3300_ALMNEGCIILA = 6;
-	bool isFullScore = 4;
-	int32 retcode = 13;
-	bool Unk3300_FPEFIADFBNI = 7;
-	bool Unk3300_CGJNBGAKFAD = 11;
-	bool isNewRecord = 12;
+    bool is_new_record = 11;
+    uint32 final_score = 10;
+    int32 retcode = 4;
+    bool HPAOHBEGALB = 5;
+    bool GKCEEMJJEEI = 3;
+    uint32 challenge_id = 13;
+    uint32 stage_id = 14;
+    bool HEJINKKCHJK = 2;
+    bool KHCOGGPJNML = 1;
 }
+

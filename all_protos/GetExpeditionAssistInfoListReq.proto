@@ -1,16 +1,10 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: LIFODGKBFKK
+// CmdId: 2180
 message GetExpeditionAssistInfoListReq {
-	enum HIOKKPCGGCH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2147;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
 }
+

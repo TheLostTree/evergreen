@@ -1,13 +1,15 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "Vector.proto";
 
-import "Rotation.proto";
-
+// Name: ABLOLDAEFJD
 message ShapeBox {
-	Rotation center = 1;
-	Rotation axis0 = 2;
-	Rotation axis1 = 3;
-	Rotation axis2 = 4;
-	Rotation extents = 5;
+    Vector center = 1;
+    Vector axis0 = 2;
+    Vector axis1 = 3;
+    Vector axis2 = 4;
+    Vector extents = 5;
 }
+

@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: PPLPNEAGDGB
+// CmdId: 2921
 message TakeOfferingLevelRewardReq {
-	enum AEDJIPDGBNO {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2909;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 level = 2;
-	uint32 offeringId = 8;
+    uint32 offering_id = 5;
+    uint32 level = 10;
 }
+

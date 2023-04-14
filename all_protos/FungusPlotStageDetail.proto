@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-
-message FungusPlotStageDetail {
-	uint32 stageId = 3;
-	bool isOpen = 15;
-}

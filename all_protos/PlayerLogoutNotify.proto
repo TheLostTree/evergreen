@@ -1,13 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: NGEFPAINAHE
+// CmdId: 172
 message PlayerLogoutNotify {
-	enum OIGPFFCHNAJ {
-		NONE = 0;
-		PEPPOHPHJOJ = 180;
-	}
-
-	int32 retcode = 7;
+    int32 retcode = 13;
 }
+

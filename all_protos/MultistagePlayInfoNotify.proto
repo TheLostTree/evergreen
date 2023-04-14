@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "MultistagePlayInfo.proto";
 
+// Name: EEELINAIEOJ
+// CmdId: 5367
 message MultistagePlayInfoNotify {
-	enum CEFDLDDACMD {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5305;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	MultistagePlayInfo info = 5;
+    MultistagePlayInfo info = 7;
 }
+

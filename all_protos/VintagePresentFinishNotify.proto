@@ -1,16 +1,11 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: EJDCILANJNL
+// CmdId: 23897
 message VintagePresentFinishNotify {
-	enum OJKNNANBCBE {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 23457;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 presentId = 4;
+    uint32 present_id = 15;
 }
+

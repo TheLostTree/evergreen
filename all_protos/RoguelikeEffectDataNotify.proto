@@ -1,18 +1,13 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "RogueEffectRecord.proto";
 
+// Name: LMLGDBGCAOJ
+// CmdId: 8556
 message RoguelikeEffectDataNotify {
-	enum GHMFENDLIGB {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8256;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated RogueEffectRecord curseList = 11;
-	repeated RogueEffectRecord cardList = 1;
+    repeated RogueEffectRecord card_list = 8;
+    repeated RogueEffectRecord curse_list = 5;
 }
+

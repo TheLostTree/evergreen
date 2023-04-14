@@ -1,11 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "DKDAOPDHNED.proto";
+import "GKPCNMJKNBG.proto";
 
-import "TowerMonthlyBrief.proto";
-import "TowerMonthlyCombatRecord.proto";
-
+// Name: MBJAKBMCIDD
 message TowerMonthlyDetail {
-	TowerMonthlyBrief monthlyBrief = 5;
-	TowerMonthlyCombatRecord monthlyCombatRecord = 1;
+    DKDAOPDHNED GPCJOCOKPCL = 3;
+    GKPCNMJKNBG PLABCAJDHND = 2;
 }
+

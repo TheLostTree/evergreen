@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: BKPPKNEHIIC
+// CmdId: 4992
 message ChatChannelShieldNotify {
-	enum INDNLFBPOGA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4966;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 channelId = 8;
-	bool isShield = 1;
+    uint32 channel_id = 13;
+    bool is_shield = 1;
 }
+

@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "Achievement.proto";
 
+// Name: PFKCLOLEDDE
+// CmdId: 2693
 message AchievementUpdateNotify {
-	enum LKDGLEKOFGN {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 2695;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated Achievement achievementList = 4;
+    repeated Achievement achievement_list = 2;
 }
+

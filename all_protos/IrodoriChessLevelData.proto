@@ -1,12 +1,14 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "MCOPOAMEGCP.proto";
 
-import "IrodoriChessMapData.proto";
-
+// Name: FHPJMFLJECD
 message IrodoriChessLevelData {
-	uint32 levelId = 10;
-	uint32 openTime = 7;
-	IrodoriChessMapData Unk3300_BGINEMHBNAD = 14;
-	IrodoriChessMapData Unk3300_GCIGNCGOBML = 15;
+    MCOPOAMEGCP PMIDHJGPANG = 15;
+    uint32 open_time = 6;
+    MCOPOAMEGCP PLIOEJLDHLF = 14;
+    uint32 level_id = 2;
 }
+

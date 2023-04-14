@@ -1,20 +1,14 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "CustomGadgetTreeInfo.proto";
 
+// Name: LKDBDNPOIJN
+// CmdId: 8301
 message PlantFlowerEditFlowerCombinationReq {
-	enum GCCOPPJKNDH {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 8837;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 scheduleId = 2;
-	CustomGadgetTreeInfo flowerCombinationInfo = 3;
-	uint32 entityId = 7;
+    uint32 entity_id = 4;
+    uint32 schedule_id = 6;
+    CustomGadgetTreeInfo flower_combination_info = 12;
 }
+

@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-
-
-import "RockBoardExploreStageData.proto";
-
-message RockBoardExploreInfo {
-	repeated RockBoardExploreStageData stageDataList = 10;
-}

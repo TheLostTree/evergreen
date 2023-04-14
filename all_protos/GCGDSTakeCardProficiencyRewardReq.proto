@@ -1,17 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: GCGDSTakeCardProficiencyRewardReq
+// CmdId: 7366
 message GCGDSTakeCardProficiencyRewardReq {
-	enum MGAEFBLCDDL {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 7267;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	bool pofiiedegjn = 4;
-	uint32 rewardIndex = 3;
+    uint32 reward_index = 10;
+    uint32 card_id = 12;
 }
+

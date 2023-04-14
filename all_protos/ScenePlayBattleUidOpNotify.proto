@@ -1,25 +1,20 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: KGPOMBJJCMB
+// CmdId: 4392
 message ScenePlayBattleUidOpNotify {
-	enum BNPMGOGKBNK {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 4366;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 entityId = 4;
-	uint32 paramIndex = 7;
-	repeated uint32 paramTargetList = 9;
-	repeated uint32 uidList = 1;
-	uint32 playId = 11;
-	repeated uint32 paramList = 2;
-	uint32 playType = 5;
-	uint32 op = 13;
-	string paramStr = 12;
-	uint32 paramDuration = 8;
+    string param_str = 6;
+    repeated uint32 uid_list = 5;
+    uint32 param_index = 8;
+    uint32 param_duration = 12;
+    uint32 play_id = 11;
+    repeated uint32 param_target_list = 13;
+    uint32 play_type = 2;
+    repeated uint32 param_list = 3;
+    uint32 op = 4;
+    uint32 entity_id = 10;
 }
+

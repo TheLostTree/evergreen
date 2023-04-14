@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_package = "layla.sleep.proto";
+
+
+// Name: MBAAFHPBLEP
+message MBAAFHPBLEP {
+    uint32 FPCJCINAGGB = 7;
+}
+

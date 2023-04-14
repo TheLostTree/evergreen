@@ -1,10 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: IPIDLJAAEGM
 message AvatarSatiationData {
-	uint64 avatarGuid = 5;
-	float finishTime = 15;
-	float penaltyFinishTime = 12;
+    uint64 avatar_guid = 3;
+    float penalty_finish_time = 13;
+    float finish_time = 5;
 }
+

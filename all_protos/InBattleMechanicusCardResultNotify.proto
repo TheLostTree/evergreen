@@ -1,22 +1,17 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "InBattleMechanicusCardInfo.proto";
 
+// Name: NLPAFOEDIFO
+// CmdId: 5342
 message InBattleMechanicusCardResultNotify {
-	enum EFHHBMNDKBA {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 5316;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	uint32 playIndex = 10;
-	uint64 waitBeginTimeUs = 4;
-	repeated InBattleMechanicusCardInfo cardList = 5;
-	map<uint32, uint32> playerConfirmedCardMap = 12;
-	uint32 groupId = 15;
-	uint32 waitSeconds = 9;
+    map<uint32, uint32> player_confirmed_card_map = 8;
+    uint32 play_index = 2;
+    uint32 group_id = 6;
+    uint32 wait_seconds = 15;
+    repeated InBattleMechanicusCardInfo card_list = 9;
+    uint64 wait_begin_time_us = 7;
 }
+

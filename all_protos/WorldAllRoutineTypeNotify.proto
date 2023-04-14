@@ -1,17 +1,12 @@
 syntax = "proto3";
 
-
+option java_package = "layla.sleep.proto";
 
 import "WorldRoutineTypeInfo.proto";
 
+// Name: BELOADNGNEK
+// CmdId: 3543
 message WorldAllRoutineTypeNotify {
-	enum DNJFMFNJMBC {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 3545;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-	}
-
-	repeated WorldRoutineTypeInfo worldRoutineTypeList = 4;
+    repeated WorldRoutineTypeInfo world_routine_type_list = 11;
 }
+

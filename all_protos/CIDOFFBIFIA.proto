@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "layla.sleep.proto";
+
+
+// Name: CIDOFFBIFIA
+message CIDOFFBIFIA {
+    uint32 controller_id = 14;
+    uint32 JCMACGJEEAD = 3;
+    oneof detail {
+        string BDBMFCIHJPL = 12;
+    }
+}
+

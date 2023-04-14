@@ -1,18 +1,12 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
 
-
+// Name: FGPHMLLJKNC
+// CmdId: 5953
 message ChangeWidgetBackgroundActiveStateReq {
-	enum DJJNCLHIPBO {
-		option allow_alias = true;
-		NONE = 0;
-		PEPPOHPHJOJ = 6092;
-		DCDNILFDFLB = 0;
-		NNBKOLMPOEA = 1;
-		EAJIABGAOCI = 1;
-	}
-
-	uint32 materialId = 8;
-	bool isActive = 9;
+    uint32 material_id = 1;
+    bool is_active = 2;
 }
+

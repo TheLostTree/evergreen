@@ -1,11 +1,13 @@
 syntax = "proto3";
 
+option java_package = "layla.sleep.proto";
 
+import "Vector.proto";
 
-import "Rotation.proto";
-
+// Name: LPOPNCBABHN
 message DynamicSVONode {
-	int32 area = 13;
-	int64 index = 11;
-	Rotation referPos = 9;
+    int64 index = 15;
+    int32 area = 7;
+    Vector refer_pos = 8;
 }
+
