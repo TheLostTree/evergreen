@@ -246,7 +246,7 @@ impl ClientServerPair{
                     
                     // self.tokenrspserverseed = Some();
                     //v.serverRandKey
-                    let x = self.decode_base64_rsa(v.server_rand_key.clone());
+                    let x = self.decode_base64_rsa(v.serverRandKey.clone());
                     self.tokenrspserverseed = Some(u64::from_be_bytes([x[0], x[1], x[2], x[3], x[4], x[5], x[6], x[7]]));
                     // Some(protobuf_json_mapping::print_to_string_with_options(&v,&options).unwrap())
                 }else{
