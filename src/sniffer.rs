@@ -2,14 +2,21 @@ use crate::{RUNNING, client_server_pair, packet_processor};
 use pcap::{Capture, Device};
 use std::cell::RefCell;
 use std::io::{stdin, stdout, Write};
+use std::num::IntErrorKind;
 use std::rc::Rc;
 use std::sync::atomic::Ordering;
 
 
-
 pub fn run(){
     let packet_processor = packet_processor::PacketProcessor::new();
-    let main_device = get_device(false).unwrap();
+
+    let main_device = match get_device(false){
+        Some(d) => d,
+        None => {
+            // println!("Error getting device: {}", e);
+            return;
+        }
+    };
 
     let device_name = format!(
         "{} {}",
@@ -84,11 +91,13 @@ fn get_device(default: bool) -> Option<Device> {
             device.flags.connection_status
         );
     }
-    println!("Choose the device to listen to.");
+    println!("Choose the device to listen to, or press control-z to exit");
 
     let choice = loop{
         let mut inpt = String::new();
         let _ = stdout().flush();
+
+
         if let Some(err) = stdin().read_line(&mut inpt).err() {
             println!("{:?}", err);
             return None;
@@ -101,8 +110,11 @@ fn get_device(default: bool) -> Option<Device> {
                 }
                 break x;
             }
-            Err(_) => {
-                println!("please give me a number... :( ")
+            Err(e) => {
+                if *e.kind() == IntErrorKind::Empty{
+                    return None;
+                }
+                println!("please give me a number... :( ");
             }
         }
     };

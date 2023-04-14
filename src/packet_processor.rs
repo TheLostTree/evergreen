@@ -30,7 +30,7 @@ pub fn load_dyn_protos()->HashMap<CmdIds, FileDescriptor>{
             map.insert(c, descriptor);
         }
     }
-    println!("therers only {} descriptors actually", map.len());
+    // println!("therers only {} descriptors actually", map.len());
 
     map
     
