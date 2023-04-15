@@ -48,7 +48,7 @@ const copyProtos = ()=>{
 const generateCmdIdsCsv = ()=>{
     const cmids = require('./packetIds.json');
     const fs = require('fs')
-    const csv = Object.entries(cmids).map(([name, num]) => {
+    const csv = Object.entries(cmids).map(([num, name]) => {
         return `${name},${num}`
     }).join('\n')
 
@@ -56,3 +56,4 @@ const generateCmdIdsCsv = ()=>{
 }
 
 copyProtos()
+generateCmdIdsCsv();

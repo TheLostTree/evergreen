@@ -8,7 +8,7 @@ pub mod protos {
 
     pub fn load_dyn_protos()->HashMap<CmdIds, FileDescriptor>{
         let x = Parser::new().pure()
-        .inputs(std::fs::read_dir("./all_protos").unwrap().map(|v|v.unwrap().path()))
+        .inputs(std::fs::read_dir("./all_protos").unwrap().map(|v|v.unwrap().path()).filter(|v|v.extension().map_or(false,|u|u == "proto")).collect::<Vec<_>>())
         .include("./all_protos")
         .parse_and_typecheck().unwrap();
         // x.file_descriptors

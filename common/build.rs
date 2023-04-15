@@ -3,7 +3,7 @@ use std::{path::Path, env, fs::{self, File}, io::Write};
 use protobuf_codegen;
 
 fn main(){
-    
+    println!("cargo:rerun-if-changed=../data/CmdIds.csv");
     let out_dir = env::var("OUT_DIR").unwrap();
     let gen_dir = Path::new(&out_dir).join("cmdids_target");
     if !gen_dir.exists() {
@@ -35,7 +35,7 @@ fn generate_cmdid_file<P: AsRef<Path>>(path: P){
     contents.push_str("#[allow(non_camel_case_types)]\n");
     contents.push_str("#[derive(Debug,Hash,Eq,PartialEq,Clone)]\n");
     contents.push_str("pub enum CmdIds {\n");
-    let binding = std::fs::read_to_string("../CmdIds.csv").expect("place ur cmdids pls");
+    let binding = std::fs::read_to_string("../data/CmdIds.csv").expect("place ur cmdids pls");
     let lines = binding.lines();
     _ = lines.clone().for_each(|line|{
         let mut split = line.split(",");

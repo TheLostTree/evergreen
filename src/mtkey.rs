@@ -1,22 +1,21 @@
-use std::{num::Wrapping, collections::HashMap};
 use bytes::BufMut;
+use std::{collections::HashMap, num::Wrapping};
 
-const MHYKEYS : &str = include_str!("../dispatch_keys.bin");
+const MHYKEYS: &str = include_str!("../data/dispatch_keys.bin");
 
-
-pub struct MTKey{
+pub struct MTKey {
     pub keybuf: Vec<u8>,
 }
 
-impl MTKey{
-    pub fn from_seed(seed: u64)->MTKey{
+impl MTKey {
+    pub fn from_seed(seed: u64) -> MTKey {
         let mut mt = MT19937_64::default();
         mt.seed(seed);
         let newseed = mt.next_ulong();
         mt.seed(newseed);
         _ = mt.next_ulong(); //discard
         let mut keybuf = vec![];
-        for _ in (0..4096).step_by(8){
+        for _ in (0..4096).step_by(8) {
             //write to keybuf as big endian
             let val = mt.next_ulong();
             keybuf.put_u64(val);
@@ -24,8 +23,8 @@ impl MTKey{
         //:(
         MTKey { keybuf: keybuf }
     }
-    pub fn xor(&self, data: &mut Vec<u8>){
-        for i in 0..data.len(){
+    pub fn xor(&self, data: &mut Vec<u8>) {
+        for i in 0..data.len() {
             data[i] ^= self.keybuf[i % self.keybuf.len()];
         }
     }
@@ -39,7 +38,7 @@ pub struct MT19937_64 {
 impl MT19937_64 {
     pub fn default() -> MT19937_64 {
         MT19937_64 {
-            // these are used in c# for some reason but not here? 
+            // these are used in c# for some reason but not here?
             // N: 0x138, // 312
             // M: 0x9C, // 156
             // matrix_a: 0xB5026F5AA96619E9, //13043109905998158313
@@ -53,9 +52,8 @@ impl MT19937_64 {
         for i in 1..312 {
             let value = Wrapping(self.mt[i - 1] ^ (self.mt[i - 1] >> 62));
 
-            self.mt[i] = ((Wrapping(6364136223846793005u64) * value).0
-                + (i as u64))
-                & 0xffffffffffffffff;
+            self.mt[i] =
+                ((Wrapping(6364136223846793005u64) * value).0 + (i as u64)) & 0xffffffffffffffff;
         }
         self.mti = 312;
     }
@@ -93,12 +91,11 @@ impl MT19937_64 {
     }
 }
 
-
 //i'm at most calling this once per run so i'm not going to bother saving it anywhere
-pub fn get_dispatch_keys()->HashMap<u16, [u8;4096]>{
+pub fn get_dispatch_keys() -> HashMap<u16, [u8; 4096]> {
     // let f = std::fs::read_to_string("./MHYKeys.bin").unwrap();
     let mut x = HashMap::new();
-    for line in MHYKEYS.split("\n"){
+    for line in MHYKEYS.split("\n") {
         let parts = line.split(": ").collect::<Vec<&str>>();
         //todo: check if its actually a i32 or a u32?
         let firstbytes = parts[0].parse::<u16>();
@@ -106,19 +103,19 @@ pub fn get_dispatch_keys()->HashMap<u16, [u8;4096]>{
         let mut keybytes = [0u8; 4096];
 
         let mut index = 0;
-        for b in (0..parts[1].len()-1).step_by(2){
-            let c = &parts[1][b..b+2];
+        for b in (0..parts[1].len() - 1).step_by(2) {
+            let c = &parts[1][b..b + 2];
             let byte = u8::from_str_radix(c, 16);
             // print!("{}", c);
-            match byte{
+            match byte {
                 Ok(_) => {
                     let byte = byte.unwrap();
                     keybytes[index] = byte;
                     index += 1;
-                },
+                }
                 Err(_) => {
                     // println!("errr: '{}' is actually '{}'", c, c as i32)
-                },
+                }
             }
         }
         // println!();

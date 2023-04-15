@@ -1,3 +1,8 @@
 out.txt
-
+all_protos/
 target/
+
+# Added by cargo
+
+/target
+prev_seeds.txt
