@@ -1,6 +1,6 @@
 use crate::client_server_pair::ClientServerPair;
 use crate::client_server_pair::Packet;
-use crossbeam_channel::{Sender};
+use crossbeam_channel::Sender;
 use pcap::{Capture, Device};
 use std::sync::Arc;
 use std::sync::Mutex;
@@ -16,7 +16,7 @@ impl UdpDataProcessor {
         }
     }
 
-    pub fn run(&mut self, sender: Sender<Packet>, main_device: Device,running: Arc<Mutex<bool>>) {
+    pub fn run(&mut self, sender: Sender<Packet>, main_device: Device, running: Arc<Mutex<bool>>) {
         let device_name = format!(
             "{} {}",
             main_device.name.clone(),
@@ -26,24 +26,22 @@ impl UdpDataProcessor {
                 .unwrap_or(&"No Description".to_owned())
         );
         let mut cap = Capture::from_device(main_device)
-        .unwrap()
-        .promisc(true)
-        .timeout(1)
-        //   .snaplen(5000)
-        .open()
-        .unwrap();
+            .unwrap()
+            .promisc(true)
+            .timeout(1)
+            //   .snaplen(5000)
+            .open()
+            .unwrap();
 
         _ = cap.filter("udp portrange 22101-22102", true);
 
-
         println!("evergreen is listening on {}...", device_name);
 
-        while running.lock().unwrap().eq(&true){
+        while running.lock().unwrap().eq(&true) {
             if let Ok(packet) = cap.next_packet() {
                 let pktdata = packet.data.to_vec();
                 let linktype = cap.get_datalink();
-                let (data, port) =
-                    remove_headers(pktdata, linktype.eq(&pcap::Linktype::ETHERNET));
+                let (data, port) = remove_headers(pktdata, linktype.eq(&pcap::Linktype::ETHERNET));
                 let is_client = port != 22101 && port != 22102;
                 if data.len() == 20 {
                     let magic = u32::from_be_bytes([data[0], data[1], data[2], data[3]]);
@@ -70,7 +68,6 @@ impl UdpDataProcessor {
                     continue;
                 }
 
-
                 self.client_server_pair.add_data(&data, is_client);
 
                 //are these clones ideal? no. but it works
@@ -86,7 +83,7 @@ impl UdpDataProcessor {
             }
         }
 
-        //save 
+        //save
         self.client_server_pair.key_bf.save();
     }
 }

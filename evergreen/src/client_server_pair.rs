@@ -33,7 +33,8 @@ pub struct Packet {
 }
 impl ClientServerPair {
     pub fn new() -> ClientServerPair {
-        let rsakey = rsa::RsaPrivateKey::from_pkcs1_pem(include_str!("../data/private.pem")).unwrap();
+        let rsakey =
+            rsa::RsaPrivateKey::from_pkcs1_pem(include_str!("../../data/private.pem")).unwrap();
 
         ClientServerPair {
             client: None,
@@ -90,16 +91,17 @@ impl ClientServerPair {
     }
 
     pub fn add_data(&mut self, data: &[u8], is_client: bool) {
-
-        let now = std::time::SystemTime::now().duration_since(std::time::UNIX_EPOCH).unwrap().as_millis() as u32;
+        let now = std::time::SystemTime::now()
+            .duration_since(std::time::UNIX_EPOCH)
+            .unwrap()
+            .as_millis() as u32;
         if is_client {
-            if let Some(client) = self.client.as_mut(){
+            if let Some(client) = self.client.as_mut() {
                 _ = client.update(now);
                 let _ = client.input(data);
-                
             }
         } else {
-            if let Some(server) = self.server.as_mut(){
+            if let Some(server) = self.server.as_mut() {
                 _ = server.update(now);
                 let _ = server.input(data);
             }
@@ -111,9 +113,9 @@ impl ClientServerPair {
             data[0] == 0x45 && data[1] == 0x67
         } else {
             data[0] == 0x45
-            && data[1] == 0x67
-            && data[data.len() - 2] == 0x89
-            && data[data.len() - 1] == 0xAB
+                && data[1] == 0x67
+                && data[data.len() - 2] == 0x89
+                && data[data.len() - 1] == 0xAB
         }
     }
 
@@ -256,8 +258,7 @@ impl ClientServerPair {
 }
 
 // stupid stuff for kcp, ignore please
-pub struct Source {
-}
+pub struct Source {}
 
 impl Write for Source {
     fn write(&mut self, data: &[u8]) -> io::Result<usize> {

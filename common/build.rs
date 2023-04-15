@@ -1,35 +1,34 @@
-use std::{path::Path, env, fs::{self, File}, io::Write};
+use std::{
+    env,
+    fs::{self, File},
+    io::Write,
+    path::Path,
+};
 
 use protobuf_codegen;
 
-fn main(){
+fn main() {
     println!("cargo:rerun-if-changed=../data/CmdIds.csv");
     let out_dir = env::var("OUT_DIR").unwrap();
     let gen_dir = Path::new(&out_dir).join("cmdids_target");
     if !gen_dir.exists() {
         fs::create_dir(&gen_dir).unwrap();
     }
-    
 
     let dest_path = gen_dir.join("cmdids.rs");
     // println!("cargo:warning=dest_path: {}", dest_path.display());
 
     generate_cmdid_file(dest_path);
-    
-    
+
     generate_protobufs();
-
-
 
     println!("cargo:rustc-env=GENERATED_ENV={}", gen_dir.display());
     println!("cargo:rustc-cfg=has_generated_feature");
 }
 
-
-fn generate_cmdid_file<P: AsRef<Path>>(path: P){
-
+fn generate_cmdid_file<P: AsRef<Path>>(path: P) {
     //yes i know this is a mess
-    
+
     let mut contents = String::new();
     // contents.push_str("pub mod cmdids {\n");
     contents.push_str("#[allow(non_camel_case_types)]\n");
@@ -37,7 +36,7 @@ fn generate_cmdid_file<P: AsRef<Path>>(path: P){
     contents.push_str("pub enum CmdIds {\n");
     let binding = std::fs::read_to_string("../data/CmdIds.csv").expect("place ur cmdids pls");
     let lines = binding.lines();
-    _ = lines.clone().for_each(|line|{
+    _ = lines.clone().for_each(|line| {
         let mut split = line.split(",");
         let name = split.next().unwrap();
         let cmdid = split.next().unwrap();
@@ -49,7 +48,7 @@ fn generate_cmdid_file<P: AsRef<Path>>(path: P){
     contents.push_str("impl CmdIds {\n");
     contents.push_str("\tpub fn from_u16(id: u16) -> Option<CmdIds> {\n");
     contents.push_str("\t\tmatch id {\n");
-    lines.clone().for_each(|line|{
+    lines.clone().for_each(|line| {
         let mut split = line.split(",");
         let name = split.next().unwrap();
         let cmdid = split.next().unwrap();
@@ -60,17 +59,21 @@ fn generate_cmdid_file<P: AsRef<Path>>(path: P){
     contents.push_str("\t}\n");
     contents.push_str("}\n");
 
-    contents.push_str("
+    contents.push_str(
+        "
 #[derive(Debug, PartialEq, Eq)]
 pub struct ParseCmdErr;
 impl std::str::FromStr for CmdIds{
-    ");
-    contents.push_str("
+    ",
+    );
+    contents.push_str(
+        "
     type Err = ParseCmdErr;
     fn from_str(s:&str) -> Result<Self, Self::Err> {
-");
+",
+    );
     contents.push_str("\t\tmatch s {\n");
-    lines.clone().for_each(|line|{
+    lines.clone().for_each(|line| {
         let mut split = line.split(",");
         let name = split.next().unwrap();
         // let cmdid = split.next().unwrap();
@@ -81,55 +84,63 @@ impl std::str::FromStr for CmdIds{
     contents.push_str("\t}\n");
     contents.push_str("}\n");
 
-    contents.push_str("
+    contents.push_str(
+        "
 use std::fmt;
 impl std::fmt::Display for CmdIds{
-    ");
-    contents.push_str("
+    ",
+    );
+    contents.push_str(
+        "
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result  {
 
-");
+",
+    );
     contents.push_str("\tmatch self {\n");
-    lines.clone().for_each(|line|{
+    lines.clone().for_each(|line| {
         let mut split = line.split(",");
         let name = split.next().unwrap();
         // let cmdid = split.next().unwrap();
-        contents.push_str(&format!("\t\t\tCmdIds::{} => write!(f, \"{}\"),\n", name, name));
+        contents.push_str(&format!(
+            "\t\t\tCmdIds::{} => write!(f, \"{}\"),\n",
+            name, name
+        ));
     });
     // contents.push_str("\t\t\t_ => Err(std::fmt::Error),\n");
     contents.push_str("\t\t}\n");
     contents.push_str("\t}\n");
     contents.push_str("}\n");
 
-
     generate_file(&path, contents.as_bytes());
 
-    
     // generate_proto_decodes(lines)
 }
 
-fn generate_protobufs(){
-
+fn generate_protobufs() {
     let protodir = format!("../{}", "protos");
-    let files = match std::fs::read_dir(protodir.clone()){
+    let files = match std::fs::read_dir(protodir.clone()) {
         Ok(f) => f,
         Err(_) => {
-            panic!("Please create a ../protos folder and place your proto files inside.");  
-        },
+            panic!("Please create a ../protos folder and place your proto files inside.");
+        }
     };
-    let paths = files.map(|f| format!("{}/{}",protodir.clone(),f.unwrap().file_name().to_str().unwrap()));
+    let paths = files.map(|f| {
+        format!(
+            "{}/{}",
+            protodir.clone(),
+            f.unwrap().file_name().to_str().unwrap()
+        )
+    });
 
     protobuf_codegen::Codegen::new()
-    .pure()
-
-    // All inputs and imports from the inputs must reside in `includes` directories.
-    .includes(&[protodir.clone()])
-    .inputs(paths)
-    // Specify output directory relative to Cargo output directory.
-    .cargo_out_dir("protos_target")
-    .run_from_script();
+        .pure()
+        // All inputs and imports from the inputs must reside in `includes` directories.
+        .includes(&[protodir.clone()])
+        .inputs(paths)
+        // Specify output directory relative to Cargo output directory.
+        .cargo_out_dir("protos_target")
+        .run_from_script();
 }
-
 
 // #[allow(dead_code)]
 // fn generate_proto_decodes(cmds: Lines){
@@ -140,14 +151,9 @@ fn generate_protobufs(){
 //     contents.push_str("use protobuf_json_mapping::print_to_string_with_options;\n");
 //     contents.push_str("use protobuf::Message;\n\n");
 
-
-
-
-
-
 //     contents.push_str("pub fn default_decode_proto(p: &mut Packet, cmd: CmdIds)->Option<String>{\n");
 //     contents.push_str("
-    
+
 //     let options = protobuf_json_mapping::PrintOptions{
 //         enum_values_int :false,
 //         proto_field_name: false,
@@ -185,7 +191,7 @@ fn generate_protobufs(){
 //         _ => {None}
 //     }
 // }
-    
+
 //     ");
 
 //     let dir = env::var("OUT_DIR").unwrap();
@@ -194,7 +200,6 @@ fn generate_protobufs(){
 //     generate_file(gen_dir, contents.as_bytes());
 
 // }
-
 
 fn generate_file<P: AsRef<Path>>(path: P, text: &[u8]) {
     let mut f = File::create(path).unwrap();

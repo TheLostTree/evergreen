@@ -26,15 +26,21 @@ impl PacketProcessor {
         let handlers: HashMap<CmdIds, Handler> = HashMap::new();
         // handlers.insert(SceneEntityAppearNotify, Self::scene_entity_appear);
         // handlers.insert(GetPlayerTokenReq, Self::get_player_token);
-        Self { handlers , count: 0}
+        Self { handlers, count: 0 }
     }
-
-
 }
 
 impl PacketConsumer for PacketProcessor {
     fn process(&mut self, cmdid: CmdIds, bytes: &[u8], is_server: bool) {
-        println!("#{} {}: {:?}", {self.count += 1; self.count}, if is_server { "S2C" } else { "C2S" },cmdid);
+        println!(
+            "#{} {}: {:?}",
+            {
+                self.count += 1;
+                self.count
+            },
+            if is_server { "S2C" } else { "C2S" },
+            cmdid
+        );
         match self.handlers.get(&cmdid) {
             Some(handler) => {
                 let _ = handler(self, bytes);
@@ -47,7 +53,11 @@ impl PacketConsumer for PacketProcessor {
 
     fn run(&mut self, rx: Receiver<Packet>) {
         for packet in rx {
-            self.process(CmdIds::from_u16(packet.cmdid).unwrap(), &packet.data, !packet.is_client);
+            self.process(
+                CmdIds::from_u16(packet.cmdid).unwrap(),
+                &packet.data,
+                !packet.is_client,
+            );
         }
     }
 }

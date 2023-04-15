@@ -1,13 +1,13 @@
 use pcap::Device;
-use std::io::{stdout, stdin, Write};
+use std::io::{stdin, stdout, Write};
 
-use evergreen::{packet_processor::{self}, iridium_backend, evergreen::Evergreen,};
-
-
-
+use evergreen::{
+    evergreen::Evergreen,
+    iridium_backend,
+    packet_processor::{self},
+};
 
 fn main() {
-
     let main_device = get_device().unwrap();
     let mut main = Evergreen::new(main_device);
     main.add_consumer(|| Box::new(packet_processor::PacketProcessor::new()));

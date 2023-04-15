@@ -1,7 +1,7 @@
 use bytes::BufMut;
 use std::{collections::HashMap, num::Wrapping};
 
-const MHYKEYS: &str = include_str!("../data/dispatch_keys.bin");
+const MHYKEYS: &str = include_str!("../../data/dispatch_keys.bin");
 
 pub struct MTKey {
     pub keybuf: Vec<u8>,
