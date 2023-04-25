@@ -9,6 +9,8 @@ use protobuf_codegen;
 
 fn main() {
     println!("cargo:rerun-if-changed=../data/CmdIds.csv");
+
+    println!("cargo:rerun-if-changed=../protos/*");
     let out_dir = env::var("OUT_DIR").unwrap();
     let gen_dir = Path::new(&out_dir).join("cmdids_target");
     if !gen_dir.exists() {
@@ -117,6 +119,7 @@ impl std::fmt::Display for CmdIds{
 }
 
 fn generate_protobufs() {
+    
     let protodir = format!("../{}", "protos");
     let files = match std::fs::read_dir(protodir.clone()) {
         Ok(f) => f,

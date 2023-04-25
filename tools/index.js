@@ -4,19 +4,17 @@ const copyProtos = ()=>{
         "PacketHead.proto",
         "GetPlayerTokenReq.proto",
         "GetPlayerTokenRsp.proto",
-        // "AvatarDataNotify.proto",
-        // "AvatarFightPropNotify.proto",
-        // "AvatarFightPropUpdateNotify.proto",
-        // "CombatInvocationsNotify.proto",
-        // "PlayerEnterSceneInfoNotify.proto",
-        // "UnionCmdNotify.proto",
-        // "AbilityInvocationsNotify.proto",
-        // "SceneTeamUpdateNotify.proto",
-        // "SceneEntityDisappearNotify.proto",
-        // "SceneEntityAppearNotify.proto",
-        // "PlayerEnterSceneNotify.proto",    
-        // "BattlePassAllDataNotify.proto",
-        // "AntiAddictNotify.proto",
+        "AvatarDataNotify.proto",
+        "AvatarFightPropNotify.proto",
+        "AvatarFightPropUpdateNotify.proto",
+        "CombatInvocationsNotify.proto",
+        "PlayerEnterSceneInfoNotify.proto",
+        "UnionCmdNotify.proto",
+        "AbilityInvocationsNotify.proto",
+        "SceneTeamUpdateNotify.proto",
+        "SceneEntityDisappearNotify.proto",
+        "SceneEntityAppearNotify.proto",
+        "PlayerEnterSceneNotify.proto",
     ]
 
     const includes = []
@@ -46,7 +44,7 @@ const copyProtos = ()=>{
 }
 
 const generateCmdIdsCsv = ()=>{
-    const cmids = require('./packetIds.json');
+    const cmids = require('../packetIds.json');
     const fs = require('fs')
     const csv = Object.entries(cmids).map(([num, name]) => {
         return `${name},${num}`

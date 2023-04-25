@@ -15,15 +15,15 @@ pub struct Evergreen {
 impl Evergreen {
     pub fn new(d: Device) -> Self {
         let running: Arc<Mutex<bool>> = Arc::new(Mutex::new(true));
-        {
-            let rclone = running.clone();
+        // {
+        //     let rclone = running.clone();
 
-            ctrlc::set_handler(move || {
-                println!("got signal");
-                *rclone.lock().unwrap() = false;
-            })
-            .expect("Error setting Ctrl-C handler");
-        }
+        //     ctrlc::set_handler(move || {
+        //         println!("got signal");
+        //         *rclone.lock().unwrap() = false;
+        //     })
+        //     .expect("Error setting Ctrl-C handler");
+        // }
         let (s, r) = unbounded();
 
         let rclone = running.clone();
@@ -68,5 +68,13 @@ impl Evergreen {
                 break;
             }
         }
+    }
+}
+
+
+impl Drop for Evergreen {
+    fn drop(&mut self) {
+        // println!("dropping evergreen");
+        *self.running.lock().unwrap() = false;
     }
 }
