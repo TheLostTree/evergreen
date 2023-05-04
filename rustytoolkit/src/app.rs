@@ -2,9 +2,13 @@ use egui::Grid;
 use evergreen::evergreen::Evergreen;
 use pcap::Device;
 
+use crate::widgets::widget::ToolKitWidget;
 use crate::session::Session;
 
+
+#[allow(dead_code)]
 type ArcMut<T> = std::sync::Arc<std::sync::Mutex<T>>;
+#[allow(unused_macros)]
 macro_rules! arc_mut {
     ($e:expr) => {
         std::sync::Arc::new(std::sync::Mutex::new($e))
@@ -19,12 +23,19 @@ macro_rules! arc_mut {
 pub struct ToolkitApp {
     device_name: Option<String>,
 
+    #[serde(skip)]
+    session: Session,
+    #[serde(skip)]
+    widgets: Vec<Box<dyn ToolKitWidget>>
+
 }
 
 impl Default for ToolkitApp {
     fn default() -> Self {
         Self {
             device_name: None,
+            widgets: vec![],
+            session: Session::new(),
         }
     }
 }
@@ -44,6 +55,10 @@ impl ToolkitApp {
         Default::default()
     }
 
+
+    fn init_widgets(&mut self) {
+
+    }
     fn set_evergreen(&mut self, mut evergreen: Evergreen) {
         evergreen.add_consumer(||Box::new(Session::new()));
         //add more consumers here
@@ -61,6 +76,10 @@ impl eframe::App for ToolkitApp {
     /// Called by the frame work to save state before shutdown.
     fn save(&mut self, storage: &mut dyn eframe::Storage) {
         eframe::set_value(storage, eframe::APP_KEY, self);
+    }
+
+    fn on_exit(&mut self, _gl: Option<&eframe::glow::Context>) {
+        
     }
 
     
@@ -84,22 +103,6 @@ impl eframe::App for ToolkitApp {
                     }
                 });
 
-                Grid::new("erm").show(ui, |ui| {
-                    ui.label("Source");
-                    ui.label("Destination");
-                    ui.label("Protocol");
-                    ui.label("Length");
-                    ui.label("Info");
-                    ui.end_row();
-                    // for packet in self.packets.iter() {
-                    //     ui.label(packet.source);
-                    //     ui.label(packet.destination);
-                    //     ui.label(packet.protocol);
-                    //     ui.label(packet.length);
-                    //     ui.label(packet.info);
-                    //     ui.end_row();
-                    // }
-                });
                 ui.menu_button("Network", |ui| {
                     ui.menu_button("Choose Network Interface", |ui|{
                         let devices_res = Device::list();
@@ -116,7 +119,10 @@ impl eframe::App for ToolkitApp {
                     })
                 });
             });
+
+
         });
+
 
         egui::SidePanel::left("side_panel").show(ctx, |ui| {
             ui.heading("Side Panel");
@@ -146,25 +152,18 @@ impl eframe::App for ToolkitApp {
             });
         });
 
-        egui::CentralPanel::default().show(ctx, |ui| {
-            // The central panel the region left after adding TopPanel's and SidePanel's
+        // egui::CentralPanel::default().show(ctx, |ui| {
+        //     // The central panel the region left after adding TopPanel's and SidePanel's
 
-            ui.heading("eframe template");
-            ui.hyperlink("https://github.com/emilk/eframe_template");
-            ui.add(egui::github_link_file!(
-                "https://github.com/emilk/eframe_template/blob/master/",
-                "Source code."
-            ));
-            egui::warn_if_debug_build(ui);
-        });
+        //     ui.heading("eframe template");
+        //     ui.hyperlink("https://github.com/emilk/eframe_template");
+        //     ui.add(egui::github_link_file!(
+        //         "https://github.com/emilk/eframe_template/blob/master/",
+        //         "Source code."
+        //     ));
+        //     egui::warn_if_debug_build(ui);
+        // });
 
-        if false {
-            egui::Window::new("Window").show(ctx, |ui| {
-                ui.label("Windows can be moved by dragging them.");
-                ui.label("They are automatically sized based on contents.");
-                ui.label("You can turn on resizing and scrolling if you like.");
-                ui.label("You would normally choose either panels OR windows.");
-            });
-        }
+        
     }
 }

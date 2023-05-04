@@ -6,9 +6,12 @@ fn main() -> eframe::Result<()> {
     // tracing_subscriber::fmt::init();
 
     let native_options = eframe::NativeOptions::default();
+    
     eframe::run_native(
         "Rusty Toolkit",
         native_options,
         Box::new(|cc| Box::new(toolkit::ToolkitApp::new(cc))),
     )
+
+    // do clean up maybe?
 }

@@ -1,6 +1,5 @@
-use crate::{client_server_pair::Packet, packet_processor::PacketConsumer, protobuf_decoder};
+use evergreen::{packet_processor::PacketConsumer, protobuf_decoder};
 use common::cmdids::CmdIds;
-use crossbeam_channel::Receiver;
 use protobuf::MessageDyn;
 use protobuf_json_mapping::{print_to_string_with_options, PrintOptions};
 
@@ -76,16 +75,6 @@ impl PacketConsumer for Iridium {
         let message = self.decoder.decode(cmdid.clone(), bytes);
         if let Some(message) = message {
             self.send_protobuf(message.as_ref(), cmdid, is_server);
-        }
-    }
-
-    fn run(&mut self, rx: Receiver<Packet>) {
-        for packet in rx {
-            self.process(
-                CmdIds::from_u16(packet.cmdid).unwrap(),
-                &packet.data,
-                !packet.is_client,
-            );
         }
     }
 }

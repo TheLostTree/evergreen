@@ -1,9 +1,9 @@
 use pcap::Device;
 use std::io::{stdin, stdout, Write};
+mod iridium_backend;
 
 use evergreen::{
     evergreen::Evergreen,
-    iridium_backend,
     packet_processor::{self},
 };
 

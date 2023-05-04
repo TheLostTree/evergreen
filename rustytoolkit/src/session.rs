@@ -1,22 +1,22 @@
-use std::collections::HashMap;
+use std::{collections::HashMap, sync::Arc};
 
 use common::cmdids::CmdIds;
 use crossbeam_channel::Receiver;
-use protobuf::{MessageDyn, Message};
+use protobuf::Message;
 use evergreen::{packet_processor::PacketConsumer, client_server_pair::Packet};
-use common::protos::{*};
+use common::protos::*;
+
 
 pub struct Session{
     handlers: HashMap<CmdIds, Handler>,
 
-    entities: HashMap<u32, SceneEntityInfo::SceneEntityInfo>,
 }
 
 
 type Handler = fn(&mut Session, &[u8]) -> ();
 
 impl PacketConsumer for Session{
-    fn run(&mut self, rx: Receiver<Packet>) {
+    fn run(&mut self, rx: Receiver<Arc<Packet>>) {
         for packet in rx {
             if let Some(cmdid) = common::cmdids::CmdIds::from_u16(packet.cmdid) {
                 self.process(cmdid, &packet.data, !packet.is_client);
@@ -24,7 +24,7 @@ impl PacketConsumer for Session{
         }
     }
 
-    fn process(&mut self, cmdid: common::cmdids::CmdIds, bytes: &[u8], is_server: bool) {
+    fn process(&mut self, cmdid: common::cmdids::CmdIds, bytes: &[u8], _is_server: bool) {
         if let Some(handler) = self.handlers.get(&cmdid) {
             handler(self, bytes);
         }
@@ -33,16 +33,16 @@ impl PacketConsumer for Session{
 
 
 impl Session{
-    pub fn new() -> Self{
+    pub fn  new() -> Self{
         let mut handlers: HashMap<CmdIds, Handler> = HashMap::new();
         handlers.insert(CmdIds::SceneEntityAppearNotify, Self::on_scene_entity_appear);
-        Self{handlers, entities: HashMap::new()}
+        Self{handlers}
     }
 
 
 
     fn on_scene_entity_appear(&mut self, bytes: &[u8]){
-        let mut msg = SceneEntityAppearNotify::SceneEntityAppearNotify::parse_from_bytes(bytes).unwrap();
+        let msg = SceneEntityAppearNotify::SceneEntityAppearNotify::parse_from_bytes(bytes).unwrap();
 
 
 

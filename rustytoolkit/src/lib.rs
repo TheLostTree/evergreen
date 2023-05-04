@@ -2,4 +2,5 @@
 
 mod app;
 mod session;
+mod widgets;
 pub use app::ToolkitApp;

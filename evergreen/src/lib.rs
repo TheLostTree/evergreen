@@ -1,6 +1,5 @@
 pub mod client_server_pair;
 pub mod evergreen;
-pub mod iridium_backend;
 pub mod key_bruteforce;
 pub mod mtkey;
 pub mod packet_processor;

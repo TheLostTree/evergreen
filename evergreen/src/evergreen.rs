@@ -3,11 +3,11 @@ use crate::packet_processor::PacketConsumer;
 use crate::udp_data_processor::UdpDataProcessor;
 use crossbeam_channel::{unbounded, Receiver, Sender};
 use pcap::Device;
-use std::sync::{Arc, Mutex};
+use std::{sync::{Arc, Mutex}};
 
 pub struct Evergreen {
     running: Arc<Mutex<bool>>,
-    senders: Vec<Sender<Packet>>,
+    senders: Vec<Sender<Arc<Packet>>>,
 
     packet_rx: Receiver<Packet>,
 }
@@ -15,21 +15,19 @@ pub struct Evergreen {
 impl Evergreen {
     pub fn new(d: Device) -> Self {
         let running: Arc<Mutex<bool>> = Arc::new(Mutex::new(true));
-        // {
-        //     let rclone = running.clone();
-
-        //     ctrlc::set_handler(move || {
-        //         println!("got signal");
-        //         *rclone.lock().unwrap() = false;
-        //     })
-        //     .expect("Error setting Ctrl-C handler");
-        // }
+        {
+            let rclone = running.clone();
+            _ = ctrlc::set_handler(move || {
+                println!("got signal");
+                *rclone.lock().unwrap() = false;
+            });  // lol!
+        }
         let (s, r) = unbounded();
 
         let rclone = running.clone();
         _ = std::thread::spawn(move || {
-            let mut evergreen = UdpDataProcessor::new();
-            evergreen.run(s, d, rclone);
+            let mut udpdataprocessor = UdpDataProcessor::new();
+            udpdataprocessor.run(s, d, rclone);
         });
 
         Self {
@@ -43,6 +41,7 @@ impl Evergreen {
         *self.running.lock().unwrap()
     }
 
+    
     pub fn add_consumer(&mut self, f: fn() -> Box<dyn PacketConsumer>) {
         let (pptx, pprx) = unbounded();
         _ = std::thread::spawn(move || {
@@ -55,8 +54,9 @@ impl Evergreen {
         loop {
             match self.packet_rx.recv() {
                 Ok(x) => {
+                    let rc_pkt = Arc::new(x);
                     for sender in self.senders.iter() {
-                        sender.send(x.clone()).unwrap();
+                        sender.send(rc_pkt.clone()).unwrap();
                     }
                 }
                 Err(_) => {
@@ -74,7 +74,7 @@ impl Evergreen {
 
 impl Drop for Evergreen {
     fn drop(&mut self) {
-        // println!("dropping evergreen");
+        println!("dropping evergreen");
         *self.running.lock().unwrap() = false;
     }
 }
