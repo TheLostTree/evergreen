@@ -6,3 +6,15 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+pcap = "1.0.0"
+ctrlc = { version = "3.0", features = ["termination"] }
+protobuf = "3.2.0"
+protobuf-json-mapping = "3.2.0"
+
+kcp = {git = "https://github.com/RustySamovar/kcp"}
+rsa = "0.8.1"
+base64 = "0.13.0"
+crossbeam-channel = "0.5.8"
+
+notify = { version = "6.0.0", default-features = false, features = ["macos_kqueue"] }
+tokio = { version = "1.28.1", features = ["full"] }
