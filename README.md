@@ -5,6 +5,8 @@ a dntk successor!
 also works as a backend for iridium!
 
 
+# Undergoing a rewrite probably
+
 
 ## Npcap
 
@@ -37,7 +39,6 @@ run index.js to move a few protos into ./protos (the ones that ares statically c
     a) updating packetIds.json then running index.js + the generateCmdIdsCsv function
     b) update cmdids.csv directly
 3. hopefully no name changes are in the protos, but fix if they appear
-
 
 todo:
 

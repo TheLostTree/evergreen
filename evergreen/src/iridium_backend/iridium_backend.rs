@@ -69,9 +69,23 @@ impl Iridium {
         }
     }
 }
+use protobuf::Message;
 
 impl PacketConsumer for Iridium {
     fn process(&mut self, cmdid: CmdIds, bytes: &[u8], is_server: bool) {
+        if cmdid == CmdIds::UnionCmdNotify{
+            let message = common::protos::UnionCmdNotify::UnionCmdNotify::parse_from_bytes(bytes);
+            if let Ok(unioncmdnotify) = message{
+                let list = unioncmdnotify.cmd_list;
+                for cmd in list{
+                    self.process(CmdIds::from_u16(cmd.message_id as u16).unwrap(), &cmd.body, is_server);
+                }
+                
+            }
+            return;
+            
+
+        }
         let message = self.decoder.decode(cmdid.clone(), bytes);
         if let Some(message) = message {
             self.send_protobuf(message.as_ref(), cmdid, is_server);
